@@ -157,6 +157,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a39b13ae3ee97deeefb49b2d600c64bf6"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkSMPVRepresentationProxy.html#a39b13ae3ee97deeefb49b2d600c64bf6">RescaleTransferFunctionToVisibleRange</a> (<a class="el" href="classvtkSMProxy.html">vtkSMProxy</a> *view, const char *arrayname, <a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/vtkShaderProgram2_8h.html#a61569f2965b7a369eb10b6d75d410d11">int</a> attribute_type)</td></tr>
 <tr class="memdesc:a39b13ae3ee97deeefb49b2d600c64bf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rescales the color transfer function and the opacity transfer function using the current data range, limited to the currernt visible elements.  <a href="#a39b13ae3ee97deeefb49b2d600c64bf6">More...</a><br /></td></tr>
 <tr class="separator:a39b13ae3ee97deeefb49b2d600c64bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a5a85d86e8e955ed94cb0e014b6c448b8"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/vtkShaderProgram2_8h.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkSMPVRepresentationProxy.html#a5a85d86e8e955ed94cb0e014b6c448b8">IsScalarBarStickyVisible</a> (<a class="el" href="classvtkSMProxy.html">vtkSMProxy</a> *view)</td></tr>
+<tr class="memdesc:a5a85d86e8e955ed94cb0e014b6c448b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the scalar bar of this representation in view is sticky visible, i.e.  <a href="#a5a85d86e8e955ed94cb0e014b6c448b8">More...</a><br /></td></tr>
+<tr class="separator:a5a85d86e8e955ed94cb0e014b6c448b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classvtkSMRepresentationProxy"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classvtkSMRepresentationProxy')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classvtkSMRepresentationProxy.html">vtkSMRepresentationProxy</a></td></tr>
 <tr class="memitem:adfd38e74dc1dcf07cf6b0a6b9be79df3 inherit pub_methods_classvtkSMRepresentationProxy"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkSMRepresentationProxy.html#adfd38e74dc1dcf07cf6b0a6b9be79df3">PrintSelf</a> (ostream &amp;os, <a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/classvtkIndent.html">vtkIndent</a> indent) override</td></tr>
 <tr class="separator:adfd38e74dc1dcf07cf6b0a6b9be79df3 inherit pub_methods_classvtkSMRepresentationProxy"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2591,6 +2595,27 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>True if ranges have to be computed independently on component 0 for the color and 1 for the opacity on the Volume representation. </p>
+
+</div>
+</div>
+<a id="a5a85d86e8e955ed94cb0e014b6c448b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a85d86e8e955ed94cb0e014b6c448b8">&#9670;&nbsp;</a></span>IsScalarBarStickyVisible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/vtkShaderProgram2_8h.html#a61569f2965b7a369eb10b6d75d410d11">int</a> vtkSMPVRepresentationProxy::IsScalarBarStickyVisible </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvtkSMProxy.html">vtkSMProxy</a> *&#160;</td>
+          <td class="paramname"><em>view</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if the scalar bar of this representation in view is sticky visible, i.e. </p>
+<p>should be visible whenever this representation is also visible. It returns 1 if the scalar bar is sticky visible, 0 other wise. If any problem is encountered, for example if view == nullptr, or if the scalar bar representation is not instanciated / found, it returns -1. </p>
 
 </div>
 </div>
