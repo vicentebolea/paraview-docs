@@ -92,6 +92,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7c395e274dc7aa07c924046371f13000"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpqPresetDialog.html#a7c395e274dc7aa07c924046371f13000">loadAnnotations</a> () const</td></tr>
 <tr class="memdesc:a7c395e274dc7aa07c924046371f13000"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the user requested to load annotations for the current preset.  <a href="#a7c395e274dc7aa07c924046371f13000">More...</a><br /></td></tr>
 <tr class="separator:a7c395e274dc7aa07c924046371f13000"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a926afb3723b3fc0156b9dca3e9c9613f"><td class="memItemLeft" align="right" valign="top">QRegularExpression&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpqPresetDialog.html#a926afb3723b3fc0156b9dca3e9c9613f">regularExpression</a> ()</td></tr>
+<tr class="memdesc:a926afb3723b3fc0156b9dca3e9c9613f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the specified regularExpression.  <a href="#a926afb3723b3fc0156b9dca3e9c9613f">More...</a><br /></td></tr>
+<tr class="separator:a926afb3723b3fc0156b9dca3e9c9613f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11fc44f14b64408b1484b21f86169979"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpqPresetDialog.html#a11fc44f14b64408b1484b21f86169979">usePresetRange</a> () const</td></tr>
 <tr class="memdesc:a11fc44f14b64408b1484b21f86169979"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the user requested to preserve/use the preset data range.  <a href="#a11fc44f14b64408b1484b21f86169979">More...</a><br /></td></tr>
 <tr class="separator:a11fc44f14b64408b1484b21f86169979"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -101,6 +104,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1bdbbe953d539c4f28236abde6e089e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpqPresetDialog.html#a1bdbbe953d539c4f28236abde6e089e6">setCustomizableLoadAnnotations</a> (bool state, bool defaultValue=true)</td></tr>
 <tr class="memdesc:a1bdbbe953d539c4f28236abde6e089e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set when user can choose to load annotations along with the default state.  <a href="#a1bdbbe953d539c4f28236abde6e089e6">More...</a><br /></td></tr>
 <tr class="separator:a1bdbbe953d539c4f28236abde6e089e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e9557186d69ea426f20c4efc6b0071c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpqPresetDialog.html#a5e9557186d69ea426f20c4efc6b0071c">setCustomizableAnnotationsRegexp</a> (bool state, bool defaultValue=false)</td></tr>
+<tr class="memdesc:a5e9557186d69ea426f20c4efc6b0071c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set when user can choose a regexp to load annotations along with the default state.  <a href="#a5e9557186d69ea426f20c4efc6b0071c">More...</a><br /></td></tr>
+<tr class="separator:a5e9557186d69ea426f20c4efc6b0071c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a6213fb8fcc169f2cff40c76213f20c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpqPresetDialog.html#a4a6213fb8fcc169f2cff40c76213f20c">setCustomizableLoadOpacities</a> (bool state, bool defaultValue=true)</td></tr>
 <tr class="memdesc:a4a6213fb8fcc169f2cff40c76213f20c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set when user can choose to load opacities along with the default state.  <a href="#a4a6213fb8fcc169f2cff40c76213f20c">More...</a><br /></td></tr>
 <tr class="separator:a4a6213fb8fcc169f2cff40c76213f20c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -333,6 +339,25 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a926afb3723b3fc0156b9dca3e9c9613f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a926afb3723b3fc0156b9dca3e9c9613f">&#9670;&nbsp;</a></span>regularExpression()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QRegularExpression pqPresetDialog::regularExpression </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the specified regularExpression. </p>
+
+</div>
+</div>
 <a id="a11fc44f14b64408b1484b21f86169979"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a11fc44f14b64408b1484b21f86169979">&#9670;&nbsp;</a></span>usePresetRange()</h2>
 
@@ -410,6 +435,36 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set when user can choose to load annotations along with the default state. </p>
+
+</div>
+</div>
+<a id="a5e9557186d69ea426f20c4efc6b0071c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e9557186d69ea426f20c4efc6b0071c">&#9670;&nbsp;</a></span>setCustomizableAnnotationsRegexp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pqPresetDialog::setCustomizableAnnotationsRegexp </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>defaultValue</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set when user can choose a regexp to load annotations along with the default state. </p>
 
 </div>
 </div>
@@ -739,7 +794,7 @@ Protected Member Functions</h2></td></tr>
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.15 on Thu Feb 20 2020
+</a> 1.8.15 on Tue Feb 25 2020
 </small></address>
 <!-- KW:BEGIN -->
 <!-- this adds the version selection header -->

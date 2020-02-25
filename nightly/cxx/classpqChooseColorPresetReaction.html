@@ -83,6 +83,12 @@ Public Slots</h2></td></tr>
 <tr class="memitem:ad6534b0213c30a5269d16174b28f678c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpqChooseColorPresetReaction.html#ad6534b0213c30a5269d16174b28f678c">updateEnableState</a> () override</td></tr>
 <tr class="memdesc:ad6534b0213c30a5269d16174b28f678c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the enabled state.  <a href="#ad6534b0213c30a5269d16174b28f678c">More...</a><br /></td></tr>
 <tr class="separator:ad6534b0213c30a5269d16174b28f678c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a162726a338df31e892a09d83a35ac318"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpqChooseColorPresetReaction.html#a162726a338df31e892a09d83a35ac318">setAllowsRegexpMatching</a> (bool allow)</td></tr>
+<tr class="memdesc:a162726a338df31e892a09d83a35ac318"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show/hide widget in the dialog.  <a href="#a162726a338df31e892a09d83a35ac318">More...</a><br /></td></tr>
+<tr class="separator:a162726a338df31e892a09d83a35ac318"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1344ff9af45a00993899efd51f4909f"><td class="memItemLeft" align="right" valign="top">QRegularExpression&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpqChooseColorPresetReaction.html#ae1344ff9af45a00993899efd51f4909f">regularExpression</a> ()</td></tr>
+<tr class="memdesc:ae1344ff9af45a00993899efd51f4909f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the regular expression specified in the Dialog.  <a href="#ae1344ff9af45a00993899efd51f4909f">More...</a><br /></td></tr>
+<tr class="separator:ae1344ff9af45a00993899efd51f4909f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
 Signals</h2></td></tr>
@@ -137,7 +143,7 @@ Additional Inherited Members</h2></td></tr>
 </ul>
 <p>In all modes, the reaction will fire the <a class="el" href="classpqChooseColorPresetReaction.html#a79f23ad7c93a0abff7747dd0ca65b099" title="fired every time a preset is applied.">presetApplied()</a> signal to indicate a new preset has been applied. Typically one can hook that signal up to render affected views. </p>
 
-<p class="definition">Definition at line <a class="el" href="pqChooseColorPresetReaction_8h_source.html#l00070">70</a> of file <a class="el" href="pqChooseColorPresetReaction_8h_source.html">pqChooseColorPresetReaction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pqChooseColorPresetReaction_8h_source.html#l00071">71</a> of file <a class="el" href="pqChooseColorPresetReaction_8h_source.html">pqChooseColorPresetReaction.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab7cce1c40db0c24738e4bba9a3d7c3b7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab7cce1c40db0c24738e4bba9a3d7c3b7">&#9670;&nbsp;</a></span>pqChooseColorPresetReaction()</h2>
@@ -307,6 +313,64 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a162726a338df31e892a09d83a35ac318"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a162726a338df31e892a09d83a35ac318">&#9670;&nbsp;</a></span>setAllowsRegexpMatching</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pqChooseColorPresetReaction::setAllowsRegexpMatching </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>allow</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Show/hide widget in the dialog. </p>
+<p>Allows a regexp as user entry to do the matching between data values and preset. Intended to be used for series preset. </p>
+
+<p class="definition">Definition at line <a class="el" href="pqChooseColorPresetReaction_8h_source.html#l00111">111</a> of file <a class="el" href="pqChooseColorPresetReaction_8h_source.html">pqChooseColorPresetReaction.h</a>.</p>
+
+</div>
+</div>
+<a id="ae1344ff9af45a00993899efd51f4909f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1344ff9af45a00993899efd51f4909f">&#9670;&nbsp;</a></span>regularExpression</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QRegularExpression pqChooseColorPresetReaction::regularExpression </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the regular expression specified in the Dialog. </p>
+
+</div>
+</div>
 <a id="a79f23ad7c93a0abff7747dd0ca65b099"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a79f23ad7c93a0abff7747dd0ca65b099">&#9670;&nbsp;</a></span>presetApplied</h2>
 
@@ -373,7 +437,7 @@ Additional Inherited Members</h2></td></tr>
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.15 on Thu Feb 20 2020
+</a> 1.8.15 on Tue Feb 25 2020
 </small></address>
 <!-- KW:BEGIN -->
 <!-- this adds the version selection header -->
