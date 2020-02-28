@@ -105,11 +105,12 @@ Public Types</h2></td></tr>
 <a class="el" href="classpqQueryClauseWidget.html#ab9a7c4a0e46cf93165b702988ce7112ba9eadd8af7d1a08eedba56639710e28a8">SINGLE_VALUE_MIN</a>, 
 <br />
 &#160;&#160;<a class="el" href="classpqQueryClauseWidget.html#ab9a7c4a0e46cf93165b702988ce7112ba962cfd5aa8d84a1909a6be5ef67a6d0f">SINGLE_VALUE_MAX</a>, 
+<a class="el" href="classpqQueryClauseWidget.html#ab9a7c4a0e46cf93165b702988ce7112ba13a91bf7465a72fbd666cd5768b746a6">SINGLE_VALUE_NAN</a>, 
 <a class="el" href="classpqQueryClauseWidget.html#ab9a7c4a0e46cf93165b702988ce7112ba972e32d603611632b3a4d34bb353eb54">SINGLE_VALUE_LE_MEAN</a>, 
 <a class="el" href="classpqQueryClauseWidget.html#ab9a7c4a0e46cf93165b702988ce7112ba4c71d8226c9807ae43d199bef7296cea">SINGLE_VALUE_GE_MEAN</a>, 
-<a class="el" href="classpqQueryClauseWidget.html#ab9a7c4a0e46cf93165b702988ce7112ba569aacf218e418a64cb39a6c62fffcf5">SINGLE_VALUE_MEAN_WITH_TOLERANCE</a>, 
 <br />
-&#160;&#160;<a class="el" href="classpqQueryClauseWidget.html#ab9a7c4a0e46cf93165b702988ce7112ba43abffe02dbf68dc88dd845bd0d086e6">LOCATION_AND_TOLERANCE</a>, 
+&#160;&#160;<a class="el" href="classpqQueryClauseWidget.html#ab9a7c4a0e46cf93165b702988ce7112ba569aacf218e418a64cb39a6c62fffcf5">SINGLE_VALUE_MEAN_WITH_TOLERANCE</a>, 
+<a class="el" href="classpqQueryClauseWidget.html#ab9a7c4a0e46cf93165b702988ce7112ba43abffe02dbf68dc88dd845bd0d086e6">LOCATION_AND_TOLERANCE</a>, 
 <a class="el" href="classpqQueryClauseWidget.html#ab9a7c4a0e46cf93165b702988ce7112ba61475dafbbf27528cd7adcb23230f0de">LOCATION</a>
 <br />
  }</td></tr>
@@ -254,6 +255,7 @@ Protected Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="ab9a7c4a0e46cf93165b702988ce7112ba34beaabd3eb4228fe16d7c2f2f5f8faa"></a>AMR_BLOCK_VALUE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ab9a7c4a0e46cf93165b702988ce7112ba9eadd8af7d1a08eedba56639710e28a8"></a>SINGLE_VALUE_MIN&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ab9a7c4a0e46cf93165b702988ce7112ba962cfd5aa8d84a1909a6be5ef67a6d0f"></a>SINGLE_VALUE_MAX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab9a7c4a0e46cf93165b702988ce7112ba13a91bf7465a72fbd666cd5768b746a6"></a>SINGLE_VALUE_NAN&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ab9a7c4a0e46cf93165b702988ce7112ba972e32d603611632b3a4d34bb353eb54"></a>SINGLE_VALUE_LE_MEAN&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ab9a7c4a0e46cf93165b702988ce7112ba4c71d8226c9807ae43d199bef7296cea"></a>SINGLE_VALUE_GE_MEAN&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ab9a7c4a0e46cf93165b702988ce7112ba569aacf218e418a64cb39a6c62fffcf5"></a>SINGLE_VALUE_MEAN_WITH_TOLERANCE&#160;</td><td class="fielddoc"></td></tr>
@@ -290,7 +292,7 @@ Protected Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="a123efbbf8099b8268e7c707b7da96e8eabba4473947412296cb493aa706263f35"></a>MULTIBLOCK&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="pqQueryClauseWidget_8h_source.html#l00094">94</a> of file <a class="el" href="pqQueryClauseWidget_8h_source.html">pqQueryClauseWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pqQueryClauseWidget_8h_source.html#l00095">95</a> of file <a class="el" href="pqQueryClauseWidget_8h_source.html">pqQueryClauseWidget.h</a>.</p>
 
 </div>
 </div>
@@ -409,7 +411,7 @@ Protected Attributes</h2></td></tr>
 <p>use this slot to initialize the clause GUI after all properties have been set. </p>
 <p>FIXME: Unsupported Terms: process id, amr-level, amr-block. We will need to extend VTK selection support for those, so we will implement them later (possibly 3.10/4.0) </p>
 
-<p class="definition">Definition at line <a class="el" href="pqQueryClauseWidget_8h_source.html#l00114">114</a> of file <a class="el" href="pqQueryClauseWidget_8h_source.html">pqQueryClauseWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pqQueryClauseWidget_8h_source.html#l00115">115</a> of file <a class="el" href="pqQueryClauseWidget_8h_source.html">pqQueryClauseWidget.h</a>.</p>
 
 </div>
 </div>
@@ -802,7 +804,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pqQueryClauseWidget_8h_source.html#l00194">194</a> of file <a class="el" href="pqQueryClauseWidget_8h_source.html">pqQueryClauseWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pqQueryClauseWidget_8h_source.html#l00195">195</a> of file <a class="el" href="pqQueryClauseWidget_8h_source.html">pqQueryClauseWidget.h</a>.</p>
 
 </div>
 </div>
@@ -826,7 +828,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pqQueryClauseWidget_8h_source.html#l00195">195</a> of file <a class="el" href="pqQueryClauseWidget_8h_source.html">pqQueryClauseWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pqQueryClauseWidget_8h_source.html#l00196">196</a> of file <a class="el" href="pqQueryClauseWidget_8h_source.html">pqQueryClauseWidget.h</a>.</p>
 
 </div>
 </div>
@@ -850,7 +852,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pqQueryClauseWidget_8h_source.html#l00196">196</a> of file <a class="el" href="pqQueryClauseWidget_8h_source.html">pqQueryClauseWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pqQueryClauseWidget_8h_source.html#l00197">197</a> of file <a class="el" href="pqQueryClauseWidget_8h_source.html">pqQueryClauseWidget.h</a>.</p>
 
 </div>
 </div>
@@ -874,7 +876,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pqQueryClauseWidget_8h_source.html#l00198">198</a> of file <a class="el" href="pqQueryClauseWidget_8h_source.html">pqQueryClauseWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pqQueryClauseWidget_8h_source.html#l00199">199</a> of file <a class="el" href="pqQueryClauseWidget_8h_source.html">pqQueryClauseWidget.h</a>.</p>
 
 </div>
 </div>
