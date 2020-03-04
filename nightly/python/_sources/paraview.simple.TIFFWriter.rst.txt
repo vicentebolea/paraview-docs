@@ -17,6 +17,10 @@ Data Descriptors
        The input filter/source whose output dataset is to be
        written to the file.
    
+   Scalars
+       This property contains the name of the scalar array to
+       be saved.
+   
    
 
 Data Descriptors inherited from SourceProxy
