@@ -23,6 +23,7 @@ Proxies generated for server side objects under :doc:`paraview.simple`
     paraview.simple.ANLSubhaloFinder
     paraview.simple.AVSUCDReader
     paraview.simple.AdaptiveCosmoCore
+    paraview.simple.AdaptiveResampleToImage
     paraview.simple.AddFieldArrays
     paraview.simple.AggregateDataset
     paraview.simple.AngularPeriodicFilter
@@ -540,6 +541,7 @@ Proxies generated for server side objects under :doc:`paraview.simple`
     ANLSubhaloFinder
     AVSUCDReader
     AdaptiveCosmoCore
+    AdaptiveResampleToImage
     AddFieldArrays
     AggregateDataset
     AngularPeriodicFilter
