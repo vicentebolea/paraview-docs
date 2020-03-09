@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>paraview.cpstate &mdash; ParaView/Python 5.8.0-307-gfbf0ffd955 documentation</title>
+  <title>paraview.cpstate &mdash; ParaView/Python 5.8.0-313-gb3db70c82d documentation</title>
   
 
   
@@ -24,7 +24,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:'../../',
-        VERSION:'5.8.0-307-gfbf0ffd955',
+        VERSION:'5.8.0-313-gb3db70c82d',
         COLLAPSE_INDEX:false,
         FILE_SUFFIX:'.html',
         HAS_SOURCE:  true
@@ -49,7 +49,7 @@
         <link rel="index" title="Index"
               href="../../genindex.html"/>
         <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="ParaView/Python 5.8.0-307-gfbf0ffd955 documentation" href="../../index.html"/>
+    <link rel="top" title="ParaView/Python 5.8.0-313-gb3db70c82d documentation" href="../../index.html"/>
         <link rel="up" title="Module code" href="../index.html"/> 
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -67,7 +67,7 @@
           <li> <a href="../../index.html">
             <img src="../../_static/paraview-logo-small.png"
             alt="ParaView/Python"></img></a> </li>
-          <li class="version"> version 5.8.0-307-gfbf0ffd955</li>
+          <li class="version"> version 5.8.0-313-gb3db70c82d</li>
         </ul>
         <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
   <input type="text" name="q" placeholder="Search docs" />
@@ -683,21 +683,34 @@
 
 <span class="kn">from</span> <span class="nn">paraview</span> <span class="k">import</span> <span class="n">smtrace</span><span class="p">,</span> <span class="n">smstate</span><span class="p">,</span> <span class="n">servermanager</span>
 
-<div class="viewcode-block" id="cpstate_globals"><a class="viewcode-back" href="../../paraview.cpstate.html#paraview.cpstate.cpstate_globals">[docs]</a><span class="k">class</span> <span class="nc">cpstate_globals</span><span class="p">:</span> <span class="k">pass</span></div>
+<span class="n">_cpstate_globals</span> <span class="o">=</span> <span class="kc">None</span>
 
-<div class="viewcode-block" id="reset_cpstate_globals"><a class="viewcode-back" href="../../paraview.cpstate.html#paraview.cpstate.reset_cpstate_globals">[docs]</a><span class="k">def</span> <span class="nf">reset_cpstate_globals</span><span class="p">():</span>
-    <span class="n">cpstate_globals</span><span class="o">.</span><span class="n">write_frequencies</span> <span class="o">=</span> <span class="p">{}</span>
-    <span class="n">cpstate_globals</span><span class="o">.</span><span class="n">simulation_input_map</span> <span class="o">=</span> <span class="p">{}</span>
-    <span class="n">cpstate_globals</span><span class="o">.</span><span class="n">view_proxies</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="n">cpstate_globals</span><span class="o">.</span><span class="n">screenshot_info</span> <span class="o">=</span> <span class="p">{}</span>
-    <span class="n">cpstate_globals</span><span class="o">.</span><span class="n">export_rendering</span> <span class="o">=</span> <span class="kc">False</span>
-    <span class="n">cpstate_globals</span><span class="o">.</span><span class="n">cinema_tracks</span> <span class="o">=</span> <span class="p">{}</span>
-    <span class="n">cpstate_globals</span><span class="o">.</span><span class="n">cinema_arrays</span> <span class="o">=</span> <span class="p">{}</span>
-    <span class="n">cpstate_globals</span><span class="o">.</span><span class="n">channels_needed</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="n">cpstate_globals</span><span class="o">.</span><span class="n">enable_live_viz</span> <span class="o">=</span> <span class="kc">False</span>
-    <span class="n">cpstate_globals</span><span class="o">.</span><span class="n">live_viz_frequency</span> <span class="o">=</span> <span class="mi">0</span></div>
+<div class="viewcode-block" id="reset_globals"><a class="viewcode-back" href="../../paraview.cpstate.html#paraview.cpstate.reset_globals">[docs]</a><span class="k">def</span> <span class="nf">reset_globals</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">_cpstate_globals</span>
+    <span class="n">_cpstate_globals</span> <span class="o">=</span> <span class="kc">None</span></div>
 
-<span class="n">reset_cpstate_globals</span><span class="p">()</span>
+<div class="viewcode-block" id="initialize_globals"><a class="viewcode-back" href="../../paraview.cpstate.html#paraview.cpstate.initialize_globals">[docs]</a><span class="k">def</span> <span class="nf">initialize_globals</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">_cpstate_globals</span>
+    <span class="k">class</span> <span class="nc">_state</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+        <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">write_frequencies</span> <span class="o">=</span> <span class="p">{}</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">simulation_input_map</span> <span class="o">=</span> <span class="p">{}</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">view_proxies</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">screenshot_info</span> <span class="o">=</span> <span class="p">{}</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">export_rendering</span> <span class="o">=</span> <span class="kc">False</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">cinema_tracks</span> <span class="o">=</span> <span class="p">{}</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">cinema_arrays</span> <span class="o">=</span> <span class="p">{}</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">channels_needed</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">enable_live_viz</span> <span class="o">=</span> <span class="kc">False</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">live_viz_frequency</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">_cpstate_globals</span> <span class="o">=</span> <span class="n">_state</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">_cpstate_globals</span></div>
+
+<div class="viewcode-block" id="get_globals"><a class="viewcode-back" href="../../paraview.cpstate.html#paraview.cpstate.get_globals">[docs]</a><span class="k">def</span> <span class="nf">get_globals</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">_cpstate_globals</span>
+    <span class="k">if</span> <span class="n">_cpstate_globals</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;get_globals called before initialize_globals!&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">_cpstate_globals</span></div>
 
 <span class="c1"># -----------------------------------------------------------------------------</span>
 <div class="viewcode-block" id="locate_simulation_inputs"><a class="viewcode-back" href="../../paraview.cpstate.html#paraview.cpstate.locate_simulation_inputs">[docs]</a><span class="k">def</span> <span class="nf">locate_simulation_inputs</span><span class="p">(</span><span class="n">proxy</span><span class="p">):</span>
@@ -755,6 +768,7 @@
 
         <span class="c1"># self.varname has .&#39;s and *&#39;s stripped. Knowing this, the key in cpstate_globals.cinema_arrays</span>
         <span class="c1"># should also be stripped of .&#39;s and *&#39;s. Refers to /Qt/ApplicationComponents/pqExportCatalystScript.cxx</span>
+        <span class="n">cpstate_globals</span> <span class="o">=</span> <span class="n">get_globals</span><span class="p">()</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">varname</span> <span class="ow">in</span> <span class="n">cpstate_globals</span><span class="o">.</span><span class="n">cinema_arrays</span><span class="p">:</span>
             <span class="n">arrays</span> <span class="o">=</span> <span class="n">cpstate_globals</span><span class="o">.</span><span class="n">cinema_arrays</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">varname</span><span class="p">]</span>
             <span class="n">trace</span><span class="o">.</span><span class="n">append_separated</span><span class="p">([</span><span class="s2">&quot;# define target arrays of filters.&quot;</span><span class="p">])</span>
@@ -776,6 +790,7 @@
         <span class="n">original_trace</span> <span class="o">=</span> <span class="n">smtrace</span><span class="o">.</span><span class="n">RealProxyAccessor</span><span class="o">.</span><span class="n">trace_ctor</span><span class="p">(</span>\
             <span class="bp">self</span><span class="p">,</span> <span class="n">ctor</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">ctor_args</span><span class="p">,</span> <span class="n">skip_assignment</span><span class="p">)</span>
         <span class="n">trace</span> <span class="o">=</span> <span class="n">smtrace</span><span class="o">.</span><span class="n">TraceOutput</span><span class="p">(</span><span class="n">original_trace</span><span class="p">)</span>
+        <span class="n">cpstate_globals</span> <span class="o">=</span> <span class="n">get_globals</span><span class="p">()</span>
         <span class="k">if</span> <span class="n">cpstate_globals</span><span class="o">.</span><span class="n">cinema_tracks</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">varname</span> <span class="ow">in</span> <span class="n">cpstate_globals</span><span class="o">.</span><span class="n">cinema_tracks</span><span class="p">:</span>
             <span class="n">valrange</span> <span class="o">=</span> <span class="n">cpstate_globals</span><span class="o">.</span><span class="n">cinema_tracks</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">varname</span><span class="p">]</span>
             <span class="n">trace</span><span class="o">.</span><span class="n">append_separated</span><span class="p">([</span><span class="s2">&quot;# register the filter with the coprocessor&#39;s cinema generator&quot;</span><span class="p">])</span>
@@ -828,6 +843,7 @@
         <span class="n">original_trace</span> <span class="o">=</span> <span class="n">smtrace</span><span class="o">.</span><span class="n">RealProxyAccessor</span><span class="o">.</span><span class="n">trace_ctor</span><span class="p">(</span> \
             <span class="bp">self</span><span class="p">,</span> <span class="n">ctor</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">ctor_args</span><span class="p">,</span> <span class="n">skip_assignment</span><span class="p">)</span>
         <span class="n">trace</span> <span class="o">=</span> <span class="n">smtrace</span><span class="o">.</span><span class="n">TraceOutput</span><span class="p">(</span><span class="n">original_trace</span><span class="p">)</span>
+        <span class="n">cpstate_globals</span> <span class="o">=</span> <span class="n">get_globals</span><span class="p">()</span>
         <span class="k">if</span> <span class="n">cpstate_globals</span><span class="o">.</span><span class="n">cinema_tracks</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">varname</span>  <span class="ow">in</span> <span class="n">cpstate_globals</span><span class="o">.</span><span class="n">cinema_tracks</span><span class="p">:</span>
             <span class="n">valrange</span> <span class="o">=</span> <span class="n">cpstate_globals</span><span class="o">.</span><span class="n">cinema_tracks</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">varname</span><span class="p">]</span>
             <span class="n">trace</span><span class="o">.</span><span class="n">append_separated</span><span class="p">([</span><span class="s2">&quot;# register the filter with the coprocessor&#39;s cinema generator&quot;</span><span class="p">])</span>
@@ -854,6 +870,7 @@
             <span class="bp">self</span><span class="p">,</span> <span class="n">ctor</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">ctor_args</span><span class="p">,</span> <span class="n">skip_assignment</span><span class="p">)</span>
 
         <span class="n">trace</span> <span class="o">=</span> <span class="n">smtrace</span><span class="o">.</span><span class="n">TraceOutput</span><span class="p">(</span><span class="n">original_trace</span><span class="p">)</span>
+        <span class="n">cpstate_globals</span> <span class="o">=</span> <span class="n">get_globals</span><span class="p">()</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">varname</span> <span class="ow">in</span> <span class="n">cpstate_globals</span><span class="o">.</span><span class="n">cinema_arrays</span><span class="p">:</span>
             <span class="n">arrays</span> <span class="o">=</span> <span class="n">cpstate_globals</span><span class="o">.</span><span class="n">cinema_arrays</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">varname</span><span class="p">]</span>
             <span class="n">trace</span><span class="o">.</span><span class="n">append_separated</span><span class="p">([</span><span class="s2">&quot;# define target arrays of filters.&quot;</span><span class="p">])</span>
@@ -875,6 +892,7 @@
         <span class="n">original_trace</span> <span class="o">=</span> <span class="n">smtrace</span><span class="o">.</span><span class="n">RealProxyAccessor</span><span class="o">.</span><span class="n">trace_ctor</span><span class="p">(</span>\
             <span class="bp">self</span><span class="p">,</span> <span class="n">ctor</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">ctor_args</span><span class="p">,</span> <span class="n">skip_assignment</span><span class="p">)</span>
         <span class="n">trace</span> <span class="o">=</span> <span class="n">smtrace</span><span class="o">.</span><span class="n">TraceOutput</span><span class="p">(</span><span class="n">original_trace</span><span class="p">)</span>
+        <span class="n">cpstate_globals</span> <span class="o">=</span> <span class="n">get_globals</span><span class="p">()</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">ProxyName</span> <span class="ow">in</span> <span class="n">cpstate_globals</span><span class="o">.</span><span class="n">screenshot_info</span><span class="p">:</span>
            <span class="n">trace</span><span class="o">.</span><span class="n">append_separated</span><span class="p">([</span><span class="s2">&quot;# register the view with coprocessor&quot;</span><span class="p">,</span>
           <span class="s2">&quot;# and provide it with information such as the filename to use,&quot;</span><span class="p">,</span>
@@ -912,6 +930,7 @@
         <span class="c1"># Locate which simulation input this write is connected to, if any. If so,</span>
         <span class="c1"># we update the write_frequencies datastructure accordingly.</span>
         <span class="n">sim_inputs</span> <span class="o">=</span> <span class="n">locate_simulation_inputs</span><span class="p">(</span><span class="n">proxy</span><span class="p">)</span>
+        <span class="n">cpstate_globals</span> <span class="o">=</span> <span class="n">get_globals</span><span class="p">()</span>
         <span class="k">for</span> <span class="n">sim_input_name</span> <span class="ow">in</span> <span class="n">sim_inputs</span><span class="p">:</span>
             <span class="k">if</span> <span class="ow">not</span> <span class="n">write_frequency</span> <span class="ow">in</span> <span class="n">cpstate_globals</span><span class="o">.</span><span class="n">write_frequencies</span><span class="p">[</span><span class="n">sim_input_name</span><span class="p">]:</span>
                 <span class="n">cpstate_globals</span><span class="o">.</span><span class="n">write_frequencies</span><span class="p">[</span><span class="n">sim_input_name</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">write_frequency</span><span class="p">)</span>
@@ -964,6 +983,7 @@
 <div class="viewcode-block" id="cp_hook"><a class="viewcode-back" href="../../paraview.cpstate.html#paraview.cpstate.cp_hook">[docs]</a><span class="k">def</span> <span class="nf">cp_hook</span><span class="p">(</span><span class="n">varname</span><span class="p">,</span> <span class="n">proxy</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;callback to create our special accessors instead of the standard ones.&quot;&quot;&quot;</span>
     <span class="n">pname</span> <span class="o">=</span> <span class="n">smtrace</span><span class="o">.</span><span class="n">Trace</span><span class="o">.</span><span class="n">get_registered_name</span><span class="p">(</span><span class="n">proxy</span><span class="p">,</span> <span class="s2">&quot;sources&quot;</span><span class="p">)</span>
+    <span class="n">cpstate_globals</span> <span class="o">=</span> <span class="n">get_globals</span><span class="p">()</span>
     <span class="k">if</span> <span class="n">pname</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">pname</span> <span class="ow">in</span> <span class="n">cpstate_globals</span><span class="o">.</span><span class="n">simulation_input_map</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">ProducerAccessor</span><span class="p">(</span><span class="n">varname</span><span class="p">,</span> <span class="n">proxy</span><span class="p">,</span> <span class="n">cpstate_globals</span><span class="o">.</span><span class="n">simulation_input_map</span><span class="p">[</span><span class="n">pname</span><span class="p">])</span>
@@ -991,6 +1011,7 @@
     <span class="sd">&quot;&quot;&quot;filter used to skip views and representations a when export_rendering is</span>
 <span class="sd">    disabled.&quot;&quot;&quot;</span>
     <span class="k">def</span> <span class="nf">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">proxy</span><span class="p">):</span>
+        <span class="n">cpstate_globals</span> <span class="o">=</span> <span class="n">get_globals</span><span class="p">()</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="n">smstate</span><span class="o">.</span><span class="n">visible_representations</span><span class="p">()(</span><span class="n">proxy</span><span class="p">):</span> <span class="k">return</span> <span class="kc">False</span>
         <span class="k">if</span> <span class="p">(</span><span class="ow">not</span> <span class="n">cpstate_globals</span><span class="o">.</span><span class="n">export_rendering</span><span class="p">)</span> <span class="ow">and</span> \
             <span class="p">(</span><span class="n">proxy</span><span class="o">.</span><span class="n">GetXMLGroup</span><span class="p">()</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;views&quot;</span><span class="p">,</span> <span class="s2">&quot;representations&quot;</span><span class="p">]):</span> <span class="k">return</span> <span class="kc">False</span>
@@ -1069,6 +1090,7 @@
             <span class="k">if</span> <span class="n">CompressionLevel</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
                 <span class="n">CompressionLevel</span> <span class="o">=</span> <span class="n">pxy</span><span class="o">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s2">&quot;CompressionLevel&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">GetElement</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 
+            <span class="n">cpstate_globals</span> <span class="o">=</span> <span class="n">get_globals</span><span class="p">()</span>
             <span class="n">sim_inputs</span> <span class="o">=</span> <span class="n">locate_simulation_inputs</span><span class="p">(</span><span class="n">pxy</span><span class="p">)</span>
             <span class="k">for</span> <span class="n">sim_input_name</span> <span class="ow">in</span> <span class="n">sim_inputs</span><span class="p">:</span>
                 <span class="k">if</span> <span class="ow">not</span> <span class="n">write_frequency</span> <span class="ow">in</span> <span class="n">cpstate_globals</span><span class="o">.</span><span class="n">write_frequencies</span><span class="p">[</span><span class="n">sim_input_name</span><span class="p">]:</span>
@@ -1155,7 +1177,8 @@
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="c1"># reset the global variables.</span>
-    <span class="n">reset_cpstate_globals</span><span class="p">()</span>
+    <span class="n">initialize_globals</span><span class="p">()</span>
+    <span class="n">cpstate_globals</span> <span class="o">=</span> <span class="n">get_globals</span><span class="p">()</span>
 
     <span class="n">cpstate_globals</span><span class="o">.</span><span class="n">export_rendering</span> <span class="o">=</span> <span class="n">export_rendering</span>
     <span class="n">cpstate_globals</span><span class="o">.</span><span class="n">simulation_input_map</span> <span class="o">=</span> <span class="n">simulation_input_map</span>
@@ -1260,6 +1283,9 @@
     <span class="n">pipelineClassDef</span> <span class="o">+=</span> <span class="s2">&quot;      coprocessor.EnableCinemaDTable()</span><span class="se">\n</span><span class="s2">&quot;</span>
     <span class="n">pipelineClassDef</span> <span class="o">+=</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span>
     <span class="n">pipelineClassDef</span> <span class="o">+=</span> <span class="s2">&quot;  return coprocessor</span><span class="se">\n</span><span class="s2">&quot;</span>
+
+    <span class="c1"># cleanup globals state</span>
+    <span class="n">reset_globals</span><span class="p">()</span>
     <span class="k">return</span> <span class="n">pipelineClassDef</span></div>
 
 <span class="c1">#------------------------------------------------------------------------------</span>

@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>cpstate Module &mdash; ParaView/Python 5.8.0-307-gfbf0ffd955 documentation</title>
+  <title>cpstate Module &mdash; ParaView/Python 5.8.0-313-gb3db70c82d documentation</title>
   
 
   
@@ -24,7 +24,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:'./',
-        VERSION:'5.8.0-307-gfbf0ffd955',
+        VERSION:'5.8.0-313-gb3db70c82d',
         COLLAPSE_INDEX:false,
         FILE_SUFFIX:'.html',
         HAS_SOURCE:  true
@@ -49,7 +49,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="ParaView/Python 5.8.0-307-gfbf0ffd955 documentation" href="index.html"/>
+    <link rel="top" title="ParaView/Python 5.8.0-313-gb3db70c82d documentation" href="index.html"/>
         <link rel="up" title="paraview Package" href="paraview.html"/>
         <link rel="next" title="lookuptable Module" href="paraview.lookuptable.html"/>
         <link rel="prev" title="cpexport Module" href="paraview.cpexport.html"/> 
@@ -69,7 +69,7 @@
           <li> <a href="index.html">
             <img src="_static/paraview-logo-small.png"
             alt="ParaView/Python"></img></a> </li>
-          <li class="version"> version 5.8.0-307-gfbf0ffd955</li>
+          <li class="version"> version 5.8.0-313-gb3db70c82d</li>
         </ul>
         <form id ="rtd-search-form" class="wy-form" action="search.html" method="get">
   <input type="text" name="q" placeholder="Search docs" />
@@ -862,61 +862,15 @@ for the writer.</p>
 disabled.</p>
 </dd></dl>
 
-<dl class="class">
-<dt id="paraview.cpstate.cpstate_globals">
-<em class="property">class </em><code class="descclassname">paraview.cpstate.</code><code class="descname">cpstate_globals</code><a class="reference internal" href="_modules/paraview/cpstate.html#cpstate_globals"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.cpstate.cpstate_globals" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<dl class="attribute">
-<dt id="paraview.cpstate.cpstate_globals.channels_needed">
-<code class="descname">channels_needed</code><em class="property"> = []</em><a class="headerlink" href="#paraview.cpstate.cpstate_globals.channels_needed" title="Permalink to this definition">¶</a></dt>
+<dl class="function">
+<dt id="paraview.cpstate.get_globals">
+<code class="descclassname">paraview.cpstate.</code><code class="descname">get_globals</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/cpstate.html#get_globals"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.cpstate.get_globals" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="attribute">
-<dt id="paraview.cpstate.cpstate_globals.cinema_arrays">
-<code class="descname">cinema_arrays</code><em class="property"> = {}</em><a class="headerlink" href="#paraview.cpstate.cpstate_globals.cinema_arrays" title="Permalink to this definition">¶</a></dt>
+<dl class="function">
+<dt id="paraview.cpstate.initialize_globals">
+<code class="descclassname">paraview.cpstate.</code><code class="descname">initialize_globals</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/cpstate.html#initialize_globals"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.cpstate.initialize_globals" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
-
-<dl class="attribute">
-<dt id="paraview.cpstate.cpstate_globals.cinema_tracks">
-<code class="descname">cinema_tracks</code><em class="property"> = {}</em><a class="headerlink" href="#paraview.cpstate.cpstate_globals.cinema_tracks" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="paraview.cpstate.cpstate_globals.enable_live_viz">
-<code class="descname">enable_live_viz</code><em class="property"> = False</em><a class="headerlink" href="#paraview.cpstate.cpstate_globals.enable_live_viz" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="paraview.cpstate.cpstate_globals.export_rendering">
-<code class="descname">export_rendering</code><em class="property"> = False</em><a class="headerlink" href="#paraview.cpstate.cpstate_globals.export_rendering" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="paraview.cpstate.cpstate_globals.live_viz_frequency">
-<code class="descname">live_viz_frequency</code><em class="property"> = 0</em><a class="headerlink" href="#paraview.cpstate.cpstate_globals.live_viz_frequency" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="paraview.cpstate.cpstate_globals.screenshot_info">
-<code class="descname">screenshot_info</code><em class="property"> = {}</em><a class="headerlink" href="#paraview.cpstate.cpstate_globals.screenshot_info" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="paraview.cpstate.cpstate_globals.simulation_input_map">
-<code class="descname">simulation_input_map</code><em class="property"> = {}</em><a class="headerlink" href="#paraview.cpstate.cpstate_globals.simulation_input_map" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="paraview.cpstate.cpstate_globals.view_proxies">
-<code class="descname">view_proxies</code><em class="property"> = []</em><a class="headerlink" href="#paraview.cpstate.cpstate_globals.view_proxies" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="paraview.cpstate.cpstate_globals.write_frequencies">
-<code class="descname">write_frequencies</code><em class="property"> = {}</em><a class="headerlink" href="#paraview.cpstate.cpstate_globals.write_frequencies" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-</dd></dl>
 
 <dl class="function">
 <dt id="paraview.cpstate.locate_simulation_inputs">
@@ -933,8 +887,8 @@ flagged as the ‘simulation input’ in the state exporting wizard.</p>
 </dd></dl>
 
 <dl class="function">
-<dt id="paraview.cpstate.reset_cpstate_globals">
-<code class="descclassname">paraview.cpstate.</code><code class="descname">reset_cpstate_globals</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/cpstate.html#reset_cpstate_globals"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.cpstate.reset_cpstate_globals" title="Permalink to this definition">¶</a></dt>
+<dt id="paraview.cpstate.reset_globals">
+<code class="descclassname">paraview.cpstate.</code><code class="descname">reset_globals</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/cpstate.html#reset_globals"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.cpstate.reset_globals" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="function">
