@@ -72,27 +72,35 @@ Collaboration diagram for pqRenameProxyReaction:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1e167cb6d110da6e891ae935fc9e9e51"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpqRenameProxyReaction.html#a1e167cb6d110da6e891ae935fc9e9e51">pqRenameProxyReaction</a> (QAction *renameAction, <a class="el" href="classpqProxy.html">pqProxy</a> *proxy)</td></tr>
-<tr class="separator:a1e167cb6d110da6e891ae935fc9e9e51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55c05c16493c5c884e7a305115f045b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpqRenameProxyReaction.html#a55c05c16493c5c884e7a305115f045b0">pqRenameProxyReaction</a> (QAction *renameAction, <a class="el" href="classpqProxy.html">pqProxy</a> *proxy, QWidget *parentWidget=nullptr)</td></tr>
+<tr class="memdesc:a55c05c16493c5c884e7a305115f045b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this overload to add a handler to rename a specific proxy.  <a href="#a55c05c16493c5c884e7a305115f045b0">More...</a><br /></td></tr>
+<tr class="separator:a55c05c16493c5c884e7a305115f045b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c69a33ac0304e4c459f907adf1b8d46"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpqRenameProxyReaction.html#a7c69a33ac0304e4c459f907adf1b8d46">pqRenameProxyReaction</a> (QAction *renameAction, QWidget *parentWidget=nullptr)</td></tr>
+<tr class="memdesc:a7c69a33ac0304e4c459f907adf1b8d46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this overload to add a handler to rename the active source proxy.  <a href="#a7c69a33ac0304e4c459f907adf1b8d46">More...</a><br /></td></tr>
+<tr class="separator:a7c69a33ac0304e4c459f907adf1b8d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-slots"></a>
 Protected Slots</h2></td></tr>
 <tr class="memitem:a9d7bb60953530bea91050e8a8d28caa7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpqRenameProxyReaction.html#a9d7bb60953530bea91050e8a8d28caa7">onTriggered</a> () override</td></tr>
 <tr class="memdesc:a9d7bb60953530bea91050e8a8d28caa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the action is triggered.  <a href="#a9d7bb60953530bea91050e8a8d28caa7">More...</a><br /></td></tr>
 <tr class="separator:a9d7bb60953530bea91050e8a8d28caa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0b4a007fcb70dfcd4881ebd71602c89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpqRenameProxyReaction.html#ab0b4a007fcb70dfcd4881ebd71602c89">updateEnableState</a> () override</td></tr>
+<tr class="separator:ab0b4a007fcb70dfcd4881ebd71602c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:ae6c6eb382bf2e42cca1ee98d557924f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpqProxy.html">pqProxy</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpqRenameProxyReaction.html#ae6c6eb382bf2e42cca1ee98d557924f6">Proxy</a></td></tr>
 <tr class="separator:ae6c6eb382bf2e42cca1ee98d557924f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55379c75ff3aa8b2d7a8268a572a9fa0"><td class="memItemLeft" align="right" valign="top">QPointer&lt; QWidget &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpqRenameProxyReaction.html#a55379c75ff3aa8b2d7a8268a572a9fa0">ParentWidget</a></td></tr>
+<tr class="separator:a55379c75ff3aa8b2d7a8268a572a9fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Reaction for renaming a proxy. </p>
 
-<p class="definition">Definition at line <a class="el" href="pqRenameProxyReaction_8h_source.html#l00043">43</a> of file <a class="el" href="pqRenameProxyReaction_8h_source.html">pqRenameProxyReaction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pqRenameProxyReaction_8h_source.html#l00046">46</a> of file <a class="el" href="pqRenameProxyReaction_8h_source.html">pqRenameProxyReaction.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a1e167cb6d110da6e891ae935fc9e9e51"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e167cb6d110da6e891ae935fc9e9e51">&#9670;&nbsp;</a></span>pqRenameProxyReaction()</h2>
+<a id="a55c05c16493c5c884e7a305115f045b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55c05c16493c5c884e7a305115f045b0">&#9670;&nbsp;</a></span>pqRenameProxyReaction() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -107,7 +115,13 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classpqProxy.html">pqProxy</a> *&#160;</td>
-          <td class="paramname"><em>proxy</em>&#160;</td>
+          <td class="paramname"><em>proxy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parentWidget</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -116,6 +130,40 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Use this overload to add a handler to rename a specific proxy. </p>
+<p><code>parentWidget</code> is used as the parent for the dialog box popped up to request new name input. If nullptr, <a class="el" href="classpqCoreUtilities.html#aa0c502fc74b3b9cede6aff6ad40731c9">pqCoreUtilities::mainWidget()</a> is used. </p>
+
+</div>
+</div>
+<a id="a7c69a33ac0304e4c459f907adf1b8d46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c69a33ac0304e4c459f907adf1b8d46">&#9670;&nbsp;</a></span>pqRenameProxyReaction() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pqRenameProxyReaction::pqRenameProxyReaction </td>
+          <td>(</td>
+          <td class="paramtype">QAction *&#160;</td>
+          <td class="paramname"><em>renameAction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parentWidget</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Use this overload to add a handler to rename the active source proxy. </p>
+<p><code>parentWidget</code> is used as the parent for the dialog box popped up to request new name input. If nullptr, <a class="el" href="classpqCoreUtilities.html#aa0c502fc74b3b9cede6aff6ad40731c9">pqCoreUtilities::mainWidget()</a> is used. </p>
 
 </div>
 </div>
@@ -147,6 +195,31 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ab0b4a007fcb70dfcd4881ebd71602c89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0b4a007fcb70dfcd4881ebd71602c89">&#9670;&nbsp;</a></span>updateEnableState</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pqRenameProxyReaction::updateEnableState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="ae6c6eb382bf2e42cca1ee98d557924f6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae6c6eb382bf2e42cca1ee98d557924f6">&#9670;&nbsp;</a></span>Proxy</h2>
@@ -168,7 +241,31 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pqRenameProxyReaction_8h_source.html#l00058">58</a> of file <a class="el" href="pqRenameProxyReaction_8h_source.html">pqRenameProxyReaction.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pqRenameProxyReaction_8h_source.html#l00076">76</a> of file <a class="el" href="pqRenameProxyReaction_8h_source.html">pqRenameProxyReaction.h</a>.</p>
+
+</div>
+</div>
+<a id="a55379c75ff3aa8b2d7a8268a572a9fa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55379c75ff3aa8b2d7a8268a572a9fa0">&#9670;&nbsp;</a></span>ParentWidget</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPointer&lt;QWidget&gt; pqRenameProxyReaction::ParentWidget</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="pqRenameProxyReaction_8h_source.html#l00077">77</a> of file <a class="el" href="pqRenameProxyReaction_8h_source.html">pqRenameProxyReaction.h</a>.</p>
 
 </div>
 </div>
