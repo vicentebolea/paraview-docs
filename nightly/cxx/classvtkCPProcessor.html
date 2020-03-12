@@ -100,6 +100,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9802a4994935a2f14cf4a9b4964d6a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f5b9c4d47c14ea217b53fd570639dc3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkCPProcessor.html#a2f5b9c4d47c14ea217b53fd570639dc3">RemoveAllPipelines</a> ()</td></tr>
 <tr class="separator:a2f5b9c4d47c14ea217b53fd570639dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4e118ae0c10de322bc3593931b3b259"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkCPProcessor.html#ac4e118ae0c10de322bc3593931b3b259">SetTemporalCacheSize</a> (<a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/vtkShaderProgram2_8h.html#a61569f2965b7a369eb10b6d75d410d11">int</a>)</td></tr>
+<tr class="separator:ac4e118ae0c10de322bc3593931b3b259"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c6a3f142ddd8b7cd72a8a328db9d37e"><td class="memItemLeft" align="right" valign="top">virtual <a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/vtkShaderProgram2_8h.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkCPProcessor.html#a5c6a3f142ddd8b7cd72a8a328db9d37e">GetTemporalCacheSize</a> ()</td></tr>
+<tr class="separator:a5c6a3f142ddd8b7cd72a8a328db9d37e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7804cf88ed93db2afcb734d36e673f5f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkCPProcessor.html#a7804cf88ed93db2afcb734d36e673f5f">MakeTemporalCache</a> (const char *<a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/namespacevtkX3D.html#ac6551f7bf833e8254b2b3ecdaea0d210ac713735f1d46c2694d66e85217207be2">name</a>)</td></tr>
+<tr class="separator:a7804cf88ed93db2afcb734d36e673f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbc6ed18d227d5d231a6dcd4198bd233"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classvtkSMSourceProxy.html">vtkSMSourceProxy</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkCPProcessor.html#afbc6ed18d227d5d231a6dcd4198bd233">GetTemporalCache</a> (const char *<a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/namespacevtkX3D.html#ac6551f7bf833e8254b2b3ecdaea0d210ac713735f1d46c2694d66e85217207be2">name</a>)</td></tr>
+<tr class="separator:afbc6ed18d227d5d231a6dcd4198bd233"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d76e641e886f17c0ff18c923dcb070a"><td class="memItemLeft" align="right" valign="top">virtual <a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/vtkShaderProgram2_8h.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkCPProcessor.html#a3d76e641e886f17c0ff18c923dcb070a">Initialize</a> (const char *workingDirectory=nullptr)</td></tr>
 <tr class="memdesc:a3d76e641e886f17c0ff18c923dcb070a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the co-processor.  <a href="#a3d76e641e886f17c0ff18c923dcb070a">More...</a><br /></td></tr>
 <tr class="separator:a3d76e641e886f17c0ff18c923dcb070a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -342,7 +350,7 @@ In the first step the Co-Processor implementation is called with a vtkDataDescri
 <p>Processing step:<br />
 In the second step the Co-Processor implementation is called with the actual data that it has been asked to provide, if any. If no data was selected during the Configuration Step than the priovided <a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/classvtkDataObject.html">vtkDataObject</a> may be NULL. </p>
 
-<p class="definition">Definition at line <a class="el" href="vtkCPProcessor_8h_source.html#l00057">57</a> of file <a class="el" href="vtkCPProcessor_8h_source.html">vtkCPProcessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkCPProcessor_8h_source.html#l00058">58</a> of file <a class="el" href="vtkCPProcessor_8h_source.html">vtkCPProcessor.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a419313bab4b5ea54da7d1c97a572dcaf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a419313bab4b5ea54da7d1c97a572dcaf">&#9670;&nbsp;</a></span>Superclass</h2>
@@ -356,7 +364,7 @@ In the second step the Co-Processor implementation is called with the actual dat
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkCPProcessor_8h_source.html#l00061">61</a> of file <a class="el" href="vtkCPProcessor_8h_source.html">vtkCPProcessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkCPProcessor_8h_source.html#l00062">62</a> of file <a class="el" href="vtkCPProcessor_8h_source.html">vtkCPProcessor.h</a>.</p>
 
 </div>
 </div>
@@ -717,6 +725,109 @@ In the second step the Co-Processor implementation is called with the actual dat
 
 </div>
 </div>
+<a id="ac4e118ae0c10de322bc3593931b3b259"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4e118ae0c10de322bc3593931b3b259">&#9670;&nbsp;</a></span>SetTemporalCacheSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void vtkCPProcessor::SetTemporalCacheSize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/vtkShaderProgram2_8h.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5c6a3f142ddd8b7cd72a8a328db9d37e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c6a3f142ddd8b7cd72a8a328db9d37e">&#9670;&nbsp;</a></span>GetTemporalCacheSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/vtkShaderProgram2_8h.html#a61569f2965b7a369eb10b6d75d410d11">int</a> vtkCPProcessor::GetTemporalCacheSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7804cf88ed93db2afcb734d36e673f5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7804cf88ed93db2afcb734d36e673f5f">&#9670;&nbsp;</a></span>MakeTemporalCache()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void vtkCPProcessor::MakeTemporalCache </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afbc6ed18d227d5d231a6dcd4198bd233"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbc6ed18d227d5d231a6dcd4198bd233">&#9670;&nbsp;</a></span>GetTemporalCache()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classvtkSMSourceProxy.html">vtkSMSourceProxy</a>* vtkCPProcessor::GetTemporalCache </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a3d76e641e886f17c0ff18c923dcb070a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3d76e641e886f17c0ff18c923dcb070a">&#9670;&nbsp;</a></span>Initialize() <span class="overload">[1/2]</span></h2>
 
@@ -808,7 +919,7 @@ In the second step the Co-Processor implementation is called with the actual dat
 <p>The Catalyst input field data string array name. </p>
 <p>This array will be generated automatically by Catalyst and have a single entry that has the input name for identifying the associated <a class="el" href="classvtkCPInputDataDescription.html" title="This class provides the data description for each input for the coprocessor pipelines.">vtkCPInputDataDescription</a>. This will allow automatically mapping </p>
 
-<p class="definition">Definition at line <a class="el" href="vtkCPProcessor_8h_source.html#l00096">96</a> of file <a class="el" href="vtkCPProcessor_8h_source.html">vtkCPProcessor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkCPProcessor_8h_source.html#l00106">106</a> of file <a class="el" href="vtkCPProcessor_8h_source.html">vtkCPProcessor.h</a>.</p>
 
 </div>
 </div>
