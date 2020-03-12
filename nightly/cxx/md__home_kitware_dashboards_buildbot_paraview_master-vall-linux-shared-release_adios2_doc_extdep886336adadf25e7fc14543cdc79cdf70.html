@@ -41,7 +41,7 @@ $(function() {
 <div class="contents">
 <div class="textblock"><p>This page describes how to build and install ParaView. It covers building for development, on both Unix-type systems (Linux, HP-UX, Solaris, macOS), and Windows. Note that Unix-like environments such as Cygwin and MinGW are not officially supported. However, patches to fix problems with these platforms will be considered for inclusion.</p>
 <p>ParaView depends on several open source tools and libraries such as Python, Qt, CGNS, HDF5, etc. Some of these are included in the ParaView source itself (e.g., HDF5), while others are expected to be present on the machine on which ParaView is being built (e.g., Python, Qt).</p>
-<p>The first chapter is a getting started guide by OS that is very helpful if you have never built ParaView before and do not know which options you need. If you are looking for the generic help, please start at ## Obtaining the source</p>
+<p>The first chapter is a getting started guide by OS that is very helpful if you have never built ParaView before and do not know which options you need. If you are looking for the generic help, please read the <a href="#complete-compilation-guide">Complete Compilation Guide</a></p>
 <h2>Getting Started Guide</h2>
 <p>This is a section intended to help those that have never built ParaView before, are not experienced with compilation in general or have no idea which option they may need when building ParaView. If you follow this guide, you will be able to compile and run a standard version of ParaView for your operating system. It will be built with the python wrapping, MPI capabilities and multithread capabilities.</p>
 <ul>
@@ -53,13 +53,13 @@ $(function() {
 <h4>Dependencies</h4>
 <p>Please run the command in a terminal to install the following dependencies depending of your linux distribution.</p>
 <h5>Ubuntu 18.04 LTS / Debian 10</h5>
-<p><code>sudo apt-get install git cmake build-essential libgl1-mesa-dev libxt-dev qt5-default libqt5x11extras5-dev libqt5help5 qttools5-dev qtxmlpatterns5-dev-tools libqt5svg5-dev python3-dev libopenmpi-dev libtbb-dev ninja-build</code></p>
+<p><code>sudo apt-get install git cmake build-essential libgl1-mesa-dev libxt-dev qt5-default libqt5x11extras5-dev libqt5help5 qttools5-dev qtxmlpatterns5-dev-tools libqt5svg5-dev python3-dev python3-numpy libopenmpi-dev libtbb-dev ninja-build</code></p>
 <h5>Centos 7</h5>
-<h5>CMake</h5>
-<p>Download and install <a href="https://cmake.org/download/">cmake</a> as the packaged version is not enough considering that CMake 3.10 or higher is needed.</p>
-<h5>Others</h5>
+<h6>CMake</h6>
+<p>Download and install <a href="https://cmake.org/download">cmake</a>) as the packaged version is not enough considering that CMake 3.10 or higher is needed.</p>
+<h6>Others</h6>
 <p><code>sudo yum install python3-devel openmpi-devel mesa-libGL-devel libX11-devel libXt-devel qt5-qtbase-devel qt5-qtx11extras-devel qt5-qttools-devel qt5-qtxmlpatterns-devel tbb-devel ninja-build git</code></p>
-<p>##### Environement </p><div class="fragment"><div class="line">alias ninja ninja-build</div><div class="line">export PATH=$PATH:/usr/lib64/openmpi/bin/</div></div><!-- fragment --><h5>ArchLinux</h5>
+<p>###### Environement </p><div class="fragment"><div class="line">alias ninja ninja-build</div><div class="line">export PATH=$PATH:/usr/lib64/openmpi/bin/</div></div><!-- fragment --><h5>ArchLinux</h5>
 <p><code>sudo pacman -S base-devel ninja openmpi tbb qt python python-numpy cmake</code></p>
 <h5>Other distribution</h5>
 <p>If you are using another distribution, please try to adapt the package list. Feel free to then provide it so we can integrate it in this guide by creating an <a href="https://gitlab.kitware.com/paraview/paraview/issues">issue</a>.</p>
@@ -72,9 +72,10 @@ $(function() {
 <li>Download and install <a href="https://gitforwindows.org/">git bash for windows</a></li>
 <li>Download and install <a href="https://cmake.org/download">cmake</a></li>
 <li>Download and install <a href="https://visualstudio.microsoft.com/vs/older-downloads">Visual Studio 2015 Community Edition</a></li>
-<li>Download <a href="https://github.com/ninja-build/ninja/releases">ninja-build</a> and drop ninja.exe in C:/Windows/</li>
-<li>Download and install both msmpisetup.exe and msmpisdk.msi from <a href="https://docs.microsoft.com/en-us/message-passing-interface/microsoft-mpi">Microsoft MPI</a></li>
+<li>Download <a href="https://github.com/ninja-build/ninja/releases">ninja-build</a> and drop <code>ninja.exe</code> in <code>C:\Windows\</code></li>
+<li>Download and install both <code>msmpisetup.exe</code> and <code>msmpisdk.msi</code> from <a href="https://docs.microsoft.com/en-us/message-passing-interface/microsoft-mpi">Microsoft MPI</a></li>
 <li>Download and install <a href="https://www.python.org/downloads/windows/">Python for windows</a></li>
+<li>Download and install <a href="https://download.qt.io/archive/qt/5.12/5.12.3/">Qt 5.12.3</a> for winfows, make sure to check the MSVC 2015 64-bit component during installation, make sure to add <code>C:\Qt\Qt5.12.3\5.12.3\msvc2015_64\bin</code> to your <code>PATH</code> environnement variable.</li>
 </ul>
 <h4>Recover the source</h4>
 <ul>
@@ -278,7 +279,7 @@ Command Prompt" available with Visual Studio in the start menu.</p>
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.15 on Wed Mar 11 2020
+</a> 1.8.15 on Thu Mar 12 2020
 </small></address>
 <!-- KW:BEGIN -->
 <!-- this adds the version selection header -->
