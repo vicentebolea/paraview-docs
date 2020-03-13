@@ -270,9 +270,14 @@ Command Prompt" available with Visual Studio in the start menu.</p>
 <ul>
 <li><code>ParaViewDoxygenDoc</code> - build the doxygen documentation from ParaView's C++ source files.</li>
 <li><code>ParaViewPythonDoc</code> - build the documentation from ParaView's Python source files.</li>
-<li><code>ParaViewDoc-TGZ</code> - build a gzipped tarball of ParaView documentation. </li>
+<li><code>ParaViewDoc-TGZ</code> - build a gzipped tarball of ParaView documentation.</li>
 </ul>
-</div></div><!-- PageDoc -->
+<h2>Using spack</h2>
+<p><a href="https://spack.io/">Spack</a> is a package manager for supercomputers, Linux and macOS. ParaView is one of the packages available in Spack. To install ParaView from spack, you can use:</p>
+<div class="fragment"><div class="line">spack install paraview</div></div><!-- fragment --><p>Please refer to <a href="https://spack.readthedocs.io/en/latest/">Spack documentation</a> for ways of customizing the install, including choosing the version and/or variant to build. Based one the version chosen, spack will download appropriate ParaView source and build it.</p>
+<p>To make it easier to build ParaView using spack from an existing source checkout, we have included relevant spack <code>package.yaml</code> files within the ParaView codebase itself. This also makes it easier to keep the spack package up-to-date with any changes to the ParaView buildsystem. With every release (and as frequently as required), we will push the changes to the ParaView paraview.yaml file upstream to the official spack repository.</p>
+<p>To build your existing source checkout of ParaView using Spack, here are the steps:</p>
+<div class="fragment"><div class="line"># assuming you&#39;ve installed spack as documented in spack docs</div><div class="line"># and activate the spack environment appropriately</div><div class="line"></div><div class="line"># add custom paraview/package.yaml</div><div class="line">&gt; spack repo add $PARAVIEW_SOURCE_DIR/Utilities/spack/repo</div><div class="line"></div><div class="line"># use info to confirm that the paraview package is available</div><div class="line"># only one version should be available</div><div class="line">&gt; spack info paraview</div><div class="line"></div><div class="line"># install similar to any other spack package</div><div class="line"># e.g. following command installs osmesa-capable ParaView</div><div class="line"># with mpich</div><div class="line"></div><div class="line">&gt; spack install paraview+osmesa^mesa~glx^mpich</div></div><!-- fragment --> </div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
