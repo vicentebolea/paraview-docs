@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>paraview.smtrace &mdash; ParaView/Python 5.8.0-388-g3024787fa6 documentation</title>
+  <title>paraview.smtrace &mdash; ParaView/Python 5.8.0-393-g401cc09f35 documentation</title>
   
 
   
@@ -24,7 +24,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:'../../',
-        VERSION:'5.8.0-388-g3024787fa6',
+        VERSION:'5.8.0-393-g401cc09f35',
         COLLAPSE_INDEX:false,
         FILE_SUFFIX:'.html',
         HAS_SOURCE:  true
@@ -49,7 +49,7 @@
         <link rel="index" title="Index"
               href="../../genindex.html"/>
         <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="ParaView/Python 5.8.0-388-g3024787fa6 documentation" href="../../index.html"/>
+    <link rel="top" title="ParaView/Python 5.8.0-393-g401cc09f35 documentation" href="../../index.html"/>
         <link rel="up" title="Module code" href="../index.html"/> 
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -67,7 +67,7 @@
           <li> <a href="../../index.html">
             <img src="../../_static/paraview-logo-small.png"
             alt="ParaView/Python"></img></a> </li>
-          <li class="version"> version 5.8.0-388-g3024787fa6</li>
+          <li class="version"> version 5.8.0-393-g401cc09f35</li>
         </ul>
         <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
   <input type="text" name="q" placeholder="Search docs" />
@@ -745,6 +745,9 @@
 <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span> <span class="o">&gt;=</span> <span class="p">(</span><span class="mi">3</span><span class="p">,):</span>
     <span class="n">xrange</span> <span class="o">=</span> <span class="nb">range</span>
 
+<span class="k">def</span> <span class="nf">_get_skip_rendering</span><span class="p">():</span>
+    <span class="k">return</span> <span class="n">sm</span><span class="o">.</span><span class="n">vtkSMTrace</span><span class="o">.</span><span class="n">GetActiveTracer</span><span class="p">()</span><span class="o">.</span><span class="n">GetSkipRenderingComponents</span><span class="p">()</span>
+
 <div class="viewcode-block" id="TraceOutput"><a class="viewcode-back" href="../../paraview.smtrace.html#paraview.smtrace.TraceOutput">[docs]</a><span class="k">class</span> <span class="nc">TraceOutput</span><span class="p">:</span>
   <span class="sd">&quot;&quot;&quot;Internal class used to collect the trace output. Everytime anything is pushed into</span>
 <span class="sd">  this using the append API, we ensure that the trace is updated. Trace</span>
@@ -852,6 +855,8 @@
 <span class="sd">        ProxyAccessor has been created, other returns False. This is needed to</span>
 <span class="sd">        bring into trace proxies that were either already created when the trace</span>
 <span class="sd">        was started or were created indirectly and hence not explicitly traced.&quot;&quot;&quot;</span>
+        <span class="n">skip_rendering</span> <span class="o">=</span> <span class="n">_get_skip_rendering</span><span class="p">()</span>
+
         <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">sm</span><span class="o">.</span><span class="n">SourceProxy</span><span class="p">):</span>
             <span class="c1"># handle pipeline source/filter proxy.</span>
             <span class="n">pname</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="n">SMProxy</span><span class="o">.</span><span class="n">GetSessionProxyManager</span><span class="p">()</span><span class="o">.</span><span class="n">GetProxyName</span><span class="p">(</span><span class="s2">&quot;sources&quot;</span><span class="p">,</span> <span class="n">obj</span><span class="o">.</span><span class="n">SMProxy</span><span class="p">)</span>
@@ -867,7 +872,7 @@
                         <span class="s2">&quot;# find source&quot;</span><span class="p">,</span>
                         <span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> = FindSource(&#39;</span><span class="si">%s</span><span class="s2">&#39;)&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">accessor</span><span class="p">,</span> <span class="n">pname</span><span class="p">)])</span>
                 <span class="k">return</span> <span class="kc">True</span>
-        <span class="k">if</span> <span class="n">obj</span><span class="o">.</span><span class="n">SMProxy</span><span class="o">.</span><span class="n">IsA</span><span class="p">(</span><span class="s2">&quot;vtkSMViewProxy&quot;</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">skip_rendering</span> <span class="ow">and</span> <span class="n">obj</span><span class="o">.</span><span class="n">SMProxy</span><span class="o">.</span><span class="n">IsA</span><span class="p">(</span><span class="s2">&quot;vtkSMViewProxy&quot;</span><span class="p">):</span>
             <span class="c1"># handle view proxy.</span>
             <span class="n">pname</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="n">SMProxy</span><span class="o">.</span><span class="n">GetSessionProxyManager</span><span class="p">()</span><span class="o">.</span><span class="n">GetProxyName</span><span class="p">(</span><span class="s2">&quot;views&quot;</span><span class="p">,</span> <span class="n">obj</span><span class="o">.</span><span class="n">SMProxy</span><span class="p">)</span>
             <span class="k">if</span> <span class="n">pname</span><span class="p">:</span>
@@ -894,7 +899,7 @@
                 <span class="k">if</span> <span class="n">layout</span><span class="p">:</span>
                     <span class="bp">cls</span><span class="o">.</span><span class="n">get_accessor</span><span class="p">(</span><span class="n">layout</span><span class="p">)</span>
                 <span class="k">return</span> <span class="kc">True</span>
-        <span class="k">if</span> <span class="n">obj</span><span class="o">.</span><span class="n">SMProxy</span><span class="o">.</span><span class="n">IsA</span><span class="p">(</span><span class="s2">&quot;vtkSMRepresentationProxy&quot;</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">skip_rendering</span> <span class="ow">and</span> <span class="n">obj</span><span class="o">.</span><span class="n">SMProxy</span><span class="o">.</span><span class="n">IsA</span><span class="p">(</span><span class="s2">&quot;vtkSMRepresentationProxy&quot;</span><span class="p">):</span>
             <span class="c1"># handle representations.</span>
             <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="s2">&quot;Input&quot;</span><span class="p">):</span>
                 <span class="n">inputAccsr</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">get_accessor</span><span class="p">(</span><span class="n">obj</span><span class="o">.</span><span class="n">Input</span><span class="p">)</span>
@@ -909,15 +914,15 @@
                         <span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> = GetDisplayProperties(</span><span class="si">%s</span><span class="s2">, view=</span><span class="si">%s</span><span class="s2">)&quot;</span> <span class="o">%</span>\
                             <span class="p">(</span><span class="n">accessor</span><span class="p">,</span> <span class="n">inputAccsr</span><span class="p">,</span> <span class="n">viewAccessor</span><span class="p">)])</span>
                     <span class="k">return</span> <span class="kc">True</span>
-        <span class="k">if</span> <span class="bp">cls</span><span class="o">.</span><span class="n">get_registered_name</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="s2">&quot;lookup_tables&quot;</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">skip_rendering</span> <span class="ow">and</span> <span class="bp">cls</span><span class="o">.</span><span class="n">get_registered_name</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="s2">&quot;lookup_tables&quot;</span><span class="p">):</span>
             <span class="n">pname</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">get_registered_name</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="s2">&quot;lookup_tables&quot;</span><span class="p">)</span>
             <span class="k">if</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_create_accessor_for_tf</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">pname</span><span class="p">):</span>
                 <span class="k">return</span> <span class="kc">True</span>
-        <span class="k">if</span> <span class="bp">cls</span><span class="o">.</span><span class="n">get_registered_name</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="s2">&quot;piecewise_functions&quot;</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">skip_rendering</span> <span class="ow">and</span> <span class="bp">cls</span><span class="o">.</span><span class="n">get_registered_name</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="s2">&quot;piecewise_functions&quot;</span><span class="p">):</span>
             <span class="n">pname</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">get_registered_name</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="s2">&quot;piecewise_functions&quot;</span><span class="p">)</span>
             <span class="k">if</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_create_accessor_for_tf</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">pname</span><span class="p">):</span>
                 <span class="k">return</span> <span class="kc">True</span>
-        <span class="k">if</span> <span class="bp">cls</span><span class="o">.</span><span class="n">get_registered_name</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="s2">&quot;scalar_bars&quot;</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">skip_rendering</span> <span class="ow">and</span> <span class="bp">cls</span><span class="o">.</span><span class="n">get_registered_name</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="s2">&quot;scalar_bars&quot;</span><span class="p">):</span>
             <span class="c1"># trace scalar bar.</span>
             <span class="n">lutAccessor</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">get_accessor</span><span class="p">(</span><span class="n">obj</span><span class="o">.</span><span class="n">LookupTable</span><span class="p">)</span>
             <span class="n">view</span> <span class="o">=</span> <span class="n">simple</span><span class="o">.</span><span class="n">LocateView</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
@@ -935,7 +940,7 @@
             <span class="k">return</span> <span class="kc">True</span>
         <span class="k">if</span> <span class="bp">cls</span><span class="o">.</span><span class="n">get_registered_name</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="s2">&quot;animation&quot;</span><span class="p">):</span>
             <span class="k">return</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_create_accessor_for_animation_proxies</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
-        <span class="k">if</span> <span class="bp">cls</span><span class="o">.</span><span class="n">get_registered_name</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="s2">&quot;layouts&quot;</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">skip_rendering</span> <span class="ow">and</span> <span class="bp">cls</span><span class="o">.</span><span class="n">get_registered_name</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="s2">&quot;layouts&quot;</span><span class="p">):</span>
             <span class="n">view</span> <span class="o">=</span> <span class="n">simple</span><span class="o">.</span><span class="n">GetActiveView</span><span class="p">()</span>
             <span class="k">if</span> <span class="n">view</span> <span class="ow">and</span> <span class="n">obj</span><span class="o">.</span><span class="n">GetViewLocation</span><span class="p">(</span><span class="n">view</span><span class="o">.</span><span class="n">SMProxy</span><span class="p">)</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
                 <span class="n">viewAccessor</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">get_accessor</span><span class="p">(</span><span class="n">view</span><span class="p">)</span>
@@ -958,7 +963,7 @@
                     <span class="s2">&quot;# get the time-keeper&quot;</span><span class="p">,</span>
                     <span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> = GetTimeKeeper()&quot;</span> <span class="o">%</span> <span class="n">tkAccessor</span><span class="p">])</span>
             <span class="k">return</span> <span class="kc">True</span>
-        <span class="k">if</span> <span class="n">obj</span><span class="o">.</span><span class="n">GetVTKClassName</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;vtkPVLight&quot;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">skip_rendering</span> <span class="ow">and</span> <span class="n">obj</span><span class="o">.</span><span class="n">GetVTKClassName</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;vtkPVLight&quot;</span><span class="p">:</span>
             <span class="n">view</span> <span class="o">=</span> <span class="n">simple</span><span class="o">.</span><span class="n">GetViewForLight</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
             <span class="k">if</span> <span class="n">view</span><span class="p">:</span>
                 <span class="n">index</span> <span class="o">=</span> <span class="n">view</span><span class="o">.</span><span class="n">AdditionalLights</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
@@ -974,13 +979,13 @@
                     <span class="s2">&quot;# create a new light&quot;</span><span class="p">,</span>
                     <span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> = CreateLight()&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">accessor</span><span class="p">)])</span>
             <span class="k">return</span> <span class="kc">True</span>
-        <span class="k">if</span> <span class="n">obj</span><span class="o">.</span><span class="n">SMProxy</span><span class="o">.</span><span class="n">IsA</span><span class="p">(</span><span class="s2">&quot;vtkSMMaterialLibraryProxy&quot;</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">skip_rendering</span> <span class="ow">and</span> <span class="n">obj</span><span class="o">.</span><span class="n">SMProxy</span><span class="o">.</span><span class="n">IsA</span><span class="p">(</span><span class="s2">&quot;vtkSMMaterialLibraryProxy&quot;</span><span class="p">):</span>
             <span class="n">tkAccessor</span> <span class="o">=</span> <span class="n">ProxyAccessor</span><span class="p">(</span><span class="bp">cls</span><span class="o">.</span><span class="n">get_varname</span><span class="p">(</span><span class="bp">cls</span><span class="o">.</span><span class="n">get_registered_name</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="s2">&quot;materiallibrary&quot;</span><span class="p">)),</span> <span class="n">obj</span><span class="p">)</span>
             <span class="bp">cls</span><span class="o">.</span><span class="n">Output</span><span class="o">.</span><span class="n">append_separated</span><span class="p">([</span>\
                     <span class="s2">&quot;# get the material library&quot;</span><span class="p">,</span>
                     <span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> = GetMaterialLibrary()&quot;</span> <span class="o">%</span> <span class="n">tkAccessor</span><span class="p">])</span>
             <span class="k">return</span> <span class="kc">True</span>
-        <span class="k">if</span> <span class="n">obj</span><span class="o">.</span><span class="n">GetVTKClassName</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;vtkTexture&quot;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">skip_rendering</span> <span class="ow">and</span> <span class="n">obj</span><span class="o">.</span><span class="n">GetVTKClassName</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;vtkTexture&quot;</span><span class="p">:</span>
             <span class="n">pname</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="n">SMProxy</span><span class="o">.</span><span class="n">GetSessionProxyManager</span><span class="p">()</span><span class="o">.</span><span class="n">GetProxyName</span><span class="p">(</span><span class="s2">&quot;textures&quot;</span><span class="p">,</span> <span class="n">obj</span><span class="o">.</span><span class="n">SMProxy</span><span class="p">)</span>
             <span class="k">if</span> <span class="n">pname</span><span class="p">:</span>
                 <span class="n">accessor</span> <span class="o">=</span> <span class="n">ProxyAccessor</span><span class="p">(</span><span class="bp">cls</span><span class="o">.</span><span class="n">get_varname</span><span class="p">(</span><span class="n">pname</span><span class="p">),</span> <span class="n">obj</span><span class="p">)</span>
@@ -1543,10 +1548,21 @@
 <span class="c1"># === TraceItem types ==</span>
 <span class="c1"># TraceItems are units of traceable actions triggered by the application using vtkSMTrace</span>
 <span class="c1"># ===================================================================================================</span>
+<div class="viewcode-block" id="RenderingMixin"><a class="viewcode-back" href="../../paraview.smtrace.html#paraview.smtrace.RenderingMixin">[docs]</a><span class="k">class</span> <span class="nc">RenderingMixin</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">skip_from_trace</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">_get_skip_rendering</span><span class="p">():</span>
+            <span class="k">return</span> <span class="kc">True</span>
+        <span class="k">return</span> <span class="kc">False</span></div>
 
 <div class="viewcode-block" id="TraceItem"><a class="viewcode-back" href="../../paraview.smtrace.html#paraview.smtrace.TraceItem">[docs]</a><span class="k">class</span> <span class="nc">TraceItem</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">pass</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">skip_from_trace</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">Untraceable</span><span class="p">(</span><span class="s2">&quot;skipped&quot;</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>
+            <span class="k">pass</span>
+
 <div class="viewcode-block" id="TraceItem.finalize"><a class="viewcode-back" href="../../paraview.smtrace.html#paraview.smtrace.TraceItem.finalize">[docs]</a>    <span class="k">def</span> <span class="nf">finalize</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">pass</span></div></div>
 
@@ -1671,7 +1687,7 @@
                         <span class="n">valaccessor</span><span class="o">.</span><span class="n">trace_properties</span><span class="p">(</span><span class="n">props_to_trace</span><span class="p">,</span> <span class="n">in_ctor</span><span class="o">=</span><span class="kc">False</span><span class="p">)])</span>
         <span class="n">TraceItem</span><span class="o">.</span><span class="n">finalize</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></div></div>
 
-<div class="viewcode-block" id="ScalarBarInteraction"><a class="viewcode-back" href="../../paraview.smtrace.html#paraview.smtrace.ScalarBarInteraction">[docs]</a><span class="k">class</span> <span class="nc">ScalarBarInteraction</span><span class="p">(</span><span class="n">NestableTraceItem</span><span class="p">):</span>
+<div class="viewcode-block" id="ScalarBarInteraction"><a class="viewcode-back" href="../../paraview.smtrace.html#paraview.smtrace.ScalarBarInteraction">[docs]</a><span class="k">class</span> <span class="nc">ScalarBarInteraction</span><span class="p">(</span><span class="n">RenderingMixin</span><span class="p">,</span> <span class="n">NestableTraceItem</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Traces scalar bar interactions&quot;&quot;&quot;</span>
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">proxy</span><span class="p">,</span> <span class="n">comment</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
         <span class="n">TraceItem</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
@@ -1692,7 +1708,7 @@
                 <span class="bp">self</span><span class="o">.</span><span class="n">Comment</span><span class="p">,</span>
                 <span class="bp">self</span><span class="o">.</span><span class="n">ProxyAccessor</span><span class="o">.</span><span class="n">trace_properties</span><span class="p">(</span><span class="n">props_to_trace</span><span class="p">,</span> <span class="n">in_ctor</span><span class="o">=</span><span class="kc">False</span><span class="p">)])</span></div></div>
 
-<div class="viewcode-block" id="Show"><a class="viewcode-back" href="../../paraview.smtrace.html#paraview.smtrace.Show">[docs]</a><span class="k">class</span> <span class="nc">Show</span><span class="p">(</span><span class="n">TraceItem</span><span class="p">):</span>
+<div class="viewcode-block" id="Show"><a class="viewcode-back" href="../../paraview.smtrace.html#paraview.smtrace.Show">[docs]</a><span class="k">class</span> <span class="nc">Show</span><span class="p">(</span><span class="n">RenderingMixin</span><span class="p">,</span> <span class="n">TraceItem</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Traces Show&quot;&quot;&quot;</span>
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">producer</span><span class="p">,</span> <span class="n">port</span><span class="p">,</span> <span class="n">view</span><span class="p">,</span> <span class="n">display</span><span class="p">,</span> <span class="n">comment</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
         <span class="n">TraceItem</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
@@ -1743,7 +1759,7 @@
         <span class="n">Trace</span><span class="o">.</span><span class="n">Output</span><span class="o">.</span><span class="n">append_separated</span><span class="p">(</span><span class="n">output</span><span class="o">.</span><span class="n">raw_data</span><span class="p">())</span>
         <span class="n">TraceItem</span><span class="o">.</span><span class="n">finalize</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></div></div>
 
-<div class="viewcode-block" id="Hide"><a class="viewcode-back" href="../../paraview.smtrace.html#paraview.smtrace.Hide">[docs]</a><span class="k">class</span> <span class="nc">Hide</span><span class="p">(</span><span class="n">TraceItem</span><span class="p">):</span>
+<div class="viewcode-block" id="Hide"><a class="viewcode-back" href="../../paraview.smtrace.html#paraview.smtrace.Hide">[docs]</a><span class="k">class</span> <span class="nc">Hide</span><span class="p">(</span><span class="n">RenderingMixin</span><span class="p">,</span> <span class="n">TraceItem</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Traces Hide&quot;&quot;&quot;</span>
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">producer</span><span class="p">,</span> <span class="n">port</span><span class="p">,</span> <span class="n">view</span><span class="p">):</span>
         <span class="n">TraceItem</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
@@ -1758,7 +1774,7 @@
           <span class="s2">&quot;Hide(</span><span class="si">%s</span><span class="s2">, </span><span class="si">%s</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">producerAccessor</span><span class="p">),</span> <span class="nb">str</span><span class="p">(</span><span class="n">viewAccessor</span><span class="p">))</span> <span class="k">if</span> <span class="n">port</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> \
               <span class="s2">&quot;Hide(OutputPort(</span><span class="si">%s</span><span class="s2">, </span><span class="si">%d</span><span class="s2">), </span><span class="si">%s</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">producerAccessor</span><span class="p">),</span> <span class="n">port</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">viewAccessor</span><span class="p">))])</span></div>
 
-<div class="viewcode-block" id="SetScalarColoring"><a class="viewcode-back" href="../../paraview.smtrace.html#paraview.smtrace.SetScalarColoring">[docs]</a><span class="k">class</span> <span class="nc">SetScalarColoring</span><span class="p">(</span><span class="n">TraceItem</span><span class="p">):</span>
+<div class="viewcode-block" id="SetScalarColoring"><a class="viewcode-back" href="../../paraview.smtrace.html#paraview.smtrace.SetScalarColoring">[docs]</a><span class="k">class</span> <span class="nc">SetScalarColoring</span><span class="p">(</span><span class="n">RenderingMixin</span><span class="p">,</span> <span class="n">TraceItem</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Trace vtkSMPVRepresentationProxy.SetScalarColoring&quot;&quot;&quot;</span>
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">display</span><span class="p">,</span> <span class="n">arrayname</span><span class="p">,</span> <span class="n">attribute_type</span><span class="p">,</span> <span class="n">component</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">separate</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">lut</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
         <span class="n">TraceItem</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
@@ -1813,7 +1829,7 @@
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">Lut</span><span class="p">:</span>
           <span class="n">Trace</span><span class="o">.</span><span class="n">get_accessor</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Lut</span><span class="p">)</span></div></div>
 
-<div class="viewcode-block" id="RegisterViewProxy"><a class="viewcode-back" href="../../paraview.smtrace.html#paraview.smtrace.RegisterViewProxy">[docs]</a><span class="k">class</span> <span class="nc">RegisterViewProxy</span><span class="p">(</span><span class="n">TraceItem</span><span class="p">):</span>
+<div class="viewcode-block" id="RegisterViewProxy"><a class="viewcode-back" href="../../paraview.smtrace.html#paraview.smtrace.RegisterViewProxy">[docs]</a><span class="k">class</span> <span class="nc">RegisterViewProxy</span><span class="p">(</span><span class="n">RenderingMixin</span><span class="p">,</span> <span class="n">TraceItem</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Traces creation of a new view (vtkSMParaViewPipelineController::RegisterViewProxy).&quot;&quot;&quot;</span>
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">proxy</span><span class="p">):</span>
         <span class="n">TraceItem</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
@@ -1860,7 +1876,7 @@
         <span class="c1"># we assume views don&#39;t have proxy list domains for now, and ignore tracing them.</span>
         <span class="n">TraceItem</span><span class="o">.</span><span class="n">finalize</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></div></div>
 
-<div class="viewcode-block" id="RegisterLightProxy"><a class="viewcode-back" href="../../paraview.smtrace.html#paraview.smtrace.RegisterLightProxy">[docs]</a><span class="k">class</span> <span class="nc">RegisterLightProxy</span><span class="p">(</span><span class="n">TraceItem</span><span class="p">):</span>
+<div class="viewcode-block" id="RegisterLightProxy"><a class="viewcode-back" href="../../paraview.smtrace.html#paraview.smtrace.RegisterLightProxy">[docs]</a><span class="k">class</span> <span class="nc">RegisterLightProxy</span><span class="p">(</span><span class="n">RenderingMixin</span><span class="p">,</span> <span class="n">TraceItem</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Traces creation of a new light (vtkSMParaViewPipelineController::RegisterLightProxy).&quot;&quot;&quot;</span>
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">proxy</span><span class="p">,</span> <span class="n">view</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
         <span class="n">TraceItem</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
@@ -1884,7 +1900,7 @@
         <span class="n">Trace</span><span class="o">.</span><span class="n">Output</span><span class="o">.</span><span class="n">append_separated</span><span class="p">(</span><span class="n">trace</span><span class="o">.</span><span class="n">raw_data</span><span class="p">())</span>
         <span class="n">TraceItem</span><span class="o">.</span><span class="n">finalize</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></div></div>
 
-<div class="viewcode-block" id="ExportView"><a class="viewcode-back" href="../../paraview.smtrace.html#paraview.smtrace.ExportView">[docs]</a><span class="k">class</span> <span class="nc">ExportView</span><span class="p">(</span><span class="n">TraceItem</span><span class="p">):</span>
+<div class="viewcode-block" id="ExportView"><a class="viewcode-back" href="../../paraview.smtrace.html#paraview.smtrace.ExportView">[docs]</a><span class="k">class</span> <span class="nc">ExportView</span><span class="p">(</span><span class="n">RenderingMixin</span><span class="p">,</span> <span class="n">TraceItem</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">view</span><span class="p">,</span> <span class="n">exporter</span><span class="p">,</span> <span class="n">filename</span><span class="p">):</span>
         <span class="n">TraceItem</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
 
@@ -1929,7 +1945,7 @@
         <span class="k">del</span> <span class="n">writer</span>
         <span class="n">Trace</span><span class="o">.</span><span class="n">Output</span><span class="o">.</span><span class="n">append_separated</span><span class="p">(</span><span class="n">trace</span><span class="o">.</span><span class="n">raw_data</span><span class="p">())</span></div>
 
-<div class="viewcode-block" id="SaveScreenshotOrAnimation"><a class="viewcode-back" href="../../paraview.smtrace.html#paraview.smtrace.SaveScreenshotOrAnimation">[docs]</a><span class="k">class</span> <span class="nc">SaveScreenshotOrAnimation</span><span class="p">(</span><span class="n">TraceItem</span><span class="p">):</span>
+<div class="viewcode-block" id="SaveScreenshotOrAnimation"><a class="viewcode-back" href="../../paraview.smtrace.html#paraview.smtrace.SaveScreenshotOrAnimation">[docs]</a><span class="k">class</span> <span class="nc">SaveScreenshotOrAnimation</span><span class="p">(</span><span class="n">RenderingMixin</span><span class="p">,</span> <span class="n">TraceItem</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">helper</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">view</span><span class="p">,</span> <span class="n">layout</span><span class="p">,</span> <span class="n">mode_screenshot</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
         <span class="n">TraceItem</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
         <span class="k">assert</span><span class="p">(</span><span class="n">view</span> <span class="o">!=</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">layout</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">)</span>
@@ -1990,7 +2006,7 @@
         <span class="k">del</span> <span class="n">options</span>
         <span class="n">Trace</span><span class="o">.</span><span class="n">Output</span><span class="o">.</span><span class="n">append_separated</span><span class="p">(</span><span class="n">trace</span><span class="o">.</span><span class="n">raw_data</span><span class="p">())</span></div>
 
-<div class="viewcode-block" id="RegisterLayoutProxy"><a class="viewcode-back" href="../../paraview.smtrace.html#paraview.smtrace.RegisterLayoutProxy">[docs]</a><span class="k">class</span> <span class="nc">RegisterLayoutProxy</span><span class="p">(</span><span class="n">TraceItem</span><span class="p">):</span>
+<div class="viewcode-block" id="RegisterLayoutProxy"><a class="viewcode-back" href="../../paraview.smtrace.html#paraview.smtrace.RegisterLayoutProxy">[docs]</a><span class="k">class</span> <span class="nc">RegisterLayoutProxy</span><span class="p">(</span><span class="n">RenderingMixin</span><span class="p">,</span> <span class="n">TraceItem</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">layout</span><span class="p">):</span>
         <span class="n">TraceItem</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">Layout</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">_getPyProxy</span><span class="p">(</span><span class="n">layout</span><span class="p">)</span>
@@ -2094,6 +2110,8 @@
         <span class="n">accessor</span> <span class="o">=</span> <span class="n">Trace</span><span class="o">.</span><span class="n">get_accessor</span><span class="p">(</span><span class="n">proxy</span><span class="p">)</span>
         <span class="n">pxm</span> <span class="o">=</span> <span class="n">selmodel</span><span class="o">.</span><span class="n">GetSessionProxyManager</span><span class="p">()</span>
         <span class="k">if</span> <span class="n">selmodel</span> <span class="ow">is</span> <span class="n">pxm</span><span class="o">.</span><span class="n">GetSelectionModel</span><span class="p">(</span><span class="s2">&quot;ActiveView&quot;</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">RenderingMixin</span><span class="p">()</span><span class="o">.</span><span class="n">skip_from_trace</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">Untraceable</span><span class="p">(</span><span class="s2">&quot;skipped&quot;</span><span class="p">)</span>
             <span class="n">Trace</span><span class="o">.</span><span class="n">Output</span><span class="o">.</span><span class="n">append_separated</span><span class="p">([</span>\
                 <span class="s2">&quot;# set active view&quot;</span><span class="p">,</span>
                 <span class="s2">&quot;SetActiveView(</span><span class="si">%s</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="n">accessor</span><span class="p">])</span>
@@ -2175,7 +2193,7 @@
         <span class="n">to_trace</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2">(</span><span class="si">%s</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">functionname</span><span class="p">,</span> <span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">args</span><span class="p">)))</span>
         <span class="n">Trace</span><span class="o">.</span><span class="n">Output</span><span class="o">.</span><span class="n">append_separated</span><span class="p">(</span><span class="n">to_trace</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="ChooseTexture"><a class="viewcode-back" href="../../paraview.smtrace.html#paraview.smtrace.ChooseTexture">[docs]</a><span class="k">class</span> <span class="nc">ChooseTexture</span><span class="p">(</span><span class="n">TraceItem</span><span class="p">):</span>
+<div class="viewcode-block" id="ChooseTexture"><a class="viewcode-back" href="../../paraview.smtrace.html#paraview.smtrace.ChooseTexture">[docs]</a><span class="k">class</span> <span class="nc">ChooseTexture</span><span class="p">(</span><span class="n">RenderingMixin</span><span class="p">,</span> <span class="n">TraceItem</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Traces changes of texture object selection. For example renderview background.&quot;&quot;&quot;</span>
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">owner</span><span class="p">,</span> <span class="n">texture</span><span class="p">,</span> <span class="n">prop</span><span class="p">):</span>
         <span class="n">TraceItem</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
@@ -2188,7 +2206,7 @@
                                        <span class="s2">&quot;# change texture&quot;</span><span class="p">,</span>
                                        <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">.</span><span class="si">%s</span><span class="s2"> = </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">ownerAccessor</span><span class="p">),</span> <span class="n">prop</span><span class="o">.</span><span class="n">GetXMLName</span><span class="p">(),</span> <span class="nb">str</span><span class="p">(</span><span class="n">textureAccessor</span><span class="p">))])</span></div>
 
-<div class="viewcode-block" id="SaveCameras"><a class="viewcode-back" href="../../paraview.smtrace.html#paraview.smtrace.SaveCameras">[docs]</a><span class="k">class</span> <span class="nc">SaveCameras</span><span class="p">(</span><span class="n">BookkeepingItem</span><span class="p">):</span>
+<div class="viewcode-block" id="SaveCameras"><a class="viewcode-back" href="../../paraview.smtrace.html#paraview.smtrace.SaveCameras">[docs]</a><span class="k">class</span> <span class="nc">SaveCameras</span><span class="p">(</span><span class="n">RenderingMixin</span><span class="p">,</span> <span class="n">BookkeepingItem</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;This is used to request recording of cameras in trace&quot;&quot;&quot;</span>
     <span class="c1"># This is a little hackish at this point. We&#39;ll figure something cleaner out</span>
     <span class="c1"># in time.</span>
@@ -2267,23 +2285,26 @@
         <span class="n">Trace</span><span class="o">.</span><span class="n">Output</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">preamble</span><span class="p">)</span>
     <span class="n">Trace</span><span class="o">.</span><span class="n">Output</span><span class="o">.</span><span class="n">append</span><span class="p">([</span>\
         <span class="s2">&quot;#### import the simple module from the paraview&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;from paraview.simple import *&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;#### disable automatic camera reset on &#39;Show&#39;&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;paraview.simple._DisableFirstRenderCameraReset()&quot;</span><span class="p">])</span>
+        <span class="s2">&quot;from paraview.simple import *&quot;</span><span class="p">])</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">_get_skip_rendering</span><span class="p">():</span>
+        <span class="n">Trace</span><span class="o">.</span><span class="n">Output</span><span class="o">.</span><span class="n">append</span><span class="p">([</span>\
+            <span class="s2">&quot;#### disable automatic camera reset on &#39;Show&#39;&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;paraview.simple._DisableFirstRenderCameraReset()&quot;</span><span class="p">])</span>
     <span class="k">return</span> <span class="kc">True</span>
 
 <span class="k">def</span> <span class="nf">_stop_trace_internal</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;**internal** stops trace. Called by vtkSMTrace::StopTrace().&quot;&quot;&quot;</span>
-    <span class="n">camera_trace</span> <span class="o">=</span> <span class="n">SaveCameras</span><span class="o">.</span><span class="n">get_trace</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">camera_trace</span><span class="p">:</span>
-        <span class="n">Trace</span><span class="o">.</span><span class="n">Output</span><span class="o">.</span><span class="n">append_separated</span><span class="p">(</span>\
-            <span class="s2">&quot;#### saving camera placements for all active views&quot;</span><span class="p">)</span>
-        <span class="n">Trace</span><span class="o">.</span><span class="n">Output</span><span class="o">.</span><span class="n">append_separated</span><span class="p">(</span><span class="n">camera_trace</span><span class="p">)</span>
-    <span class="n">Trace</span><span class="o">.</span><span class="n">Output</span><span class="o">.</span><span class="n">append_separated</span><span class="p">([</span>\
-        <span class="s2">&quot;#### uncomment the following to render all views&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;# RenderAllViews()&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;# alternatively, if you want to write images, you can use SaveScreenshot(...).&quot;</span>
-        <span class="p">])</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">_get_skip_rendering</span><span class="p">():</span>
+        <span class="n">camera_trace</span> <span class="o">=</span> <span class="n">SaveCameras</span><span class="o">.</span><span class="n">get_trace</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">camera_trace</span><span class="p">:</span>
+            <span class="n">Trace</span><span class="o">.</span><span class="n">Output</span><span class="o">.</span><span class="n">append_separated</span><span class="p">(</span>\
+                <span class="s2">&quot;#### saving camera placements for all active views&quot;</span><span class="p">)</span>
+            <span class="n">Trace</span><span class="o">.</span><span class="n">Output</span><span class="o">.</span><span class="n">append_separated</span><span class="p">(</span><span class="n">camera_trace</span><span class="p">)</span>
+        <span class="n">Trace</span><span class="o">.</span><span class="n">Output</span><span class="o">.</span><span class="n">append_separated</span><span class="p">([</span>\
+            <span class="s2">&quot;#### uncomment the following to render all views&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;# RenderAllViews()&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;# alternatively, if you want to write images, you can use SaveScreenshot(...).&quot;</span>
+            <span class="p">])</span>
     <span class="n">trace</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">Trace</span><span class="o">.</span><span class="n">Output</span><span class="p">)</span>
     <span class="n">Trace</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
 

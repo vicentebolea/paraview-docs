@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>smtrace Module &mdash; ParaView/Python 5.8.0-388-g3024787fa6 documentation</title>
+  <title>smtrace Module &mdash; ParaView/Python 5.8.0-393-g401cc09f35 documentation</title>
   
 
   
@@ -24,7 +24,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:'./',
-        VERSION:'5.8.0-388-g3024787fa6',
+        VERSION:'5.8.0-393-g401cc09f35',
         COLLAPSE_INDEX:false,
         FILE_SUFFIX:'.html',
         HAS_SOURCE:  true
@@ -49,7 +49,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="ParaView/Python 5.8.0-388-g3024787fa6 documentation" href="index.html"/>
+    <link rel="top" title="ParaView/Python 5.8.0-393-g401cc09f35 documentation" href="index.html"/>
         <link rel="up" title="paraview Package" href="paraview.html"/>
         <link rel="next" title="spatiotemporalparallelism Module" href="paraview.spatiotemporalparallelism.html"/>
         <link rel="prev" title="smtesting Module" href="paraview.smtesting.html"/> 
@@ -69,7 +69,7 @@
           <li> <a href="index.html">
             <img src="_static/paraview-logo-small.png"
             alt="ParaView/Python"></img></a> </li>
-          <li class="version"> version 5.8.0-388-g3024787fa6</li>
+          <li class="version"> version 5.8.0-393-g401cc09f35</li>
         </ul>
         <form id ="rtd-search-form" class="wy-form" action="search.html" method="get">
   <input type="text" name="q" placeholder="Search docs" />
@@ -814,7 +814,7 @@ finalized.</p>
 <dl class="class">
 <dt id="paraview.smtrace.ChooseTexture">
 <em class="property">class </em><code class="descclassname">paraview.smtrace.</code><code class="descname">ChooseTexture</code><span class="sig-paren">(</span><em>owner</em>, <em>texture</em>, <em>prop</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/smtrace.html#ChooseTexture"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.ChooseTexture" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#paraview.smtrace.TraceItem" title="paraview.smtrace.TraceItem"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.TraceItem</span></code></a></p>
+<dd><p>Bases: <a class="reference internal" href="#paraview.smtrace.RenderingMixin" title="paraview.smtrace.RenderingMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.RenderingMixin</span></code></a>, <a class="reference internal" href="#paraview.smtrace.TraceItem" title="paraview.smtrace.TraceItem"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.TraceItem</span></code></a></p>
 <p>Traces changes of texture object selection. For example renderview background.</p>
 </dd></dl>
 
@@ -862,7 +862,7 @@ finalized.</p>
 <dl class="class">
 <dt id="paraview.smtrace.ExportView">
 <em class="property">class </em><code class="descclassname">paraview.smtrace.</code><code class="descname">ExportView</code><span class="sig-paren">(</span><em>view</em>, <em>exporter</em>, <em>filename</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/smtrace.html#ExportView"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.ExportView" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#paraview.smtrace.TraceItem" title="paraview.smtrace.TraceItem"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.TraceItem</span></code></a></p>
+<dd><p>Bases: <a class="reference internal" href="#paraview.smtrace.RenderingMixin" title="paraview.smtrace.RenderingMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.RenderingMixin</span></code></a>, <a class="reference internal" href="#paraview.smtrace.TraceItem" title="paraview.smtrace.TraceItem"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.TraceItem</span></code></a></p>
 </dd></dl>
 
 <dl class="class">
@@ -896,7 +896,7 @@ finalized.</p>
 <dl class="class">
 <dt id="paraview.smtrace.Hide">
 <em class="property">class </em><code class="descclassname">paraview.smtrace.</code><code class="descname">Hide</code><span class="sig-paren">(</span><em>producer</em>, <em>port</em>, <em>view</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/smtrace.html#Hide"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.Hide" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#paraview.smtrace.TraceItem" title="paraview.smtrace.TraceItem"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.TraceItem</span></code></a></p>
+<dd><p>Bases: <a class="reference internal" href="#paraview.smtrace.RenderingMixin" title="paraview.smtrace.RenderingMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.RenderingMixin</span></code></a>, <a class="reference internal" href="#paraview.smtrace.TraceItem" title="paraview.smtrace.TraceItem"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.TraceItem</span></code></a></p>
 <p>Traces Hide</p>
 </dd></dl>
 
@@ -1133,7 +1133,7 @@ in the constructor.</p>
 <dl class="class">
 <dt id="paraview.smtrace.RegisterLayoutProxy">
 <em class="property">class </em><code class="descclassname">paraview.smtrace.</code><code class="descname">RegisterLayoutProxy</code><span class="sig-paren">(</span><em>layout</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/smtrace.html#RegisterLayoutProxy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.RegisterLayoutProxy" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#paraview.smtrace.TraceItem" title="paraview.smtrace.TraceItem"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.TraceItem</span></code></a></p>
+<dd><p>Bases: <a class="reference internal" href="#paraview.smtrace.RenderingMixin" title="paraview.smtrace.RenderingMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.RenderingMixin</span></code></a>, <a class="reference internal" href="#paraview.smtrace.TraceItem" title="paraview.smtrace.TraceItem"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.TraceItem</span></code></a></p>
 <dl class="method">
 <dt id="paraview.smtrace.RegisterLayoutProxy.finalize">
 <code class="descname">finalize</code><span class="sig-paren">(</span><em>filter=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/smtrace.html#RegisterLayoutProxy.finalize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.RegisterLayoutProxy.finalize" title="Permalink to this definition">¶</a></dt>
@@ -1144,7 +1144,7 @@ in the constructor.</p>
 <dl class="class">
 <dt id="paraview.smtrace.RegisterLightProxy">
 <em class="property">class </em><code class="descclassname">paraview.smtrace.</code><code class="descname">RegisterLightProxy</code><span class="sig-paren">(</span><em>proxy</em>, <em>view=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/smtrace.html#RegisterLightProxy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.RegisterLightProxy" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#paraview.smtrace.TraceItem" title="paraview.smtrace.TraceItem"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.TraceItem</span></code></a></p>
+<dd><p>Bases: <a class="reference internal" href="#paraview.smtrace.RenderingMixin" title="paraview.smtrace.RenderingMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.RenderingMixin</span></code></a>, <a class="reference internal" href="#paraview.smtrace.TraceItem" title="paraview.smtrace.TraceItem"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.TraceItem</span></code></a></p>
 <p>Traces creation of a new light (vtkSMParaViewPipelineController::RegisterLightProxy).</p>
 <dl class="method">
 <dt id="paraview.smtrace.RegisterLightProxy.finalize">
@@ -1169,7 +1169,7 @@ sources/filters/readers etc.</p>
 <dl class="class">
 <dt id="paraview.smtrace.RegisterViewProxy">
 <em class="property">class </em><code class="descclassname">paraview.smtrace.</code><code class="descname">RegisterViewProxy</code><span class="sig-paren">(</span><em>proxy</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/smtrace.html#RegisterViewProxy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.RegisterViewProxy" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#paraview.smtrace.TraceItem" title="paraview.smtrace.TraceItem"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.TraceItem</span></code></a></p>
+<dd><p>Bases: <a class="reference internal" href="#paraview.smtrace.RenderingMixin" title="paraview.smtrace.RenderingMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.RenderingMixin</span></code></a>, <a class="reference internal" href="#paraview.smtrace.TraceItem" title="paraview.smtrace.TraceItem"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.TraceItem</span></code></a></p>
 <p>Traces creation of a new view (vtkSMParaViewPipelineController::RegisterViewProxy).</p>
 <dl class="method">
 <dt id="paraview.smtrace.RegisterViewProxy.finalize">
@@ -1186,6 +1186,17 @@ sources/filters/readers etc.</p>
 <dl class="method">
 <dt id="paraview.smtrace.RenameProxy.finalize">
 <code class="descname">finalize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/smtrace.html#RenameProxy.finalize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.RenameProxy.finalize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="paraview.smtrace.RenderingMixin">
+<em class="property">class </em><code class="descclassname">paraview.smtrace.</code><code class="descname">RenderingMixin</code><a class="reference internal" href="_modules/paraview/smtrace.html#RenderingMixin"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.RenderingMixin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="paraview.smtrace.RenderingMixin.skip_from_trace">
+<code class="descname">skip_from_trace</code><a class="headerlink" href="#paraview.smtrace.RenderingMixin.skip_from_trace" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -1217,7 +1228,7 @@ even when it’s same as the default value (see issue #17196).</p>
 <dl class="class">
 <dt id="paraview.smtrace.SaveCameras">
 <em class="property">class </em><code class="descclassname">paraview.smtrace.</code><code class="descname">SaveCameras</code><span class="sig-paren">(</span><em>proxy=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/smtrace.html#SaveCameras"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.SaveCameras" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#paraview.smtrace.BookkeepingItem" title="paraview.smtrace.BookkeepingItem"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.BookkeepingItem</span></code></a></p>
+<dd><p>Bases: <a class="reference internal" href="#paraview.smtrace.RenderingMixin" title="paraview.smtrace.RenderingMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.RenderingMixin</span></code></a>, <a class="reference internal" href="#paraview.smtrace.BookkeepingItem" title="paraview.smtrace.BookkeepingItem"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.BookkeepingItem</span></code></a></p>
 <p>This is used to request recording of cameras in trace</p>
 <dl class="classmethod">
 <dt id="paraview.smtrace.SaveCameras.get_trace">
@@ -1235,13 +1246,13 @@ even when it’s same as the default value (see issue #17196).</p>
 <dl class="class">
 <dt id="paraview.smtrace.SaveScreenshotOrAnimation">
 <em class="property">class </em><code class="descclassname">paraview.smtrace.</code><code class="descname">SaveScreenshotOrAnimation</code><span class="sig-paren">(</span><em>helper</em>, <em>filename</em>, <em>view</em>, <em>layout</em>, <em>mode_screenshot=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/smtrace.html#SaveScreenshotOrAnimation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.SaveScreenshotOrAnimation" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#paraview.smtrace.TraceItem" title="paraview.smtrace.TraceItem"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.TraceItem</span></code></a></p>
+<dd><p>Bases: <a class="reference internal" href="#paraview.smtrace.RenderingMixin" title="paraview.smtrace.RenderingMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.RenderingMixin</span></code></a>, <a class="reference internal" href="#paraview.smtrace.TraceItem" title="paraview.smtrace.TraceItem"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.TraceItem</span></code></a></p>
 </dd></dl>
 
 <dl class="class">
 <dt id="paraview.smtrace.ScalarBarInteraction">
 <em class="property">class </em><code class="descclassname">paraview.smtrace.</code><code class="descname">ScalarBarInteraction</code><span class="sig-paren">(</span><em>proxy</em>, <em>comment=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/smtrace.html#ScalarBarInteraction"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.ScalarBarInteraction" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#paraview.smtrace.NestableTraceItem" title="paraview.smtrace.NestableTraceItem"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.NestableTraceItem</span></code></a></p>
+<dd><p>Bases: <a class="reference internal" href="#paraview.smtrace.RenderingMixin" title="paraview.smtrace.RenderingMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.RenderingMixin</span></code></a>, <a class="reference internal" href="#paraview.smtrace.NestableTraceItem" title="paraview.smtrace.NestableTraceItem"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.NestableTraceItem</span></code></a></p>
 <p>Traces scalar bar interactions</p>
 <dl class="method">
 <dt id="paraview.smtrace.ScalarBarInteraction.finalize">
@@ -1292,7 +1303,7 @@ even when it’s same as the default value (see issue #17196).</p>
 <dl class="class">
 <dt id="paraview.smtrace.SetScalarColoring">
 <em class="property">class </em><code class="descclassname">paraview.smtrace.</code><code class="descname">SetScalarColoring</code><span class="sig-paren">(</span><em>display</em>, <em>arrayname</em>, <em>attribute_type</em>, <em>component=None</em>, <em>separate=False</em>, <em>lut=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/smtrace.html#SetScalarColoring"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.SetScalarColoring" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#paraview.smtrace.TraceItem" title="paraview.smtrace.TraceItem"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.TraceItem</span></code></a></p>
+<dd><p>Bases: <a class="reference internal" href="#paraview.smtrace.RenderingMixin" title="paraview.smtrace.RenderingMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.RenderingMixin</span></code></a>, <a class="reference internal" href="#paraview.smtrace.TraceItem" title="paraview.smtrace.TraceItem"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.TraceItem</span></code></a></p>
 <p>Trace vtkSMPVRepresentationProxy.SetScalarColoring</p>
 <dl class="method">
 <dt id="paraview.smtrace.SetScalarColoring.finalize">
@@ -1304,7 +1315,7 @@ even when it’s same as the default value (see issue #17196).</p>
 <dl class="class">
 <dt id="paraview.smtrace.Show">
 <em class="property">class </em><code class="descclassname">paraview.smtrace.</code><code class="descname">Show</code><span class="sig-paren">(</span><em>producer</em>, <em>port</em>, <em>view</em>, <em>display</em>, <em>comment=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/smtrace.html#Show"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.Show" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#paraview.smtrace.TraceItem" title="paraview.smtrace.TraceItem"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.TraceItem</span></code></a></p>
+<dd><p>Bases: <a class="reference internal" href="#paraview.smtrace.RenderingMixin" title="paraview.smtrace.RenderingMixin"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.RenderingMixin</span></code></a>, <a class="reference internal" href="#paraview.smtrace.TraceItem" title="paraview.smtrace.TraceItem"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.TraceItem</span></code></a></p>
 <p>Traces Show</p>
 <dl class="method">
 <dt id="paraview.smtrace.Show.finalize">
