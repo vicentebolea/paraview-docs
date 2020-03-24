@@ -128,9 +128,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7d711ecc7b9b682862f66163b650fef2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkPVSynchronizedRenderer.html#a7d711ecc7b9b682862f66163b650fef2">Initialize</a> (<a class="el" href="classvtkPVSession.html">vtkPVSession</a> *session)</td></tr>
 <tr class="memdesc:a7d711ecc7b9b682862f66163b650fef2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must be called once to initialize the instance.  <a href="#a7d711ecc7b9b682862f66163b650fef2">More...</a><br /></td></tr>
 <tr class="separator:a7d711ecc7b9b682862f66163b650fef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2717d9df09ba21e3cce67beda5fe61ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkPVSynchronizedRenderer.html#a2717d9df09ba21e3cce67beda5fe61ee">SetPartitionOrdering</a> (<a class="el" href="classvtkPartitionOrderingInterface.html">vtkPartitionOrderingInterface</a> *partitionOrdering)</td></tr>
-<tr class="memdesc:a2717d9df09ba21e3cce67beda5fe61ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">partition ordering that gives processes ordering.  <a href="#a2717d9df09ba21e3cce67beda5fe61ee">More...</a><br /></td></tr>
-<tr class="separator:a2717d9df09ba21e3cce67beda5fe61ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae64ee167d7a3895324ffec376f3ca2b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkPVSynchronizedRenderer.html#ae64ee167d7a3895324ffec376f3ca2b7">SetOrderedCompositingHelper</a> (<a class="el" href="classvtkOrderedCompositingHelper.html">vtkOrderedCompositingHelper</a> *helper)</td></tr>
+<tr class="memdesc:ae64ee167d7a3895324ffec376f3ca2b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to determine sorting order and use ordered compositing.  <a href="#ae64ee167d7a3895324ffec376f3ca2b7">More...</a><br /></td></tr>
+<tr class="separator:ae64ee167d7a3895324ffec376f3ca2b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afeb60640aac4da41d4be20687e26b970"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkPVSynchronizedRenderer.html#afeb60640aac4da41d4be20687e26b970">SetRenderer</a> (<a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/classvtkRenderer.html">vtkRenderer</a> *)</td></tr>
 <tr class="memdesc:afeb60640aac4da41d4be20687e26b970"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the renderer that is being synchronized.  <a href="#afeb60640aac4da41d4be20687e26b970">More...</a><br /></td></tr>
 <tr class="separator:afeb60640aac4da41d4be20687e26b970"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -770,24 +770,24 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a2717d9df09ba21e3cce67beda5fe61ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2717d9df09ba21e3cce67beda5fe61ee">&#9670;&nbsp;</a></span>SetPartitionOrdering()</h2>
+<a id="ae64ee167d7a3895324ffec376f3ca2b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae64ee167d7a3895324ffec376f3ca2b7">&#9670;&nbsp;</a></span>SetOrderedCompositingHelper()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void vtkPVSynchronizedRenderer::SetPartitionOrdering </td>
+          <td class="memname">void vtkPVSynchronizedRenderer::SetOrderedCompositingHelper </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classvtkPartitionOrderingInterface.html">vtkPartitionOrderingInterface</a> *&#160;</td>
-          <td class="paramname"><em>partitionOrdering</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classvtkOrderedCompositingHelper.html">vtkOrderedCompositingHelper</a> *&#160;</td>
+          <td class="paramname"><em>helper</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>partition ordering that gives processes ordering. </p>
-<p>Initial value is a NULL pointer. This is used only when UseOrderedCompositing is true. </p>
+<p>Used to determine sorting order and use ordered compositing. </p>
+<p>Set to nullptr to not use ordered compositing and instead use depth-buffer based compositing, if applicable. </p>
 
 </div>
 </div>
@@ -1407,7 +1407,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html#l00189">189</a> of file <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html">vtkPVSynchronizedRenderer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html#l00190">190</a> of file <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html">vtkPVSynchronizedRenderer.h</a>.</p>
 
 </div>
 </div>
@@ -1431,7 +1431,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html#l00190">190</a> of file <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html">vtkPVSynchronizedRenderer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html#l00191">191</a> of file <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html">vtkPVSynchronizedRenderer.h</a>.</p>
 
 </div>
 </div>
@@ -1455,7 +1455,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html#l00191">191</a> of file <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html">vtkPVSynchronizedRenderer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html#l00192">192</a> of file <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html">vtkPVSynchronizedRenderer.h</a>.</p>
 
 </div>
 </div>
@@ -1479,7 +1479,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html#l00192">192</a> of file <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html">vtkPVSynchronizedRenderer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html#l00193">193</a> of file <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html">vtkPVSynchronizedRenderer.h</a>.</p>
 
 </div>
 </div>
@@ -1503,7 +1503,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html#l00194">194</a> of file <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html">vtkPVSynchronizedRenderer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html#l00195">195</a> of file <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html">vtkPVSynchronizedRenderer.h</a>.</p>
 
 </div>
 </div>
@@ -1527,7 +1527,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html#l00195">195</a> of file <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html">vtkPVSynchronizedRenderer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html#l00196">196</a> of file <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html">vtkPVSynchronizedRenderer.h</a>.</p>
 
 </div>
 </div>
@@ -1551,7 +1551,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html#l00196">196</a> of file <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html">vtkPVSynchronizedRenderer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html#l00197">197</a> of file <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html">vtkPVSynchronizedRenderer.h</a>.</p>
 
 </div>
 </div>
@@ -1575,7 +1575,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html#l00197">197</a> of file <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html">vtkPVSynchronizedRenderer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html#l00198">198</a> of file <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html">vtkPVSynchronizedRenderer.h</a>.</p>
 
 </div>
 </div>
@@ -1599,7 +1599,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html#l00199">199</a> of file <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html">vtkPVSynchronizedRenderer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html#l00200">200</a> of file <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html">vtkPVSynchronizedRenderer.h</a>.</p>
 
 </div>
 </div>
@@ -1623,7 +1623,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html#l00200">200</a> of file <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html">vtkPVSynchronizedRenderer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html#l00201">201</a> of file <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html">vtkPVSynchronizedRenderer.h</a>.</p>
 
 </div>
 </div>
@@ -1647,7 +1647,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html#l00201">201</a> of file <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html">vtkPVSynchronizedRenderer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html#l00202">202</a> of file <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html">vtkPVSynchronizedRenderer.h</a>.</p>
 
 </div>
 </div>
@@ -1671,7 +1671,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html#l00203">203</a> of file <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html">vtkPVSynchronizedRenderer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html#l00204">204</a> of file <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html">vtkPVSynchronizedRenderer.h</a>.</p>
 
 </div>
 </div>
@@ -1695,7 +1695,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html#l00204">204</a> of file <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html">vtkPVSynchronizedRenderer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html#l00205">205</a> of file <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html">vtkPVSynchronizedRenderer.h</a>.</p>
 
 </div>
 </div>
@@ -1719,7 +1719,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html#l00205">205</a> of file <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html">vtkPVSynchronizedRenderer.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html#l00206">206</a> of file <a class="el" href="vtkPVSynchronizedRenderer_8h_source.html">vtkPVSynchronizedRenderer.h</a>.</p>
 
 </div>
 </div>

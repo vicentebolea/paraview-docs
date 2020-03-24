@@ -1,11 +1,8 @@
 <map id="vtkPVRenderViewDataDeliveryManager" name="vtkPVRenderViewDataDeliveryManager">
-<area shape="rect" id="node1" title="vtkPVRenderView specific subclass of vtkPVDataDeliveryManager." alt="" coords="1223,96,1445,138"/>
-<area shape="rect" id="node2" href="$classvtkPVDataDeliveryManager.html" title="manager for data&#45;delivery." alt="" coords="909,104,1111,130"/>
-<area shape="rect" id="node3" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkObject.html" title=" " alt="" coords="533,74,619,101"/>
-<area shape="rect" id="node4" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkObjectBase.html" title=" " alt="" coords="5,53,123,80"/>
-<area shape="rect" id="node8" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkSmartPointerBase.html" title=" " alt="" coords="217,24,377,50"/>
-<area shape="rect" id="node5" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkTimeStamp.html" title=" " alt="" coords="238,158,357,185"/>
-<area shape="rect" id="node6" href="$classvtkPVDataDeliveryManager_1_1vtkInternals.html" title=" " alt="" coords="475,126,677,167"/>
-<area shape="rect" id="node7" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkSmartPointer.html" title=" " alt="" coords="895,24,1125,50"/>
-<area shape="rect" id="node9" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkSmartPointer.html" title=" " alt="" coords="493,24,659,50"/>
+<area shape="rect" id="node1" title="vtkPVRenderView specific subclass of vtkPVDataDeliveryManager." alt="" coords="5,289,228,331"/>
+<area shape="rect" id="node2" href="$classvtkPVDataDeliveryManager.html" title="manager for data&#45;delivery." alt="" coords="154,213,357,240"/>
+<area shape="rect" id="node3" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkObject.html" title=" " alt="" coords="351,102,437,129"/>
+<area shape="rect" id="node4" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkObjectBase.html" title=" " alt="" coords="335,5,453,32"/>
+<area shape="rect" id="node5" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkTimeStamp.html" title=" " alt="" coords="111,5,229,32"/>
+<area shape="rect" id="node6" href="$classvtkPVDataDeliveryManager_1_1vtkInternals.html" title=" " alt="" coords="125,95,327,136"/>
 </map>
