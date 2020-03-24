@@ -125,6 +125,12 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr class="memitem:aec3e1af85996389e15985411510348c4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkSMDomain.html#aec3e1af85996389e15985411510348c4">IsInDomainReturnCodes</a> { <a class="el" href="classvtkSMDomain.html#aec3e1af85996389e15985411510348c4a80b1273ae5097e363a5ecb4537ab122c">NOT_APPLICABLE</a> = -1, 
+<a class="el" href="classvtkSMDomain.html#aec3e1af85996389e15985411510348c4a71c4189ec38582aa2894f980427b1c45">NOT_IN_DOMAIN</a> = 0, 
+<a class="el" href="classvtkSMDomain.html#aec3e1af85996389e15985411510348c4a4079db63c2b3a6a4368f436f56100b2f">IN_DOMAIN</a> = 1
+ }</td></tr>
+<tr class="memdesc:aec3e1af85996389e15985411510348c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return values for <code>IsInDomain</code> calls.  <a href="classvtkSMDomain.html#aec3e1af85996389e15985411510348c4">More...</a><br /></td></tr>
+<tr class="separator:aec3e1af85996389e15985411510348c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a828667e6d6344a327adcc8fd851f0e61"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classvtkSMSessionObject.html">vtkSMSessionObject</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkSMDomain.html#a828667e6d6344a327adcc8fd851f0e61">Superclass</a></td></tr>
 <tr class="separator:a828667e6d6344a327adcc8fd851f0e61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classvtkSMSessionObject"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classvtkSMSessionObject')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classvtkSMSessionObject.html">vtkSMSessionObject</a></td></tr>
@@ -491,6 +497,30 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="aec3e1af85996389e15985411510348c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec3e1af85996389e15985411510348c4">&#9670;&nbsp;</a></span>IsInDomainReturnCodes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classvtkSMDomain.html#aec3e1af85996389e15985411510348c4">vtkSMDomain::IsInDomainReturnCodes</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return values for <code>IsInDomain</code> calls. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aec3e1af85996389e15985411510348c4a80b1273ae5097e363a5ecb4537ab122c"></a>NOT_APPLICABLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aec3e1af85996389e15985411510348c4a71c4189ec38582aa2894f980427b1c45"></a>NOT_IN_DOMAIN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aec3e1af85996389e15985411510348c4a4079db63c2b3a6a4368f436f56100b2f"></a>IN_DOMAIN&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="vtkSMDomain_8h_source.html#l00058">58</a> of file <a class="el" href="vtkSMDomain_8h_source.html">vtkSMDomain.h</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7cc176ac741a72e4715568ec5b5e8a67"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7cc176ac741a72e4715568ec5b5e8a67">&#9670;&nbsp;</a></span>vtkSMDomain()</h2>
@@ -719,6 +749,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Is the (unchecked) value of the property in the domain? Overwritten by sub-classes. </p>
+<p>Returned values as defined in <code>IsInDomainReturnCodes</code>. <code>NOT_APPLICABLE</code> is returned if the domain is not applicable for the property values. <code>NOT_IN_DOMAIN</code> implies that the value is not in domain while <code>IN_DOMAIN</code> implies that the value is acceptable. </p>
 
 <p>Implemented in <a class="el" href="classvtkSMProxyListDomain.html#a347e2432c4fce3b7864d2e3cb0ff2237">vtkSMProxyListDomain</a>, <a class="el" href="classvtkSMSubsetInclusionLatticeDomain.html#a234b72b591becfe1ed34f804c3a7e165">vtkSMSubsetInclusionLatticeDomain</a>, <a class="el" href="classvtkSMEnumerationDomain.html#ac55c315710c3bcf4b7e009911d97156f">vtkSMEnumerationDomain</a>, <a class="el" href="classvtkSMInputArrayDomain.html#afd6f5f5961d2ffcba35c13db095a9c15">vtkSMInputArrayDomain</a>, <a class="el" href="classvtkSMRangeDomainTemplate.html#a7183ce4abab89b011945a00eb45c6eaa">vtkSMRangeDomainTemplate&lt; T &gt;</a>, <a class="el" href="classvtkSMProxyGroupDomain.html#a67edbdaffb4a53600ce7c826a967f778">vtkSMProxyGroupDomain</a>, <a class="el" href="classvtkSMDataTypeDomain.html#acd229ac1416dcc0274db7b8c359a0642">vtkSMDataTypeDomain</a>, <a class="el" href="classvtkSMStringListDomain.html#ab1c13efb31055aefa850fe63917daf80">vtkSMStringListDomain</a>, <a class="el" href="classvtkSMDiscreteDoubleDomain.html#a4b388983d672557f3732ea3f62b5563e">vtkSMDiscreteDoubleDomain</a>, <a class="el" href="classvtkSMFixedTypeDomain.html#aa4f4c40b6f11e2b2d5f50c84cf47e174">vtkSMFixedTypeDomain</a>, <a class="el" href="classvtkSMBooleanDomain.html#abc64a4e6c86dead44220ceed27317848">vtkSMBooleanDomain</a>, and <a class="el" href="classvtkSMIndexSelectionDomain.html#a07b1066328cc10d1d117419342ffe8b9">vtkSMIndexSelectionDomain</a>.</p>
 
@@ -753,7 +784,7 @@ Friends</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classvtkSMEnumerationDomain.html#a1eaacd83167461414311d2ad98b458f8">vtkSMEnumerationDomain</a>, <a class="el" href="classvtkSMRangeDomainTemplate.html#ab4d0b3d0ae804a7eb1432105d7a488ed">vtkSMRangeDomainTemplate&lt; T &gt;</a>, <a class="el" href="classvtkSMSubsetInclusionLatticeDomain.html#acd9cc126905504a12b26d48c04f0d67c">vtkSMSubsetInclusionLatticeDomain</a>, <a class="el" href="classvtkSMArrayListDomain.html#acd1fd1bc169ec1cc3f5d91e29f3ab473">vtkSMArrayListDomain</a>, <a class="el" href="classvtkSMCompositeTreeDomain.html#aed7c84eeab3dfca9398f342a7236da30">vtkSMCompositeTreeDomain</a>, <a class="el" href="classvtkSMBoundsDomain.html#a6a5f7d2b781be3bf56d4bcad22711fd3">vtkSMBoundsDomain</a>, <a class="el" href="classvtkSMFieldDataDomain.html#aff8823a0587d8313d4f03aab27cc5569">vtkSMFieldDataDomain</a>, <a class="el" href="classvtkSMStringListDomain.html#ac6008d2761d43956fdaaf54af8ae6e0e">vtkSMStringListDomain</a>, <a class="el" href="classvtkSMDiscreteDoubleDomain.html#a2a34ec89ae743601d6b96922876bbe00">vtkSMDiscreteDoubleDomain</a>, <a class="el" href="classvtkSMChartSeriesSelectionDomain.html#a3caec98e7844423952c9ae4d67517429">vtkSMChartSeriesSelectionDomain</a>, <a class="el" href="classvtkSMChartUseIndexForAxisDomain.html#a9b0920ebfadfcfba51e0d1398c9ac43d">vtkSMChartUseIndexForAxisDomain</a>, <a class="el" href="classvtkSMChartSeriesListDomain.html#a04a48fc903ff72d2b14c126231ba7ded">vtkSMChartSeriesListDomain</a>, <a class="el" href="classvtkSMDimensionsDomain.html#a8ff9c9a57d3aba5e2d5b81b2b668b698">vtkSMDimensionsDomain</a>, <a class="el" href="classvtkSMNumberOfComponentsDomain.html#a75de99dbc9220e5de1bfe836ced2bc58">vtkSMNumberOfComponentsDomain</a>, <a class="el" href="classvtkSMArrayRangeDomain.html#aedcf4cdde66276a77c1c451dc15b9b1a">vtkSMArrayRangeDomain</a>, <a class="el" href="classvtkSMAMRLevelsDomain.html#a5ae74e7883e4d69b9f5fba8069216e3e">vtkSMAMRLevelsDomain</a>, <a class="el" href="classvtkSMExtentDomain.html#a80e4ff68b8ce9ca0a524b2721a6ebcc3">vtkSMExtentDomain</a>, <a class="el" href="classvtkSMMaterialDomain.html#af22328adae7c0a221ea63521ac7129fd">vtkSMMaterialDomain</a>, <a class="el" href="classvtkSMRepresentedArrayListDomain.html#af14b8341522e9746a6f28e9f0c59ea5d">vtkSMRepresentedArrayListDomain</a>, <a class="el" href="classvtkSMTimeStepIndexDomain.html#acab099d920e273c03c080f2d648ab645">vtkSMTimeStepIndexDomain</a>, <a class="el" href="classvtkSMInputFileNameDomain.html#a90072f53768f2c78369b02f5997bc0e5">vtkSMInputFileNameDomain</a>, <a class="el" href="classvtkSMAnimationFrameWindowDomain.html#adb0872a57efcd412b143d55088c2c381">vtkSMAnimationFrameWindowDomain</a>, <a class="el" href="classvtkSMViewResolutionDomain.html#a576404cf339259cc49a18214a6a5c63e">vtkSMViewResolutionDomain</a>, and <a class="el" href="classvtkSMRendererDomain.html#ad4286c536f0953ef74022d00ef25e3b8">vtkSMRendererDomain</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="vtkSMDomain_8h_source.html#l00066">66</a> of file <a class="el" href="vtkSMDomain_8h_source.html">vtkSMDomain.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkSMDomain_8h_source.html#l00082">82</a> of file <a class="el" href="vtkSMDomain_8h_source.html">vtkSMDomain.h</a>.</p>
 
 </div>
 </div>
@@ -799,7 +830,7 @@ Friends</h2></td></tr>
 
 <p>Set the value of an element of a property from the animation editor. </p>
 
-<p class="definition">Definition at line <a class="el" href="vtkSMDomain_8h_source.html#l00071">71</a> of file <a class="el" href="vtkSMDomain_8h_source.html">vtkSMDomain.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkSMDomain_8h_source.html#l00087">87</a> of file <a class="el" href="vtkSMDomain_8h_source.html">vtkSMDomain.h</a>.</p>
 
 </div>
 </div>
@@ -840,7 +871,7 @@ Friends</h2></td></tr>
 <p>A <a class="el" href="classvtkSMProperty.html" title="superclass for all SM properties">vtkSMProperty</a> is often defined with a default value in the XML itself. </p>
 <p>However, many times, the default value must be determined at run time. To facilitate this, domains can override this method to compute and set the default value for the property. Note that unlike the compile-time default values, the application must explicitly call this method to initialize the property. If <code>use_unchecked_values</code> is true, the property's unchecked values will be changed by this method. Returns 1 if the domain updated the property. Default implementation does nothing. </p>
 
-<p class="definition">Definition at line <a class="el" href="vtkSMDomain_8h_source.html#l00086">86</a> of file <a class="el" href="vtkSMDomain_8h_source.html">vtkSMDomain.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkSMDomain_8h_source.html#l00102">102</a> of file <a class="el" href="vtkSMDomain_8h_source.html">vtkSMDomain.h</a>.</p>
 
 </div>
 </div>
@@ -1095,7 +1126,7 @@ Friends</h2></td></tr>
 <li>domains whose values depend on data (at runtime) will be repopulated with data values when the XML state is loaded. The only exception to this rule is <a class="el" href="classvtkSMProxyListDomain.html" title="union of proxies.">vtkSMProxyListDomain</a> (presently). <a class="el" href="classvtkSMProxyListDomain.html" title="union of proxies.">vtkSMProxyListDomain</a> needs to try to restore proxies (with proper ids) for the domain. </li>
 </ol>
 
-<p class="definition">Definition at line <a class="el" href="vtkSMDomain_8h_source.html#l00154">154</a> of file <a class="el" href="vtkSMDomain_8h_source.html">vtkSMDomain.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkSMDomain_8h_source.html#l00170">170</a> of file <a class="el" href="vtkSMDomain_8h_source.html">vtkSMDomain.h</a>.</p>
 
 </div>
 </div>
@@ -1345,7 +1376,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkSMDomain_8h_source.html#l00214">214</a> of file <a class="el" href="vtkSMDomain_8h_source.html">vtkSMDomain.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkSMDomain_8h_source.html#l00230">230</a> of file <a class="el" href="vtkSMDomain_8h_source.html">vtkSMDomain.h</a>.</p>
 
 </div>
 </div>
@@ -1426,7 +1457,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkSMDomain_8h_source.html#l00166">166</a> of file <a class="el" href="vtkSMDomain_8h_source.html">vtkSMDomain.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkSMDomain_8h_source.html#l00182">182</a> of file <a class="el" href="vtkSMDomain_8h_source.html">vtkSMDomain.h</a>.</p>
 
 </div>
 </div>
@@ -1450,7 +1481,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkSMDomain_8h_source.html#l00270">270</a> of file <a class="el" href="vtkSMDomain_8h_source.html">vtkSMDomain.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkSMDomain_8h_source.html#l00286">286</a> of file <a class="el" href="vtkSMDomain_8h_source.html">vtkSMDomain.h</a>.</p>
 
 </div>
 </div>
@@ -1475,7 +1506,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkSMDomain_8h_source.html#l00262">262</a> of file <a class="el" href="vtkSMDomain_8h_source.html">vtkSMDomain.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkSMDomain_8h_source.html#l00278">278</a> of file <a class="el" href="vtkSMDomain_8h_source.html">vtkSMDomain.h</a>.</p>
 
 </div>
 </div>
@@ -1499,7 +1530,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkSMDomain_8h_source.html#l00263">263</a> of file <a class="el" href="vtkSMDomain_8h_source.html">vtkSMDomain.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkSMDomain_8h_source.html#l00279">279</a> of file <a class="el" href="vtkSMDomain_8h_source.html">vtkSMDomain.h</a>.</p>
 
 </div>
 </div>
@@ -1523,7 +1554,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkSMDomain_8h_source.html#l00264">264</a> of file <a class="el" href="vtkSMDomain_8h_source.html">vtkSMDomain.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkSMDomain_8h_source.html#l00280">280</a> of file <a class="el" href="vtkSMDomain_8h_source.html">vtkSMDomain.h</a>.</p>
 
 </div>
 </div>

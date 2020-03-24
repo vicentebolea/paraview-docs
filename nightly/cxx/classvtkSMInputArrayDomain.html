@@ -95,6 +95,12 @@ Public Types</h2></td></tr>
 <tr class="memitem:a2b93b262acf6357d57988b804e70a9b8"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classvtkSMDomain.html">vtkSMDomain</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkSMInputArrayDomain.html#a2b93b262acf6357d57988b804e70a9b8">Superclass</a></td></tr>
 <tr class="separator:a2b93b262acf6357d57988b804e70a9b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classvtkSMDomain"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classvtkSMDomain')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classvtkSMDomain.html">vtkSMDomain</a></td></tr>
+<tr class="memitem:aec3e1af85996389e15985411510348c4 inherit pub_types_classvtkSMDomain"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkSMDomain.html#aec3e1af85996389e15985411510348c4">IsInDomainReturnCodes</a> { <a class="el" href="classvtkSMDomain.html#aec3e1af85996389e15985411510348c4a80b1273ae5097e363a5ecb4537ab122c">NOT_APPLICABLE</a> = -1, 
+<a class="el" href="classvtkSMDomain.html#aec3e1af85996389e15985411510348c4a71c4189ec38582aa2894f980427b1c45">NOT_IN_DOMAIN</a> = 0, 
+<a class="el" href="classvtkSMDomain.html#aec3e1af85996389e15985411510348c4a4079db63c2b3a6a4368f436f56100b2f">IN_DOMAIN</a> = 1
+ }</td></tr>
+<tr class="memdesc:aec3e1af85996389e15985411510348c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return values for <code>IsInDomain</code> calls.  <a href="classvtkSMDomain.html#aec3e1af85996389e15985411510348c4">More...</a><br /></td></tr>
+<tr class="separator:aec3e1af85996389e15985411510348c4 inherit pub_types_classvtkSMDomain"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a828667e6d6344a327adcc8fd851f0e61 inherit pub_types_classvtkSMDomain"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classvtkSMSessionObject.html">vtkSMSessionObject</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkSMDomain.html#a828667e6d6344a327adcc8fd851f0e61">Superclass</a></td></tr>
 <tr class="separator:a828667e6d6344a327adcc8fd851f0e61 inherit pub_types_classvtkSMDomain"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classvtkSMSessionObject"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classvtkSMSessionObject')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classvtkSMSessionObject.html">vtkSMSessionObject</a></td></tr>
@@ -299,6 +305,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aa96d8f21fdf905258f7e5035a34b94ed"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkSMInputArrayDomain.html#aa96d8f21fdf905258f7e5035a34b94ed">IsAttributeTypeAcceptable</a> (<a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/vtkShaderProgram2_8h.html#a61569f2965b7a369eb10b6d75d410d11">int</a> required_type, <a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/vtkShaderProgram2_8h.html#a61569f2965b7a369eb10b6d75d410d11">int</a> attribute_type, <a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/vtkShaderProgram2_8h.html#a61569f2965b7a369eb10b6d75d410d11">int</a> *acceptable_as_type=NULL)</td></tr>
 <tr class="memdesc:aa96d8f21fdf905258f7e5035a34b94ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to check if a particular attribute-type (<code>attribute_type</code>) will be accepted by this domain with a required attribute type (<code>required_type</code>).  <a href="#aa96d8f21fdf905258f7e5035a34b94ed">More...</a><br /></td></tr>
 <tr class="separator:aa96d8f21fdf905258f7e5035a34b94ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31eff8dd01ad2e04741ea54df60c9b51"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classvtkSMInputArrayDomain.html">vtkSMInputArrayDomain</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkSMInputArrayDomain.html#a31eff8dd01ad2e04741ea54df60c9b51">FindApplicableDomain</a> (<a class="el" href="classvtkSMProperty.html">vtkSMProperty</a> *property)</td></tr>
+<tr class="memdesc:a31eff8dd01ad2e04741ea54df60c9b51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper method find the first <code><a class="el" href="classvtkSMInputArrayDomain.html" title="domain to ensure that input has required types of arrays.">vtkSMInputArrayDomain</a></code> on the <code>property</code> that is acceptable based on the value of the property.  <a href="#a31eff8dd01ad2e04741ea54df60c9b51">More...</a><br /></td></tr>
+<tr class="separator:a31eff8dd01ad2e04741ea54df60c9b51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classvtkSMDomain"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classvtkSMDomain')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classvtkSMDomain.html">vtkSMDomain</a></td></tr>
 <tr class="memitem:aa50978ea7ca268ba7e50c82f00b89c06 inherit pub_static_methods_classvtkSMDomain"><td class="memItemLeft" align="right" valign="top">static <a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/vtkShaderProgram2_8h.html#a61569f2965b7a369eb10b6d75d410d11">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkSMDomain.html#aa50978ea7ca268ba7e50c82f00b89c06">IsTypeOf</a> (const char *<a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/namespacevtkX3D.html#ac6551f7bf833e8254b2b3ecdaea0d210a8e7f81709ed57920a45c02a954726847">type</a>)</td></tr>
 <tr class="separator:aa50978ea7ca268ba7e50c82f00b89c06 inherit pub_static_methods_classvtkSMDomain"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -453,6 +462,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a6c4f43f0777b06b5d6117ce2442c3a65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15f070a1122d17daa6b794bc2190c576"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/namespacevtkX3D.html#ac6551f7bf833e8254b2b3ecdaea0d210a1033bb9cd45a86c85601c24cbbf2fa22">std::vector</a>&lt; <a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/vtkShaderProgram2_8h.html#a61569f2965b7a369eb10b6d75d410d11">int</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkSMInputArrayDomain.html#a15f070a1122d17daa6b794bc2190c576">AcceptableNumbersOfComponents</a></td></tr>
 <tr class="separator:a15f070a1122d17daa6b794bc2190c576"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a0ac3bf4a48afb3e85f5daa91ec8770"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/namespacevtkX3D.html#ac6551f7bf833e8254b2b3ecdaea0d210aff2af282e340f7884417cb571d333ccc">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkSMInputArrayDomain.html#a2a0ac3bf4a48afb3e85f5daa91ec8770">DataType</a></td></tr>
+<tr class="separator:a2a0ac3bf4a48afb3e85f5daa91ec8770"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classvtkSMDomain"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classvtkSMDomain')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classvtkSMDomain.html">vtkSMDomain</a></td></tr>
 <tr class="memitem:ae80a48ef5bf836afca6c731b06d34312 inherit pro_attribs_classvtkSMDomain"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkSMDomain.html#ae80a48ef5bf836afca6c731b06d34312">XMLName</a></td></tr>
 <tr class="separator:ae80a48ef5bf836afca6c731b06d34312 inherit pro_attribs_classvtkSMDomain"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -484,12 +495,13 @@ Protected Attributes</h2></td></tr>
 <p>When enabled, ParaView supports automatic array conversion i.e. extracting components or converting cell data to point data and vice-versa is done implicitly. In that case, <a class="el" href="classvtkSMInputArrayDomain.html" title="domain to ensure that input has required types of arrays.">vtkSMInputArrayDomain</a>'s behavior also changes as appropriate.</p>
 <p>Supported XML attributes: </p><ul>
 <li><code>attribute_type</code> : (optional) value can be 'point', 'cell', 'field', 'vertex', 'edge', 'row', 'none', 'any-except-field', 'any'. If not specified, 'any-except-field' is assumed. This indicates the attribute type for acceptable arrays. </li>
-<li><code>number_of_components</code> : (optional) Indicates the number of components required in arrays that are considered acceptable. 0 (default) indicates any number of components is acceptable. A comma-separated list (e.g., "1" or "1,3,4") of component counts limits acceptable arrays to those with a number of components that appear in the list.</li>
+<li><code>number_of_components</code> : (optional) Indicates the number of components required in arrays that are considered acceptable. 0 (default) indicates any number of components is acceptable. A comma-separated list (e.g., "1" or "1,3,4") of component counts limits acceptable arrays to those with a number of components that appear in the list. </li>
+<li><code>data_type:</code> (optional) when specified must be the class name for data type that this domain is applicable to. This is useful when adding multiple input-array-domains a property with different requirements based on the type (see <code>("filters", "Contour")</code> filter, for example).</li>
 </ul>
 <p>This domain doesn't support any required properties (to help clean old code, we print a warning if any required properties are specified).</p>
 <dl class="section attention"><dt>Attention</dt><dd>Prior to ParaView 5.0, attribute_type="any" meant all attributes excepting field data. For being consistent with general understanding of "any", this has been changed to include field data arrays since 5.0. Use "any-except-field" for cases where the intention is to match any attribute arrays except field data arrays. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="vtkSMInputArrayDomain_8h_source.html#l00074">74</a> of file <a class="el" href="vtkSMInputArrayDomain_8h_source.html">vtkSMInputArrayDomain.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkSMInputArrayDomain_8h_source.html#l00079">79</a> of file <a class="el" href="vtkSMInputArrayDomain_8h_source.html">vtkSMInputArrayDomain.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a2b93b262acf6357d57988b804e70a9b8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2b93b262acf6357d57988b804e70a9b8">&#9670;&nbsp;</a></span>Superclass</h2>
@@ -503,7 +515,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkSMInputArrayDomain_8h_source.html#l00078">78</a> of file <a class="el" href="vtkSMInputArrayDomain_8h_source.html">vtkSMInputArrayDomain.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkSMInputArrayDomain_8h_source.html#l00083">83</a> of file <a class="el" href="vtkSMInputArrayDomain_8h_source.html">vtkSMInputArrayDomain.h</a>.</p>
 
 </div>
 </div>
@@ -531,7 +543,7 @@ Protected Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="ad4f9eeef7c4a8b4d9e296bf3ce149146a1107fef3985d9967ca2b06a7fb5662a9"></a>NUMBER_OF_ATTRIBUTE_TYPES&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="vtkSMInputArrayDomain_8h_source.html#l00116">116</a> of file <a class="el" href="vtkSMInputArrayDomain_8h_source.html">vtkSMInputArrayDomain.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkSMInputArrayDomain_8h_source.html#l00121">121</a> of file <a class="el" href="vtkSMInputArrayDomain_8h_source.html">vtkSMInputArrayDomain.h</a>.</p>
 
 </div>
 </div>
@@ -1005,6 +1017,35 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a31eff8dd01ad2e04741ea54df60c9b51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31eff8dd01ad2e04741ea54df60c9b51">&#9670;&nbsp;</a></span>FindApplicableDomain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classvtkSMInputArrayDomain.html">vtkSMInputArrayDomain</a>* vtkSMInputArrayDomain::FindApplicableDomain </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvtkSMProperty.html">vtkSMProperty</a> *&#160;</td>
+          <td class="paramname"><em>property</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Helper method find the first <code><a class="el" href="classvtkSMInputArrayDomain.html" title="domain to ensure that input has required types of arrays.">vtkSMInputArrayDomain</a></code> on the <code>property</code> that is acceptable based on the value of the property. </p>
+<p>The property is typically <code><a class="el" href="classvtkSMInputProperty.html" title="proxy representing inputs to a filter">vtkSMInputProperty</a></code>. If none of the domains applicable, this will simply return the first <a class="el" href="classvtkSMInputArrayDomain.html" title="domain to ensure that input has required types of arrays.">vtkSMInputArrayDomain</a> that is found. </p>
+
+</div>
+</div>
 <a id="a41a269a05bed22606f5a6c5958d0d66d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a41a269a05bed22606f5a6c5958d0d66d">&#9670;&nbsp;</a></span>SetAttributeType() <span class="overload">[1/2]</span></h2>
 
@@ -1175,7 +1216,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkSMInputArrayDomain_8h_source.html#l00177">177</a> of file <a class="el" href="vtkSMInputArrayDomain_8h_source.html">vtkSMInputArrayDomain.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkSMInputArrayDomain_8h_source.html#l00190">190</a> of file <a class="el" href="vtkSMInputArrayDomain_8h_source.html">vtkSMInputArrayDomain.h</a>.</p>
 
 </div>
 </div>
@@ -1199,7 +1240,31 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkSMInputArrayDomain_8h_source.html#l00178">178</a> of file <a class="el" href="vtkSMInputArrayDomain_8h_source.html">vtkSMInputArrayDomain.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkSMInputArrayDomain_8h_source.html#l00191">191</a> of file <a class="el" href="vtkSMInputArrayDomain_8h_source.html">vtkSMInputArrayDomain.h</a>.</p>
+
+</div>
+</div>
+<a id="a2a0ac3bf4a48afb3e85f5daa91ec8770"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a0ac3bf4a48afb3e85f5daa91ec8770">&#9670;&nbsp;</a></span>DataType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/namespacevtkX3D.html#ac6551f7bf833e8254b2b3ecdaea0d210aff2af282e340f7884417cb571d333ccc">std::string</a> vtkSMInputArrayDomain::DataType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="vtkSMInputArrayDomain_8h_source.html#l00192">192</a> of file <a class="el" href="vtkSMInputArrayDomain_8h_source.html">vtkSMInputArrayDomain.h</a>.</p>
 
 </div>
 </div>
