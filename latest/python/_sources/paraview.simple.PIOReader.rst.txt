@@ -19,7 +19,17 @@ Data Descriptors
        ASCII .pio file describes locations of data files,
        type and order of data written to the files.
    
+   LoadTracers
+       This property determines if tracer data is read into a second unstructured grid.
+   
+   LoadvariablesasdoublesFloat64
+       This property determines if the AMR and tracer variable data is read as 64 bit float.
+   
    TimestepValues
+   
+   UseHyperTreeGridHTGforAMRMesh
+       This property determines if AMR in the PIO file is created
+       as a hypertree grid rather than as an unstructured grid.
    
    
 
