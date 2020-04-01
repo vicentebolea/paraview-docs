@@ -485,6 +485,7 @@ $(function() {
 : <a class="el" href="classpqConsoleWidget.html#a0e198a0ddb37507190d1cb982ea4af7c">pqConsoleWidget</a>
 , <a class="el" href="classpqHighlightablePushButton.html#aed406fc13315f4e238b3637d67d00ed3">pqHighlightablePushButton</a>
 , <a class="el" href="classpqHighlightableToolButton.html#a7c9bf2001e7e5ec7c3f7add8ef50cf3f">pqHighlightableToolButton</a>
+, <a class="el" href="classpqLogViewerWindow.html#ae8a59dab9ccc393a951e8266674da05a">pqLogViewerWindow</a>
 , <a class="el" href="classpqOutputWidget.html#a78087eea97ede3fe1816ee7461e8bbb5">pqOutputWidget</a>
 , <a class="el" href="classpqPropertyLinks.html#a73b7052d4157f015179e61f877120371">pqPropertyLinks</a>
 , <a class="el" href="classpqProxiesWidget.html#a0e330a751dbd53c4e49726646033d32e">pqProxiesWidget</a>
@@ -627,6 +628,9 @@ $(function() {
 <li>ClearLineThicknesses()
 : <a class="el" href="classvtkXYChartRepresentation.html#a8cd7e487e2d1db35ffe421495cb0efd5">vtkXYChartRepresentation</a>
 </li>
+<li>ClearLogs()
+: <a class="el" href="classvtkLogRecorder.html#ac0e490a113ef573ae0a7c83bce1f984d">vtkLogRecorder</a>
+</li>
 <li>ClearMarkerSizes()
 : <a class="el" href="classvtkXYChartRepresentation.html#a193921766fc46e2de9f3e0e9e3a45c00">vtkXYChartRepresentation</a>
 </li>
@@ -749,6 +753,9 @@ $(function() {
 <li>Close()
 : <a class="el" href="classvtkCSVExporter.html#af8eff1ab7bfbccbeb46f43ad1d95a659">vtkCSVExporter</a>
 </li>
+<li>closed()
+: <a class="el" href="classpqLogViewerWidget.html#a348e42d0c4492aaf044d2dbe74052343">pqLogViewerWidget</a>
+</li>
 <li>ClosedFocalPathOff()
 : <a class="el" href="classvtkCameraInterpolator2.html#aef5d546ff2f16d842335c9a304ab33bf">vtkCameraInterpolator2</a>
 </li>
@@ -769,6 +776,7 @@ $(function() {
 , <a class="el" href="classpqMainWindowEventManager.html#a17b3f7cc91d2642bb8f2bcd80742431f">pqMainWindowEventManager</a>
 , <a class="el" href="classpqPresetDialog.html#a259d53755a5afc9d597f5b42f909ec53">pqPresetDialog</a>
 , <a class="el" href="classpqPythonScriptEditor.html#a5f080b9664a7ce2e5f3dd67a87766dfb">pqPythonScriptEditor</a>
+, <a class="el" href="classpqSingleLogViewerWidget.html#a1b70e03f830e2bedbe10a2cbefd98759">pqSingleLogViewerWidget</a>
 </li>
 <li>CloseSession()
 : <a class="el" href="classvtkSMSessionClient.html#aae0a227f9899892cfd96767df1e13a82">vtkSMSessionClient</a>
@@ -1428,6 +1436,7 @@ $(function() {
 , <a class="el" href="classvtkPVGenericAttributeInformation.html#af923635461e1b17ebfa95d8e1ad7df4a">vtkPVGenericAttributeInformation</a>
 , <a class="el" href="classvtkPVInformation.html#aeb2a27a3f79a327aac6bbe459a5d9eb9">vtkPVInformation</a>
 , <a class="el" href="classvtkPVLastSelectionInformation.html#a3f4b613d18cf7332d141a3584cb14cd1">vtkPVLastSelectionInformation</a>
+, <a class="el" href="classvtkPVLogInformation.html#a816631e70755d8307d2a25c3361994f5">vtkPVLogInformation</a>
 , <a class="el" href="classvtkPVMemoryUseInformation.html#a71864844dd66175f21e1cf3d1dd547b7">vtkPVMemoryUseInformation</a>
 , <a class="el" href="classvtkPVMultiClientsInformation.html#a9febaa88966e55506eafb8a27c75fb82">vtkPVMultiClientsInformation</a>
 , <a class="el" href="classvtkPVOpenGLInformation.html#a9f02c9c702239c8b8a85d51bcf8328e1">vtkPVOpenGLInformation</a>
@@ -1465,6 +1474,7 @@ $(function() {
 , <a class="el" href="classvtkPVEnvironmentInformation.html#a6234cfccb1162bac6de26c1cf5756001">vtkPVEnvironmentInformation</a>
 , <a class="el" href="classvtkPVFileInformation.html#a778af6cf23fd7a5881f417869d392e42">vtkPVFileInformation</a>
 , <a class="el" href="classvtkPVInformation.html#a20b6acea4d7ddad5948e4896a3cc7858">vtkPVInformation</a>
+, <a class="el" href="classvtkPVLogInformation.html#a9ee20832f700e9daa40b8c057f2324ae">vtkPVLogInformation</a>
 , <a class="el" href="classvtkPVMemoryUseInformation.html#a324febf6adb5ba9010988409d7d957a0">vtkPVMemoryUseInformation</a>
 , <a class="el" href="classvtkPVMultiClientsInformation.html#a2694a1df1410b85778ca7f3ea81bda05">vtkPVMultiClientsInformation</a>
 , <a class="el" href="classvtkPVOpenGLInformation.html#a3d7b4cf36c79d13cfa3b413eeb8910a2">vtkPVOpenGLInformation</a>
@@ -1500,6 +1510,7 @@ $(function() {
 : <a class="el" href="classvtkPVClassNameInformation.html#ab8fd8460fb51bf3e83154eb64046d657">vtkPVClassNameInformation</a>
 , <a class="el" href="classvtkPVDataInformation.html#a4eb54d4ec6cef130ac1e377e07b2a485">vtkPVDataInformation</a>
 , <a class="el" href="classvtkPVInformation.html#a0b59e754e808fa350fd9ed96214374a8">vtkPVInformation</a>
+, <a class="el" href="classvtkPVLogInformation.html#af1c9c0145f19871891e79069a7d0341b">vtkPVLogInformation</a>
 , <a class="el" href="classvtkPVProminentValuesInformation.html#aeac5a43cc441d8c5140e92d90647792d">vtkPVProminentValuesInformation</a>
 , <a class="el" href="classvtkPVTemporalDataInformation.html#a0a141a9369f2d8d7e0c933437e8c2fbc">vtkPVTemporalDataInformation</a>
 , <a class="el" href="classvtkPVTimerInformation.html#af0bb69f742a40a0377aca01f8fb529d9">vtkPVTimerInformation</a>
@@ -1508,6 +1519,7 @@ $(function() {
 : <a class="el" href="classvtkPVClassNameInformation.html#ab1ecc0e8ca5ca580209d721b60b2eedf">vtkPVClassNameInformation</a>
 , <a class="el" href="classvtkPVDataInformation.html#a274572dbb17857d181648dad10ec4fcd">vtkPVDataInformation</a>
 , <a class="el" href="classvtkPVInformation.html#a25672e1a90b28a2bbf2ed6c91e8a3a92">vtkPVInformation</a>
+, <a class="el" href="classvtkPVLogInformation.html#a51173447a302b48f710a42056fbd4093">vtkPVLogInformation</a>
 , <a class="el" href="classvtkPVProminentValuesInformation.html#a87739f88ef753502cd07d5c592354d12">vtkPVProminentValuesInformation</a>
 , <a class="el" href="classvtkPVTemporalDataInformation.html#aaf7864db35bd44f55787fce91dfd8165">vtkPVTemporalDataInformation</a>
 , <a class="el" href="classvtkPVTimerInformation.html#ab8072a8956fe590252e8753b9bfbafc4">vtkPVTimerInformation</a>
@@ -1547,6 +1559,7 @@ $(function() {
 , <a class="el" href="classvtkPVEnvironmentInformation.html#a4a2e0fb8cc04787a015d195daf85be9f">vtkPVEnvironmentInformation</a>
 , <a class="el" href="classvtkPVFileInformation.html#af7e5b272dce84368d3da2799a5542945">vtkPVFileInformation</a>
 , <a class="el" href="classvtkPVInformation.html#a99faf61c29f91d0301f67cc5030d5a87">vtkPVInformation</a>
+, <a class="el" href="classvtkPVLogInformation.html#a96bf5b8ab3e0b3b5f6dfa44000a15cf9">vtkPVLogInformation</a>
 , <a class="el" href="classvtkPVMemoryUseInformation.html#a6c21be76b050e5dfe3e240b58d276f6c">vtkPVMemoryUseInformation</a>
 , <a class="el" href="classvtkPVMultiClientsInformation.html#ad898363f9d17b37d40dfd699f47286ee">vtkPVMultiClientsInformation</a>
 , <a class="el" href="classvtkPVOpenGLInformation.html#a2468f149376155a6ecdeba5474c3d524">vtkPVOpenGLInformation</a>
@@ -1686,7 +1699,7 @@ $(function() {
 : <a class="el" href="classvtkSMProperty.html#a3e8a6810a4353540016d31ba4412eb2e">vtkSMProperty</a>
 </li>
 <li>CreateOrbit()
-: <a class="el" href="classvtkSMUtilities.html#a97809ca73723885765a0b035b1db7b0f">vtkSMUtilities</a>
+: <a class="el" href="classvtkSMUtilities.html#af7400c13cc08ce6d808c221b1cbd4d04">vtkSMUtilities</a>
 </li>
 <li>CreateOutputPorts()
 : <a class="el" href="classvtkSICompoundSourceProxy.html#a4b021b4a012004c707091a0ad66b89ea">vtkSICompoundSourceProxy</a>
@@ -1751,7 +1764,7 @@ $(function() {
 : <a class="el" href="classvtkSMProxy.html#a7e1c212471e04a9524594877b87fb436">vtkSMProxy</a>
 </li>
 <li>createTab()
-: <a class="el" href="classpqTabbedMultiViewWidget.html#a9562255bf64175404ea15350eece5ac9">pqTabbedMultiViewWidget</a>
+: <a class="el" href="classpqTabbedMultiViewWidget.html#a47abce1207a2856f34ba92da549eb70a">pqTabbedMultiViewWidget</a>
 </li>
 <li>createTrack()
 : <a class="el" href="classpqAnimationViewWidget.html#aa8dfa113490cee18eaf8f9f4285f31e3">pqAnimationViewWidget</a>
@@ -1825,7 +1838,7 @@ $(function() {
 , <a class="el" href="classpqStandardPropertyWidgetInterface.html#a1c95b6df9dd9d9e9e54956c58d6244bb">pqStandardPropertyWidgetInterface</a>
 </li>
 <li>CreateWriter()
-: <a class="el" href="classvtkSMWriterFactory.html#ac1d231396edcab2e47858afba3c55140">vtkSMWriterFactory</a>
+: <a class="el" href="classvtkSMWriterFactory.html#a3fdfcdc8605f49a68b22028a3f5d0feb">vtkSMWriterFactory</a>
 </li>
 <li>CreateWriters()
 : <a class="el" href="classvtkXMLPVDWriter.html#a9bf3bc05cc3f0aa39316a88ebe6b9f30">vtkXMLPVDWriter</a>
@@ -1840,7 +1853,7 @@ $(function() {
 : <a class="el" href="classpqColorAnnotationsWidget.html#a96fa8792031feebe8f6e34a3f2fc4386">pqColorAnnotationsWidget</a>
 </li>
 <li>currentChanged()
-: <a class="el" href="classpqIndexSelectionWidget.html#abf9d08158960cc8779ddf737e8960092">pqIndexSelectionWidget</a>
+: <a class="el" href="classpqIndexSelectionWidget.html#a9d7ceea38ef79b18bccbd3b40b2f3445">pqIndexSelectionWidget</a>
 </li>
 <li>currentConditionType()
 : <a class="el" href="classpqQueryClauseWidget.html#aecd1130428e3da15a8ad2ed0ddba1f3c">pqQueryClauseWidget</a>
@@ -2271,7 +2284,7 @@ $(function() {
 : <a class="el" href="classvtkRedistributePolyData_1_1vtkCommSched.html#a98058bb25119e4e005d003aac5b73736">vtkRedistributePolyData::vtkCommSched</a>
 </li>
 <li>vtkCommunicationErrorCatcher()
-: <a class="el" href="classvtkCommunicationErrorCatcher.html#a00cac377574fe716c5b47853b8100e88">vtkCommunicationErrorCatcher</a>
+: <a class="el" href="classvtkCommunicationErrorCatcher.html#aebe9eb362e86c01d7b2c81db795424d5">vtkCommunicationErrorCatcher</a>
 </li>
 <li>vtkCompleteArrays()
 : <a class="el" href="classvtkCompleteArrays.html#ac6657423df551480f6254e152644fdde">vtkCompleteArrays</a>
@@ -2532,7 +2545,7 @@ $(function() {
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.15 on Mon Mar 30 2020
+</a> 1.8.15 on Tue Mar 31 2020
 </small></address>
 <!-- KW:BEGIN -->
 <!-- this adds the version selection header -->

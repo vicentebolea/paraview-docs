@@ -1,5 +1,5 @@
 <map id="pqReaction" name="pqReaction">
-<area shape="rect" id="node1" title="This is a superclass just to make it easier to collect all such reactions." alt="" coords="5,1521,100,1548"/>
+<area shape="rect" id="node1" title="This is a superclass just to make it easier to collect all such reactions." alt="" coords="5,1547,100,1573"/>
 <area shape="rect" id="node2" href="$classpqAboutDialogReaction.html" title="pqAboutDialogReaction used to show the standard about dialog for the application." alt="" coords="190,5,365,32"/>
 <area shape="rect" id="node3" href="$classpqAddToFavoritesReaction.html" title="Reaction to add selected filter in favorites." alt="" coords="181,56,373,83"/>
 <area shape="rect" id="node4" href="$classpqApplicationSettingsReaction.html" title="pqApplicationSettingsReaction is a reaction to popup the application settings dialog." alt="" coords="167,107,387,133"/>
@@ -37,35 +37,36 @@
 <area shape="rect" id="node37" href="$classpqLoadRestoreWindowLayoutReaction.html" title="Reaction to support saving/restoring main window geometry/layout." alt="" coords="170,1775,385,1817"/>
 <area shape="rect" id="node38" href="$classpqLoadStateReaction.html" title=" " alt="" coords="198,1841,357,1868"/>
 <area shape="rect" id="node39" href="$classpqLockPanelsReaction.html" title="Reaction to toggle locking of dockable panels." alt="" coords="194,1892,361,1919"/>
-<area shape="rect" id="node40" href="$classpqMasterOnlyReaction.html" title="This is a superclass just to make it easier to collect all such reactions." alt="" coords="193,1943,361,1969"/>
-<area shape="rect" id="node47" href="$classpqReloadFilesReaction.html" title="pqReloadFilesReaction adds handler code to reload the active reader." alt="" coords="194,1993,361,2020"/>
-<area shape="rect" id="node48" href="$classpqRenameProxyReaction.html" title="Reaction for renaming a proxy." alt="" coords="185,2044,369,2071"/>
-<area shape="rect" id="node49" href="$classpqResetDefaultSettingsReaction.html" title="reaction to restore user settings to default." alt="" coords="162,2095,393,2121"/>
-<area shape="rect" id="node50" href="$classpqResetScalarRangeReaction.html" title="Reaction to reset the active lookup table&#39;s range to match the active representation." alt="" coords="172,2145,383,2172"/>
-<area shape="rect" id="node51" href="$classpqSaveAnimationGeometryReaction.html" title="Reaction to save animation geometry." alt="" coords="148,2196,407,2223"/>
-<area shape="rect" id="node52" href="$classpqSaveAnimationReaction.html" title="Reaction to save animation." alt="" coords="181,2247,374,2273"/>
-<area shape="rect" id="node53" href="$classpqSaveDataReaction.html" title="Reaction to save data files." alt="" coords="199,2297,356,2324"/>
-<area shape="rect" id="node54" href="$classpqSaveScreenshotReaction.html" title="Reaction to save a screenshot." alt="" coords="178,2348,377,2375"/>
-<area shape="rect" id="node55" href="$classpqSaveStateReaction.html" title="Reaction for saving state file." alt="" coords="197,2399,357,2425"/>
-<area shape="rect" id="node56" href="$classpqScalarBarVisibilityReaction.html" title="Reaction to toggle scalar bar visibility." alt="" coords="171,2449,384,2476"/>
-<area shape="rect" id="node57" href="$classpqSelectionReaction.html" title="Generric reaction for creating selections on views." alt="" coords="200,2500,355,2527"/>
-<area shape="rect" id="node60" href="$classpqServerConnectReaction.html" title="Reaction for connecting to a server." alt="" coords="183,2551,372,2577"/>
-<area shape="rect" id="node61" href="$classpqServerDisconnectReaction.html" title="Reaction to disconnect from a server." alt="" coords="173,2601,381,2628"/>
-<area shape="rect" id="node62" href="$classpqSetMainWindowTitleReaction.html" title="pqSetMainWindowTitleReaction is the reaction that popups the Set Window Title Dialog allowing the use..." alt="" coords="164,2652,391,2679"/>
-<area shape="rect" id="node63" href="$classpqShowHideAllReaction.html" title="Reaction to show or hide all sources output ports." alt="" coords="189,2703,365,2729"/>
-<area shape="rect" id="node64" href="$classpqTemporalExportReaction.html" title="Reaction to export a script that will produce configured temporal data products simultaneously." alt="" coords="179,2753,375,2780"/>
-<area shape="rect" id="node65" href="$classpqTimerLogReaction.html" title="Reaction for showing the timer log dialog." alt="" coords="200,2804,355,2831"/>
-<area shape="rect" id="node66" href="$classpqToggleInteractionViewMode.html" title="pqToggleInteractionViewMode is a reaction that toggle 2D/3D interaction mode" alt="" coords="169,2855,386,2881"/>
-<area shape="rect" id="node67" href="$classpqTraceReaction.html" title="Reaction for application python start/stop trace." alt="" coords="213,2905,341,2932"/>
-<area shape="rect" id="node68" href="$classpqUndoRedoReaction.html" title="Reaction for application undo&#45;redo." alt="" coords="197,2956,357,2983"/>
-<area shape="rect" id="node69" href="$classpqUseSeparateColorMapReaction.html" title="Reaction to toggle the use of separated color map for an array in a representation." alt="" coords="158,3007,397,3033"/>
+<area shape="rect" id="node40" href="$classpqLogViewerReaction.html" title="Reaction for showing the log viewer." alt="" coords="196,1943,359,1969"/>
+<area shape="rect" id="node41" href="$classpqMasterOnlyReaction.html" title="This is a superclass just to make it easier to collect all such reactions." alt="" coords="193,1993,361,2020"/>
+<area shape="rect" id="node48" href="$classpqReloadFilesReaction.html" title="pqReloadFilesReaction adds handler code to reload the active reader." alt="" coords="194,2044,361,2071"/>
+<area shape="rect" id="node49" href="$classpqRenameProxyReaction.html" title="Reaction for renaming a proxy." alt="" coords="185,2095,369,2121"/>
+<area shape="rect" id="node50" href="$classpqResetDefaultSettingsReaction.html" title="reaction to restore user settings to default." alt="" coords="162,2145,393,2172"/>
+<area shape="rect" id="node51" href="$classpqResetScalarRangeReaction.html" title="Reaction to reset the active lookup table&#39;s range to match the active representation." alt="" coords="172,2196,383,2223"/>
+<area shape="rect" id="node52" href="$classpqSaveAnimationGeometryReaction.html" title="Reaction to save animation geometry." alt="" coords="148,2247,407,2273"/>
+<area shape="rect" id="node53" href="$classpqSaveAnimationReaction.html" title="Reaction to save animation." alt="" coords="181,2297,374,2324"/>
+<area shape="rect" id="node54" href="$classpqSaveDataReaction.html" title="Reaction to save data files." alt="" coords="199,2348,356,2375"/>
+<area shape="rect" id="node55" href="$classpqSaveScreenshotReaction.html" title="Reaction to save a screenshot." alt="" coords="178,2399,377,2425"/>
+<area shape="rect" id="node56" href="$classpqSaveStateReaction.html" title="Reaction for saving state file." alt="" coords="197,2449,357,2476"/>
+<area shape="rect" id="node57" href="$classpqScalarBarVisibilityReaction.html" title="Reaction to toggle scalar bar visibility." alt="" coords="171,2500,384,2527"/>
+<area shape="rect" id="node58" href="$classpqSelectionReaction.html" title="Generric reaction for creating selections on views." alt="" coords="200,2551,355,2577"/>
+<area shape="rect" id="node61" href="$classpqServerConnectReaction.html" title="Reaction for connecting to a server." alt="" coords="183,2601,372,2628"/>
+<area shape="rect" id="node62" href="$classpqServerDisconnectReaction.html" title="Reaction to disconnect from a server." alt="" coords="173,2652,381,2679"/>
+<area shape="rect" id="node63" href="$classpqSetMainWindowTitleReaction.html" title="pqSetMainWindowTitleReaction is the reaction that popups the Set Window Title Dialog allowing the use..." alt="" coords="164,2703,391,2729"/>
+<area shape="rect" id="node64" href="$classpqShowHideAllReaction.html" title="Reaction to show or hide all sources output ports." alt="" coords="189,2753,365,2780"/>
+<area shape="rect" id="node65" href="$classpqTemporalExportReaction.html" title="Reaction to export a script that will produce configured temporal data products simultaneously." alt="" coords="179,2804,375,2831"/>
+<area shape="rect" id="node66" href="$classpqTimerLogReaction.html" title="Reaction for showing the timer log dialog." alt="" coords="200,2855,355,2881"/>
+<area shape="rect" id="node67" href="$classpqToggleInteractionViewMode.html" title="pqToggleInteractionViewMode is a reaction that toggle 2D/3D interaction mode" alt="" coords="169,2905,386,2932"/>
+<area shape="rect" id="node68" href="$classpqTraceReaction.html" title="Reaction for application python start/stop trace." alt="" coords="213,2956,341,2983"/>
+<area shape="rect" id="node69" href="$classpqUndoRedoReaction.html" title="Reaction for application undo&#45;redo." alt="" coords="197,3007,357,3033"/>
+<area shape="rect" id="node70" href="$classpqUseSeparateColorMapReaction.html" title="Reaction to toggle the use of separated color map for an array in a representation." alt="" coords="158,3057,397,3084"/>
 <area shape="rect" id="node13" href="$classpqCatalystContinueReaction.html" title="Reaction for setting a breakpoint to Catalyst CoProcessing Engine for Live&#45;Data Visualization." alt="" coords="469,520,675,547"/>
-<area shape="rect" id="node41" href="$classpqMacroReaction.html" title="Reaction for creating or deleting a python macro." alt="" coords="505,1816,639,1843"/>
-<area shape="rect" id="node42" href="$classpqManageCustomFiltersReaction.html" title="Reaction for showing the custom&#45;filter manager dialog." alt="" coords="455,1867,689,1893"/>
-<area shape="rect" id="node43" href="$classpqManageFavoritesReaction.html" title="pqManageFavoritesReaction is the reaction to pop&#45;up the favorites manager dialog." alt="" coords="470,1917,674,1944"/>
-<area shape="rect" id="node44" href="$classpqManageLinksReaction.html" title="pqManageLinksReaction is the reaction to pop&#45;up the links manager dialog." alt="" coords="483,1968,661,1995"/>
-<area shape="rect" id="node45" href="$classpqManagePluginsReaction.html" title="pqManagePluginsReaction is the reaction to pop&#45;up the plugins manager dialog." alt="" coords="476,2019,668,2045"/>
-<area shape="rect" id="node46" href="$classpqTestingReaction.html" title="pqTestingReaction can be used to recording or playing back tests." alt="" coords="502,2069,642,2096"/>
-<area shape="rect" id="node58" href="$classpqChartSelectionReaction.html" title="Reaction for creating selections on chart views." alt="" coords="477,2475,667,2501"/>
-<area shape="rect" id="node59" href="$classpqRenderViewSelectionReaction.html" title="pqRenderViewSelectionReaction handles various selection modes available on RenderViews." alt="" coords="457,2525,687,2552"/>
+<area shape="rect" id="node42" href="$classpqMacroReaction.html" title="Reaction for creating or deleting a python macro." alt="" coords="505,1867,639,1893"/>
+<area shape="rect" id="node43" href="$classpqManageCustomFiltersReaction.html" title="Reaction for showing the custom&#45;filter manager dialog." alt="" coords="455,1917,689,1944"/>
+<area shape="rect" id="node44" href="$classpqManageFavoritesReaction.html" title="pqManageFavoritesReaction is the reaction to pop&#45;up the favorites manager dialog." alt="" coords="470,1968,674,1995"/>
+<area shape="rect" id="node45" href="$classpqManageLinksReaction.html" title="pqManageLinksReaction is the reaction to pop&#45;up the links manager dialog." alt="" coords="483,2019,661,2045"/>
+<area shape="rect" id="node46" href="$classpqManagePluginsReaction.html" title="pqManagePluginsReaction is the reaction to pop&#45;up the plugins manager dialog." alt="" coords="476,2069,668,2096"/>
+<area shape="rect" id="node47" href="$classpqTestingReaction.html" title="pqTestingReaction can be used to recording or playing back tests." alt="" coords="502,2120,642,2147"/>
+<area shape="rect" id="node59" href="$classpqChartSelectionReaction.html" title="Reaction for creating selections on chart views." alt="" coords="477,2525,667,2552"/>
+<area shape="rect" id="node60" href="$classpqRenderViewSelectionReaction.html" title="pqRenderViewSelectionReaction handles various selection modes available on RenderViews." alt="" coords="457,2576,687,2603"/>
 </map>
