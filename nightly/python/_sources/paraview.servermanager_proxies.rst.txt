@@ -100,6 +100,7 @@ Proxies generated for server side objects under :doc:`paraview.simple`
     paraview.simple.DateToNumeric
     paraview.simple.Decimate
     paraview.simple.DecimatePolyline
+    paraview.simple.DeflectNormals
     paraview.simple.Delaunay2D
     paraview.simple.Delaunay3D
     paraview.simple.DescriptiveStatistics
@@ -619,6 +620,7 @@ Proxies generated for server side objects under :doc:`paraview.simple`
     DateToNumeric
     Decimate
     DecimatePolyline
+    DeflectNormals
     Delaunay2D
     Delaunay3D
     DescriptiveStatistics
