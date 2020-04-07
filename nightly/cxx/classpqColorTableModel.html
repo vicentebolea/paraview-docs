@@ -37,6 +37,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-slots">Protected Slots</a> &#124;
 <a href="classpqColorTableModel-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">pqColorTableModel Class Reference</div>  </div>
@@ -66,8 +67,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7f7081ce474681d6643356bccfac961f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6e6398078c9cb52c47494241c0cf008"><td class="memItemLeft" align="right" valign="top">QVariant&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpqColorTableModel.html#ab6e6398078c9cb52c47494241c0cf008">headerData</a> (<a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/vtkShaderProgram2_8h.html#a61569f2965b7a369eb10b6d75d410d11">int</a> section, Qt::Orientation <a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/namespacevtkX3D.html#ac6551f7bf833e8254b2b3ecdaea0d210a4c110580c6100be1551bd4fdb4518204">orientation</a>, <a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/vtkShaderProgram2_8h.html#a61569f2965b7a369eb10b6d75d410d11">int</a> role) const override</td></tr>
 <tr class="separator:ab6e6398078c9cb52c47494241c0cf008"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69393abe8f34294bcd4107c15b6c12f1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpqColorTableModel.html#a69393abe8f34294bcd4107c15b6c12f1">refresh</a> ()</td></tr>
-<tr class="separator:a69393abe8f34294bcd4107c15b6c12f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-slots"></a>
+Protected Slots</h2></td></tr>
+<tr class="memitem:a63d197c0678571b3877ea735eee23a45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpqColorTableModel.html#a63d197c0678571b3877ea735eee23a45">controlPointsChanged</a> ()</td></tr>
+<tr class="separator:a63d197c0678571b3877ea735eee23a45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2fba2eba1fe9e2bbf5ee62ece73d005"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpqColorTableModel.html#af2fba2eba1fe9e2bbf5ee62ece73d005">updatePoint</a> (const QModelIndex &amp;idx)</td></tr>
+<tr class="separator:af2fba2eba1fe9e2bbf5ee62ece73d005"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -330,8 +336,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a69393abe8f34294bcd4107c15b6c12f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69393abe8f34294bcd4107c15b6c12f1">&#9670;&nbsp;</a></span>refresh()</h2>
+<a id="a63d197c0678571b3877ea735eee23a45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63d197c0678571b3877ea735eee23a45">&#9670;&nbsp;</a></span>controlPointsChanged</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -340,7 +346,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void pqColorTableModel::refresh </td>
+          <td class="memname">void pqColorTableModel::controlPointsChanged </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -348,7 +354,33 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af2fba2eba1fe9e2bbf5ee62ece73d005"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2fba2eba1fe9e2bbf5ee62ece73d005">&#9670;&nbsp;</a></span>updatePoint</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pqColorTableModel::updatePoint </td>
+          <td>(</td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>idx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">slot</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -364,7 +396,7 @@ Public Member Functions</h2></td></tr>
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.15 on Mon Apr 6 2020
+</a> 1.8.15 on Tue Apr 7 2020
 </small></address>
 <!-- KW:BEGIN -->
 <!-- this adds the version selection header -->
