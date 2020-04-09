@@ -60,7 +60,13 @@ Data Descriptors
        random sample of the input, ignoring Offset (fast - O(sample size)).
        Spatially Stratified Random Sampling is a variant of random sampling
        that splits the points into equal sized spatial strata before randomly
-       sampling (slow - O(N log N)).
+       sampling (slow - O(N log N)). The Uniform Spatial Distribution (Bound
+       based) samples points using random poisitions inside the bounds of
+       the data set and a point locator. The Uniform Spatial Distribution
+       (Surface Sampling) samples points randomly via an inverse transform on
+       surface area of each cell (3D cells are ignored). The Uniform Spatial
+       Distribution (Volume Sampling) samples points randomly sampled via an
+       inverse transform on volume area of each cell (2D cells are ignored).
    
    SingleVertexPerCell
        Tell filter to only generate one vertex per cell instead
