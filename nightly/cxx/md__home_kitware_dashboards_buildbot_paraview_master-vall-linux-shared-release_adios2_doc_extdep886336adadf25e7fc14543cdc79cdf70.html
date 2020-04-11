@@ -56,7 +56,7 @@ $(function() {
 <p><code>sudo apt-get install git cmake build-essential libgl1-mesa-dev libxt-dev qt5-default libqt5x11extras5-dev libqt5help5 qttools5-dev qtxmlpatterns5-dev-tools libqt5svg5-dev python3-dev python3-numpy libopenmpi-dev libtbb-dev ninja-build</code></p>
 <h5>Centos 7</h5>
 <h6>CMake</h6>
-<p>Download and install <a href="https://cmake.org/download">cmake</a>) as the packaged version is not enough considering that CMake 3.10 or higher is needed.</p>
+<p>Download and install <a href="https://cmake.org/download">cmake</a>) as the packaged version is not enough considering that CMake 3.12 or higher is needed.</p>
 <h6>Others</h6>
 <p><code>sudo yum install python3-devel openmpi-devel mesa-libGL-devel libX11-devel libXt-devel qt5-qtbase-devel qt5-qtx11extras-devel qt5-qttools-devel qt5-qtxmlpatterns-devel tbb-devel ninja-build git</code></p>
 <p>###### Environement </p><div class="fragment"><div class="line">alias ninja ninja-build</div><div class="line">export PATH=$PATH:/usr/lib64/openmpi/bin/</div></div><!-- fragment --><h5>ArchLinux</h5>
@@ -103,7 +103,7 @@ $(function() {
 <p>Required:</p>
 <ul>
 <li><a href="https://cmake.org">CMake</a><ul>
-<li>Version 3.10 or newer, however, the latest version is always recommended</li>
+<li>Version 3.12 or newer, however, the latest version is always recommended</li>
 </ul>
 </li>
 <li>Supported compiler<ul>
@@ -190,7 +190,7 @@ Command Prompt" available with Visual Studio in the start menu.</p>
 <li><code>PARAVIEW_BUILD_LEGACY_REMOVE</code> (default <code>OFF</code>): Remove legacy / deprecated code.</li>
 <li><code>PARAVIEW_BUILD_LEGACY_SILENT</code> (default <code>OFF</code>): Silence all legacy / deprecated code messages.</li>
 <li><code>PARAVIEW_BUILD_WITH_EXTERNAL</code> (default <code>OFF</code>): When set to <code>ON</code>, the build will try to use external copies of all included third party libraries unless explicitly overridden.</li>
-<li><code>PARAVIEW_BUILD_WITH_KITS</code> (default <code>OFF</code>; requires CMake 3.12+): Compile ParaView into a smaller set of libraries. Can be useful on platforms where ParaView takes a long time to launch due to expensive disk access.</li>
+<li><code>PARAVIEW_BUILD_WITH_KITS</code> (default <code>OFF</code>): Compile ParaView into a smaller set of libraries. Can be useful on platforms where ParaView takes a long time to launch due to expensive disk access.</li>
 </ul>
 <h4>Capability settings</h4>
 <p>These settings control capabitities of the build. These begin with the prefix <code>PARAVIEW_USE_</code>. The common variables to modify include:</p>
