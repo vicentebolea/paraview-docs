@@ -172,6 +172,7 @@ Proxies generated for server side objects under :doc:`paraview.simple`
     paraview.simple.GroupDatasets
     paraview.simple.GroupTimeSteps
     paraview.simple.H5PartReader
+    paraview.simple.HDRReader
     paraview.simple.HierarchicalDataIDSelectionSource
     paraview.simple.HierarchicalFractal
     paraview.simple.Histogram
@@ -692,6 +693,7 @@ Proxies generated for server side objects under :doc:`paraview.simple`
     GroupDatasets
     GroupTimeSteps
     H5PartReader
+    HDRReader
     HierarchicalDataIDSelectionSource
     HierarchicalFractal
     Histogram
