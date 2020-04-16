@@ -22,6 +22,10 @@ Data Descriptors
        pretend that it can support time and provide one file per time
        step.
    
+   TimeArray
+       This property sets which field data to use as time arrays to
+       read. If set to Default, time steps are incremented integer values starting at zero.
+   
    TimestepValues
        Available timestep values.
    

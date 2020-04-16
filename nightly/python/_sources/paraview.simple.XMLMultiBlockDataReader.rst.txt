@@ -28,6 +28,10 @@ Data Descriptors
        This property lists which point-centered arrays to
        read.
    
+   TimeArray
+       This property sets which field data to use as time arrays to
+       read. If set to Default, time steps are incremented integer values starting at zero.
+   
    TimestepValues
        Available timestep values.
    
