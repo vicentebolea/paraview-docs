@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>paraview.cpstate &mdash; ParaView/Python 5.8.0-586-g508cd850e8 documentation</title>
+  <title>paraview.cpstate &mdash; ParaView/Python 5.8.0-591-g2803b5c2ac documentation</title>
   
 
   
@@ -24,7 +24,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:'../../',
-        VERSION:'5.8.0-586-g508cd850e8',
+        VERSION:'5.8.0-591-g2803b5c2ac',
         COLLAPSE_INDEX:false,
         FILE_SUFFIX:'.html',
         HAS_SOURCE:  true
@@ -49,7 +49,7 @@
         <link rel="index" title="Index"
               href="../../genindex.html"/>
         <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="ParaView/Python 5.8.0-586-g508cd850e8 documentation" href="../../index.html"/>
+    <link rel="top" title="ParaView/Python 5.8.0-591-g2803b5c2ac documentation" href="../../index.html"/>
         <link rel="up" title="Module code" href="../index.html"/> 
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -67,7 +67,7 @@
           <li> <a href="../../index.html">
             <img src="../../_static/paraview-logo-small.png"
             alt="ParaView/Python"></img></a> </li>
-          <li class="version"> version 5.8.0-586-g508cd850e8</li>
+          <li class="version"> version 5.8.0-591-g2803b5c2ac</li>
         </ul>
         <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
   <input type="text" name="q" placeholder="Search docs" />
@@ -685,6 +685,7 @@
 <span class="sd">&quot;&quot;&quot;</span>
 
 <span class="kn">from</span> <span class="nn">paraview</span> <span class="k">import</span> <span class="n">smtrace</span><span class="p">,</span> <span class="n">smstate</span><span class="p">,</span> <span class="n">servermanager</span>
+<span class="kn">import</span> <span class="nn">numbers</span>
 
 <span class="n">_cpstate_globals</span> <span class="o">=</span> <span class="kc">None</span>
 
@@ -706,6 +707,7 @@
             <span class="bp">self</span><span class="o">.</span><span class="n">channels_needed</span> <span class="o">=</span> <span class="p">[]</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">enable_live_viz</span> <span class="o">=</span> <span class="kc">False</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">live_viz_frequency</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">variable_to_name_map</span> <span class="o">=</span> <span class="p">{}</span>
     <span class="n">_cpstate_globals</span> <span class="o">=</span> <span class="n">_state</span><span class="p">()</span>
     <span class="k">return</span> <span class="n">_cpstate_globals</span></div>
 
@@ -987,6 +989,7 @@
     <span class="sd">&quot;&quot;&quot;callback to create our special accessors instead of the standard ones.&quot;&quot;&quot;</span>
     <span class="n">pname</span> <span class="o">=</span> <span class="n">smtrace</span><span class="o">.</span><span class="n">Trace</span><span class="o">.</span><span class="n">get_registered_name</span><span class="p">(</span><span class="n">proxy</span><span class="p">,</span> <span class="s2">&quot;sources&quot;</span><span class="p">)</span>
     <span class="n">cpstate_globals</span> <span class="o">=</span> <span class="n">get_globals</span><span class="p">()</span>
+    <span class="n">cpstate_globals</span><span class="o">.</span><span class="n">variable_to_name_map</span><span class="p">[</span><span class="n">proxy</span><span class="p">]</span> <span class="o">=</span> <span class="n">varname</span>
     <span class="k">if</span> <span class="n">pname</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">pname</span> <span class="ow">in</span> <span class="n">cpstate_globals</span><span class="o">.</span><span class="n">simulation_input_map</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">ProducerAccessor</span><span class="p">(</span><span class="n">varname</span><span class="p">,</span> <span class="n">proxy</span><span class="p">,</span> <span class="n">cpstate_globals</span><span class="o">.</span><span class="n">simulation_input_map</span><span class="p">[</span><span class="n">pname</span><span class="p">])</span>
@@ -1077,21 +1080,6 @@
             <span class="n">padding_amount</span> <span class="o">=</span> <span class="n">globalepxy</span><span class="o">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s2">&quot;FileNamePadding&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">GetElement</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
             <span class="n">write_frequency</span> <span class="o">=</span> <span class="n">pxy</span><span class="o">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s2">&quot;WriteFrequency&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">GetElement</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
             <span class="n">filename</span> <span class="o">=</span> <span class="n">pxy</span><span class="o">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s2">&quot;CatalystFilePattern&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">GetElement</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-            <span class="n">DataMode</span> <span class="o">=</span> <span class="n">pxy</span><span class="o">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s2">&quot;DataMode&quot;</span><span class="p">)</span>
-            <span class="k">if</span> <span class="n">DataMode</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-                <span class="n">DataMode</span> <span class="o">=</span> <span class="n">pxy</span><span class="o">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s2">&quot;DataMode&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">GetElement</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-            <span class="n">HeaderType</span> <span class="o">=</span> <span class="n">pxy</span><span class="o">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s2">&quot;HeaderType&quot;</span><span class="p">)</span>
-            <span class="k">if</span> <span class="n">HeaderType</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-                <span class="n">HeaderType</span> <span class="o">=</span> <span class="n">pxy</span><span class="o">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s2">&quot;HeaderType&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">GetElement</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-            <span class="n">EncodeAppendedData</span><span class="o">=</span><span class="n">pxy</span><span class="o">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s2">&quot;EncodeAppendedData&quot;</span><span class="p">)</span>
-            <span class="k">if</span> <span class="n">EncodeAppendedData</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-                <span class="n">EncodeAppendedData</span> <span class="o">=</span> <span class="n">pxy</span><span class="o">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s2">&quot;EncodeAppendedData&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">GetElement</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">!=</span><span class="mi">0</span>
-            <span class="n">CompressorType</span> <span class="o">=</span> <span class="n">pxy</span><span class="o">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s2">&quot;CompressorType&quot;</span><span class="p">)</span>
-            <span class="k">if</span> <span class="n">CompressorType</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-                <span class="n">CompressorType</span> <span class="o">=</span> <span class="n">pxy</span><span class="o">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s2">&quot;CompressorType&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">GetElement</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-            <span class="n">CompressionLevel</span> <span class="o">=</span> <span class="n">pxy</span><span class="o">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s2">&quot;CompressionLevel&quot;</span><span class="p">)</span>
-            <span class="k">if</span> <span class="n">CompressionLevel</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-                <span class="n">CompressionLevel</span> <span class="o">=</span> <span class="n">pxy</span><span class="o">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s2">&quot;CompressionLevel&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">GetElement</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 
             <span class="n">cpstate_globals</span> <span class="o">=</span> <span class="n">get_globals</span><span class="p">()</span>
             <span class="n">sim_inputs</span> <span class="o">=</span> <span class="n">locate_simulation_inputs</span><span class="p">(</span><span class="n">pxy</span><span class="p">)</span>
@@ -1125,12 +1113,35 @@
             <span class="c1"># Actual writer</span>
             <span class="n">f</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> = servermanager.writers.</span><span class="si">%s</span><span class="s2">(Input=</span><span class="si">%s</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">varname</span><span class="p">,</span> <span class="n">writername</span><span class="p">,</span> <span class="n">inputname</span><span class="p">)</span>
             <span class="n">res</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+            <span class="c1"># set various writer properties, except for the filename since that will be set later.</span>
+            <span class="c1"># point, cell and field arrays should already be set</span>
+            <span class="n">notNeededProperties</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;CatalystFilePattern&#39;</span><span class="p">,</span> <span class="s1">&#39;CellDataArrays&#39;</span><span class="p">,</span> <span class="s1">&#39;ChooseArraysToWrite&#39;</span><span class="p">,</span> <span class="s1">&#39;EdgeDataArrays&#39;</span><span class="p">,</span>
+                                   <span class="s1">&#39;FieldDataArrays&#39;</span><span class="p">,</span> <span class="s1">&#39;FileName&#39;</span><span class="p">,</span> <span class="s1">&#39;FileNameSuffix&#39;</span><span class="p">,</span> <span class="s1">&#39;Filenamesuffix&#39;</span><span class="p">,</span> <span class="s1">&#39;Input&#39;</span><span class="p">,</span>
+                                   <span class="s1">&#39;PointDataArrays&#39;</span><span class="p">,</span> <span class="s1">&#39;WriteFrequency&#39;</span><span class="p">,]</span>
+            <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">pxy</span><span class="o">.</span><span class="n">ListProperties</span><span class="p">():</span>
+                <span class="k">if</span> <span class="n">p</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">notNeededProperties</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">pxy</span><span class="o">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="n">p</span><span class="p">)):</span>
+                    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">pxy</span><span class="o">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="n">p</span><span class="p">)</span><span class="o">.</span><span class="n">GetData</span><span class="p">(),</span> <span class="n">servermanager</span><span class="o">.</span><span class="n">Proxy</span><span class="p">):</span>
+                        <span class="n">proxyvalue</span> <span class="o">=</span> <span class="n">pxy</span><span class="o">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="n">p</span><span class="p">)</span><span class="o">.</span><span class="n">GetData</span><span class="p">()</span>
+                        <span class="n">cpstate_globals</span> <span class="o">=</span> <span class="n">get_globals</span><span class="p">()</span>
+                        <span class="k">if</span> <span class="n">proxyvalue</span> <span class="ow">in</span> <span class="n">cpstate_globals</span><span class="o">.</span><span class="n">variable_to_name_map</span><span class="p">:</span>
+                            <span class="n">f</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">.</span><span class="si">%s</span><span class="s2"> = </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">varname</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">cpstate_globals</span><span class="o">.</span><span class="n">variable_to_name_map</span><span class="p">[</span><span class="n">proxyvalue</span><span class="p">])</span>
+                            <span class="n">res</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+                    <span class="k">elif</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">pxy</span><span class="o">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="n">p</span><span class="p">),</span> <span class="s1">&#39;GetElement&#39;</span><span class="p">):</span>
+                        <span class="n">value</span> <span class="o">=</span> <span class="n">pxy</span><span class="o">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="n">p</span><span class="p">)</span><span class="o">.</span><span class="n">GetElement</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+                        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">numbers</span><span class="o">.</span><span class="n">Number</span><span class="p">):</span>
+                            <span class="n">f</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">.</span><span class="si">%s</span><span class="s2"> = </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">varname</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+                        <span class="k">elif</span>  <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+                            <span class="n">f</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">.</span><span class="si">%s</span><span class="s2"> = &#39;</span><span class="si">%s</span><span class="s2">&#39;&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">varname</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+                        <span class="k">else</span><span class="p">:</span>
+                            <span class="n">f</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">.</span><span class="si">%s</span><span class="s2"> = </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">varname</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">value</span><span class="p">))</span>
+                        <span class="n">res</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+
             <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__make_temporal_script</span><span class="p">:</span>
                 <span class="n">f</span> <span class="o">=</span> <span class="s2">&quot;STP.RegisterWriter(</span><span class="si">%s</span><span class="s2">, &#39;</span><span class="si">%s</span><span class="s2">&#39;, tp_writers)&quot;</span> <span class="o">%</span> <span class="p">(</span>
                     <span class="n">varname</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
             <span class="k">else</span><span class="p">:</span>
-                <span class="n">f</span> <span class="o">=</span> <span class="s2">&quot;coprocessor.RegisterWriter(</span><span class="si">%s</span><span class="s2">, filename=&#39;</span><span class="si">%s</span><span class="s2">&#39;, freq=</span><span class="si">%s</span><span class="s2">, paddingamount=</span><span class="si">%s</span><span class="s2">, DataMode=&#39;</span><span class="si">%s</span><span class="s2">&#39;, HeaderType=&#39;</span><span class="si">%s</span><span class="s2">&#39;, EncodeAppendedData=</span><span class="si">%s</span><span class="s2">, CompressorType=&#39;</span><span class="si">%s</span><span class="s2">&#39;, CompressionLevel=&#39;</span><span class="si">%s</span><span class="s2">&#39;)&quot;</span> <span class="o">%</span> <span class="p">(</span>
-                    <span class="n">varname</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">write_frequency</span><span class="p">,</span> <span class="n">padding_amount</span><span class="p">,</span> <span class="n">DataMode</span><span class="p">,</span> <span class="n">HeaderType</span><span class="p">,</span> <span class="n">EncodeAppendedData</span><span class="p">,</span> <span class="n">CompressorType</span><span class="p">,</span> <span class="n">CompressionLevel</span><span class="p">)</span>
+                <span class="n">f</span> <span class="o">=</span> <span class="s2">&quot;coprocessor.RegisterWriter(</span><span class="si">%s</span><span class="s2">, filename=&#39;</span><span class="si">%s</span><span class="s2">&#39;, freq=</span><span class="si">%s</span><span class="s2">, paddingamount=</span><span class="si">%s</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="p">(</span>
+                    <span class="n">varname</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">write_frequency</span><span class="p">,</span> <span class="n">padding_amount</span><span class="p">)</span>
             <span class="n">res</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
             <span class="n">res</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">res</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
