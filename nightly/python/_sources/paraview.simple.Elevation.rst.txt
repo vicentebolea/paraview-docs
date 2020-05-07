@@ -11,7 +11,7 @@ Data Descriptors
 
    
    HighPoint
-       This property defines the other end of the direction
+       This property defines the high end of the direction
        vector (large scalar values).
    
    Input
@@ -19,7 +19,7 @@ Data Descriptors
        Elevation filter.
    
    LowPoint
-       This property defines one end of the direction vector
+       This property defines low end of the direction vector
        (small scalar values).
    
    ScalarRange

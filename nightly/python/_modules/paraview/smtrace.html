@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>paraview.smtrace &mdash; ParaView/Python 5.8.0-660-gf026a1145f documentation</title>
+  <title>paraview.smtrace &mdash; ParaView/Python 5.8.0-668-g4e8200b46b documentation</title>
   
 
   
@@ -24,7 +24,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:'../../',
-        VERSION:'5.8.0-660-gf026a1145f',
+        VERSION:'5.8.0-668-g4e8200b46b',
         COLLAPSE_INDEX:false,
         FILE_SUFFIX:'.html',
         HAS_SOURCE:  true
@@ -49,7 +49,7 @@
         <link rel="index" title="Index"
               href="../../genindex.html"/>
         <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="ParaView/Python 5.8.0-660-gf026a1145f documentation" href="../../index.html"/>
+    <link rel="top" title="ParaView/Python 5.8.0-668-g4e8200b46b documentation" href="../../index.html"/>
         <link rel="up" title="Module code" href="../index.html"/> 
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -67,7 +67,7 @@
           <li> <a href="../../index.html">
             <img src="../../_static/paraview-logo-small.png"
             alt="ParaView/Python"></img></a> </li>
-          <li class="version"> version 5.8.0-660-gf026a1145f</li>
+          <li class="version"> version 5.8.0-668-g4e8200b46b</li>
         </ul>
         <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
   <input type="text" name="q" placeholder="Search docs" />
@@ -992,9 +992,10 @@
             <span class="k">if</span> <span class="n">pname</span><span class="p">:</span>
                 <span class="n">accessor</span> <span class="o">=</span> <span class="n">ProxyAccessor</span><span class="p">(</span><span class="bp">cls</span><span class="o">.</span><span class="n">get_varname</span><span class="p">(</span><span class="n">pname</span><span class="p">),</span> <span class="n">obj</span><span class="p">)</span>
                 <span class="n">filename</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="n">FileName</span>
+                <span class="c1"># repr() will escape the path correctly, especially backslash on Windows.</span>
                 <span class="bp">cls</span><span class="o">.</span><span class="n">Output</span><span class="o">.</span><span class="n">append_separated</span><span class="p">([</span>\
                         <span class="s2">&quot;# a texture&quot;</span><span class="p">,</span>
-                                             <span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> = CreateTexture(</span><span class="se">\&quot;</span><span class="si">%s</span><span class="se">\&quot;</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">accessor</span><span class="p">,</span> <span class="n">filename</span><span class="p">)])</span>
+                                             <span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> = CreateTexture(</span><span class="si">%s</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">accessor</span><span class="p">,</span> <span class="nb">repr</span><span class="p">(</span><span class="n">filename</span><span class="p">))])</span>
             <span class="k">return</span> <span class="kc">True</span>
 
         <span class="k">return</span> <span class="kc">False</span></div>
@@ -1916,7 +1917,7 @@
         <span class="n">trace</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;# export view&quot;</span><span class="p">)</span>
         <span class="n">trace</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>\
             <span class="n">exporterAccessor</span><span class="o">.</span><span class="n">trace_ctor</span><span class="p">(</span><span class="s2">&quot;ExportView&quot;</span><span class="p">,</span> <span class="n">ExporterProxyFilter</span><span class="p">(),</span>
-              <span class="n">ctor_args</span><span class="o">=</span><span class="s2">&quot;&#39;</span><span class="si">%s</span><span class="s2">&#39;, view=</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">viewAccessor</span><span class="p">),</span>
+              <span class="n">ctor_args</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2">, view=</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">repr</span><span class="p">(</span><span class="n">filename</span><span class="p">),</span> <span class="n">viewAccessor</span><span class="p">),</span>
               <span class="n">skip_assignment</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
         <span class="n">exporterAccessor</span><span class="o">.</span><span class="n">finalize</span><span class="p">()</span> <span class="c1"># so that it will get deleted</span>
         <span class="k">del</span> <span class="n">exporterAccessor</span>
@@ -1940,7 +1941,7 @@
         <span class="n">trace</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;# save data&quot;</span><span class="p">)</span>
         <span class="n">trace</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>\
             <span class="n">writerAccessor</span><span class="o">.</span><span class="n">trace_ctor</span><span class="p">(</span><span class="s2">&quot;SaveData&quot;</span><span class="p">,</span> <span class="n">WriterProxyFilter</span><span class="p">(),</span>
-              <span class="n">ctor_args</span><span class="o">=</span><span class="s2">&quot;&#39;</span><span class="si">%s</span><span class="s2">&#39;, proxy=</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">ctor_args_1</span><span class="p">),</span>
+              <span class="n">ctor_args</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2">, proxy=</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">repr</span><span class="p">(</span><span class="n">filename</span><span class="p">),</span> <span class="n">ctor_args_1</span><span class="p">),</span>
               <span class="n">skip_assignment</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
         <span class="n">writerAccessor</span><span class="o">.</span><span class="n">finalize</span><span class="p">()</span> <span class="c1"># so that it will get deleted.</span>
         <span class="k">del</span> <span class="n">writerAccessor</span>

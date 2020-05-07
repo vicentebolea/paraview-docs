@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>paraview.smstate &mdash; ParaView/Python 5.8.0-660-gf026a1145f documentation</title>
+  <title>paraview.smstate &mdash; ParaView/Python 5.8.0-668-g4e8200b46b documentation</title>
   
 
   
@@ -24,7 +24,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:'../../',
-        VERSION:'5.8.0-660-gf026a1145f',
+        VERSION:'5.8.0-668-g4e8200b46b',
         COLLAPSE_INDEX:false,
         FILE_SUFFIX:'.html',
         HAS_SOURCE:  true
@@ -49,7 +49,7 @@
         <link rel="index" title="Index"
               href="../../genindex.html"/>
         <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="ParaView/Python 5.8.0-660-gf026a1145f documentation" href="../../index.html"/>
+    <link rel="top" title="ParaView/Python 5.8.0-668-g4e8200b46b documentation" href="../../index.html"/>
         <link rel="up" title="Module code" href="../index.html"/> 
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -67,7 +67,7 @@
           <li> <a href="../../index.html">
             <img src="../../_static/paraview-logo-small.png"
             alt="ParaView/Python"></img></a> </li>
-          <li class="version"> version 5.8.0-660-gf026a1145f</li>
+          <li class="version"> version 5.8.0-668-g4e8200b46b</li>
         </ul>
         <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
   <input type="text" name="q" placeholder="Search docs" />
@@ -674,7 +674,7 @@
   <h1>Source code for paraview.smstate</h1><div class="highlight"><pre>
 <span></span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Module for generating a Python state for ParaView.</span>
 <span class="sd">This module uses paraview.smtrace to generate a trace for a selected set of</span>
-<span class="sd">proxies my mimicking the creating of various pipeline components in sequence.</span>
+<span class="sd">proxies by mimicking the creation of various pipeline components in sequence.</span>
 <span class="sd">Typical usage of this module is as follows::</span>
 
 <span class="sd">    from paraview import smstate</span>
@@ -783,7 +783,7 @@
     <span class="n">skipHiddenRepresentations</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">skipRenderingComponents</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">source_set</span><span class="o">=</span><span class="p">[],</span> <span class="nb">filter</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">raw</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Returns the state string&quot;&quot;&quot;</span>
 
-    <span class="c1"># essential to ensure any obsolete accessor don&#39;t linger can cause havoc</span>
+    <span class="c1"># essential to ensure any obsolete accessors don&#39;t linger - can cause havoc</span>
     <span class="c1"># when saving state following a Python trace session</span>
     <span class="c1"># (paraview/paraview#18994)</span>
     <span class="kn">import</span> <span class="nn">gc</span>
@@ -890,11 +890,15 @@
             <span class="n">traceitem</span> <span class="o">=</span> <span class="n">smtrace</span><span class="o">.</span><span class="n">RegisterPipelineProxy</span><span class="p">(</span><span class="n">source</span><span class="p">)</span>
             <span class="n">traceitem</span><span class="o">.</span><span class="n">finalize</span><span class="p">()</span>
             <span class="k">del</span> <span class="n">traceitem</span>
+            <span class="c1"># make sure any name changes are recorded</span>
+            <span class="n">traceitem</span> <span class="o">=</span> <span class="n">smtrace</span><span class="o">.</span><span class="n">RenameProxy</span><span class="p">(</span><span class="n">source</span><span class="p">)</span>
+            <span class="n">traceitem</span><span class="o">.</span><span class="n">finalize</span><span class="p">()</span>
+            <span class="k">del</span> <span class="n">traceitem</span>
         <span class="n">trace</span><span class="o">.</span><span class="n">append_separated</span><span class="p">(</span><span class="n">smtrace</span><span class="o">.</span><span class="n">get_current_trace_output_and_reset</span><span class="p">(</span><span class="n">raw</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
 
     <span class="c1">#--------------------------------------------------------------------------</span>
     <span class="c1"># Can&#39;t decide if the representations should be saved with the pipeline</span>
-    <span class="c1"># objects or afterwords, opting for afterwords for now since the topological</span>
+    <span class="c1"># objects or afterwards, opting for afterwards for now since the topological</span>
     <span class="c1"># sort doesn&#39;t guarantee that the representations will follow their sources</span>
     <span class="c1"># anyways.</span>
     <span class="n">sorted_representations</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">sorted_proxies_of_interest</span> \
