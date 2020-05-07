@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>paraview.simple.PolyPointSource &mdash; ParaView/Python 5.8.0-640-gb32910c740 documentation</title>
+  <title>paraview.simple.PointCloud &mdash; ParaView/Python 5.8.0-650-g1c7db6099e documentation</title>
   
 
   
@@ -24,7 +24,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:'./',
-        VERSION:'5.8.0-640-gb32910c740',
+        VERSION:'5.8.0-650-g1c7db6099e',
         COLLAPSE_INDEX:false,
         FILE_SUFFIX:'.html',
         HAS_SOURCE:  true
@@ -49,10 +49,10 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="ParaView/Python 5.8.0-640-gb32910c740 documentation" href="index.html"/>
+    <link rel="top" title="ParaView/Python 5.8.0-650-g1c7db6099e documentation" href="index.html"/>
         <link rel="up" title="Available readers, sources, writers, filters and animation cues" href="paraview.servermanager_proxies.html"/>
-        <link rel="next" title="paraview.simple.PrincipalComponentAnalysis" href="paraview.simple.PrincipalComponentAnalysis.html"/>
-        <link rel="prev" title="paraview.simple.PolyLineSource" href="paraview.simple.PolyLineSource.html"/> 
+        <link rel="next" title="paraview.simple.PointDatasetInterpolator" href="paraview.simple.PointDatasetInterpolator.html"/>
+        <link rel="prev" title="paraview.simple.PlotSelectionOverTime" href="paraview.simple.PlotSelectionOverTime.html"/> 
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 
@@ -69,7 +69,7 @@
           <li> <a href="index.html">
             <img src="_static/paraview-logo-small.png"
             alt="ParaView/Python"></img></a> </li>
-          <li class="version"> version 5.8.0-640-gb32910c740</li>
+          <li class="version"> version 5.8.0-650-g1c7db6099e</li>
         </ul>
         <form id ="rtd-search-form" class="wy-form" action="search.html" method="get">
   <input type="text" name="q" placeholder="Search docs" />
@@ -377,15 +377,15 @@
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.PlotOnSortedLines.html">paraview.simple.PlotOnSortedLines</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.PlotOverLine.html">paraview.simple.PlotOverLine</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.PlotSelectionOverTime.html">paraview.simple.PlotSelectionOverTime</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">paraview.simple.PointCloud</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.PointDatasetInterpolator.html">paraview.simple.PointDatasetInterpolator</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.PointDatatoCellData.html">paraview.simple.PointDatatoCellData</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.PointInterpolator.html">paraview.simple.PointInterpolator</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.PointLineInterpolator.html">paraview.simple.PointLineInterpolator</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.PointPlaneInterpolator.html">paraview.simple.PointPlaneInterpolator</a></li>
-<li class="toctree-l2"><a class="reference internal" href="paraview.simple.PointSource.html">paraview.simple.PointSource</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.PointVolumeInterpolator.html">paraview.simple.PointVolumeInterpolator</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.PolyLineSource.html">paraview.simple.PolyLineSource</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">paraview.simple.PolyPointSource</a></li>
+<li class="toctree-l2"><a class="reference internal" href="paraview.simple.PolyPointCloud.html">paraview.simple.PolyPointCloud</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.PrincipalComponentAnalysis.html">paraview.simple.PrincipalComponentAnalysis</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.ProbeLocation.html">paraview.simple.ProbeLocation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.ProcessIdScalars.html">paraview.simple.ProcessIdScalars</a></li>
@@ -666,27 +666,40 @@
           <ul class="wy-breadcrumbs">
   <li><a href="index.html">Docs</a> &raquo;</li>
   <a href="genindex.html" class="float-right">Index</a> 
-  <li><a href="">paraview.simple.PolyPointSource</a></li>
+  <li><a href="">paraview.simple.PointCloud</a></li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
 </ul>
 <hr/>
           
-  <div class="section" id="paraview-simple-polypointsource">
-<h1>paraview.simple.PolyPointSource<a class="headerlink" href="#paraview-simple-polypointsource" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="paraview-simple-pointcloud">
+<h1>paraview.simple.PointCloud<a class="headerlink" href="#paraview-simple-pointcloud" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
-<dt id="paraview.simple.PolyPointSource">
-<code class="descclassname">paraview.simple.</code><code class="descname">PolyPointSource</code><span class="sig-paren">(</span><em>*input</em>, <em>**params</em><span class="sig-paren">)</span><a class="headerlink" href="#paraview.simple.PolyPointSource" title="Permalink to this definition">¶</a></dt>
-<dd><blockquote>
-<div>The Poly Point Source creates a poly data of points from an arbitrary
-number of specified points.</div></blockquote>
+<dt id="paraview.simple.PointCloud">
+<code class="descclassname">paraview.simple.</code><code class="descname">PointCloud</code><span class="sig-paren">(</span><em>*input</em>, <em>**params</em><span class="sig-paren">)</span><a class="headerlink" href="#paraview.simple.PointCloud" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>The point source creates</dt>
+<dd>a specified number of points within a given radius about a
+specified center point.</dd>
+</dl>
 </dd></dl>
 
 <div class="section" id="data-descriptors">
 <h2>Data Descriptors<a class="headerlink" href="#data-descriptors" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div>Points</div></blockquote>
+<div><dl class="docutils">
+<dt>Center</dt>
+<dd>This property specifies the 3D coordinates of the center
+of the point cloud.</dd>
+<dt>NumberOfPoints</dt>
+<dd>This property specifies the number of points in the
+point cloud.</dd>
+<dt>Radius</dt>
+<dd>This property specifies the radius of the point cloud,
+measured from the value of the Center property.</dd>
+</dl>
+</div></blockquote>
 <div class="section" id="data-descriptors-inherited-from-sourceproxy">
 <h3>Data Descriptors inherited from SourceProxy<a class="headerlink" href="#data-descriptors-inherited-from-sourceproxy" title="Permalink to this headline">¶</a></h3>
 <blockquote>
@@ -795,10 +808,10 @@ the proxy with the proxy manager.</dd>
   
     <div class="rst-footer-buttons">
       
-        <a href="paraview.simple.PrincipalComponentAnalysis.html" class="btn btn-neutral float-right" title="paraview.simple.PrincipalComponentAnalysis"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="paraview.simple.PointDatasetInterpolator.html" class="btn btn-neutral float-right" title="paraview.simple.PointDatasetInterpolator"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="paraview.simple.PolyLineSource.html" class="btn btn-neutral" title="paraview.simple.PolyLineSource"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="paraview.simple.PlotSelectionOverTime.html" class="btn btn-neutral" title="paraview.simple.PlotSelectionOverTime"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   

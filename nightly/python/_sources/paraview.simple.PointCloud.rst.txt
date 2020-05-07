@@ -1,9 +1,9 @@
-paraview.simple.PointSource
-===========================
+paraview.simple.PointCloud
+==========================
 
 .. currentmodule:: paraview.simple
 
-.. autofunction:: PointSource
+.. autofunction:: PointCloud
 
 Data Descriptors
 ----------------
