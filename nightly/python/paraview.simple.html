@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>simple Module &mdash; ParaView/Python 5.8.0-670-gd6c81fc388 documentation</title>
+  <title>simple Module &mdash; ParaView/Python 5.8.0-676-g3fcd6a57f0 documentation</title>
   
 
   
@@ -24,7 +24,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:'./',
-        VERSION:'5.8.0-670-gd6c81fc388',
+        VERSION:'5.8.0-676-g3fcd6a57f0',
         COLLAPSE_INDEX:false,
         FILE_SUFFIX:'.html',
         HAS_SOURCE:  true
@@ -49,7 +49,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="ParaView/Python 5.8.0-670-gd6c81fc388 documentation" href="index.html"/>
+    <link rel="top" title="ParaView/Python 5.8.0-676-g3fcd6a57f0 documentation" href="index.html"/>
         <link rel="up" title="paraview Package" href="paraview.html"/>
         <link rel="next" title="Available readers, sources, writers, filters and animation cues" href="paraview.servermanager_proxies.html"/>
         <link rel="prev" title="servermanager Module" href="paraview.servermanager.html"/> 
@@ -69,7 +69,7 @@
           <li> <a href="index.html">
             <img src="_static/paraview-logo-small.png"
             alt="ParaView/Python"></img></a> </li>
-          <li class="version"> version 5.8.0-670-gd6c81fc388</li>
+          <li class="version"> version 5.8.0-676-g3fcd6a57f0</li>
         </ul>
         <form id ="rtd-search-form" class="wy-form" action="search.html" method="get">
   <input type="text" name="q" placeholder="Search docs" />
@@ -1366,6 +1366,25 @@ make sure to pass <code class="docutils literal notranslate"><span class="pre">g
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">LoadPlugin</span><span class="p">(</span><span class="s2">&quot;myplugin&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="nb">globals</span><span class="p">())</span> <span class="c1"># to load on client</span>
 <span class="n">LoadPlugin</span><span class="p">(</span><span class="s2">&quot;myplugin&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="nb">globals</span><span class="p">())</span>  <span class="c1"># to load on server</span>
 <span class="n">LoadPlugin</span><span class="p">(</span><span class="s2">&quot;myplugin&quot;</span><span class="p">,</span> <span class="n">ns</span><span class="o">=</span><span class="nb">globals</span><span class="p">())</span>     <span class="c1"># to load on server</span>
+</pre></div>
+</div>
+<p>Otherwise, the new functions will not appear in the global namespace.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="paraview.simple.LoadPlugins">
+<code class="descclassname">paraview.simple.</code><code class="descname">LoadPlugins</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/simple.html#LoadPlugins"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.simple.LoadPlugins" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loads ParaView plugins and updates this module with new constructors
+if any. The remote keword argument (default to <code class="docutils literal notranslate"><span class="pre">True</span></code>) is to specify
+whether the plugin will be loaded on client (<code class="docutils literal notranslate"><span class="pre">remote=False</span></code>) or on server
+(<code class="docutils literal notranslate"><span class="pre">remote=True</span></code>). Proxy definition updates are deferred until all plugins
+have been read, which can be more computationally efficient when multiple
+plugins are loaded in sequence.
+If you loaded the simple module with <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">paraview.simple</span> <span class="pre">import</span> <span class="pre">*</span></code>,
+make sure to pass <code class="docutils literal notranslate"><span class="pre">globals()</span></code> as a keyword argument:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">LoadPlugins</span><span class="p">(</span><span class="s2">&quot;myplugin1&quot;</span><span class="p">,</span> <span class="s2">&quot;myplugin2&quot;</span><span class="p">,</span> <span class="n">remote</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">ns</span><span class="o">=</span><span class="nb">globals</span><span class="p">())</span> <span class="c1"># to load on client</span>
+<span class="n">LoadPlugins</span><span class="p">(</span><span class="s2">&quot;myplugin&quot;</span><span class="p">,</span> <span class="s2">&quot;myplugin2&quot;</span><span class="p">,</span> <span class="n">remote</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">ns</span><span class="o">=</span><span class="nb">globals</span><span class="p">())</span>  <span class="c1"># to load on server</span>
+<span class="n">LoadPlugins</span><span class="p">(</span><span class="s2">&quot;myplugin&quot;</span><span class="p">,</span> <span class="s2">&quot;myplugin2&quot;</span><span class="p">,</span> <span class="n">ns</span><span class="o">=</span><span class="nb">globals</span><span class="p">())</span>     <span class="c1"># to load on server</span>
 </pre></div>
 </div>
 <p>Otherwise, the new functions will not appear in the global namespace.</p>

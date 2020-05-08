@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>paraview.simple &mdash; ParaView/Python 5.8.0-670-gd6c81fc388 documentation</title>
+  <title>paraview.simple &mdash; ParaView/Python 5.8.0-676-g3fcd6a57f0 documentation</title>
   
 
   
@@ -24,7 +24,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:'../../',
-        VERSION:'5.8.0-670-gd6c81fc388',
+        VERSION:'5.8.0-676-g3fcd6a57f0',
         COLLAPSE_INDEX:false,
         FILE_SUFFIX:'.html',
         HAS_SOURCE:  true
@@ -49,7 +49,7 @@
         <link rel="index" title="Index"
               href="../../genindex.html"/>
         <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="ParaView/Python 5.8.0-670-gd6c81fc388 documentation" href="../../index.html"/>
+    <link rel="top" title="ParaView/Python 5.8.0-676-g3fcd6a57f0 documentation" href="../../index.html"/>
         <link rel="up" title="Module code" href="../index.html"/> 
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -67,7 +67,7 @@
           <li> <a href="../../index.html">
             <img src="../../_static/paraview-logo-small.png"
             alt="ParaView/Python"></img></a> </li>
-          <li class="version"> version 5.8.0-670-gd6c81fc388</li>
+          <li class="version"> version 5.8.0-676-g3fcd6a57f0</li>
         </ul>
         <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
   <input type="text" name="q" placeholder="Search docs" />
@@ -2549,9 +2549,39 @@
 
 <span class="sd">    Otherwise, the new functions will not appear in the global namespace.&quot;&quot;&quot;</span>
 
-    <span class="k">if</span> <span class="ow">not</span> <span class="n">ns</span><span class="p">:</span>
-        <span class="n">ns</span> <span class="o">=</span> <span class="nb">globals</span><span class="p">()</span>
-    <span class="n">servermanager</span><span class="o">.</span><span class="n">LoadPlugin</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">remote</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">LoadPlugins</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">remote</span><span class="o">=</span><span class="n">remote</span><span class="p">,</span> <span class="n">ns</span><span class="o">=</span><span class="n">ns</span><span class="p">)</span></div>
+
+<span class="c1"># -----------------------------------------------------------------------------</span>
+
+<div class="viewcode-block" id="LoadPlugins"><a class="viewcode-back" href="../../paraview.simple.html#paraview.simple.LoadPlugins">[docs]</a><span class="k">def</span> <span class="nf">LoadPlugins</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Loads ParaView plugins and updates this module with new constructors</span>
+<span class="sd">    if any. The remote keword argument (default to ``True``) is to specify</span>
+<span class="sd">    whether the plugin will be loaded on client (``remote=False``) or on server</span>
+<span class="sd">    (``remote=True``). Proxy definition updates are deferred until all plugins</span>
+<span class="sd">    have been read, which can be more computationally efficient when multiple</span>
+<span class="sd">    plugins are loaded in sequence.</span>
+<span class="sd">    If you loaded the simple module with ``from paraview.simple import *``,</span>
+<span class="sd">    make sure to pass ``globals()`` as a keyword argument::</span>
+
+<span class="sd">        LoadPlugins(&quot;myplugin1&quot;, &quot;myplugin2&quot;, remote=False, ns=globals()) # to load on client</span>
+<span class="sd">        LoadPlugins(&quot;myplugin&quot;, &quot;myplugin2&quot;, remote=True, ns=globals())  # to load on server</span>
+<span class="sd">        LoadPlugins(&quot;myplugin&quot;, &quot;myplugin2&quot;, ns=globals())     # to load on server</span>
+
+<span class="sd">    Otherwise, the new functions will not appear in the global namespace.&quot;&quot;&quot;</span>
+
+    <span class="n">remote</span> <span class="o">=</span> <span class="kc">True</span>
+    <span class="k">if</span> <span class="s1">&#39;remote&#39;</span> <span class="ow">in</span> <span class="n">kwargs</span><span class="p">:</span>
+        <span class="n">remote</span> <span class="o">=</span> <span class="n">kwargs</span><span class="p">[</span><span class="s1">&#39;remote&#39;</span><span class="p">]</span>
+
+    <span class="n">ns</span> <span class="o">=</span> <span class="nb">globals</span><span class="p">()</span>
+    <span class="k">if</span> <span class="s1">&#39;ns&#39;</span> <span class="ow">in</span> <span class="n">kwargs</span> <span class="ow">and</span> <span class="n">kwargs</span><span class="p">[</span><span class="s1">&#39;ns&#39;</span><span class="p">]:</span>
+        <span class="n">ns</span> <span class="o">=</span> <span class="n">kwargs</span><span class="p">[</span><span class="s1">&#39;ns&#39;</span><span class="p">]</span>
+
+    <span class="n">servermanager</span><span class="o">.</span><span class="n">vtkSMProxyManager</span><span class="o">.</span><span class="n">GetProxyManager</span><span class="p">()</span><span class="o">.</span><span class="n">SetBlockProxyDefinitionUpdates</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">arg</span> <span class="ow">in</span> <span class="n">args</span><span class="p">:</span>
+        <span class="n">servermanager</span><span class="o">.</span><span class="n">LoadPlugin</span><span class="p">(</span><span class="n">arg</span><span class="p">,</span> <span class="n">remote</span><span class="p">)</span>
+    <span class="n">servermanager</span><span class="o">.</span><span class="n">vtkSMProxyManager</span><span class="o">.</span><span class="n">GetProxyManager</span><span class="p">()</span><span class="o">.</span><span class="n">SetBlockProxyDefinitionUpdates</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">servermanager</span><span class="o">.</span><span class="n">vtkSMProxyManager</span><span class="o">.</span><span class="n">GetProxyManager</span><span class="p">()</span><span class="o">.</span><span class="n">UpdateProxyDefinitions</span><span class="p">()</span>
     <span class="n">_add_functions</span><span class="p">(</span><span class="n">ns</span><span class="p">)</span></div>
 
 <span class="c1"># -----------------------------------------------------------------------------</span>

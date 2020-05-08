@@ -128,6 +128,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a31e89ecbff9652f6ac7c1f6d68404a0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvtkSMSessionProxyManager.html">vtkSMSessionProxyManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkSMProxyManager.html#a31e89ecbff9652f6ac7c1f6d68404a0c">GetSessionProxyManager</a> (<a class="el" href="classvtkSMSession.html">vtkSMSession</a> *session)</td></tr>
 <tr class="memdesc:a31e89ecbff9652f6ac7c1f6d68404a0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the corresponding <a class="el" href="classvtkSMSessionProxyManager.html" title="The vtkSMSessionProxyManager is esponsible for creating and managing proxies for a given session.">vtkSMSessionProxyManager</a> and if any, then create a new one.  <a href="#a31e89ecbff9652f6ac7c1f6d68404a0c">More...</a><br /></td></tr>
 <tr class="separator:a31e89ecbff9652f6ac7c1f6d68404a0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61d9b7faca75394397028c35675372fb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkSMProxyManager.html#a61d9b7faca75394397028c35675372fb">SetBlockProxyDefinitionUpdates</a> (bool)</td></tr>
+<tr class="separator:a61d9b7faca75394397028c35675372fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5fe1ec0ca482dd28e6d58b97c2f21a4"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkSMProxyManager.html#aa5fe1ec0ca482dd28e6d58b97c2f21a4">GetBlockProxyDefinitionUpdates</a> ()</td></tr>
+<tr class="separator:aa5fe1ec0ca482dd28e6d58b97c2f21a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88ad06503ec046889c5a1c658cd91624"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkSMProxyManager.html#a88ad06503ec046889c5a1c658cd91624">BlockProxyDefinitionUpdatesOn</a> ()</td></tr>
+<tr class="separator:a88ad06503ec046889c5a1c658cd91624"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a402d17a8122920b708c782f3a9ccee22"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkSMProxyManager.html#a402d17a8122920b708c782f3a9ccee22">BlockProxyDefinitionUpdatesOff</a> ()</td></tr>
+<tr class="separator:a402d17a8122920b708c782f3a9ccee22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f2b38edfc8dfa32c9a3f1be6b9baa60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkSMProxyManager.html#a7f2b38edfc8dfa32c9a3f1be6b9baa60">UpdateProxyDefinitions</a> ()</td></tr>
+<tr class="separator:a7f2b38edfc8dfa32c9a3f1be6b9baa60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:af26624211e9e385a137144525f9c1768"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkSMProxyManager.html#af26624211e9e385a137144525f9c1768">SetActiveSession</a> (<a class="el" href="classvtkSMSession.html">vtkSMSession</a> *session)</td></tr>
 <tr class="memdesc:af26624211e9e385a137144525f9c1768"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the active session.  <a href="#af26624211e9e385a137144525f9c1768">More...</a><br /></td></tr>
@@ -411,6 +421,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:aebc91296051a22a1c781e953a1285efe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a0597a303b8fe7c07efa5716868f55c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvtkSMWriterFactory.html">vtkSMWriterFactory</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkSMProxyManager.html#a7a0597a303b8fe7c07efa5716868f55c">WriterFactory</a></td></tr>
 <tr class="separator:a7a0597a303b8fe7c07efa5716868f55c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4043618c94c71ce7ae19c684942fd81"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkSMProxyManager.html#ae4043618c94c71ce7ae19c684942fd81">BlockProxyDefinitionUpdates</a></td></tr>
+<tr class="separator:ae4043618c94c71ce7ae19c684942fd81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classvtkObject"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classvtkObject')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el"  href="http://www.vtk.org/doc/nightly/html/classvtkObject.html">vtkObject</a></td></tr>
 <tr class="memitem:aa1eff04a721088aa7dae855f012d3ac2 inherit pro_attribs_classvtkObject"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/classvtkObject.html#aa1eff04a721088aa7dae855f012d3ac2">Debug</a></td></tr>
 <tr class="separator:aa1eff04a721088aa7dae855f012d3ac2 inherit pro_attribs_classvtkObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -467,7 +479,7 @@ Friends</h2></td></tr>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a58164a4b90309b304198a094ebd9af92a8548b71e377d5d9e819748bc5e63231a"></a>ActiveSessionChanged&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="vtkSMProxyManager_8h_source.html#l00169">169</a> of file <a class="el" href="vtkSMProxyManager_8h_source.html">vtkSMProxyManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkSMProxyManager_8h_source.html#l00174">174</a> of file <a class="el" href="vtkSMProxyManager_8h_source.html">vtkSMProxyManager.h</a>.</p>
 
 </div>
 </div>
@@ -1166,6 +1178,124 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a61d9b7faca75394397028c35675372fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61d9b7faca75394397028c35675372fb">&#9670;&nbsp;</a></span>SetBlockProxyDefinitionUpdates()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void vtkSMProxyManager::SetBlockProxyDefinitionUpdates </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa5fe1ec0ca482dd28e6d58b97c2f21a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5fe1ec0ca482dd28e6d58b97c2f21a4">&#9670;&nbsp;</a></span>GetBlockProxyDefinitionUpdates()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool vtkSMProxyManager::GetBlockProxyDefinitionUpdates </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a88ad06503ec046889c5a1c658cd91624"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88ad06503ec046889c5a1c658cd91624">&#9670;&nbsp;</a></span>BlockProxyDefinitionUpdatesOn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void vtkSMProxyManager::BlockProxyDefinitionUpdatesOn </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a402d17a8122920b708c782f3a9ccee22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a402d17a8122920b708c782f3a9ccee22">&#9670;&nbsp;</a></span>BlockProxyDefinitionUpdatesOff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void vtkSMProxyManager::BlockProxyDefinitionUpdatesOff </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7f2b38edfc8dfa32c9a3f1be6b9baa60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f2b38edfc8dfa32c9a3f1be6b9baa60">&#9670;&nbsp;</a></span>UpdateProxyDefinitions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vtkSMProxyManager::UpdateProxyDefinitions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a9d99622577c019dfe84f5c046260181c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9d99622577c019dfe84f5c046260181c">&#9670;&nbsp;</a></span>SetUndoStackBuilder()</h2>
 
@@ -1388,7 +1518,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkSMProxyManager_8h_source.html#l00216">216</a> of file <a class="el" href="vtkSMProxyManager_8h_source.html">vtkSMProxyManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkSMProxyManager_8h_source.html#l00221">221</a> of file <a class="el" href="vtkSMProxyManager_8h_source.html">vtkSMProxyManager.h</a>.</p>
 
 </div>
 </div>
@@ -1413,7 +1543,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkSMProxyManager_8h_source.html#l00223">223</a> of file <a class="el" href="vtkSMProxyManager_8h_source.html">vtkSMProxyManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkSMProxyManager_8h_source.html#l00228">228</a> of file <a class="el" href="vtkSMProxyManager_8h_source.html">vtkSMProxyManager.h</a>.</p>
 
 </div>
 </div>
@@ -1437,7 +1567,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkSMProxyManager_8h_source.html#l00224">224</a> of file <a class="el" href="vtkSMProxyManager_8h_source.html">vtkSMProxyManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkSMProxyManager_8h_source.html#l00229">229</a> of file <a class="el" href="vtkSMProxyManager_8h_source.html">vtkSMProxyManager.h</a>.</p>
 
 </div>
 </div>
@@ -1461,7 +1591,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkSMProxyManager_8h_source.html#l00225">225</a> of file <a class="el" href="vtkSMProxyManager_8h_source.html">vtkSMProxyManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkSMProxyManager_8h_source.html#l00230">230</a> of file <a class="el" href="vtkSMProxyManager_8h_source.html">vtkSMProxyManager.h</a>.</p>
 
 </div>
 </div>
@@ -1485,7 +1615,31 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkSMProxyManager_8h_source.html#l00226">226</a> of file <a class="el" href="vtkSMProxyManager_8h_source.html">vtkSMProxyManager.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkSMProxyManager_8h_source.html#l00231">231</a> of file <a class="el" href="vtkSMProxyManager_8h_source.html">vtkSMProxyManager.h</a>.</p>
+
+</div>
+</div>
+<a id="ae4043618c94c71ce7ae19c684942fd81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4043618c94c71ce7ae19c684942fd81">&#9670;&nbsp;</a></span>BlockProxyDefinitionUpdates</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vtkSMProxyManager::BlockProxyDefinitionUpdates</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="vtkSMProxyManager_8h_source.html#l00233">233</a> of file <a class="el" href="vtkSMProxyManager_8h_source.html">vtkSMProxyManager.h</a>.</p>
 
 </div>
 </div>
