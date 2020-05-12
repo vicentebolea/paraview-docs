@@ -117,8 +117,7 @@ $(function() {
 <p>Optional dependencies:</p>
 <ul>
 <li><a href="https://python.org">Python</a><ul>
-<li>When using Python 2, at least 2.7 is required</li>
-<li>When using Python 3, at least 3.3 is required</li>
+<li>At least 3.3 is required</li>
 </ul>
 </li>
 <li><a href="https://qt.io">Qt5</a><ul>
@@ -138,7 +137,7 @@ $(function() {
 <h5>MPI</h5>
 <p>To run ParaView in parallel, an <a href="https://www.mcs.anl.gov/research/projects/mpi">MPI</a> implementation is required. If an MPI implementation that exploits special interconnect hardware is provided on your system, we suggest using it for optimal performance. Otherwise, on Linux/Mac, we suggest either <a href="https://www.open-mpi.org">OpenMPI</a> or <a href="https://www.mpich.org">MPICH</a>. On Windows, <a href="https://docs.microsoft.com/en-us/message-passing-interface/microsoft-mpi">Microsoft MPI</a> is required.</p>
 <h5>Python</h5>
-<p>In order to use scripting, <a href="https://python.org">Python</a> is required (versions 2.7 and 3.3). Python is also required in order to build ParaViewWeb support.</p>
+<p>In order to use scripting, <a href="https://python.org">Python</a> is required (version 3.3). Python is also required in order to build ParaViewWeb support.</p>
 <h5>OSMesa</h5>
 <p>Off-screen Mesa can be used as a software-renderer for running ParaView on a server without hardware OpenGL acceleration. This is usually available in system packages on Linux. For example, the <code>libosmesa6-dev</code> package on Debian and Ubuntu. However, for older machines, building a newer version of Mesa is likely necessary for bug fixes and support. Its source and build instructions can be found on <a href="https://www.mesa3d.org">its website</a>.</p>
 <h3>Creating the Build Environment</h3>

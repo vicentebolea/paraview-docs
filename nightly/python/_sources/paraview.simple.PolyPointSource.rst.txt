@@ -1,9 +1,9 @@
-paraview.simple.PolyPointCloud
-==============================
+paraview.simple.PolyPointSource
+===============================
 
 .. currentmodule:: paraview.simple
 
-.. autofunction:: PolyPointCloud
+.. autofunction:: PolyPointSource
 
 Data Descriptors
 ----------------

@@ -282,15 +282,15 @@ Proxies generated for server side objects under :doc:`paraview.simple`
     paraview.simple.PlotOnSortedLines
     paraview.simple.PlotOverLine
     paraview.simple.PlotSelectionOverTime
-    paraview.simple.PointCloud
     paraview.simple.PointDatasetInterpolator
     paraview.simple.PointDatatoCellData
     paraview.simple.PointInterpolator
     paraview.simple.PointLineInterpolator
     paraview.simple.PointPlaneInterpolator
+    paraview.simple.PointSource
     paraview.simple.PointVolumeInterpolator
     paraview.simple.PolyLineSource
-    paraview.simple.PolyPointCloud
+    paraview.simple.PolyPointSource
     paraview.simple.PrincipalComponentAnalysis
     paraview.simple.ProbeLocation
     paraview.simple.ProcessIdScalars
@@ -803,15 +803,15 @@ Proxies generated for server side objects under :doc:`paraview.simple`
     PlotOnSortedLines
     PlotOverLine
     PlotSelectionOverTime
-    PointCloud
     PointDatasetInterpolator
     PointDatatoCellData
     PointInterpolator
     PointLineInterpolator
     PointPlaneInterpolator
+    PointSource
     PointVolumeInterpolator
     PolyLineSource
-    PolyPointCloud
+    PolyPointSource
     PrincipalComponentAnalysis
     ProbeLocation
     ProcessIdScalars
