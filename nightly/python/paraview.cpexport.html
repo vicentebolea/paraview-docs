@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>cpexport Module &mdash; ParaView/Python 5.8.0-729-g0cb96d89f0 documentation</title>
+  <title>cpexport Module &mdash; ParaView/Python 5.8.0-736-gc98d09fe1e documentation</title>
   
 
   
@@ -24,7 +24,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:'./',
-        VERSION:'5.8.0-729-g0cb96d89f0',
+        VERSION:'5.8.0-736-gc98d09fe1e',
         COLLAPSE_INDEX:false,
         FILE_SUFFIX:'.html',
         HAS_SOURCE:  true
@@ -49,7 +49,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="ParaView/Python 5.8.0-729-g0cb96d89f0 documentation" href="index.html"/>
+    <link rel="top" title="ParaView/Python 5.8.0-736-gc98d09fe1e documentation" href="index.html"/>
         <link rel="up" title="paraview Package" href="paraview.html"/>
         <link rel="next" title="cpstate Module" href="paraview.cpstate.html"/>
         <link rel="prev" title="coprocessing Module" href="paraview.coprocessing.html"/> 
@@ -69,7 +69,7 @@
           <li> <a href="index.html">
             <img src="_static/paraview-logo-small.png"
             alt="ParaView/Python"></img></a> </li>
-          <li class="version"> version 5.8.0-729-g0cb96d89f0</li>
+          <li class="version"> version 5.8.0-736-gc98d09fe1e</li>
         </ul>
         <form id ="rtd-search-form" class="wy-form" action="search.html" method="get">
   <input type="text" name="q" placeholder="Search docs" />
@@ -672,7 +672,7 @@ an Python class description that can be then be used in the CoProcessor.</p>
 CoProcessing.</p>
 <dl class="function">
 <dt id="paraview.cpexport.DumpCoProcessingScript">
-<code class="descclassname">paraview.cpexport.</code><code class="descname">DumpCoProcessingScript</code><span class="sig-paren">(</span><em>export_rendering</em>, <em>simulation_input_map</em>, <em>screenshot_info</em>, <em>padding_amount</em>, <em>rescale_data_range</em>, <em>enable_live_viz</em>, <em>live_viz_frequency</em>, <em>cinema_tracks</em>, <em>cinema_arrays</em>, <em>filename=None</em>, <em>write_start=0</em>, <em>make_cinema_table=False</em>, <em>root_directory=''</em>, <em>request_specific_arrays=False</em>, <em>force_first_output=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/cpexport.html#DumpCoProcessingScript"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.cpexport.DumpCoProcessingScript" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">paraview.cpexport.</code><code class="descname">DumpCoProcessingScript</code><span class="sig-paren">(</span><em>export_rendering</em>, <em>simulation_input_map</em>, <em>screenshot_info</em>, <em>padding_amount</em>, <em>rescale_data_range</em>, <em>enable_live_viz</em>, <em>live_viz_frequency</em>, <em>cinema_tracks</em>, <em>cinema_arrays</em>, <em>filename=None</em>, <em>write_start=0</em>, <em>make_cinema_table=False</em>, <em>image_root_directory=''</em>, <em>data_root_directory=''</em>, <em>request_specific_arrays=False</em>, <em>force_first_output=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/cpexport.html#DumpCoProcessingScript"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.cpexport.DumpCoProcessingScript" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns a string with the generated CoProcessing script based on the
 options specified.</p>
 <p>First three arguments are same as those expected by
@@ -691,7 +691,8 @@ cpstate.DumpPipeline() function.</p>
 <li><strong>cinema_arrays</strong> – selected value arrays for cinema</li>
 <li><strong>make_cinema_table</strong> – boolean set to true to request a cinema D index file.</li>
 <li><strong>filename</strong> – if specified, the script is written to the file.</li>
-<li><strong>root_directory</strong> – if specified, the script will export underneath this directory.</li>
+<li><strong>image_root_directory</strong> – if specified, the script will export image extracts underneath this directory.</li>
+<li><strong>data_root_directory</strong> – if specified, the script will export data extracts underneath this directory.</li>
 <li><strong>request_specific_arrays</strong> – boolean set to true to ask for individual arrays</li>
 <li><strong>force_first_output</strong> – boolean set to true to write the first timestep regardless of write_start.</li>
 </ul>

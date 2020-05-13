@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>paraview.cpexport &mdash; ParaView/Python 5.8.0-729-g0cb96d89f0 documentation</title>
+  <title>paraview.cpexport &mdash; ParaView/Python 5.8.0-736-gc98d09fe1e documentation</title>
   
 
   
@@ -24,7 +24,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:'../../',
-        VERSION:'5.8.0-729-g0cb96d89f0',
+        VERSION:'5.8.0-736-gc98d09fe1e',
         COLLAPSE_INDEX:false,
         FILE_SUFFIX:'.html',
         HAS_SOURCE:  true
@@ -49,7 +49,7 @@
         <link rel="index" title="Index"
               href="../../genindex.html"/>
         <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="ParaView/Python 5.8.0-729-g0cb96d89f0 documentation" href="../../index.html"/>
+    <link rel="top" title="ParaView/Python 5.8.0-736-gc98d09fe1e documentation" href="../../index.html"/>
         <link rel="up" title="Module code" href="../index.html"/> 
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -67,7 +67,7 @@
           <li> <a href="../../index.html">
             <img src="../../_static/paraview-logo-small.png"
             alt="ParaView/Python"></img></a> </li>
-          <li class="version"> version 5.8.0-729-g0cb96d89f0</li>
+          <li class="version"> version 5.8.0-736-gc98d09fe1e</li>
         </ul>
         <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
   <input type="text" name="q" placeholder="Search docs" />
@@ -691,7 +691,8 @@
 <span class="s2">requestSpecificArrays=</span><span class="si">%s</span><span class="s2"></span>
 
 <span class="s2"># a root directory under which all Catalyst output goes</span>
-<span class="s2">rootDirectory=&#39;</span><span class="si">%s</span><span class="s2">&#39;</span>
+<span class="s2">imageRootDirectory=&#39;</span><span class="si">%s</span><span class="s2">&#39;</span>
+<span class="s2">dataRootDirectory=&#39;</span><span class="si">%s</span><span class="s2">&#39;</span>
 
 <span class="s2"># makes a cinema D index table</span>
 <span class="s2">make_cinema_table=</span><span class="si">%s</span><span class="s2"></span>
@@ -752,7 +753,8 @@
 <div class="viewcode-block" id="DumpCoProcessingScript"><a class="viewcode-back" href="../../paraview.cpexport.html#paraview.cpexport.DumpCoProcessingScript">[docs]</a><span class="k">def</span> <span class="nf">DumpCoProcessingScript</span><span class="p">(</span><span class="n">export_rendering</span><span class="p">,</span> <span class="n">simulation_input_map</span><span class="p">,</span> <span class="n">screenshot_info</span><span class="p">,</span>
     <span class="n">padding_amount</span><span class="p">,</span> <span class="n">rescale_data_range</span><span class="p">,</span> <span class="n">enable_live_viz</span><span class="p">,</span> <span class="n">live_viz_frequency</span><span class="p">,</span>
                            <span class="n">cinema_tracks</span><span class="p">,</span> <span class="n">cinema_arrays</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">write_start</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
-                           <span class="n">make_cinema_table</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">root_directory</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+                           <span class="n">make_cinema_table</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">image_root_directory</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+                           <span class="n">data_root_directory</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
                            <span class="n">request_specific_arrays</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">force_first_output</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Returns a string with the generated CoProcessing script based on the</span>
 <span class="sd">    options specified.</span>
@@ -778,7 +780,9 @@
 
 <span class="sd">    :param filename: if specified, the script is written to the file.</span>
 
-<span class="sd">    :param root_directory: if specified, the script will export underneath this directory.</span>
+<span class="sd">    :param image_root_directory: if specified, the script will export image extracts underneath this directory.</span>
+
+<span class="sd">    :param data_root_directory: if specified, the script will export data extracts underneath this directory.</span>
 
 <span class="sd">    :param request_specific_arrays: boolean set to true to ask for individual arrays</span>
 
@@ -796,7 +800,8 @@
                                   <span class="n">padding_amount</span><span class="p">,</span>
                                   <span class="n">rescale_data_range</span><span class="p">,</span>
                                   <span class="n">request_specific_arrays</span><span class="p">,</span>
-                                  <span class="n">root_directory</span><span class="p">,</span>
+                                  <span class="n">image_root_directory</span><span class="p">,</span>
+                                  <span class="n">data_root_directory</span><span class="p">,</span>
                                   <span class="n">make_cinema_table</span><span class="p">,</span>
                                   <span class="n">version_str</span><span class="p">,</span>
                                   <span class="n">pipeline_script</span><span class="p">,</span>

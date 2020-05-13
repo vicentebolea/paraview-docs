@@ -128,7 +128,7 @@ $(function() {
 </pre><h2>FileChooser </h2>
 <p>Specify supported extensions to list for <code><a class="el" href="classpqFileChooserWidget.html" title="file chooser widget which consists of a tool button and a line edit hitting the tool button will brin...">pqFileChooserWidget</a></code> dialog.</p>
 <p>For properties using FileListDomain to show a file chooser widget on the Properties panel, sometimes we want to provide a list of extensions expected. In that case, one can use this hint. Note, this is not intended for specifying extensions that a reader supports. For that one uses the <code>&lt;ReaderFactory&gt;</code> hint described in <a class="el" href="ProxyHints.html">ProxyHints</a>. Multiple <code>FileChooser</code> hints may be specified to show multiple extensions with different description texts.</p>
-<p>By default, the file chooser widget will accept only existing files. It is possible to add <code>&lt;UseDirectoryName/&gt;</code> in the <code>&lt;Hints&gt;</code> section to accept only directories, or <code>&lt;AcceptAnyFile/&gt;</code> to accept any filename to export data. </p><pre class="fragment">&lt;StringVectorProperty animateable="0"
+<p>By default, the file chooser widget will accept only existing files. It is possible to add <code>&lt;UseDirectoryName/&gt;</code> in the <code>&lt;Hints&gt;</code> section to accept only directories, <code>&lt;AcceptAnyFile/&gt;</code> to accept any filename to export data, or <code>&lt;BrowseLocalFileSystem/&gt;</code> to browse local file-system irrespective of the connection type. </p><pre class="fragment">&lt;StringVectorProperty animateable="0"
                       command="SetQFileName"
                       name="QFileName"
                       number_of_elements="1"

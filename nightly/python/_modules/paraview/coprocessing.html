@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>paraview.coprocessing &mdash; ParaView/Python 5.8.0-729-g0cb96d89f0 documentation</title>
+  <title>paraview.coprocessing &mdash; ParaView/Python 5.8.0-736-gc98d09fe1e documentation</title>
   
 
   
@@ -24,7 +24,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:'../../',
-        VERSION:'5.8.0-729-g0cb96d89f0',
+        VERSION:'5.8.0-736-gc98d09fe1e',
         COLLAPSE_INDEX:false,
         FILE_SUFFIX:'.html',
         HAS_SOURCE:  true
@@ -49,7 +49,7 @@
         <link rel="index" title="Index"
               href="../../genindex.html"/>
         <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="ParaView/Python 5.8.0-729-g0cb96d89f0 documentation" href="../../index.html"/>
+    <link rel="top" title="ParaView/Python 5.8.0-736-gc98d09fe1e documentation" href="../../index.html"/>
         <link rel="up" title="Module code" href="../index.html"/> 
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -67,7 +67,7 @@
           <li> <a href="../../index.html">
             <img src="../../_static/paraview-logo-small.png"
             alt="ParaView/Python"></img></a> </li>
-          <li class="version"> version 5.8.0-729-g0cb96d89f0</li>
+          <li class="version"> version 5.8.0-736-gc98d09fe1e</li>
         </ul>
         <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
   <input type="text" name="q" placeholder="Search docs" />
@@ -730,7 +730,8 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">__FirstTimeStepIndex</span> <span class="o">=</span> <span class="kc">None</span>
         <span class="c1"># a list of arrays requested for each channel, e.g. {&#39;input&#39;: [&quot;a point data array name&quot;, 0], [&quot;a cell data array name&quot;, 1]}</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">__RequestedArrays</span> <span class="o">=</span> <span class="kc">None</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">__RootDirectory</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__ImageRootDirectory</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__DataRootDirectory</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">__CinemaDHelper</span> <span class="o">=</span> <span class="kc">None</span>
 
 <div class="viewcode-block" id="CoProcessor.SetPrintEnsightFormatString"><a class="viewcode-back" href="../../paraview.coprocessing.html#paraview.coprocessing.CoProcessor.SetPrintEnsightFormatString">[docs]</a>    <span class="k">def</span> <span class="nf">SetPrintEnsightFormatString</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">enable</span><span class="p">):</span>
@@ -1497,7 +1498,8 @@
 
 <div class="viewcode-block" id="CoProcessor.EnableCinemaDTable"><a class="viewcode-back" href="../../paraview.coprocessing.html#paraview.coprocessing.CoProcessor.EnableCinemaDTable">[docs]</a>    <span class="k">def</span> <span class="nf">EnableCinemaDTable</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot; Enable the normally disabled cinema D table export feature &quot;&quot;&quot;</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">__CinemaDHelper</span> <span class="o">=</span> <span class="n">exportnow</span><span class="o">.</span><span class="n">CinemaDHelper</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">__RootDirectory</span><span class="p">)</span></div>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__CinemaDHelper</span> <span class="o">=</span> <span class="n">exportnow</span><span class="o">.</span><span class="n">CinemaDHelper</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">__ImageRootDirectory</span><span class="p">)</span></div>
 
 
     <span class="k">def</span> <span class="nf">__AppendCViewToCinemaDTable</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">time</span><span class="p">,</span> <span class="n">producer</span><span class="p">,</span> <span class="n">filelist</span><span class="p">):</span>
@@ -1535,24 +1537,33 @@
         <span class="k">if</span> <span class="n">comm</span><span class="o">.</span><span class="n">GetLocalProcessId</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">__CinemaDHelper</span><span class="o">.</span><span class="n">WriteNow</span><span class="p">()</span>
 
-
 <div class="viewcode-block" id="CoProcessor.SetRootDirectory"><a class="viewcode-back" href="../../paraview.coprocessing.html#paraview.coprocessing.CoProcessor.SetRootDirectory">[docs]</a>    <span class="k">def</span> <span class="nf">SetRootDirectory</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">root_directory</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot; Makes Catalyst put all output under this directory. &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">SetImageRootDirectory</span><span class="p">(</span><span class="n">root_directory</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">SetDataRootDirectory</span><span class="p">(</span><span class="n">root_directory</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="CoProcessor.SetImageRootDirectory"><a class="viewcode-back" href="../../paraview.coprocessing.html#paraview.coprocessing.CoProcessor.SetImageRootDirectory">[docs]</a>    <span class="k">def</span> <span class="nf">SetImageRootDirectory</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">root_directory</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Specify root directory for image extracts&quot;&quot;&quot;</span>
         <span class="k">if</span> <span class="n">root_directory</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">root_directory</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">):</span>
             <span class="n">root_directory</span> <span class="o">=</span> <span class="n">root_directory</span> <span class="o">+</span> <span class="s2">&quot;/&quot;</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">__RootDirectory</span> <span class="o">=</span> <span class="n">root_directory</span></div>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__ImageRootDirectory</span> <span class="o">=</span> <span class="n">root_directory</span></div>
 
+<div class="viewcode-block" id="CoProcessor.SetDataRootDirectory"><a class="viewcode-back" href="../../paraview.coprocessing.html#paraview.coprocessing.CoProcessor.SetDataRootDirectory">[docs]</a>    <span class="k">def</span> <span class="nf">SetDataRootDirectory</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">root_directory</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Specify root directory for data extracts&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">root_directory</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">root_directory</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">):</span>
+            <span class="n">root_directory</span> <span class="o">=</span> <span class="n">root_directory</span> <span class="o">+</span> <span class="s2">&quot;/&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__DataRootDirectory</span> <span class="o">=</span> <span class="n">root_directory</span></div>
 
     <span class="k">def</span> <span class="nf">__FixupWriters</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot; Called once to ensure that all writers obey the root directory directive &quot;&quot;&quot;</span>
-        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">__RootDirectory</span><span class="p">:</span>
-            <span class="k">return</span>
-        <span class="k">for</span> <span class="n">view</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">__ViewsList</span><span class="p">:</span>
-            <span class="n">view</span><span class="o">.</span><span class="n">cpFileName</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__RootDirectory</span> <span class="o">+</span> <span class="n">view</span><span class="o">.</span><span class="n">cpFileName</span>
-        <span class="k">for</span> <span class="n">writer</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">__WritersList</span><span class="p">:</span>
-            <span class="n">fileName</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__RootDirectory</span> <span class="o">+</span> <span class="n">writer</span><span class="o">.</span><span class="n">parameters</span><span class="o">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s2">&quot;FileName&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">GetElement</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-            <span class="n">writer</span><span class="o">.</span><span class="n">parameters</span><span class="o">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s2">&quot;FileName&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">SetElement</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">fileName</span><span class="p">)</span>
-            <span class="n">writer</span><span class="o">.</span><span class="n">parameters</span><span class="o">.</span><span class="n">FileName</span> <span class="o">=</span> <span class="n">fileName</span></div>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__ImageRootDirectory</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">view</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">__ViewsList</span><span class="p">:</span>
+                <span class="n">view</span><span class="o">.</span><span class="n">cpFileName</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__ImageRootDirectory</span> <span class="o">+</span> <span class="n">view</span><span class="o">.</span><span class="n">cpFileName</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__DataRootDirectory</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">writer</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">__WritersList</span><span class="p">:</span>
+                <span class="n">fileName</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__DataRootDirectory</span> <span class="o">+</span> <span class="n">writer</span><span class="o">.</span><span class="n">parameters</span><span class="o">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s2">&quot;FileName&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">GetElement</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+                <span class="n">writer</span><span class="o">.</span><span class="n">parameters</span><span class="o">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s2">&quot;FileName&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">SetElement</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">fileName</span><span class="p">)</span>
+                <span class="n">writer</span><span class="o">.</span><span class="n">parameters</span><span class="o">.</span><span class="n">FileName</span> <span class="o">=</span> <span class="n">fileName</span></div>
 </pre></div>
 
           <footer>
