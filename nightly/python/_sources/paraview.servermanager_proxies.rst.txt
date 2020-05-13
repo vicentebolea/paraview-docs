@@ -522,6 +522,7 @@ Proxies generated for server side objects under :doc:`paraview.simple`
     paraview.simple.YoungsMaterialInterface
     paraview.simple.a2DGlyph
     paraview.simple.a3DText
+    paraview.simple.glTFReader
     paraview.simple.plyreader
     paraview.simple.proSTARSTARCDReader
     paraview.simple.spcthhistoryreader
@@ -1043,6 +1044,7 @@ Proxies generated for server side objects under :doc:`paraview.simple`
     YoungsMaterialInterface
     a2DGlyph
     a3DText
+    glTFReader
     plyreader
     proSTARSTARCDReader
     spcthhistoryreader
