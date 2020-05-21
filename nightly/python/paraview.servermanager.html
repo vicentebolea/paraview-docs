@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>servermanager Module &mdash; ParaView/Python 5.8.0-771-gad233677ee documentation</title>
+  <title>servermanager Module &mdash; ParaView/Python 5.8.0-775-g630b85dfaa documentation</title>
   
 
   
@@ -24,7 +24,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:'./',
-        VERSION:'5.8.0-771-gad233677ee',
+        VERSION:'5.8.0-775-g630b85dfaa',
         COLLAPSE_INDEX:false,
         FILE_SUFFIX:'.html',
         HAS_SOURCE:  true
@@ -49,7 +49,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="ParaView/Python 5.8.0-771-gad233677ee documentation" href="index.html"/>
+    <link rel="top" title="ParaView/Python 5.8.0-775-g630b85dfaa documentation" href="index.html"/>
         <link rel="up" title="paraview Package" href="paraview.html"/>
         <link rel="next" title="simple Module" href="paraview.simple.html"/>
         <link rel="prev" title="selection Module" href="paraview.selection.html"/> 
@@ -69,7 +69,7 @@
           <li> <a href="index.html">
             <img src="_static/paraview-logo-small.png"
             alt="ParaView/Python"></img></a> </li>
-          <li class="version"> version 5.8.0-771-gad233677ee</li>
+          <li class="version"> version 5.8.0-775-g630b85dfaa</li>
         </ul>
         <form id ="rtd-search-form" class="wy-form" action="search.html" method="get">
   <input type="text" name="q" placeholder="Search docs" />
@@ -1291,6 +1291,20 @@ manager state.</p>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
 <p>Exception for missing registration information. Raised when a name or group
 is not specified or when a group cannot be deduced.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="paraview.servermanager.MultiplexerSourceProxy">
+<em class="property">class </em><code class="descclassname">paraview.servermanager.</code><code class="descname">MultiplexerSourceProxy</code><span class="sig-paren">(</span><em>**args</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/servermanager.html#MultiplexerSourceProxy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.servermanager.MultiplexerSourceProxy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#paraview.servermanager.SourceProxy" title="paraview.servermanager.SourceProxy"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.servermanager.SourceProxy</span></code></a></p>
+<dl class="method">
+<dt id="paraview.servermanager.MultiplexerSourceProxy.UpdateDynamicProperties">
+<code class="descname">UpdateDynamicProperties</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/servermanager.html#MultiplexerSourceProxy.UpdateDynamicProperties"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.servermanager.MultiplexerSourceProxy.UpdateDynamicProperties" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update the instance to add properties of newly exposed
+SMProperties. The current limitation is that help() still
+doesn’t work as one would expect.</p>
+</dd></dl>
+
 </dd></dl>
 
 <dl class="function">

@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>paraview.servermanager &mdash; ParaView/Python 5.8.0-771-gad233677ee documentation</title>
+  <title>paraview.servermanager &mdash; ParaView/Python 5.8.0-775-g630b85dfaa documentation</title>
   
 
   
@@ -24,7 +24,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:'../../',
-        VERSION:'5.8.0-771-gad233677ee',
+        VERSION:'5.8.0-775-g630b85dfaa',
         COLLAPSE_INDEX:false,
         FILE_SUFFIX:'.html',
         HAS_SOURCE:  true
@@ -49,7 +49,7 @@
         <link rel="index" title="Index"
               href="../../genindex.html"/>
         <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="ParaView/Python 5.8.0-771-gad233677ee documentation" href="../../index.html"/>
+    <link rel="top" title="ParaView/Python 5.8.0-775-g630b85dfaa documentation" href="../../index.html"/>
         <link rel="up" title="Module code" href="../index.html"/> 
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -67,7 +67,7 @@
           <li> <a href="../../index.html">
             <img src="../../_static/paraview-logo-small.png"
             alt="ParaView/Python"></img></a> </li>
-          <li class="version"> version 5.8.0-771-gad233677ee</li>
+          <li class="version"> version 5.8.0-775-g630b85dfaa</li>
         </ul>
         <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
   <input type="text" name="q" placeholder="Search docs" />
@@ -1284,6 +1284,16 @@
                 <span class="s1">&#39;ElementVariables&#39;</span><span class="p">,</span> <span class="s1">&#39;GlobalVariables&#39;</span><span class="p">):</span>
                 <span class="n">f</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">prop</span><span class="p">)</span>
                 <span class="n">f</span><span class="o">.</span><span class="n">DeselectAll</span><span class="p">()</span></div></div>
+
+<div class="viewcode-block" id="MultiplexerSourceProxy"><a class="viewcode-back" href="../../paraview.servermanager.html#paraview.servermanager.MultiplexerSourceProxy">[docs]</a><span class="k">class</span> <span class="nc">MultiplexerSourceProxy</span><span class="p">(</span><span class="n">SourceProxy</span><span class="p">):</span>
+<div class="viewcode-block" id="MultiplexerSourceProxy.UpdateDynamicProperties"><a class="viewcode-back" href="../../paraview.servermanager.html#paraview.servermanager.MultiplexerSourceProxy.UpdateDynamicProperties">[docs]</a>    <span class="k">def</span> <span class="nf">UpdateDynamicProperties</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Update the instance to add properties of newly exposed</span>
+<span class="sd">        SMProperties. The current limitation is that help() still</span>
+<span class="sd">        doesn&#39;t work as one would expect.&quot;&quot;&quot;</span>
+        <span class="n">exclude</span> <span class="o">=</span> <span class="nb">frozenset</span><span class="p">([</span><span class="n">p</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="nb">dir</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">)</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">,</span> <span class="n">p</span><span class="p">),</span> <span class="nb">property</span><span class="p">)])</span>
+        <span class="n">cdict</span> <span class="o">=</span> <span class="n">_createClassProperties</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">exclude</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">cdict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">add_attribute</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">val</span><span class="p">)</span></div></div>
 
 <div class="viewcode-block" id="ViewLayoutProxy"><a class="viewcode-back" href="../../paraview.servermanager.html#paraview.servermanager.ViewLayoutProxy">[docs]</a><span class="k">class</span> <span class="nc">ViewLayoutProxy</span><span class="p">(</span><span class="n">Proxy</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Special class to define convenience methods for View Layout&quot;&quot;&quot;</span>
@@ -3356,6 +3366,35 @@
 <span class="k">def</span> <span class="nf">_make_name_valid</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">paraview</span><span class="o">.</span><span class="n">make_name_valid</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
 
+<span class="k">def</span> <span class="nf">_createClassProperties</span><span class="p">(</span><span class="n">proto</span><span class="p">,</span> <span class="n">excludeset</span><span class="o">=</span><span class="nb">frozenset</span><span class="p">()):</span>
+    <span class="sd">&quot;&quot;&quot;Builds a dict of properties for all SMProperties on the `proto` proxy.</span>
+<span class="sd">    If excludeset is not empty, then it is expected to be names of properties</span>
+<span class="sd">    to exclude.&quot;&quot;&quot;</span>
+    <span class="n">cdict</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="nb">iter</span> <span class="o">=</span> <span class="n">PropertyIterator</span><span class="p">(</span><span class="n">proto</span><span class="p">)</span>
+    <span class="c1"># Add all properties as python properties.</span>
+    <span class="k">for</span> <span class="n">prop</span> <span class="ow">in</span> <span class="nb">iter</span><span class="p">:</span>
+        <span class="n">propName</span> <span class="o">=</span> <span class="nb">iter</span><span class="o">.</span><span class="n">GetKey</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">paraview</span><span class="o">.</span><span class="n">compatibility</span><span class="o">.</span><span class="n">GetVersion</span><span class="p">()</span> <span class="o">&gt;=</span> <span class="mf">3.5</span><span class="p">:</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">prop</span><span class="o">.</span><span class="n">GetInformationOnly</span><span class="p">()</span> <span class="ow">and</span> <span class="n">propName</span> <span class="o">!=</span> <span class="s2">&quot;TimestepValues&quot;</span> \
+              <span class="ow">and</span> <span class="n">prop</span><span class="o">.</span><span class="n">GetPanelVisibility</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;never&quot;</span><span class="p">)</span> <span class="ow">or</span> <span class="n">prop</span><span class="o">.</span><span class="n">GetIsInternal</span><span class="p">():</span>
+                <span class="k">continue</span>
+        <span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="n">propName</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">paraview</span><span class="o">.</span><span class="n">compatibility</span><span class="o">.</span><span class="n">GetVersion</span><span class="p">()</span> <span class="o">&gt;=</span> <span class="mf">3.5</span><span class="p">:</span>
+            <span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="nb">iter</span><span class="o">.</span><span class="n">PropertyLabel</span><span class="p">]</span>
+
+        <span class="n">propDoc</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">if</span> <span class="n">prop</span><span class="o">.</span><span class="n">GetDocumentation</span><span class="p">():</span>
+            <span class="n">propDoc</span> <span class="o">=</span> <span class="n">prop</span><span class="o">.</span><span class="n">GetDocumentation</span><span class="p">()</span><span class="o">.</span><span class="n">GetDescription</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">names</span><span class="p">:</span>
+            <span class="n">name</span> <span class="o">=</span> <span class="n">_make_name_valid</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">name</span> <span class="ow">and</span> <span class="n">name</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">excludeset</span><span class="p">:</span>
+                <span class="n">cdict</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="nb">property</span><span class="p">(</span><span class="n">_createGetProperty</span><span class="p">(</span><span class="n">propName</span><span class="p">),</span>
+                                       <span class="n">_createSetProperty</span><span class="p">(</span><span class="n">propName</span><span class="p">),</span>
+                                       <span class="kc">None</span><span class="p">,</span>
+                                       <span class="n">propDoc</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">cdict</span>
+
 <span class="k">def</span> <span class="nf">_createClass</span><span class="p">(</span><span class="n">groupName</span><span class="p">,</span> <span class="n">proxyName</span><span class="p">,</span> <span class="n">apxm</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">prototype</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Defines a new class type for the proxy.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">prototype</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
@@ -3375,28 +3414,8 @@
     <span class="n">cdict</span> <span class="o">=</span> <span class="p">{}</span>
     <span class="c1"># Create an Initialize() method for this sub-class.</span>
     <span class="n">cdict</span><span class="p">[</span><span class="s1">&#39;Initialize&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">_createInitialize</span><span class="p">(</span><span class="n">groupName</span><span class="p">,</span> <span class="n">proxyName</span><span class="p">)</span>
-    <span class="nb">iter</span> <span class="o">=</span> <span class="n">PropertyIterator</span><span class="p">(</span><span class="n">proto</span><span class="p">)</span>
-    <span class="c1"># Add all properties as python properties.</span>
-    <span class="k">for</span> <span class="n">prop</span> <span class="ow">in</span> <span class="nb">iter</span><span class="p">:</span>
-        <span class="n">propName</span> <span class="o">=</span> <span class="nb">iter</span><span class="o">.</span><span class="n">GetKey</span><span class="p">()</span>
-        <span class="k">if</span> <span class="n">paraview</span><span class="o">.</span><span class="n">compatibility</span><span class="o">.</span><span class="n">GetVersion</span><span class="p">()</span> <span class="o">&gt;=</span> <span class="mf">3.5</span><span class="p">:</span>
-            <span class="k">if</span> <span class="p">(</span><span class="n">prop</span><span class="o">.</span><span class="n">GetInformationOnly</span><span class="p">()</span> <span class="ow">and</span> <span class="n">propName</span> <span class="o">!=</span> <span class="s2">&quot;TimestepValues&quot;</span> \
-              <span class="ow">and</span> <span class="n">prop</span><span class="o">.</span><span class="n">GetPanelVisibility</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;never&quot;</span><span class="p">)</span> <span class="ow">or</span> <span class="n">prop</span><span class="o">.</span><span class="n">GetIsInternal</span><span class="p">():</span>
-                <span class="k">continue</span>
-        <span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="n">propName</span><span class="p">]</span>
-        <span class="k">if</span> <span class="n">paraview</span><span class="o">.</span><span class="n">compatibility</span><span class="o">.</span><span class="n">GetVersion</span><span class="p">()</span> <span class="o">&gt;=</span> <span class="mf">3.5</span><span class="p">:</span>
-            <span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="nb">iter</span><span class="o">.</span><span class="n">PropertyLabel</span><span class="p">]</span>
+    <span class="n">cdict</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">_createClassProperties</span><span class="p">(</span><span class="n">proto</span><span class="p">))</span>
 
-        <span class="n">propDoc</span> <span class="o">=</span> <span class="kc">None</span>
-        <span class="k">if</span> <span class="n">prop</span><span class="o">.</span><span class="n">GetDocumentation</span><span class="p">():</span>
-            <span class="n">propDoc</span> <span class="o">=</span> <span class="n">prop</span><span class="o">.</span><span class="n">GetDocumentation</span><span class="p">()</span><span class="o">.</span><span class="n">GetDescription</span><span class="p">()</span>
-        <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">names</span><span class="p">:</span>
-            <span class="n">name</span> <span class="o">=</span> <span class="n">_make_name_valid</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
-            <span class="k">if</span> <span class="n">name</span><span class="p">:</span>
-                <span class="n">cdict</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="nb">property</span><span class="p">(</span><span class="n">_createGetProperty</span><span class="p">(</span><span class="n">propName</span><span class="p">),</span>
-                                       <span class="n">_createSetProperty</span><span class="p">(</span><span class="n">propName</span><span class="p">),</span>
-                                       <span class="kc">None</span><span class="p">,</span>
-                                       <span class="n">propDoc</span><span class="p">)</span>
     <span class="c1"># Add the documentation as the class __doc__</span>
     <span class="k">if</span> <span class="n">proto</span><span class="o">.</span><span class="n">GetDocumentation</span><span class="p">()</span> <span class="ow">and</span> \
        <span class="n">proto</span><span class="o">.</span><span class="n">GetDocumentation</span><span class="p">()</span><span class="o">.</span><span class="n">GetDescription</span><span class="p">():</span>
@@ -3407,6 +3426,8 @@
     <span class="c1"># Create the new type</span>
     <span class="k">if</span> <span class="n">proto</span><span class="o">.</span><span class="n">GetXMLName</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;ExodusIIReader&quot;</span><span class="p">:</span>
         <span class="n">superclasses</span> <span class="o">=</span> <span class="p">(</span><span class="n">ExodusIIReaderProxy</span><span class="p">,)</span>
+    <span class="k">elif</span> <span class="n">proto</span><span class="o">.</span><span class="n">IsA</span><span class="p">(</span><span class="s2">&quot;vtkSMMultiplexerSourceProxy&quot;</span><span class="p">):</span>
+        <span class="n">superclasses</span> <span class="o">=</span> <span class="p">(</span><span class="n">MultiplexerSourceProxy</span><span class="p">,)</span>
     <span class="k">elif</span> <span class="n">proto</span><span class="o">.</span><span class="n">IsA</span><span class="p">(</span><span class="s2">&quot;vtkSMSourceProxy&quot;</span><span class="p">):</span>
         <span class="n">superclasses</span> <span class="o">=</span> <span class="p">(</span><span class="n">SourceProxy</span><span class="p">,)</span>
     <span class="k">elif</span> <span class="n">proto</span><span class="o">.</span><span class="n">IsA</span><span class="p">(</span><span class="s2">&quot;vtkSMViewLayoutProxy&quot;</span><span class="p">):</span>
