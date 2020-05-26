@@ -104,6 +104,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8c8843b911c6b57fc6bea6ac3699f6d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7599eed8836c7f5277b51e541563c9db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkPVPlane.html#a7599eed8836c7f5277b51e541563c9db">SetTransform</a> (const <a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/vtkVectorOperators_8h.html#a45c855d65dd0e2b57b08024500ff9159">double</a> elements[16]) override</td></tr>
 <tr class="separator:a7599eed8836c7f5277b51e541563c9db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf74e17714928e7f14d393771b55f0da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkPVPlane.html#abf74e17714928e7f14d393771b55f0da">EvaluateFunction</a> (<a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/classvtkDataArray.html">vtkDataArray</a> *input, <a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/classvtkDataArray.html">vtkDataArray</a> *output) override</td></tr>
+<tr class="separator:abf74e17714928e7f14d393771b55f0da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ac5952e7d49e3cdbc50a6758f62f0af"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/vtkVectorOperators_8h.html#a45c855d65dd0e2b57b08024500ff9159">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkPVPlane.html#a1ac5952e7d49e3cdbc50a6758f62f0af">EvaluateFunction</a> (<a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/vtkVectorOperators_8h.html#a45c855d65dd0e2b57b08024500ff9159">double</a> x[3]) override</td></tr>
 <tr class="separator:a1ac5952e7d49e3cdbc50a6758f62f0af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af73c2699661554d247891dfcb013abd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkPVPlane.html#af73c2699661554d247891dfcb013abd7">EvaluateGradient</a> (<a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/vtkVectorOperators_8h.html#a45c855d65dd0e2b57b08024500ff9159">double</a> x[3], <a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/vtkVectorOperators_8h.html#a45c855d65dd0e2b57b08024500ff9159">double</a> g[3]) override</td></tr>
@@ -941,8 +943,44 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="abf74e17714928e7f14d393771b55f0da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf74e17714928e7f14d393771b55f0da">&#9670;&nbsp;</a></span>EvaluateFunction() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vtkPVPlane::EvaluateFunction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/classvtkDataArray.html">vtkDataArray</a> *&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/classvtkDataArray.html">vtkDataArray</a> *&#160;</td>
+          <td class="paramname"><em>output</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a1ac5952e7d49e3cdbc50a6758f62f0af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ac5952e7d49e3cdbc50a6758f62f0af">&#9670;&nbsp;</a></span>EvaluateFunction()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ac5952e7d49e3cdbc50a6758f62f0af">&#9670;&nbsp;</a></span>EvaluateFunction() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1031,7 +1069,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkPVPlane_8h_source.html#l00091">91</a> of file <a class="el" href="vtkPVPlane_8h_source.html">vtkPVPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkPVPlane_8h_source.html#l00092">92</a> of file <a class="el" href="vtkPVPlane_8h_source.html">vtkPVPlane.h</a>.</p>
 
 </div>
 </div>
@@ -1055,7 +1093,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkPVPlane_8h_source.html#l00092">92</a> of file <a class="el" href="vtkPVPlane_8h_source.html">vtkPVPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkPVPlane_8h_source.html#l00093">93</a> of file <a class="el" href="vtkPVPlane_8h_source.html">vtkPVPlane.h</a>.</p>
 
 </div>
 </div>
@@ -1079,7 +1117,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkPVPlane_8h_source.html#l00094">94</a> of file <a class="el" href="vtkPVPlane_8h_source.html">vtkPVPlane.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkPVPlane_8h_source.html#l00095">95</a> of file <a class="el" href="vtkPVPlane_8h_source.html">vtkPVPlane.h</a>.</p>
 
 </div>
 </div>

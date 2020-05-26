@@ -45,7 +45,7 @@ $(function() {
 <p>Before you begin, perform initial setup:</p>
 <ol type="1">
 <li>Register <a href="https://gitlab.kitware.com/users/sign_in">GitLab Access</a> to create an account and select a user name.</li>
-<li><a href="https://gitlab.kitware.com/paraview/paraview/forks/new">Fork ParaView</a> into your user's namespace on GitLab.</li>
+<li><a href="https://gitlab.kitware.com/paraview/paraview/-/forks/new">Fork ParaView</a> into your user's namespace on GitLab.</li>
 <li>Follow the <a href="download.md#clone">download instructions</a> to create a local clone of the main ParaView repository. Optionally configure Git to <a href="download.md#use-ssh-instead-of-https">use SSH instead of HTTPS</a>. Then clone: <pre class="fragment">$ git clone --recursive https://gitlab.kitware.com/paraview/paraview.git ParaView
 $ cd ParaView
 </pre> The main repository will be configured as your <code>origin</code> remote.</li>
@@ -133,7 +133,7 @@ $ git commit
 <li><p class="startli">Push commits in your topic branch to your fork in GitLab: </p><pre class="fragment">$ git gitlab-push
 </pre><p class="startli">Notes:</p><ul>
 <li>If you are revising a previously pushed topic and have rewritten the topic history, add <code>-f</code> or <code>--force</code> to overwrite the destination.</li>
-<li>If the topic adds data see <a href="https://gitlab.kitware.com/vtk/vtk/blob/master/Documentation/dev/git/data.md#push">this note</a>.</li>
+<li>If the topic adds data see <a href="https://gitlab.kitware.com/vtk/vtk/-/blob/master/Documentation/dev/git/data.md#push">this note</a>.</li>
 <li>The <code>gitlab-push</code> script also pushes the <code>master</code> branch to your fork in GitLab to keep it in sync with the upstream <code>master</code>.</li>
 </ul>
 <p class="startli">The output will include a link to the topic branch in your fork in GitLab and a link to a page for creating a Merge Request.</p>
@@ -141,7 +141,7 @@ $ git commit
 </ol>
 <h2>Create a Merge Request </h2>
 <p>(If you already created a merge request for a given topic and have reached this step after revising it, skip to the <a href="#review-a-merge-request">next step</a>.)</p>
-<p>Visit your fork in GitLab, browse to the "**Merge Requests**" link on the left, and use the "**New Merge Request**" button in the upper right to reach the URL printed at the end of the <a href="#share-a-topic">previous step</a>. It should be of the form: </p><pre class="fragment">https://gitlab.kitware.com/&lt;username&gt;/paraview/merge_requests/new
+<p>Visit your fork in GitLab, browse to the "**Merge Requests**" link on the left, and use the "**New Merge Request**" button in the upper right to reach the URL printed at the end of the <a href="#share-a-topic">previous step</a>. It should be of the form: </p><pre class="fragment">https://gitlab.kitware.com/&lt;username&gt;/paraview/-/merge_requests/new
 </pre><p>Follow these steps:</p>
 <ol type="1">
 <li>In the "**Source branch**" box select the <code>&lt;username&gt;/paraview</code> repository and the <code>my-topic</code> branch.</li>
@@ -267,7 +267,7 @@ $ git pull
 </li>
 </ol>
 <h2>Contribute VTK Changes </h2>
-<p>If you have any VTK changes, then you are required to get your changes incorporated into VTK using <a href="https://gitlab.kitware.com/vtk/vtk/tree/master/Documentation/dev/git">VTK's development workflow</a>. Once your VTK topic has been approved and merged into VTK, then:</p>
+<p>If you have any VTK changes, then you are required to get your changes incorporated into VTK using <a href="https://gitlab.kitware.com/vtk/vtk/-/tree/master/Documentation/dev/git">VTK's development workflow</a>. Once your VTK topic has been approved and merged into VTK, then:</p>
 <ol type="1">
 <li>Create a <a href="#create-a-topic">ParaView topic</a> if you haven't already.</li>
 <li>Add your VTK topic head (or the latest VTK origin/master which includes your VTK topic head). <pre class="fragment"> $ cd VTK

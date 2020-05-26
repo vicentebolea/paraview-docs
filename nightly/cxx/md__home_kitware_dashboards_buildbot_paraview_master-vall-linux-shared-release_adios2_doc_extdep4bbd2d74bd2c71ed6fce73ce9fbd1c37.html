@@ -42,17 +42,17 @@ $(function() {
 <div class="textblock"><p>This page documents at a very high level how to contribute to ParaView. Please check our <a class="el" href="develop_8md.html">developer instructions</a> for a more detailed guide to developing and contributing to the project, and our <a class="el" href="Documentation_2dev_2git_2README_8md.html">ParaView Git README</a> for additional information.</p>
 <p>The ParaView development cycle is built upon the following components:</p>
 <ol type="1">
-<li><a href="https://gitlab.kitware.com/paraview/paraview/issues">Issues</a> identify any issues including bugs and feature requests. In general, every code change should have an associated issue which identifies the bug being fixed or the feature being added.</li>
-<li><a href="https://gitlab.kitware.com/paraview/paraview/merge_requests">Merge Requests</a> are collections of changes that address issues.</li>
-<li><a href="https://gitlab.kitware.com/paraview/paraview/labels">Labels</a> are labels or tags that can be added and removed to/from issues and/or merge requests to annotate them including indicating their state in the development cycle. See <a class="el" href="labels_8md.html">Labels Glossary</a>.</li>
-<li><a href="https://gitlab.kitware.com/paraview/paraview/milestones">Milestones</a> refer to development milestones such as numbered public releases, or named internal releases.</li>
+<li><a href="https://gitlab.kitware.com/paraview/paraview/-/issues">Issues</a> identify any issues including bugs and feature requests. In general, every code change should have an associated issue which identifies the bug being fixed or the feature being added.</li>
+<li><a href="https://gitlab.kitware.com/paraview/paraview/-/merge_requests">Merge Requests</a> are collections of changes that address issues.</li>
+<li><a href="https://gitlab.kitware.com/paraview/paraview/-/labels">Labels</a> are labels or tags that can be added and removed to/from issues and/or merge requests to annotate them including indicating their state in the development cycle. See <a class="el" href="labels_8md.html">Labels Glossary</a>.</li>
+<li><a href="https://gitlab.kitware.com/paraview/paraview/-/milestones">Milestones</a> refer to development milestones such as numbered public releases, or named internal releases.</li>
 </ol>
 <h1>Reporting Issues </h1>
-<p>If you have a bug report or a feature request for ParaView, you can use the <a href="https://gitlab.kitware.com/paraview/paraview/issues">issues</a> tracker to report a <a href="https://gitlab.kitware.com/paraview/paraview/issues/new">new issue</a>.</p>
+<p>If you have a bug report or a feature request for ParaView, you can use the <a href="https://gitlab.kitware.com/paraview/paraview/-/issues">issues</a> tracker to report a <a href="https://gitlab.kitware.com/paraview/paraview/-/issues/new">new issue</a>.</p>
 <p>To report an issue.</p>
 <ol type="1">
 <li>Register <a href="https://gitlab.kitware.com/users/sign_in">GitLab Access</a> to create an account and select a user name.</li>
-<li>Create a <a href="https://gitlab.kitware.com/paraview/paraview/issues/new">new issue</a>.</li>
+<li>Create a <a href="https://gitlab.kitware.com/paraview/paraview/-/issues/new">new issue</a>.</li>
 <li>Ensure that the issue has a <b>Title</b> and <b>Description</b> with enough details for someone from the development team to reproduce the issue. See <a href="https://gitlab.kitware.com/help/markdown/markdown">Gitlab Markdown</a> guide for styling the <b>Description</b>. Include screenshots and sample datasets whenever possible. Typically, reporter <b>should not</b> set any other fields for the issue, including <b>Assignee</b>, <b>Milestone</b>, or <b>Labels</b>. These get set by members of the development team.</li>
 <li>If developers need more information on an issue, they will add the <code>triage:needinfo</code> label as add a comment for the reporter soliciting more information. Once the reporter has provided the necessary information, he/she should remove the <code>triage:needinfo</code> label from the issue to notify the development team.</li>
 </ol>
@@ -75,7 +75,7 @@ $(function() {
 <p>Typically, one addresses issues by writing code. To start contributing to ParaView:</p>
 <ol type="1">
 <li>Register <a href="https://gitlab.kitware.com/users/sign_in">GitLab Access</a> to create an account and select a user name.</li>
-<li><a href="https://gitlab.kitware.com/paraview/paraview/forks/new">Fork ParaView</a> into your user's namespace on GitLab.</li>
+<li><a href="https://gitlab.kitware.com/paraview/paraview/-/forks/new">Fork ParaView</a> into your user's namespace on GitLab.</li>
 <li><p class="startli">Create a local clone of the main ParaView repository. Optionally configure Git to <a href="Documentation/dev/git/download.md#use-ssh-instead-of-https">use SSH instead of HTTPS</a>. Then clone: </p><pre class="fragment">$ git clone --recursive https://gitlab.kitware.com/paraview/paraview.git ParaView
 $ cd ParaView
 </pre><p> The main repository will be configured as your <code>origin</code> remote.</p>
