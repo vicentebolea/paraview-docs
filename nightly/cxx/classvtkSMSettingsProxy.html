@@ -136,6 +136,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aeee09617ec351b69103069ae87d6c8e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkSMSettingsProxy.html#aeee09617ec351b69103069ae87d6c8e5">LoadLinksState</a> (<a class="el" href="classvtkPVXMLElement.html">vtkPVXMLElement</a> *root, <a class="el" href="classvtkSMProxyLocator.html">vtkSMProxyLocator</a> *locator)</td></tr>
 <tr class="memdesc:aeee09617ec351b69103069ae87d6c8e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save/Load the state for links registered with this settings proxy.  <a href="#aeee09617ec351b69103069ae87d6c8e5">More...</a><br /></td></tr>
 <tr class="separator:aeee09617ec351b69103069ae87d6c8e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:aa978e92900fce8b4bec547e7f6f5e211"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkSMSettingsProxy.html#aa978e92900fce8b4bec547e7f6f5e211">SetIsSerializable</a> (bool)</td></tr>
+<tr class="memdesc:aa978e92900fce8b4bec547e7f6f5e211"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get/Set whether the settings proxy is serializable.  <a href="#aa978e92900fce8b4bec547e7f6f5e211">More...</a><br /></td></tr>
+<tr class="separator:aa978e92900fce8b4bec547e7f6f5e211"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceee0bcfbcd69f522a003e7185eafc62"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkSMSettingsProxy.html#aceee0bcfbcd69f522a003e7185eafc62">GetIsSerializable</a> ()</td></tr>
+<tr class="memdesc:aceee0bcfbcd69f522a003e7185eafc62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get/Set whether the settings proxy is serializable.  <a href="#aceee0bcfbcd69f522a003e7185eafc62">More...</a><br /></td></tr>
+<tr class="separator:aceee0bcfbcd69f522a003e7185eafc62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classvtkSMProxy"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classvtkSMProxy')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classvtkSMProxy.html">vtkSMProxy</a></td></tr>
 <tr class="memitem:ad3f0e984c6abba36493d432b82360fd6 inherit pub_methods_classvtkSMProxy"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkSMProxy.html#ad3f0e984c6abba36493d432b82360fd6">SetAnnotation</a> (const char *<a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/namespacevtkX3D.html#ac6551f7bf833e8254b2b3ecdaea0d210a0846b78bc0416ae791ce3bc3eddc9bc7">key</a>, const char *<a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/namespacevtkX3D.html#ac6551f7bf833e8254b2b3ecdaea0d210a6bf5e5151797630e91167caab3f22b9a">value</a>)</td></tr>
 <tr class="separator:ad3f0e984c6abba36493d432b82360fd6 inherit pub_methods_classvtkSMProxy"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -840,9 +847,13 @@ Additional Inherited Members</h2></td></tr>
 <li>In <code>ReadXMLAttributes</code>, if for a property an <code>information_property</code> attribute is specified i.e. <code><a class="el" href="classvtkSMProperty.html#a8ff7dc5841d3aea14dee0340f9bb7d8c" title="Get the associated information property.">vtkSMProperty::GetInformationProperty</a></code> is not null, then a link is setup between that information property and the original property so that if the information property is modified, the original property is updated accordingly.</li>
 <li>Settings proxies may have an underlying <a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/classvtkObject.html">vtkObject</a> class that they instantiate locally. In which case, the proxy observes vtkCommand::ModifiedEvent on that VTK object and calls <code><a class="el" href="classvtkSMProxy.html#ad929084cd23f1f465399a116ca833f65" title="Updates all property information by calling UpdateInformation() and populating the values.">vtkSMProxy::UpdatePropertyInformation</a></code> on itself to ensure all information properties are updated if the <a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/classvtkObject.html">vtkObject</a> changes.</li>
 </ol>
-<p><code><a class="el" href="classvtkSMSettingsProxy.html#ae72c6ea929dc68ad93376d23951b31e9" title="Process property link hints on the given proxy.">vtkSMSettingsProxy::ProcessPropertyLinks</a></code> is called during proxy initialization (<a class="el" href="classvtkSMParaViewPipelineController.html#a8590d8ab0c40bf7336bf143a3aebc189" title="Pre-initializes a proxy i.e.">vtkSMParaViewPipelineController::PreInitializeProxy</a>) to setup links between the proxy being initialized any of the settings proxies for that session. This is done by processing property hints on the proxy being initialized. </p>
+<p><code><a class="el" href="classvtkSMSettingsProxy.html#ae72c6ea929dc68ad93376d23951b31e9" title="Process property link hints on the given proxy.">vtkSMSettingsProxy::ProcessPropertyLinks</a></code> is called during proxy initialization (<a class="el" href="classvtkSMParaViewPipelineController.html#a8590d8ab0c40bf7336bf143a3aebc189" title="Pre-initializes a proxy i.e.">vtkSMParaViewPipelineController::PreInitializeProxy</a>) to setup links between the proxy being initialized any of the settings proxies for that session. This is done by processing property hints on the proxy being initialized.</p>
+<h1><a class="anchor" id="SettingsAndStateFiles"></a>
+SettingsProxies and state files</h1>
+<p>By default, settings proxies are not saved in the XML state files by <code><a class="el" href="classvtkSMSessionProxyManager.html#aadeea4771bf5a442e2ae2bcb5c679085" title="Save the state of the server manager in XML format in a file.">vtkSMSessionProxyManager::SaveXMLState</a></code>. This is so since settings proxies are often used for application settings to preserve across sessions rather than visualization state. However, there are exceptions. For example, color palettes which are handled using a settings proxy are part of the visualization state and hence should be saved in the XML state. For such settings proxies, one can add the <code>serializable="1"</code> attribute in the proxy definition XML.</p>
+<div class="fragment"><div class="line">&lt;<span class="keywordtype">SettingsProxy</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ColorPalette&quot;</span> <span class="keyword">label</span>=<span class="stringliteral">&quot;Color Palette&quot;</span> <span class="keyword">serializable</span>=<span class="stringliteral">&quot;1&quot;</span>&gt;</div><div class="line">...</div><div class="line">&lt;/<span class="keywordtype">SettingsProxy</span>&gt;</div></div><!-- fragment --><p>All settings proxies with this attribute will be saved in the XML state files. </p>
 
-<p class="definition">Definition at line <a class="el" href="vtkSMSettingsProxy_8h_source.html#l00051">51</a> of file <a class="el" href="vtkSMSettingsProxy_8h_source.html">vtkSMSettingsProxy.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkSMSettingsProxy_8h_source.html#l00071">71</a> of file <a class="el" href="vtkSMSettingsProxy_8h_source.html">vtkSMSettingsProxy.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a0705d4c5aafac2bb7459d71215127eb8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0705d4c5aafac2bb7459d71215127eb8">&#9670;&nbsp;</a></span>Superclass</h2>
@@ -856,7 +867,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkSMSettingsProxy_8h_source.html#l00055">55</a> of file <a class="el" href="vtkSMSettingsProxy_8h_source.html">vtkSMSettingsProxy.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkSMSettingsProxy_8h_source.html#l00075">75</a> of file <a class="el" href="vtkSMSettingsProxy_8h_source.html">vtkSMSettingsProxy.h</a>.</p>
 
 </div>
 </div>
@@ -1308,6 +1319,61 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Save/Load the state for links registered with this settings proxy. </p>
+
+</div>
+</div>
+<a id="aa978e92900fce8b4bec547e7f6f5e211"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa978e92900fce8b4bec547e7f6f5e211">&#9670;&nbsp;</a></span>SetIsSerializable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void vtkSMSettingsProxy::SetIsSerializable </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get/Set whether the settings proxy is serializable. </p>
+
+</div>
+</div>
+<a id="aceee0bcfbcd69f522a003e7185eafc62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aceee0bcfbcd69f522a003e7185eafc62">&#9670;&nbsp;</a></span>GetIsSerializable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool vtkSMSettingsProxy::GetIsSerializable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get/Set whether the settings proxy is serializable. </p>
 
 </div>
 </div>
