@@ -250,6 +250,7 @@ Proxies generated for server side objects under :doc:`paraview.simple`
     paraview.simple.OutlineCorners
     paraview.simple.OutlineCurvilinearDataSet
     paraview.simple.OutlineGenericDataSet
+    paraview.simple.OverlappingCellsDetector
     paraview.simple.PDBReader
     paraview.simple.PDataSetWriterPolyData
     paraview.simple.PDataSetWriterUnstructuredGrid
@@ -772,6 +773,7 @@ Proxies generated for server side objects under :doc:`paraview.simple`
     OutlineCorners
     OutlineCurvilinearDataSet
     OutlineGenericDataSet
+    OverlappingCellsDetector
     PDBReader
     PDataSetWriterPolyData
     PDataSetWriterUnstructuredGrid
