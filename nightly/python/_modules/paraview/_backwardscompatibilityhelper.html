@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>paraview._backwardscompatibilityhelper &mdash; ParaView/Python 5.8.0-814-g1b4e4489d3 documentation</title>
+  <title>paraview._backwardscompatibilityhelper &mdash; ParaView/Python 5.8.0-823-g0d7fa09a05 documentation</title>
   
 
   
@@ -24,7 +24,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:'../../',
-        VERSION:'5.8.0-814-g1b4e4489d3',
+        VERSION:'5.8.0-823-g0d7fa09a05',
         COLLAPSE_INDEX:false,
         FILE_SUFFIX:'.html',
         HAS_SOURCE:  true
@@ -49,7 +49,7 @@
         <link rel="index" title="Index"
               href="../../genindex.html"/>
         <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="ParaView/Python 5.8.0-814-g1b4e4489d3 documentation" href="../../index.html"/>
+    <link rel="top" title="ParaView/Python 5.8.0-823-g0d7fa09a05 documentation" href="../../index.html"/>
         <link rel="up" title="Module code" href="../index.html"/> 
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -67,7 +67,7 @@
           <li> <a href="../../index.html">
             <img src="../../_static/paraview-logo-small.png"
             alt="ParaView/Python"></img></a> </li>
-          <li class="version"> version 5.8.0-814-g1b4e4489d3</li>
+          <li class="version"> version 5.8.0-823-g0d7fa09a05</li>
         </ul>
         <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
   <input type="text" name="q" placeholder="Search docs" />
@@ -1369,6 +1369,36 @@
             <span class="n">reader</span><span class="o">.</span><span class="n">UseLegacyBlockNamesWithElementTypes</span> <span class="o">=</span> <span class="mi">1</span>
             <span class="k">return</span> <span class="n">reader</span>
     <span class="k">return</span> <span class="n">module</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">[</span><span class="n">key</span><span class="p">](</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="lookupTableUpdate"><a class="viewcode-back" href="../../paraview._backwardscompatibilityhelper.html#paraview._backwardscompatibilityhelper.lookupTableUpdate">[docs]</a><span class="k">def</span> <span class="nf">lookupTableUpdate</span><span class="p">(</span><span class="n">lutName</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Provide backwards compatibility for color lookup table name changes.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># For backwards compatibility</span>
+    <span class="n">reverseLut</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="n">version</span> <span class="o">=</span> <span class="n">paraview</span><span class="o">.</span><span class="n">compatibility</span><span class="o">.</span><span class="n">GetVersion</span><span class="p">()</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">version</span> <span class="o">&lt;=</span> <span class="mf">5.8</span><span class="p">):</span>
+        <span class="c1"># In 5.9, some redundant color maps were removed and some had name changes.</span>
+        <span class="c1"># Replace these with a color map that remains. Also handle some color map</span>
+        <span class="c1"># name changes.</span>
+        <span class="n">reverse</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Red to Blue Rainbow&quot;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">lutName</span> <span class="ow">in</span> <span class="n">reverse</span><span class="p">:</span>
+            <span class="n">reverseLut</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="n">nameChanges</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;jet&quot;</span><span class="p">:</span> <span class="s2">&quot;Jet&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;coolwarm&quot;</span><span class="p">:</span> <span class="s2">&quot;Cool to Warm&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Asymmtrical Earth Tones (6_21b)&quot;</span><span class="p">:</span> <span class="s2">&quot;Asymmetrical Earth Tones (6_21b)&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;CIELab_blue2red&quot;</span><span class="p">:</span> <span class="s2">&quot;CIELab Blue to Red&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;gray_Matlab&quot;</span><span class="p">:</span> <span class="s2">&quot;Grayscale&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;rainbow&quot;</span><span class="p">:</span> <span class="s2">&quot;Blue to Red Rainbow&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Red to Blue Rainbow&quot;</span><span class="p">:</span> <span class="s2">&quot;Blue to Red Rainbow&quot;</span>
+        <span class="p">}</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">lutName</span> <span class="o">=</span> <span class="n">nameChanges</span><span class="p">[</span><span class="n">lutName</span><span class="p">]</span>
+        <span class="k">except</span><span class="p">:</span>
+            <span class="k">pass</span>
+
+    <span class="k">return</span> <span class="p">(</span><span class="n">lutName</span><span class="p">,</span> <span class="n">reverseLut</span><span class="p">)</span></div>
 </pre></div>
 
           <footer>

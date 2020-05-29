@@ -47,7 +47,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>exporter used by certain views to export data as a CSV file.  
+<p>exporter used by certain views to export data as CSV.  
  <a href="classvtkCSVExporter.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="vtkCSVExporter_8h_source.html">vtkCSVExporter.h</a>&gt;</code></p>
@@ -56,7 +56,7 @@ Inheritance diagram for vtkCSVExporter:</div>
 <div class="dyncontent">
 <div class="center"><img src="classvtkCSVExporter__inherit__graph.png" border="0" usemap="#vtkCSVExporter_inherit__map" alt="Inheritance graph"/></div>
 <map name="vtkCSVExporter_inherit__map" id="vtkCSVExporter_inherit__map">
-<area shape="rect"  title="exporter used by certain views to export data as a CSV file." alt="" coords="5,155,129,181"/>
+<area shape="rect"  title="exporter used by certain views to export data as CSV." alt="" coords="5,155,129,181"/>
 <area shape="rect"  doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/classvtkObject.html" title=" " alt="" coords="25,80,110,107"/>
 <area shape="rect"  doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/classvtkObjectBase.html" title=" " alt="" coords="9,5,126,32"/>
 </map>
@@ -66,7 +66,7 @@ Collaboration diagram for vtkCSVExporter:</div>
 <div class="dyncontent">
 <div class="center"><img src="classvtkCSVExporter__coll__graph.png" border="0" usemap="#vtkCSVExporter_coll__map" alt="Collaboration graph"/></div>
 <map name="vtkCSVExporter_coll__map" id="vtkCSVExporter_coll__map">
-<area shape="rect"  title="exporter used by certain views to export data as a CSV file." alt="" coords="190,171,314,197"/>
+<area shape="rect"  title="exporter used by certain views to export data as CSV." alt="" coords="190,171,314,197"/>
 <area shape="rect"  doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/classvtkObject.html" title=" " alt="" coords="209,95,295,121"/>
 <area shape="rect"  doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/classvtkObjectBase.html" title=" " alt="" coords="59,5,176,32"/>
 <area shape="rect"  doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/classvtkWeakPointerBase.html" title=" " alt="" coords="5,95,163,121"/>
@@ -367,15 +367,13 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a8b1994de8f45ddb8ae8acd18240715e6 inherit pro_attribs_classvtkObjectBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>exporter used by certain views to export data as a CSV file. </p>
-<p>This is used by <a class="el" href="classvtkSMCSVExporterProxy.html" title="exporter used to export the spreadsheet view and supported chart views as to a CSV file.">vtkSMCSVExporterProxy</a> to export the data shown in the spreadsheet view or chart views as a CSV. The reason this class simply doesn't use a <a class="el" href="classvtkCSVWriter.html" title="CSV writer for vtkTable Writes a vtkTable as a delimited text file (such as CSV).">vtkCSVWriter</a> is that <a class="el" href="classvtkCSVWriter.html" title="CSV writer for vtkTable Writes a vtkTable as a delimited text file (such as CSV).">vtkCSVWriter</a> is designed to write out a single <a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/classvtkTable.html">vtkTable</a> as CSV. For exporting data from views, generating this single <a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/classvtkTable.html">vtkTable</a> that can be exported is often time consuming or memory consuming or both. Having a special exporter helps us with that. It provides two sets of APIs:</p>
-<ul>
-<li><code>STREAM_ROWS:</code> to use to stream a single large <a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/classvtkTable.html">vtkTable</a> as contiguous chunks where each chuck is a subset of the rows (ideal for use by <a class="el" href="classvtkSpreadSheetView.html" title="vtkSpreadSheetView is a vtkPVView subclass for a view used to show any data as a spreadsheet.">vtkSpreadSheetView</a>) viz. OpenFile, WriteHeader, WriteData (which can be repeated as many times as needed), and CloseFile, </li>
-<li><code>STREAM_COLUMNS:</code> to use to add columns (idea for chart views) viz. OpenFile, AddColumn (which can be repeated), and CloseFile.</li>
-</ul>
-<p>One has to pick which mode the exporter is operating in during the OpenFile() call. </p>
+<div class="textblock"><p>exporter used by certain views to export data as CSV. </p>
+<p><a class="el" href="classvtkCSVExporter.html" title="exporter used by certain views to export data as CSV.">vtkCSVExporter</a> can be used to generate comma-separated files. Unlike <code><a class="el" href="classvtkCSVWriter.html" title="CSV writer for vtkTable Writes a vtkTable as a delimited text file (such as CSV).">vtkCSVWriter</a></code>, this class can generate a single CSV from multiple array collections. This avoids the need to generate of single large appended table. The multiple arrays together represent the complete tabular data that gets exported. The table can be split column-wise or row-wise between multiple arrays. The <code><a class="el" href="classvtkCSVExporter.html" title="exporter used by certain views to export data as CSV.">vtkCSVExporter</a></code> provides two sets of APIs to handle the two cases. They cannot be mixed.</p>
+<p>When exporting array instances split by columns, i.e. each array will have exactly same number of rows but different columns that are to be concatenated together, use the <code>STREAM_COLUMNS</code> mode. To use this mode, start writing by using <code>vtkCSVExporter::Open(vtkCSVExporter::STREAM_COLUMNS)</code> and then add each column using <code><a class="el" href="classvtkCSVExporter.html#a800098b37cc3d62357603e9abeff674f" title="In STREAM_COLUMNS mode, use this method to add a column (yarray).">vtkCSVExporter::AddColumn</a></code>. Finally, complete the export can generate the output using <code><a class="el" href="classvtkCSVExporter.html#af8eff1ab7bfbccbeb46f43ad1d95a659" title="Closes the file cleanly.">vtkCSVExporter::Close</a></code>.</p>
+<p>When exporting arrays that are split by rows, use the STREAM_ROWS mode. The arrays are provided as a part of <a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/classvtkFieldData.html">vtkFieldData</a> (or subclass). To begin exporting in this mode, use <code>vtkCSVExporter::Open(vtkCSVExporter::STREAM_ROWS)</code>. Write the header using <code><a class="el" href="classvtkCSVExporter.html#afe0533a5084eaa2a890116e70d1abcf0" title="In STREAM_ROWS mode, use these methods to write column headers once using WriteHeader and then use Wr...">vtkCSVExporter::WriteHeader(vtkFieldData*)</a></code> and the pass rows in order by using <code><a class="el" href="classvtkCSVExporter.html#a705ebdf6d932888e7ca7280c97702f3c" title="In STREAM_ROWS mode, use these methods to write column headers once using WriteHeader and then use Wr...">vtkCSVExporter::WriteData(vtkFieldData*)</a> multiple times. Finally, close using</code><a class="el" href="classvtkCSVExporter.html#af8eff1ab7bfbccbeb46f43ad1d95a659" title="Closes the file cleanly.">vtkCSVExporter::Close</a>`.</p>
+<p>In STREAM_ROWS mode, the exporter supports invalid / empty cells. When writing each column in <code>WriteData</code> call, for each column-name an <a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/classvtkUnsignedCharArray.html">vtkUnsignedCharArray</a> with the name <code>{COLUMN-NAME}__vtkValidMask__</code> is looked up. If found, it's value is used to determine if that cell is to written out or not. </p>
 
-<p class="definition">Definition at line <a class="el" href="vtkCSVExporter_8h_source.html#l00051">51</a> of file <a class="el" href="vtkCSVExporter_8h_source.html">vtkCSVExporter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkCSVExporter_8h_source.html#l00061">61</a> of file <a class="el" href="vtkCSVExporter_8h_source.html">vtkCSVExporter.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a84b9393831fab28d55f54a10b4a97b04"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a84b9393831fab28d55f54a10b4a97b04">&#9670;&nbsp;</a></span>Superclass</h2>
@@ -389,7 +387,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkCSVExporter_8h_source.html#l00055">55</a> of file <a class="el" href="vtkCSVExporter_8h_source.html">vtkCSVExporter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkCSVExporter_8h_source.html#l00065">65</a> of file <a class="el" href="vtkCSVExporter_8h_source.html">vtkCSVExporter.h</a>.</p>
 
 </div>
 </div>
@@ -410,7 +408,7 @@ Protected Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="a7f126fb8ac8369a6de04904454dbe8cfa3e1ef73099d8ad0e1c19371447304f39"></a>STREAM_COLUMNS&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="vtkCSVExporter_8h_source.html#l00074">74</a> of file <a class="el" href="vtkCSVExporter_8h_source.html">vtkCSVExporter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkCSVExporter_8h_source.html#l00084">84</a> of file <a class="el" href="vtkCSVExporter_8h_source.html">vtkCSVExporter.h</a>.</p>
 
 </div>
 </div>
@@ -1100,7 +1098,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkCSVExporter_8h_source.html#l00147">147</a> of file <a class="el" href="vtkCSVExporter_8h_source.html">vtkCSVExporter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkCSVExporter_8h_source.html#l00157">157</a> of file <a class="el" href="vtkCSVExporter_8h_source.html">vtkCSVExporter.h</a>.</p>
 
 </div>
 </div>
@@ -1124,7 +1122,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkCSVExporter_8h_source.html#l00148">148</a> of file <a class="el" href="vtkCSVExporter_8h_source.html">vtkCSVExporter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkCSVExporter_8h_source.html#l00158">158</a> of file <a class="el" href="vtkCSVExporter_8h_source.html">vtkCSVExporter.h</a>.</p>
 
 </div>
 </div>
@@ -1148,7 +1146,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkCSVExporter_8h_source.html#l00149">149</a> of file <a class="el" href="vtkCSVExporter_8h_source.html">vtkCSVExporter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkCSVExporter_8h_source.html#l00159">159</a> of file <a class="el" href="vtkCSVExporter_8h_source.html">vtkCSVExporter.h</a>.</p>
 
 </div>
 </div>
@@ -1172,7 +1170,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkCSVExporter_8h_source.html#l00150">150</a> of file <a class="el" href="vtkCSVExporter_8h_source.html">vtkCSVExporter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkCSVExporter_8h_source.html#l00160">160</a> of file <a class="el" href="vtkCSVExporter_8h_source.html">vtkCSVExporter.h</a>.</p>
 
 </div>
 </div>
@@ -1196,7 +1194,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkCSVExporter_8h_source.html#l00152">152</a> of file <a class="el" href="vtkCSVExporter_8h_source.html">vtkCSVExporter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkCSVExporter_8h_source.html#l00162">162</a> of file <a class="el" href="vtkCSVExporter_8h_source.html">vtkCSVExporter.h</a>.</p>
 
 </div>
 </div>
@@ -1220,7 +1218,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkCSVExporter_8h_source.html#l00153">153</a> of file <a class="el" href="vtkCSVExporter_8h_source.html">vtkCSVExporter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkCSVExporter_8h_source.html#l00163">163</a> of file <a class="el" href="vtkCSVExporter_8h_source.html">vtkCSVExporter.h</a>.</p>
 
 </div>
 </div>

@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>paraview.simple &mdash; ParaView/Python 5.8.0-814-g1b4e4489d3 documentation</title>
+  <title>paraview.simple &mdash; ParaView/Python 5.8.0-823-g0d7fa09a05 documentation</title>
   
 
   
@@ -24,7 +24,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:'../../',
-        VERSION:'5.8.0-814-g1b4e4489d3',
+        VERSION:'5.8.0-823-g0d7fa09a05',
         COLLAPSE_INDEX:false,
         FILE_SUFFIX:'.html',
         HAS_SOURCE:  true
@@ -49,7 +49,7 @@
         <link rel="index" title="Index"
               href="../../genindex.html"/>
         <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="ParaView/Python 5.8.0-814-g1b4e4489d3 documentation" href="../../index.html"/>
+    <link rel="top" title="ParaView/Python 5.8.0-823-g0d7fa09a05 documentation" href="../../index.html"/>
         <link rel="up" title="Module code" href="../index.html"/> 
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -67,7 +67,7 @@
           <li> <a href="../../index.html">
             <img src="../../_static/paraview-logo-small.png"
             alt="ParaView/Python"></img></a> </li>
-          <li class="version"> version 5.8.0-814-g1b4e4489d3</li>
+          <li class="version"> version 5.8.0-823-g0d7fa09a05</li>
         </ul>
         <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
   <input type="text" name="q" placeholder="Search docs" />
@@ -2261,7 +2261,7 @@
 
 <span class="sd">    `lutName` is the name for the transfer function preset.</span>
 
-<span class="sd">    `rangeOveride` is provided is the range to use instead of the range of the</span>
+<span class="sd">    `rangeOveride` is provided as the range to use instead of the range of the</span>
 <span class="sd">    array determined using the `arrayInfo`.</span>
 
 <span class="sd">    Example usage::</span>
@@ -2271,16 +2271,30 @@
 <span class="sd">      AssignLookupTable(arrayInfo, &quot;Cool to Warm&quot;)</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># If the named LUT is not in the presets, see if it was one that was removed and</span>
+    <span class="c1"># substitute it with the backwards compatibility helper</span>
     <span class="n">presets</span> <span class="o">=</span> <span class="n">servermanager</span><span class="o">.</span><span class="n">vtkSMTransferFunctionPresets</span><span class="o">.</span><span class="n">GetInstance</span><span class="p">()</span>
+    <span class="n">reverse</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">presets</span><span class="o">.</span><span class="n">HasPreset</span><span class="p">(</span><span class="n">lutName</span><span class="p">):</span>
+        <span class="p">(</span><span class="n">lutName</span><span class="p">,</span> <span class="n">reverse</span><span class="p">)</span> <span class="o">=</span> <span class="n">paraview</span><span class="o">.</span><span class="n">_backwardscompatibilityhelper</span><span class="o">.</span><span class="n">lookupTableUpdate</span><span class="p">(</span><span class="n">lutName</span><span class="p">)</span>
+
+    <span class="c1"># If no alternate LUT exists, raise an exception</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">presets</span><span class="o">.</span><span class="n">HasPreset</span><span class="p">(</span><span class="n">lutName</span><span class="p">):</span>
         <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;no preset with name `</span><span class="si">%s</span><span class="s2">` present&quot;</span><span class="p">,</span> <span class="n">lutName</span><span class="p">)</span>
 
+    <span class="c1"># Preset found. Apply it.</span>
     <span class="n">lut</span> <span class="o">=</span> <span class="n">GetColorTransferFunction</span><span class="p">(</span><span class="n">arrayInfo</span><span class="o">.</span><span class="n">Name</span><span class="p">)</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">lut</span><span class="o">.</span><span class="n">ApplyPreset</span><span class="p">(</span><span class="n">lutName</span><span class="p">):</span>
         <span class="k">return</span> <span class="kc">False</span>
 
     <span class="k">if</span> <span class="n">rangeOveride</span><span class="p">:</span>
         <span class="n">lut</span><span class="o">.</span><span class="n">RescaleTransferFunction</span><span class="p">(</span><span class="n">rangeOveride</span><span class="p">)</span>
+
+    <span class="c1"># Reverse if necessary for backwards compatibility</span>
+    <span class="k">if</span> <span class="n">reverse</span><span class="p">:</span>
+        <span class="n">lut</span><span class="o">.</span><span class="n">InvertTransferFunction</span><span class="p">()</span>
+
     <span class="k">return</span> <span class="kc">True</span></div>
 
 <span class="c1"># -----------------------------------------------------------------------------</span>
