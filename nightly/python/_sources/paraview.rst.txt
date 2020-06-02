@@ -20,6 +20,7 @@ Modules
     paraview.coprocessing
     paraview.cpexport
     paraview.cpstate
+    paraview.live
     paraview.lookuptable
     paraview.numeric
     paraview.numpy_support

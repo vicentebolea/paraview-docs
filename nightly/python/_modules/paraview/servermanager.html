@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>paraview.servermanager &mdash; ParaView/Python 5.8.0-830-g90ad5c9c1e documentation</title>
+  <title>paraview.servermanager &mdash; ParaView/Python 5.8.0-837-gccb9e0a4cc documentation</title>
   
 
   
@@ -24,7 +24,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:'../../',
-        VERSION:'5.8.0-830-g90ad5c9c1e',
+        VERSION:'5.8.0-837-gccb9e0a4cc',
         COLLAPSE_INDEX:false,
         FILE_SUFFIX:'.html',
         HAS_SOURCE:  true
@@ -49,7 +49,7 @@
         <link rel="index" title="Index"
               href="../../genindex.html"/>
         <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="ParaView/Python 5.8.0-830-g90ad5c9c1e documentation" href="../../index.html"/>
+    <link rel="top" title="ParaView/Python 5.8.0-837-gccb9e0a4cc documentation" href="../../index.html"/>
         <link rel="up" title="Module code" href="../index.html"/> 
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -67,7 +67,7 @@
           <li> <a href="../../index.html">
             <img src="../../_static/paraview-logo-small.png"
             alt="ParaView/Python"></img></a> </li>
-          <li class="version"> version 5.8.0-830-g90ad5c9c1e</li>
+          <li class="version"> version 5.8.0-837-gccb9e0a4cc</li>
         </ul>
         <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
   <input type="text" name="q" placeholder="Search docs" />
@@ -2831,6 +2831,25 @@
       <span class="k">return</span> <span class="n">connection</span>
     <span class="k">else</span><span class="p">:</span>
       <span class="k">return</span> <span class="kc">None</span></div>
+
+<div class="viewcode-block" id="ConnectToCatalyst"><a class="viewcode-back" href="../../paraview.servermanager.html#paraview.servermanager.ConnectToCatalyst">[docs]</a><span class="k">def</span> <span class="nf">ConnectToCatalyst</span><span class="p">(</span><span class="n">ds_host</span><span class="o">=</span><span class="s1">&#39;localhost&#39;</span><span class="p">,</span> <span class="n">ds_port</span><span class="o">=</span><span class="mi">22222</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Use this function to create a new catalyst session.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Create an InsituLink</span>
+    <span class="n">insituLink</span> <span class="o">=</span> <span class="n">CreateProxy</span><span class="p">(</span><span class="s1">&#39;coprocessing&#39;</span><span class="p">,</span> <span class="s1">&#39;LiveInsituLink&#39;</span><span class="p">)</span>
+    <span class="n">insituLink</span><span class="o">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s1">&#39;InsituPort&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">SetElement</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">ds_port</span><span class="p">)</span>
+    <span class="n">insituLink</span><span class="o">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s1">&#39;Hostname&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">SetElement</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">ds_host</span><span class="p">)</span>
+    <span class="c1"># set process type to Visualization</span>
+    <span class="n">insituLink</span><span class="o">.</span><span class="n">GetProperty</span><span class="p">(</span><span class="s1">&#39;ProcessType&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">SetElement</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="n">insituLink</span><span class="o">.</span><span class="n">UpdateVTKObjects</span><span class="p">()</span>
+
+    <span class="c1"># Create dummy session</span>
+    <span class="nb">id</span> <span class="o">=</span> <span class="n">vtkSMSession</span><span class="o">.</span><span class="n">ConnectToCatalyst</span><span class="p">()</span>
+    <span class="n">connection</span> <span class="o">=</span> <span class="n">GetConnectionFromId</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span>
+    <span class="n">insituLink</span><span class="o">.</span><span class="n">SetInsituProxyManager</span><span class="p">(</span><span class="n">connection</span><span class="o">.</span><span class="n">Session</span><span class="o">.</span><span class="n">GetSessionProxyManager</span><span class="p">())</span>
+
+    <span class="k">return</span> <span class="n">insituLink</span></div>
 
 <div class="viewcode-block" id="ReverseConnect"><a class="viewcode-back" href="../../paraview.servermanager.html#paraview.servermanager.ReverseConnect">[docs]</a><span class="k">def</span> <span class="nf">ReverseConnect</span><span class="p">(</span><span class="n">port</span><span class="o">=</span><span class="mi">11111</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
