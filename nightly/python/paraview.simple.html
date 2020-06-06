@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>simple Module &mdash; ParaView/Python 5.8.0-851-g73bc37532e documentation</title>
+  <title>simple Module &mdash; ParaView/Python 5.8.0-860-g90404ae27a documentation</title>
   
 
   
@@ -24,7 +24,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:'./',
-        VERSION:'5.8.0-851-g73bc37532e',
+        VERSION:'5.8.0-860-g90404ae27a',
         COLLAPSE_INDEX:false,
         FILE_SUFFIX:'.html',
         HAS_SOURCE:  true
@@ -49,7 +49,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="ParaView/Python 5.8.0-851-g73bc37532e documentation" href="index.html"/>
+    <link rel="top" title="ParaView/Python 5.8.0-860-g90404ae27a documentation" href="index.html"/>
         <link rel="up" title="paraview Package" href="paraview.html"/>
         <link rel="next" title="Available readers, sources, writers, filters and animation cues" href="paraview.servermanager_proxies.html"/>
         <link rel="prev" title="servermanager Module" href="paraview.servermanager.html"/> 
@@ -69,7 +69,7 @@
           <li> <a href="index.html">
             <img src="_static/paraview-logo-small.png"
             alt="ParaView/Python"></img></a> </li>
-          <li class="version"> version 5.8.0-851-g73bc37532e</li>
+          <li class="version"> version 5.8.0-860-g90404ae27a</li>
         </ul>
         <form id ="rtd-search-form" class="wy-form" action="search.html" method="get">
   <input type="text" name="q" placeholder="Search docs" />
@@ -998,6 +998,13 @@ by calling <cite>AssignViewToLayout</cite>.</p>
 </dd></dl>
 
 <dl class="function">
+<dt id="paraview.simple.GetAllSettings">
+<code class="descclassname">paraview.simple.</code><code class="descname">GetAllSettings</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/simple.html#GetAllSettings"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.simple.GetAllSettings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of Strings, that return valid Proxies using
+the GetSettingsProxy function</p>
+</dd></dl>
+
+<dl class="function">
 <dt id="paraview.simple.GetAnimationScene">
 <code class="descclassname">paraview.simple.</code><code class="descname">GetAnimationScene</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/simple.html#GetAnimationScene"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.simple.GetAnimationScene" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the application-wide animation scene. ParaView has only one
@@ -1193,6 +1200,13 @@ If pipeline object and view are not specified, active objects are used.</p>
 <dd><p>Returns the scalar bar for color transfer function in the given view.
 If view is None, the active view will be used, if possible.
 This will either return an existing scalar bar or create a new one.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="paraview.simple.GetSettingsProxy">
+<code class="descclassname">paraview.simple.</code><code class="descname">GetSettingsProxy</code><span class="sig-paren">(</span><em>type</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/simple.html#GetSettingsProxy"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.simple.GetSettingsProxy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Given a type as name returns the Proxy for those settings.
+For example for type=GeneralSettings</p>
 </dd></dl>
 
 <dl class="function">

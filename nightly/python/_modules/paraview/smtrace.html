@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>paraview.smtrace &mdash; ParaView/Python 5.8.0-851-g73bc37532e documentation</title>
+  <title>paraview.smtrace &mdash; ParaView/Python 5.8.0-860-g90404ae27a documentation</title>
   
 
   
@@ -24,7 +24,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:'../../',
-        VERSION:'5.8.0-851-g73bc37532e',
+        VERSION:'5.8.0-860-g90404ae27a',
         COLLAPSE_INDEX:false,
         FILE_SUFFIX:'.html',
         HAS_SOURCE:  true
@@ -49,7 +49,7 @@
         <link rel="index" title="Index"
               href="../../genindex.html"/>
         <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="ParaView/Python 5.8.0-851-g73bc37532e documentation" href="../../index.html"/>
+    <link rel="top" title="ParaView/Python 5.8.0-860-g90404ae27a documentation" href="../../index.html"/>
         <link rel="up" title="Module code" href="../index.html"/> 
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -67,7 +67,7 @@
           <li> <a href="../../index.html">
             <img src="../../_static/paraview-logo-small.png"
             alt="ParaView/Python"></img></a> </li>
-          <li class="version"> version 5.8.0-851-g73bc37532e</li>
+          <li class="version"> version 5.8.0-860-g90404ae27a</li>
         </ul>
         <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
   <input type="text" name="q" placeholder="Search docs" />
@@ -954,6 +954,13 @@
             <span class="bp">cls</span><span class="o">.</span><span class="n">Output</span><span class="o">.</span><span class="n">append_separated</span><span class="p">([</span>\
                     <span class="s2">&quot;# get the time-keeper&quot;</span><span class="p">,</span>
                     <span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> = GetTimeKeeper()&quot;</span> <span class="o">%</span> <span class="n">tkAccessor</span><span class="p">])</span>
+            <span class="k">return</span> <span class="kc">True</span>
+        <span class="k">if</span> <span class="n">obj</span><span class="o">.</span><span class="n">SMProxy</span><span class="o">.</span><span class="n">IsA</span><span class="p">(</span><span class="s2">&quot;vtkSMSettingsProxy&quot;</span><span class="p">):</span>
+            <span class="n">pname</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="n">SMProxy</span><span class="o">.</span><span class="n">GetSessionProxyManager</span><span class="p">()</span><span class="o">.</span><span class="n">GetProxyName</span><span class="p">(</span><span class="s2">&quot;settings&quot;</span><span class="p">,</span> <span class="n">obj</span><span class="o">.</span><span class="n">SMProxy</span><span class="p">)</span>
+            <span class="n">accessor</span> <span class="o">=</span> <span class="n">ProxyAccessor</span><span class="p">(</span><span class="bp">cls</span><span class="o">.</span><span class="n">get_varname</span><span class="p">(</span><span class="n">pname</span><span class="p">),</span> <span class="n">obj</span><span class="p">)</span>
+            <span class="bp">cls</span><span class="o">.</span><span class="n">Output</span><span class="o">.</span><span class="n">append_separated</span><span class="p">([</span>\
+                <span class="s2">&quot;# find settings proxy&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> = GetSettingsProxy(&#39;</span><span class="si">%s</span><span class="s2">&#39;)&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">accessor</span><span class="p">,</span> <span class="n">pname</span><span class="p">)])</span>
             <span class="k">return</span> <span class="kc">True</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="n">skip_rendering</span> <span class="ow">and</span> <span class="n">obj</span><span class="o">.</span><span class="n">GetVTKClassName</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;vtkPVLight&quot;</span><span class="p">:</span>
             <span class="n">view</span> <span class="o">=</span> <span class="n">simple</span><span class="o">.</span><span class="n">GetViewForLight</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
