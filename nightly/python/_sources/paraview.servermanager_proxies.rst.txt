@@ -51,6 +51,7 @@ Proxies generated for server side objects under :doc:`paraview.simple`
     paraview.simple.CGNSSeriesReader
     paraview.simple.CGNSWriter
     paraview.simple.CMLMoleculeReader
+    paraview.simple.CONVERGECFDReader
     paraview.simple.CSVReader
     paraview.simple.CSVWriter
     paraview.simple.Calculator
@@ -574,6 +575,7 @@ Proxies generated for server side objects under :doc:`paraview.simple`
     CGNSSeriesReader
     CGNSWriter
     CMLMoleculeReader
+    CONVERGECFDReader
     CSVReader
     CSVWriter
     Calculator
