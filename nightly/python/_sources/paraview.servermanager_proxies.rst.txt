@@ -402,6 +402,7 @@ Proxies generated for server side objects under :doc:`paraview.simple`
     paraview.simple.VRMLReader
     paraview.simple.ValidateCells
     paraview.simple.ValueSelectionSource
+    paraview.simple.VelodyneAMRReader
     paraview.simple.VisItANSYSReader
     paraview.simple.VisItAUXFileReader
     paraview.simple.VisItBOVReader
@@ -926,6 +927,7 @@ Proxies generated for server side objects under :doc:`paraview.simple`
     VRMLReader
     ValidateCells
     ValueSelectionSource
+    VelodyneAMRReader
     VisItANSYSReader
     VisItAUXFileReader
     VisItBOVReader
