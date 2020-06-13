@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>paraview.simple.ExtractBlock &mdash; ParaView/Python 5.8.0-925-g1f438f9722 documentation</title>
+  <title>paraview.simple.ExtractBlock &mdash; ParaView/Python 5.8.0-937-ga6d550b745 documentation</title>
   
 
   
@@ -24,7 +24,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:'./',
-        VERSION:'5.8.0-925-g1f438f9722',
+        VERSION:'5.8.0-937-ga6d550b745',
         COLLAPSE_INDEX:false,
         FILE_SUFFIX:'.html',
         HAS_SOURCE:  true
@@ -49,9 +49,9 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="ParaView/Python 5.8.0-925-g1f438f9722 documentation" href="index.html"/>
+    <link rel="top" title="ParaView/Python 5.8.0-937-ga6d550b745 documentation" href="index.html"/>
         <link rel="up" title="Available readers, sources, writers, filters and animation cues" href="paraview.servermanager_proxies.html"/>
-        <link rel="next" title="paraview.simple.ExtractCTHParts" href="paraview.simple.ExtractCTHParts.html"/>
+        <link rel="next" title="paraview.simple.ExtractBlockUsingDataAssembly" href="paraview.simple.ExtractBlockUsingDataAssembly.html"/>
         <link rel="prev" title="paraview.simple.ExtractAttributes" href="paraview.simple.ExtractAttributes.html"/> 
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -69,7 +69,7 @@
           <li> <a href="index.html">
             <img src="_static/paraview-logo-small.png"
             alt="ParaView/Python"></img></a> </li>
-          <li class="version"> version 5.8.0-925-g1f438f9722</li>
+          <li class="version"> version 5.8.0-937-ga6d550b745</li>
         </ul>
         <form id ="rtd-search-form" class="wy-form" action="search.html" method="get">
   <input type="text" name="q" placeholder="Search docs" />
@@ -219,6 +219,8 @@
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.ExtractAMRBlocks.html">paraview.simple.ExtractAMRBlocks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.ExtractAttributes.html">paraview.simple.ExtractAttributes</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">paraview.simple.ExtractBlock</a></li>
+<li class="toctree-l2"><a class="reference internal" href="paraview.simple.ExtractBlockUsingDataAssembly.html">paraview.simple.ExtractBlockUsingDataAssembly</a></li>
+<li class="toctree-l2"><a class="reference internal" href="paraview.simple.ExtractBlockUsingIds.html">paraview.simple.ExtractBlockUsingIds</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.ExtractCTHParts.html">paraview.simple.ExtractCTHParts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.ExtractCellsByRegion.html">paraview.simple.ExtractCellsByRegion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.ExtractComponent.html">paraview.simple.ExtractComponent</a></li>
@@ -670,30 +672,17 @@
 <dl class="function">
 <dt id="paraview.simple.ExtractBlock">
 <code class="descclassname">paraview.simple.</code><code class="descname">ExtractBlock</code><span class="sig-paren">(</span><em>*input</em>, <em>**params</em><span class="sig-paren">)</span><a class="headerlink" href="#paraview.simple.ExtractBlock" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="docutils">
-<dt>This filter extracts a range</dt>
-<dd>of groups from a multiblock dataset</dd>
-</dl>
+<dd><blockquote>
+<div>This filter extract blocks from composite datasets such as
+vtkMultiBlockDataSet or vtkPartitionedDataSetCollection</div></blockquote>
 </dd></dl>
 
 <div class="section" id="data-descriptors">
 <h2>Data Descriptors<a class="headerlink" href="#data-descriptors" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><dl class="docutils">
-<dt>BlockIndices</dt>
-<dd>This property lists the ids of the blocks to extract
-from the input multiblock dataset.</dd>
 <dt>Input</dt>
-<dd>This property specifies the input to the Extract Group
-filter.</dd>
-<dt>MaintainStructure</dt>
-<dd>This is used only when PruneOutput is ON. By default,
-when pruning the output i.e. remove empty blocks, if node has only 1
-non-null child block, then that node is removed. To preserve these
-parent nodes, set this flag to true.</dd>
-<dt>PruneOutput</dt>
-<dd>When set, the output multiblock dataset will be pruned
-to remove empty nodes. On by default.</dd>
+<dd>Specify the input to this filter.</dd>
 </dl>
 </div></blockquote>
 <div class="section" id="data-descriptors-inherited-from-sourceproxy">
@@ -725,6 +714,17 @@ to remove empty nodes. On by default.</dd>
 <h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div>Initialize = aInitialize(self, connection=None, update=True)</div></blockquote>
+<div class="section" id="methods-inherited-from-multiplexersourceproxy">
+<h3>Methods inherited from MultiplexerSourceProxy<a class="headerlink" href="#methods-inherited-from-multiplexersourceproxy" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><dl class="docutils">
+<dt>UpdateDynamicProperties(self)</dt>
+<dd>Update the instance to add properties of newly exposed
+SMProperties. The current limitation is that help() still
+doesn’t work as one would expect.</dd>
+</dl>
+</div></blockquote>
+</div>
 <div class="section" id="methods-inherited-from-sourceproxy">
 <h3>Methods inherited from SourceProxy<a class="headerlink" href="#methods-inherited-from-sourceproxy" title="Permalink to this headline">¶</a></h3>
 <blockquote>
@@ -804,7 +804,7 @@ the proxy with the proxy manager.</dd>
   
     <div class="rst-footer-buttons">
       
-        <a href="paraview.simple.ExtractCTHParts.html" class="btn btn-neutral float-right" title="paraview.simple.ExtractCTHParts"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="paraview.simple.ExtractBlockUsingDataAssembly.html" class="btn btn-neutral float-right" title="paraview.simple.ExtractBlockUsingDataAssembly"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="paraview.simple.ExtractAttributes.html" class="btn btn-neutral" title="paraview.simple.ExtractAttributes"><span class="icon icon-circle-arrow-left"></span> Previous</a>

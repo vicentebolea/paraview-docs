@@ -10,23 +10,8 @@ Data Descriptors
 
 
    
-   BlockIndices
-       This property lists the ids of the blocks to extract
-       from the input multiblock dataset.
-   
    Input
-       This property specifies the input to the Extract Group
-       filter.
-   
-   MaintainStructure
-       This is used only when PruneOutput is ON. By default,
-       when pruning the output i.e. remove empty blocks, if node has only 1
-       non-null child block, then that node is removed. To preserve these
-       parent nodes, set this flag to true.
-   
-   PruneOutput
-       When set, the output multiblock dataset will be pruned
-       to remove empty nodes. On by default.
+       Specify the input to this filter.
    
    
 
@@ -64,6 +49,18 @@ Methods
 
    
    Initialize = aInitialize(self, connection=None, update=True)
+   
+   
+
+Methods inherited from MultiplexerSourceProxy
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+   
+   UpdateDynamicProperties(self)
+       Update the instance to add properties of newly exposed
+       SMProperties. The current limitation is that help() still
+       doesn't work as one would expect.
    
    
 

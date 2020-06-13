@@ -124,6 +124,8 @@ Proxies generated for server side objects under :doc:`paraview.simple`
     paraview.simple.ExtractAMRBlocks
     paraview.simple.ExtractAttributes
     paraview.simple.ExtractBlock
+    paraview.simple.ExtractBlockUsingDataAssembly
+    paraview.simple.ExtractBlockUsingIds
     paraview.simple.ExtractCTHParts
     paraview.simple.ExtractCellsByRegion
     paraview.simple.ExtractComponent
@@ -649,6 +651,8 @@ Proxies generated for server side objects under :doc:`paraview.simple`
     ExtractAMRBlocks
     ExtractAttributes
     ExtractBlock
+    ExtractBlockUsingDataAssembly
+    ExtractBlockUsingIds
     ExtractCTHParts
     ExtractCellsByRegion
     ExtractComponent
