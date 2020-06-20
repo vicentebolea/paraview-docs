@@ -45,12 +45,12 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="classpqQVTKWidget.html" title="pqQVTKWidget extends pqQVTKWidgetBase to add awareness for view proxies.">pqQVTKWidget</a> extends pqQVTKWidgetBase to add awareness for view proxies.  
+<p><a class="el" href="classpqQVTKWidget.html" title="pqQVTKWidget has a QVTKOpenGL*Widget object to which it adds awareness for view proxies.">pqQVTKWidget</a> has a QVTKOpenGL*Widget object to which it adds awareness for view proxies.  
  <a href="classpqQVTKWidget.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="pqQVTKWidget_8h_source.html">pqQVTKWidget.h</a>&gt;</code></p>
 
-<p>Inherits pqQVTKWidgetBase.</p>
+<p>Inherits QWidget.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
 Public Slots</h2></td></tr>
@@ -61,6 +61,8 @@ Public Slots</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab48059e748c1e863131ee2eb8b0fd022"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpqQVTKWidget.html#ab48059e748c1e863131ee2eb8b0fd022">pqQVTKWidget</a> (QWidget *parent=NULL, Qt::WindowFlags f=0)</td></tr>
 <tr class="separator:ab48059e748c1e863131ee2eb8b0fd022"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e06730c0f57bf30bba80cc729fe1a1d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpqQVTKWidget.html#a6e06730c0f57bf30bba80cc729fe1a1d">pqQVTKWidget</a> (QWidget *parentObject, Qt::WindowFlags f, bool isStereo)</td></tr>
+<tr class="separator:a6e06730c0f57bf30bba80cc729fe1a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12e3a036ed1e9f838e05d1fa24bb3bd9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpqQVTKWidget.html#a12e3a036ed1e9f838e05d1fa24bb3bd9">~pqQVTKWidget</a> () override</td></tr>
 <tr class="separator:a12e3a036ed1e9f838e05d1fa24bb3bd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ff4399f040cd87ade17d0c1d62b8d18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpqQVTKWidget.html#a9ff4399f040cd87ade17d0c1d62b8d18">setViewProxy</a> (<a class="el" href="classvtkSMProxy.html">vtkSMProxy</a> *)</td></tr>
@@ -77,6 +79,17 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6be0d50c34f47e26a21c058f9da8e4dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16fa13aecea957743d4c3171ff1b1123"><td class="memItemLeft" align="right" valign="top">const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpqQVTKWidget.html#a16fa13aecea957743d4c3171ff1b1123">sizePropertyName</a> () const</td></tr>
 <tr class="separator:a16fa13aecea957743d4c3171ff1b1123"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2f51de7d0cfab4732667996048f495d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpqQVTKWidget.html#aa2f51de7d0cfab4732667996048f495d">notifyQApplication</a> (QMouseEvent *)</td></tr>
+<tr class="separator:aa2f51de7d0cfab4732667996048f495d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34a6e0efe1acadc190009bf6b621b21c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpqQVTKWidget.html#a34a6e0efe1acadc190009bf6b621b21c">setRenderWindow</a> (<a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/classvtkRenderWindow.html">vtkRenderWindow</a> *win)</td></tr>
+<tr class="memdesc:a34a6e0efe1acadc190009bf6b621b21c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Methods that decorates QVTKOpenGL*Widget methods.  <a href="#a34a6e0efe1acadc190009bf6b621b21c">More...</a><br /></td></tr>
+<tr class="separator:a34a6e0efe1acadc190009bf6b621b21c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63233b0d23927dba1c0ea7d58f2fe828"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/classvtkRenderWindow.html">vtkRenderWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpqQVTKWidget.html#a63233b0d23927dba1c0ea7d58f2fe828">renderWindow</a> () const</td></tr>
+<tr class="separator:a63233b0d23927dba1c0ea7d58f2fe828"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94bb08553e34e907b9ee24e284c74dec"><td class="memItemLeft" align="right" valign="top">QVTKInteractor *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpqQVTKWidget.html#a94bb08553e34e907b9ee24e284c74dec">interactor</a> () const</td></tr>
+<tr class="separator:a94bb08553e34e907b9ee24e284c74dec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a795996c9767b4ee90ef4ab9c52dcce32"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpqQVTKWidget.html#a795996c9767b4ee90ef4ab9c52dcce32">isValid</a> ()</td></tr>
+<tr class="separator:a795996c9767b4ee90ef4ab9c52dcce32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -86,14 +99,14 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a3d6504fbb22abe42ccd8353a1435e7a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classpqQVTKWidget.html" title="pqQVTKWidget extends pqQVTKWidgetBase to add awareness for view proxies.">pqQVTKWidget</a> extends pqQVTKWidgetBase to add awareness for view proxies. </p>
-<p>The advantage of doing that is that <a class="el" href="classpqQVTKWidget.html" title="pqQVTKWidget extends pqQVTKWidgetBase to add awareness for view proxies.">pqQVTKWidget</a> can automatically update the "ViewSize" property on the view proxy whenever the widget's size/position changes.</p>
-<p>This class also enables image-caching by default (image caching support is provided by the superclass). </p>
+<div class="textblock"><p><a class="el" href="classpqQVTKWidget.html" title="pqQVTKWidget has a QVTKOpenGL*Widget object to which it adds awareness for view proxies.">pqQVTKWidget</a> has a QVTKOpenGL*Widget object to which it adds awareness for view proxies. </p>
+<p>The advantage of doing that is that <a class="el" href="classpqQVTKWidget.html" title="pqQVTKWidget has a QVTKOpenGL*Widget object to which it adds awareness for view proxies.">pqQVTKWidget</a> can automatically update the "ViewSize" property on the view proxy whenever the widget's size/position changes.</p>
+<p>This class also enables image-caching by default (image caching support is provided by its contained QVTKOpenGL*Widget class). </p>
 
-<p class="definition">Definition at line <a class="el" href="pqQVTKWidget_8h_source.html#l00055">55</a> of file <a class="el" href="pqQVTKWidget_8h_source.html">pqQVTKWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pqQVTKWidget_8h_source.html#l00057">57</a> of file <a class="el" href="pqQVTKWidget_8h_source.html">pqQVTKWidget.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab48059e748c1e863131ee2eb8b0fd022"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab48059e748c1e863131ee2eb8b0fd022">&#9670;&nbsp;</a></span>pqQVTKWidget()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab48059e748c1e863131ee2eb8b0fd022">&#9670;&nbsp;</a></span>pqQVTKWidget() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -109,6 +122,40 @@ Protected Member Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">Qt::WindowFlags&#160;</td>
           <td class="paramname"><em>f</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6e06730c0f57bf30bba80cc729fe1a1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e06730c0f57bf30bba80cc729fe1a1d">&#9670;&nbsp;</a></span>pqQVTKWidget() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pqQVTKWidget::pqQVTKWidget </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parentObject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Qt::WindowFlags&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isStereo</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -233,7 +280,7 @@ Protected Member Functions</h2></td></tr>
 <p>Set/Get the name of the property to use to update the size of the widget on the proxy. </p>
 <p>By default "ViewSize" is used. </p>
 
-<p class="definition">Definition at line <a class="el" href="pqQVTKWidget_8h_source.html#l00084">84</a> of file <a class="el" href="pqQVTKWidget_8h_source.html">pqQVTKWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pqQVTKWidget_8h_source.html#l00087">87</a> of file <a class="el" href="pqQVTKWidget_8h_source.html">pqQVTKWidget.h</a>.</p>
 
 </div>
 </div>
@@ -260,7 +307,96 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pqQVTKWidget_8h_source.html#l00085">85</a> of file <a class="el" href="pqQVTKWidget_8h_source.html">pqQVTKWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pqQVTKWidget_8h_source.html#l00088">88</a> of file <a class="el" href="pqQVTKWidget_8h_source.html">pqQVTKWidget.h</a>.</p>
+
+</div>
+</div>
+<a id="aa2f51de7d0cfab4732667996048f495d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2f51de7d0cfab4732667996048f495d">&#9670;&nbsp;</a></span>notifyQApplication()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pqQVTKWidget::notifyQApplication </td>
+          <td>(</td>
+          <td class="paramtype">QMouseEvent *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a34a6e0efe1acadc190009bf6b621b21c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34a6e0efe1acadc190009bf6b621b21c">&#9670;&nbsp;</a></span>setRenderWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pqQVTKWidget::setRenderWindow </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/classvtkRenderWindow.html">vtkRenderWindow</a> *&#160;</td>
+          <td class="paramname"><em>win</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Methods that decorates QVTKOpenGL*Widget methods. </p>
+
+</div>
+</div>
+<a id="a63233b0d23927dba1c0ea7d58f2fe828"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63233b0d23927dba1c0ea7d58f2fe828">&#9670;&nbsp;</a></span>renderWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/classvtkRenderWindow.html">vtkRenderWindow</a>* pqQVTKWidget::renderWindow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a94bb08553e34e907b9ee24e284c74dec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94bb08553e34e907b9ee24e284c74dec">&#9670;&nbsp;</a></span>interactor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVTKInteractor* pqQVTKWidget::interactor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a795996c9767b4ee90ef4ab9c52dcce32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a795996c9767b4ee90ef4ab9c52dcce32">&#9670;&nbsp;</a></span>isValid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pqQVTKWidget::isValid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
