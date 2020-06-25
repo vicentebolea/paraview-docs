@@ -10,22 +10,23 @@ Data Descriptors
 
 
    
-   CellArrays
+   CellArrayStatus
        This property lists which cell-centered arrays to read.
    
    FileName
-       This property specifies the file name for the reader
+       The list of files to be read by the reader.
    
-   Materials
+   MaterialStatus
        Select the materials to be loaded from the dataset, if any.
    
-   Meshes
+   MeshStatus
        Select the meshes to be loaded from the dataset, if any.
    
-   PointArrays
+   PointArrayStatus
        This property lists which point-centered arrays to read.
    
    TimestepValues
+       Available timestep values.
    
    
 
