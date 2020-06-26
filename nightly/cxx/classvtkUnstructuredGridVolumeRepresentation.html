@@ -191,6 +191,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1a4fbb6d29fcd43442d38e53435aa068"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a140d274d7d87bfc7c1c11aaecac750c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkUnstructuredGridVolumeRepresentation.html#a140d274d7d87bfc7c1c11aaecac750c4">SetScalarOpacityUnitDistance</a> (<a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/vtkVectorOperators_8h.html#a45c855d65dd0e2b57b08024500ff9159">double</a> val)</td></tr>
 <tr class="separator:a140d274d7d87bfc7c1c11aaecac750c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0915a5a62b549136c70f588f8923c29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkUnstructuredGridVolumeRepresentation.html#ae0915a5a62b549136c70f588f8923c29">SetMapScalars</a> (bool)</td></tr>
+<tr class="separator:ae0915a5a62b549136c70f588f8923c29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a368af5c72f2c80636490187bf9d0f54a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkUnstructuredGridVolumeRepresentation.html#a368af5c72f2c80636490187bf9d0f54a">SetMultiComponentsMapping</a> (bool)</td></tr>
+<tr class="separator:a368af5c72f2c80636490187bf9d0f54a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affc52f512d0996b5750304df86af922a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvtkPVLODVolume.html">vtkPVLODVolume</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkUnstructuredGridVolumeRepresentation.html#affc52f512d0996b5750304df86af922a">GetActor</a> ()</td></tr>
 <tr class="memdesc:affc52f512d0996b5750304df86af922a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides access to the actor used by this representation.  <a href="#affc52f512d0996b5750304df86af922a">More...</a><br /></td></tr>
 <tr class="separator:affc52f512d0996b5750304df86af922a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1170,6 +1174,10 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:adf7639860201b7e7f2735561b8844ec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8120f1021ea9c5a097c2f60b2f74eee"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/vtkVectorOperators_8h.html#a45c855d65dd0e2b57b08024500ff9159">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkUnstructuredGridVolumeRepresentation.html#aa8120f1021ea9c5a097c2f60b2f74eee">DataBounds</a> [6]</td></tr>
 <tr class="separator:aa8120f1021ea9c5a097c2f60b2f74eee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab74d34e45b7672413b45ec892593708d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkUnstructuredGridVolumeRepresentation.html#ab74d34e45b7672413b45ec892593708d">MapScalars</a></td></tr>
+<tr class="separator:ab74d34e45b7672413b45ec892593708d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af365ee0afb24eb0befde85a25e070858"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkUnstructuredGridVolumeRepresentation.html#af365ee0afb24eb0befde85a25e070858">MultiComponentsMapping</a></td></tr>
+<tr class="separator:af365ee0afb24eb0befde85a25e070858"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac539f1395a0212dedb24128ded4d0610"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkUnstructuredGridVolumeRepresentation.html#ac539f1395a0212dedb24128ded4d0610">UseDataPartitions</a></td></tr>
 <tr class="separator:ac539f1395a0212dedb24128ded4d0610"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classvtkPVDataRepresentation"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classvtkPVDataRepresentation')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classvtkPVDataRepresentation.html">vtkPVDataRepresentation</a></td></tr>
@@ -1941,6 +1949,42 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ae0915a5a62b549136c70f588f8923c29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0915a5a62b549136c70f588f8923c29">&#9670;&nbsp;</a></span>SetMapScalars()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vtkUnstructuredGridVolumeRepresentation::SetMapScalars </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a368af5c72f2c80636490187bf9d0f54a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a368af5c72f2c80636490187bf9d0f54a">&#9670;&nbsp;</a></span>SetMultiComponentsMapping()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vtkUnstructuredGridVolumeRepresentation::SetMultiComponentsMapping </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="affc52f512d0996b5750304df86af922a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#affc52f512d0996b5750304df86af922a">&#9670;&nbsp;</a></span>GetActor()</h2>
 
@@ -1966,7 +2010,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Provides access to the actor used by this representation. </p>
 
-<p class="definition">Definition at line <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html#l00110">110</a> of file <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html">vtkUnstructuredGridVolumeRepresentation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html#l00112">112</a> of file <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html">vtkUnstructuredGridVolumeRepresentation.h</a>.</p>
 
 </div>
 </div>
@@ -2303,7 +2347,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html#l00158">158</a> of file <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html">vtkUnstructuredGridVolumeRepresentation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html#l00160">160</a> of file <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html">vtkUnstructuredGridVolumeRepresentation.h</a>.</p>
 
 </div>
 </div>
@@ -2327,7 +2371,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html#l00159">159</a> of file <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html">vtkUnstructuredGridVolumeRepresentation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html#l00161">161</a> of file <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html">vtkUnstructuredGridVolumeRepresentation.h</a>.</p>
 
 </div>
 </div>
@@ -2351,7 +2395,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html#l00160">160</a> of file <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html">vtkUnstructuredGridVolumeRepresentation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html#l00162">162</a> of file <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html">vtkUnstructuredGridVolumeRepresentation.h</a>.</p>
 
 </div>
 </div>
@@ -2375,7 +2419,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html#l00161">161</a> of file <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html">vtkUnstructuredGridVolumeRepresentation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html#l00163">163</a> of file <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html">vtkUnstructuredGridVolumeRepresentation.h</a>.</p>
 
 </div>
 </div>
@@ -2399,7 +2443,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html#l00163">163</a> of file <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html">vtkUnstructuredGridVolumeRepresentation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html#l00165">165</a> of file <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html">vtkUnstructuredGridVolumeRepresentation.h</a>.</p>
 
 </div>
 </div>
@@ -2423,7 +2467,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html#l00164">164</a> of file <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html">vtkUnstructuredGridVolumeRepresentation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html#l00166">166</a> of file <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html">vtkUnstructuredGridVolumeRepresentation.h</a>.</p>
 
 </div>
 </div>
@@ -2447,7 +2491,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html#l00165">165</a> of file <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html">vtkUnstructuredGridVolumeRepresentation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html#l00167">167</a> of file <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html">vtkUnstructuredGridVolumeRepresentation.h</a>.</p>
 
 </div>
 </div>
@@ -2471,7 +2515,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html#l00167">167</a> of file <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html">vtkUnstructuredGridVolumeRepresentation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html#l00169">169</a> of file <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html">vtkUnstructuredGridVolumeRepresentation.h</a>.</p>
 
 </div>
 </div>
@@ -2495,7 +2539,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html#l00168">168</a> of file <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html">vtkUnstructuredGridVolumeRepresentation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html#l00170">170</a> of file <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html">vtkUnstructuredGridVolumeRepresentation.h</a>.</p>
 
 </div>
 </div>
@@ -2519,7 +2563,55 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html#l00169">169</a> of file <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html">vtkUnstructuredGridVolumeRepresentation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html#l00171">171</a> of file <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html">vtkUnstructuredGridVolumeRepresentation.h</a>.</p>
+
+</div>
+</div>
+<a id="ab74d34e45b7672413b45ec892593708d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab74d34e45b7672413b45ec892593708d">&#9670;&nbsp;</a></span>MapScalars</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vtkUnstructuredGridVolumeRepresentation::MapScalars</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html#l00173">173</a> of file <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html">vtkUnstructuredGridVolumeRepresentation.h</a>.</p>
+
+</div>
+</div>
+<a id="af365ee0afb24eb0befde85a25e070858"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af365ee0afb24eb0befde85a25e070858">&#9670;&nbsp;</a></span>MultiComponentsMapping</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vtkUnstructuredGridVolumeRepresentation::MultiComponentsMapping</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html#l00174">174</a> of file <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html">vtkUnstructuredGridVolumeRepresentation.h</a>.</p>
 
 </div>
 </div>
@@ -2543,7 +2635,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html#l00171">171</a> of file <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html">vtkUnstructuredGridVolumeRepresentation.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html#l00176">176</a> of file <a class="el" href="vtkUnstructuredGridVolumeRepresentation_8h_source.html">vtkUnstructuredGridVolumeRepresentation.h</a>.</p>
 
 </div>
 </div>
