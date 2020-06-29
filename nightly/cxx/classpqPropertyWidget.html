@@ -168,6 +168,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad50352e355c61798ccb1012c0ab6721d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f35b6853900ca415e9529f2f953d613"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpqPropertyWidget.html#a6f35b6853900ca415e9529f2f953d613">setPanelVisibility</a> (const char *vis)</td></tr>
 <tr class="separator:a6f35b6853900ca415e9529f2f953d613"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b01ee0d5ec0c60099e78f9136a09664"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpqPropertyWidget.html#a9b01ee0d5ec0c60099e78f9136a09664">isSingleRowItem</a> () const</td></tr>
+<tr class="memdesc:a9b01ee0d5ec0c60099e78f9136a09664"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if the PropertyWidget must be constructed using a single row.  <a href="#a9b01ee0d5ec0c60099e78f9136a09664">More...</a><br /></td></tr>
+<tr class="separator:a9b01ee0d5ec0c60099e78f9136a09664"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f9eabef4001341b1c13e841b05f9eb6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpqPropertyWidget.html#a7f9eabef4001341b1c13e841b05f9eb6">showLabel</a> () const</td></tr>
 <tr class="separator:a7f9eabef4001341b1c13e841b05f9eb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3962cb5614da05d581e34c77798fa115"><td class="memItemLeft" align="right" valign="top">const QList&lt; QPointer&lt; <a class="el" href="classpqPropertyWidgetDecorator.html">pqPropertyWidgetDecorator</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpqPropertyWidget.html#a3962cb5614da05d581e34c77798fa115">decorators</a> () const</td></tr>
@@ -563,6 +566,37 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a9b01ee0d5ec0c60099e78f9136a09664"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b01ee0d5ec0c60099e78f9136a09664">&#9670;&nbsp;</a></span>isSingleRowItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool pqPropertyWidget::isSingleRowItem </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determines if the PropertyWidget must be constructed using a single row. </p>
+<p>Originally intended for PropertyWidgets which are a group of other Propertywidgets, such as <a class="el" href="classpqCheckableProperty.html" title="property widget for properties representing a checkable property.">pqCheckableProperty</a>. This mandates that when the widget is rendered, its label to be placed in the same row as the widget group.</p>
+<dl class="section see"><dt>See also</dt><dd>pqProxyWidgetItem::newGroupItem </dd></dl>
+
+<p>Reimplemented in <a class="el" href="classpqCheckableProperty.html#afa0d0a0da7d419553795faf506027627">pqCheckableProperty</a>.</p>
+
+</div>
+</div>
 <a id="a7f9eabef4001341b1c13e841b05f9eb6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7f9eabef4001341b1c13e841b05f9eb6">&#9670;&nbsp;</a></span>showLabel()</h2>
 
@@ -611,7 +645,7 @@ template&lt;class T &gt; </div>
 <p>This is templated so that it will work with a variety of objects such as <a class="el" href="classvtkSMProperty.html" title="superclass for all SM properties">vtkSMProperty</a>'s and <a class="el" href="classvtkSMDomain.html" title="represents the possible values a property can have">vtkSMDomain</a>'s. It can be called with anything that has a "char* GetXMLName()" method.</p>
 <p>For example, to get the XML name of a <a class="el" href="classvtkSMIntRangeDomain.html" title="type specific extension to vtkSMRangeDomainTemplate for ints.">vtkSMIntRangeDomain</a>: QString name = pqPropertyWidget::getXMLName(domain); </p>
 
-<p class="definition">Definition at line <a class="el" href="pqPropertyWidget_8h_source.html#l00115">115</a> of file <a class="el" href="pqPropertyWidget_8h_source.html">pqPropertyWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pqPropertyWidget_8h_source.html#l00127">127</a> of file <a class="el" href="pqPropertyWidget_8h_source.html">pqPropertyWidget.h</a>.</p>
 
 </div>
 </div>
@@ -640,7 +674,7 @@ template&lt;class T &gt; </div>
 
 <p>Provides access to the decorators for this widget. </p>
 
-<p class="definition">Definition at line <a class="el" href="pqPropertyWidget_8h_source.html#l00123">123</a> of file <a class="el" href="pqPropertyWidget_8h_source.html">pqPropertyWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pqPropertyWidget_8h_source.html#l00135">135</a> of file <a class="el" href="pqPropertyWidget_8h_source.html">pqPropertyWidget.h</a>.</p>
 
 </div>
 </div>
@@ -1135,7 +1169,7 @@ template&lt;class T &gt; </div>
 <p>For most <a class="el" href="classpqPropertyWidget.html" title="pqPropertyWidget represents a widget created for each property of a proxy on the pqPropertiesPanel (f...">pqPropertyWidget</a> subclasses a <a class="el" href="classpqPropertyWidget.html#a22d1606a2a25e739f192d2cf8ffc162f" title="This signal is fired as soon as the user starts editing in the widget.">changeAvailable()</a> signal, corresponds to a <a class="el" href="classpqPropertyWidget.html#a76b7ccd53dccd2d4044ae0e3228d54f3" title="This signal is fired as soon as the user is done with making an atomic change.">changeFinished()</a> signal. </p>
 <p>Hence by default we connect the two together. For subclasses that don't follow this pattern should call this method with 'false' to disconnect <a class="el" href="classpqPropertyWidget.html#a22d1606a2a25e739f192d2cf8ffc162f" title="This signal is fired as soon as the user starts editing in the widget.">changeAvailable()</a> and <a class="el" href="classpqPropertyWidget.html#a76b7ccd53dccd2d4044ae0e3228d54f3" title="This signal is fired as soon as the user is done with making an atomic change.">changeFinished()</a> signals. In that case, the subclass must explicitly fire <a class="el" href="classpqPropertyWidget.html#a76b7ccd53dccd2d4044ae0e3228d54f3" title="This signal is fired as soon as the user is done with making an atomic change.">changeFinished()</a> signal. </p>
 
-<p class="definition">Definition at line <a class="el" href="pqPropertyWidget_8h_source.html#l00191">191</a> of file <a class="el" href="pqPropertyWidget_8h_source.html">pqPropertyWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pqPropertyWidget_8h_source.html#l00203">203</a> of file <a class="el" href="pqPropertyWidget_8h_source.html">pqPropertyWidget.h</a>.</p>
 
 </div>
 </div>
@@ -1221,7 +1255,7 @@ template&lt;class T &gt; </div>
 
 <p>Provides access to the <a class="el" href="classpqPropertyLinks.html" title="pqPropertyLinks is used to connect vtkSMProperty and subclasses to properties on QObject instances.">pqPropertyLinks</a> instance. </p>
 
-<p class="definition">Definition at line <a class="el" href="pqPropertyWidget_8h_source.html#l00211">211</a> of file <a class="el" href="pqPropertyWidget_8h_source.html">pqPropertyWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pqPropertyWidget_8h_source.html#l00223">223</a> of file <a class="el" href="pqPropertyWidget_8h_source.html">pqPropertyWidget.h</a>.</p>
 
 </div>
 </div>
@@ -1264,7 +1298,7 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pqPropertyWidget_8h_source.html#l00217">217</a> of file <a class="el" href="pqPropertyWidget_8h_source.html">pqPropertyWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pqPropertyWidget_8h_source.html#l00229">229</a> of file <a class="el" href="pqPropertyWidget_8h_source.html">pqPropertyWidget.h</a>.</p>
 
 </div>
 </div>
@@ -1288,7 +1322,7 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pqPropertyWidget_8h_source.html#l00218">218</a> of file <a class="el" href="pqPropertyWidget_8h_source.html">pqPropertyWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pqPropertyWidget_8h_source.html#l00230">230</a> of file <a class="el" href="pqPropertyWidget_8h_source.html">pqPropertyWidget.h</a>.</p>
 
 </div>
 </div>
@@ -1312,7 +1346,7 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pqPropertyWidget_8h_source.html#l00219">219</a> of file <a class="el" href="pqPropertyWidget_8h_source.html">pqPropertyWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pqPropertyWidget_8h_source.html#l00231">231</a> of file <a class="el" href="pqPropertyWidget_8h_source.html">pqPropertyWidget.h</a>.</p>
 
 </div>
 </div>
@@ -1325,7 +1359,7 @@ template&lt;class T &gt; </div>
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.15 on Fri Jun 26 2020
+</a> 1.8.15 on Mon Jun 29 2020
 </small></address>
 <!-- KW:BEGIN -->
 <!-- this adds the version selection header -->
