@@ -1,6 +1,7 @@
 <map id="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Qt/ApplicationComponents/pqBoxPropertyWidget.h" name="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Qt/ApplicationComponents/pqBoxPropertyWidget.h">
-<area shape="rect" id="node1" title=" " alt="" coords="653,5,960,105"/>
+<area shape="rect" id="node1" title=" " alt="" coords="740,5,1047,105"/>
 <area shape="rect" id="node2" href="$pqInteractivePropertyWidget_8h.html" title=" " alt="" coords="696,153,917,180"/>
+<area shape="rect" id="node19" title=" " alt="" coords="941,153,1019,180"/>
 <area shape="rect" id="node3" title=" " alt="" coords="166,228,418,255"/>
 <area shape="rect" id="node4" href="$pqPropertyWidget_8h.html" title=" " alt="" coords="442,228,593,255"/>
 <area shape="rect" id="node10" title=" " alt="" coords="744,303,869,329"/>
