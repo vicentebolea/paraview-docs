@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>paraview.simple &mdash; ParaView/Python 5.8.1-RC1-883-gf201515c2c documentation</title>
+  <title>paraview.simple &mdash; ParaView/Python 5.8.1-RC1-954-ga5d1ee6b8c documentation</title>
   
 
   
@@ -24,7 +24,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:'../../',
-        VERSION:'5.8.1-RC1-883-gf201515c2c',
+        VERSION:'5.8.1-RC1-954-ga5d1ee6b8c',
         COLLAPSE_INDEX:false,
         FILE_SUFFIX:'.html',
         HAS_SOURCE:  true
@@ -49,7 +49,7 @@
         <link rel="index" title="Index"
               href="../../genindex.html"/>
         <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="ParaView/Python 5.8.1-RC1-883-gf201515c2c documentation" href="../../index.html"/>
+    <link rel="top" title="ParaView/Python 5.8.1-RC1-954-ga5d1ee6b8c documentation" href="../../index.html"/>
         <link rel="up" title="Module code" href="../index.html"/> 
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -67,7 +67,7 @@
           <li> <a href="../../index.html">
             <img src="../../_static/paraview-logo-small.png"
             alt="ParaView/Python"></img></a> </li>
-          <li class="version"> version 5.8.1-RC1-883-gf201515c2c</li>
+          <li class="version"> version 5.8.1-RC1-954-ga5d1ee6b8c</li>
         </ul>
         <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
   <input type="text" name="q" placeholder="Search docs" />
@@ -362,6 +362,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../paraview.simple.PTSReader.html">paraview.simple.PTSReader</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../paraview.simple.PVDReader.html">paraview.simple.PVDReader</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../paraview.simple.PVTrivialProducer.html">paraview.simple.PVTrivialProducer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../paraview.simple.PVTrivialProducer2.html">paraview.simple.PVTrivialProducer2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../paraview.simple.ParallelNetCDFPOPreader.html">paraview.simple.ParallelNetCDFPOPreader</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../paraview.simple.ParticlePath.html">paraview.simple.ParticlePath</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../paraview.simple.ParticleTracer.html">paraview.simple.ParticleTracer</a></li>
@@ -1107,6 +1108,151 @@
         <span class="n">pxm</span><span class="o">.</span><span class="n">UnRegisterProxy</span><span class="p">(</span><span class="s1">&#39;layouts&#39;</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">layouts</span><span class="p">[(</span><span class="n">name</span><span class="p">,</span> <span class="nb">id</span><span class="p">)])</span></div>
 
 <span class="c1">#==============================================================================</span>
+<span class="c1"># Extracts and Extract Generators</span>
+<span class="c1">#==============================================================================</span>
+<div class="viewcode-block" id="CreateExtractGenerator"><a class="viewcode-back" href="../../paraview.simple.html#paraview.simple.CreateExtractGenerator">[docs]</a><span class="k">def</span> <span class="nf">CreateExtractGenerator</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">proxy</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">registrationName</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Creates a new extract generator and returns it.</span>
+
+<span class="sd">    :param name: The type of the extract generator to create.</span>
+<span class="sd">    :type name: `str`</span>
+<span class="sd">    :param proxy: The proxy to generate the extract from. If not specified</span>
+<span class="sd">    `GetActiveSource()` is used.</span>
+<span class="sd">    :type proxy: :class:`paraview.servermanager.Proxy`, optional</span>
+<span class="sd">    :param registrationName: The registration name to use to register</span>
+<span class="sd">    the generator with the ProxyManager. If not specified a unique name</span>
+<span class="sd">    will be generated.</span>
+<span class="sd">    :type name: `str`, optional</span>
+
+<span class="sd">    :return: The extract generator created, on success, else None</span>
+<span class="sd">    :rtype: :class:`paraview.servermanager.Proxy` or `None`</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">proxy</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">proxy</span> <span class="o">=</span> <span class="n">GetActiveSource</span><span class="p">()</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">proxy</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;Could determine input for extract generator&quot;</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">proxy</span><span class="o">.</span><span class="n">Port</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">rawProxy</span> <span class="o">=</span> <span class="n">proxy</span><span class="o">.</span><span class="n">SMProxy</span><span class="o">.</span><span class="n">GetOutputPort</span><span class="p">(</span><span class="n">proxy</span><span class="o">.</span><span class="n">Port</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">rawProxy</span> <span class="o">=</span> <span class="n">proxy</span><span class="o">.</span><span class="n">SMProxy</span>
+
+    <span class="n">controller</span> <span class="o">=</span> <span class="n">servermanager</span><span class="o">.</span><span class="n">vtkSMExtractsController</span><span class="p">()</span>
+    <span class="n">rawGenerator</span> <span class="o">=</span> <span class="n">controller</span><span class="o">.</span><span class="n">CreateExtractGenerator</span><span class="p">(</span><span class="n">rawProxy</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">registrationName</span><span class="p">)</span>
+    <span class="n">generator</span> <span class="o">=</span> <span class="n">servermanager</span><span class="o">.</span><span class="n">_getPyProxy</span><span class="p">(</span><span class="n">rawGenerator</span><span class="p">)</span>
+
+    <span class="kn">from</span> <span class="nn">.catalyst.detail</span> <span class="k">import</span> <span class="n">IsInsitu</span><span class="p">,</span> <span class="n">RegisterExtractGenerator</span>
+    <span class="k">if</span> <span class="n">IsInsitu</span><span class="p">():</span>
+        <span class="c1"># tag the extract generator to know which pipeline this came from.</span>
+        <span class="n">RegisterExtractGenerator</span><span class="p">(</span><span class="n">generator</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">generator</span></div>
+
+
+<div class="viewcode-block" id="GetExtractGenerators"><a class="viewcode-back" href="../../paraview.simple.html#paraview.simple.GetExtractGenerators">[docs]</a><span class="k">def</span> <span class="nf">GetExtractGenerators</span><span class="p">(</span><span class="n">proxy</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Returns a list of extract generators associated with the proxy.</span>
+
+<span class="sd">    :param proxy: The proxy to return the extract generators associated with.</span>
+<span class="sd">    If not specified (or is None) then all extract generators are returned.</span>
+<span class="sd">    :type proxy: :class:`paraview.servermanager.Proxy`, optional</span>
+
+<span class="sd">    :return: List of associated extract generators if any. May return an empty</span>
+<span class="sd">    list.</span>
+<span class="sd">    :rtype: list of :class:`paraview.servermanager.Proxy`</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">controller</span> <span class="o">=</span> <span class="n">servermanager</span><span class="o">.</span><span class="n">vtkSMExtractsController</span><span class="p">()</span>
+    <span class="n">pxm</span> <span class="o">=</span> <span class="n">servermanager</span><span class="o">.</span><span class="n">ProxyManager</span><span class="p">()</span>
+    <span class="n">generators</span> <span class="o">=</span> <span class="n">pxm</span><span class="o">.</span><span class="n">GetProxiesInGroup</span><span class="p">(</span><span class="s2">&quot;extract_generators&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">values</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">proxy</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="n">generators</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">g</span> <span class="k">for</span> <span class="n">g</span> <span class="ow">in</span> <span class="n">generators</span> <span class="k">if</span> <span class="n">controller</span><span class="o">.</span><span class="n">IsExtractGenerator</span><span class="p">(</span><span class="n">g</span><span class="o">.</span><span class="n">SMProxy</span><span class="p">,</span> <span class="n">proxy</span><span class="o">.</span><span class="n">SMProxy</span><span class="p">)]</span></div>
+
+<div class="viewcode-block" id="FindExtractGenerator"><a class="viewcode-back" href="../../paraview.simple.html#paraview.simple.FindExtractGenerator">[docs]</a><span class="k">def</span> <span class="nf">FindExtractGenerator</span><span class="p">(</span><span class="n">registrationName</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Returns an extract generator with a specific registrationName.</span>
+
+<span class="sd">    :param registrationName: Registration name for the extract generator.</span>
+<span class="sd">    :type registrationName: `str`</span>
+
+<span class="sd">    :return: The extract generator or None</span>
+<span class="sd">    :rtype: :class:`paraview.servermanager.Proxy` or `None`</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">pxm</span> <span class="o">=</span> <span class="n">servermanager</span><span class="o">.</span><span class="n">ProxyManager</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">pxm</span><span class="o">.</span><span class="n">GetProxy</span><span class="p">(</span><span class="s2">&quot;extract_generators&quot;</span><span class="p">,</span> <span class="n">registrationName</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="SaveExtractsUsingCatalystOptions"><a class="viewcode-back" href="../../paraview.simple.html#paraview.simple.SaveExtractsUsingCatalystOptions">[docs]</a><span class="k">def</span> <span class="nf">SaveExtractsUsingCatalystOptions</span><span class="p">(</span><span class="n">options</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Generates extracts using a CatalystOptions object. This is intended for use</span>
+<span class="sd">    when a Catalyst analysis script is being run in batch.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># handle the case where options is CatalystOptions</span>
+
+    <span class="c1"># currently, Catalyst state files don&#39;t have anything about animation,</span>
+    <span class="c1"># however, we reply one animation to generate the extracts, so we ensure</span>
+    <span class="c1"># that the animation is updated based on timesteps in data by explicitly</span>
+    <span class="c1"># calling UpdateAnimationUsingDataTimeSteps.</span>
+    <span class="n">scene</span> <span class="o">=</span> <span class="n">GetAnimationScene</span><span class="p">()</span>
+    <span class="n">scene</span><span class="o">.</span><span class="n">UpdateAnimationUsingDataTimeSteps</span><span class="p">()</span>
+
+    <span class="n">pxm</span> <span class="o">=</span> <span class="n">servermanager</span><span class="o">.</span><span class="n">ProxyManager</span><span class="p">()</span>
+    <span class="n">proxy</span> <span class="o">=</span> <span class="n">servermanager</span><span class="o">.</span><span class="n">_getPyProxy</span><span class="p">(</span><span class="n">pxm</span><span class="o">.</span><span class="n">NewProxy</span><span class="p">(</span><span class="s2">&quot;misc&quot;</span><span class="p">,</span> <span class="s2">&quot;SaveAnimationExtracts&quot;</span><span class="p">))</span>
+
+    <span class="c1"># override options if passed in environment options.</span>
+    <span class="kn">import</span> <span class="nn">os</span>
+    <span class="k">if</span> <span class="s1">&#39;PARAVIEW_OVERRIDE_DATA_OUTPUT_DIRECTORY&#39;</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">:</span>
+        <span class="n">proxy</span><span class="o">.</span><span class="n">DataExtractsOutputDirectory</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;PARAVIEW_OVERRIDE_DATA_OUTPUT_DIRECTORY&quot;</span><span class="p">]</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">proxy</span><span class="o">.</span><span class="n">DataExtractsOutputDirectory</span> <span class="o">=</span> <span class="n">options</span><span class="o">.</span><span class="n">DataExtractsOutputDirectory</span>
+    <span class="k">if</span> <span class="s1">&#39;PARAVIEW_OVERRIDE_IMAGE_OUTPUT_DIRECTORY&#39;</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">:</span>
+        <span class="n">proxy</span><span class="o">.</span><span class="n">ImageExtractsOutputDirectory</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;PARAVIEW_OVERRIDE_IMAGE_OUTPUT_DIRECTORY&quot;</span><span class="p">]</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">proxy</span><span class="o">.</span><span class="n">ImageExtractsOutputDirectory</span> <span class="o">=</span> <span class="n">options</span><span class="o">.</span><span class="n">ImageExtractsOutputDirectory</span>
+    <span class="k">return</span> <span class="n">proxy</span><span class="o">.</span><span class="n">SaveExtracts</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="SaveExtracts"><a class="viewcode-back" href="../../paraview.simple.html#paraview.simple.SaveExtracts">[docs]</a><span class="k">def</span> <span class="nf">SaveExtracts</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Generate extracts. Parameters are forwarded for &#39;SaveAnimationExtracts&#39;</span>
+<span class="sd">    Currently, supported keyword parameters are:</span>
+
+<span class="sd">    :param DataExtractsOutputDirectory: root directory for data extracts</span>
+<span class="sd">    :type DataExtractsOutputDirectory: `str`</span>
+
+<span class="sd">    :param ImageExtractsOutputDirectory: root directory for image extracts</span>
+<span class="sd">    :type ImageExtractsOutputDirectory: `str`</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># currently, Python state files don&#39;t have anything about animation,</span>
+    <span class="c1"># however, we reply one animation to generate the extracts, so we ensure</span>
+    <span class="c1"># that the animation is updated based on timesteps in data by explicitly</span>
+    <span class="c1"># calling UpdateAnimationUsingDataTimeSteps.</span>
+    <span class="n">scene</span> <span class="o">=</span> <span class="n">GetAnimationScene</span><span class="p">()</span>
+    <span class="n">scene</span><span class="o">.</span><span class="n">UpdateAnimationUsingDataTimeSteps</span><span class="p">()</span>
+
+    <span class="n">pxm</span> <span class="o">=</span> <span class="n">servermanager</span><span class="o">.</span><span class="n">ProxyManager</span><span class="p">()</span>
+    <span class="n">proxy</span> <span class="o">=</span> <span class="n">servermanager</span><span class="o">.</span><span class="n">_getPyProxy</span><span class="p">(</span><span class="n">pxm</span><span class="o">.</span><span class="n">NewProxy</span><span class="p">(</span><span class="s2">&quot;misc&quot;</span><span class="p">,</span> <span class="s2">&quot;SaveAnimationExtracts&quot;</span><span class="p">))</span>
+    <span class="n">SetProperties</span><span class="p">(</span><span class="n">proxy</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+    <span class="c1"># override options if passed in environment options.</span>
+    <span class="kn">import</span> <span class="nn">os</span>
+    <span class="k">if</span> <span class="s1">&#39;PARAVIEW_OVERRIDE_DATA_OUTPUT_DIRECTORY&#39;</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">:</span>
+        <span class="n">data_root</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;PARAVIEW_OVERRIDE_DATA_OUTPUT_DIRECTORY&quot;</span><span class="p">]</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">data_root</span> <span class="o">=</span> <span class="n">proxy</span><span class="o">.</span><span class="n">DataExtractsOutputDirectory</span>
+
+    <span class="k">if</span> <span class="s1">&#39;PARAVIEW_OVERRIDE_IMAGE_OUTPUT_DIRECTORY&#39;</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">:</span>
+        <span class="n">image_root</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;PARAVIEW_OVERRIDE_IMAGE_OUTPUT_DIRECTORY&quot;</span><span class="p">]</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">image_root</span> <span class="o">=</span> <span class="n">proxy</span><span class="o">.</span><span class="n">ImageExtractsOutputDirectory</span>
+
+    <span class="c1"># if the paths have ${...}, replace that with environment variables.</span>
+    <span class="kn">from</span> <span class="nn">.util</span> <span class="k">import</span> <span class="n">ReplaceDollarVariablesWithEnvironment</span>
+    <span class="n">data_root</span> <span class="o">=</span> <span class="n">ReplaceDollarVariablesWithEnvironment</span><span class="p">(</span><span class="n">data_root</span><span class="p">)</span>
+    <span class="n">image_root</span> <span class="o">=</span> <span class="n">ReplaceDollarVariablesWithEnvironment</span><span class="p">(</span><span class="n">image_root</span><span class="p">)</span>
+    <span class="n">proxy</span><span class="o">.</span><span class="n">DataExtractsOutputDirectory</span> <span class="o">=</span> <span class="n">data_root</span>
+    <span class="n">proxy</span><span class="o">.</span><span class="n">ImageExtractsOutputDirectory</span> <span class="o">=</span> <span class="n">image_root</span>
+    <span class="k">return</span> <span class="n">proxy</span><span class="o">.</span><span class="n">SaveExtracts</span><span class="p">()</span></div>
+
+<span class="c1">#==============================================================================</span>
 <span class="c1"># XML State management</span>
 <span class="c1">#==============================================================================</span>
 
@@ -1171,7 +1317,7 @@
 <span class="sd">    If pipeline object and/or view are not specified, active objects are used.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">proxy</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
         <span class="n">proxy</span> <span class="o">=</span> <span class="n">GetActiveSource</span><span class="p">()</span>
-    <span class="k">if</span> <span class="n">proxy</span><span class="o">.</span><span class="n">GetNumberOfOutputPorts</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">proxy</span><span class="p">,</span> <span class="s2">&quot;GetNumberOfOutputPorts&quot;</span><span class="p">)</span> <span class="ow">or</span> <span class="n">proxy</span><span class="o">.</span><span class="n">GetNumberOfOutputPorts</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
         <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s1">&#39;Cannot show a sink i.e. algorithm with no output.&#39;</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">proxy</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
         <span class="k">raise</span> <span class="ne">RuntimeError</span> <span class="p">(</span><span class="s2">&quot;Show() needs a proxy argument or that an active source is set.&quot;</span><span class="p">)</span>
@@ -2962,11 +3108,22 @@
 <span class="sd">        all non-keyword arguments are assumed to be inputs. All keyword arguments are</span>
 <span class="sd">        assumed to be property,value pairs and are passed to the new proxy.&quot;&quot;&quot;</span>
 
+        <span class="n">registrationName</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">for</span> <span class="n">nameParam</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;registrationName&#39;</span><span class="p">,</span> <span class="s1">&#39;guiName&#39;</span><span class="p">]:</span>
+          <span class="k">if</span> <span class="n">nameParam</span> <span class="ow">in</span> <span class="n">params</span><span class="p">:</span>
+              <span class="n">registrationName</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="n">nameParam</span><span class="p">]</span>
+              <span class="k">del</span> <span class="n">params</span><span class="p">[</span><span class="n">nameParam</span><span class="p">]</span>
+
         <span class="c1"># Create a controller instance.</span>
         <span class="n">controller</span> <span class="o">=</span> <span class="n">servermanager</span><span class="o">.</span><span class="n">ParaViewPipelineController</span><span class="p">()</span>
 
-        <span class="c1"># Instantiate the actual object from the given module.</span>
-        <span class="n">px</span> <span class="o">=</span> <span class="n">paraview</span><span class="o">.</span><span class="n">_backwardscompatibilityhelper</span><span class="o">.</span><span class="n">GetProxy</span><span class="p">(</span><span class="n">module</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">no_update</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="kn">from</span> <span class="nn">.catalyst.detail</span> <span class="k">import</span> <span class="n">IsInsituInput</span><span class="p">,</span> <span class="n">CreateProducer</span>
+        <span class="k">if</span> <span class="n">IsInsituInput</span><span class="p">(</span><span class="n">registrationName</span><span class="p">):</span>
+            <span class="c1"># This is a catalyst input, replace with a trivial producer</span>
+            <span class="n">px</span> <span class="o">=</span> <span class="n">CreateProducer</span><span class="p">(</span><span class="n">registrationName</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="c1"># Instantiate the actual object from the given module.</span>
+            <span class="n">px</span> <span class="o">=</span> <span class="n">paraview</span><span class="o">.</span><span class="n">_backwardscompatibilityhelper</span><span class="o">.</span><span class="n">GetProxy</span><span class="p">(</span><span class="n">module</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">no_update</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
         <span class="c1"># preinitialize the proxy.</span>
         <span class="n">controller</span><span class="o">.</span><span class="n">PreInitializeProxy</span><span class="p">(</span><span class="n">px</span><span class="p">)</span>
@@ -2994,12 +3151,6 @@
         <span class="k">else</span><span class="p">:</span>
             <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="nb">input</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
                 <span class="k">raise</span> <span class="ne">RuntimeError</span> <span class="p">(</span><span class="s2">&quot;This function does not expect an input.&quot;</span><span class="p">)</span>
-
-        <span class="n">registrationName</span> <span class="o">=</span> <span class="kc">None</span>
-        <span class="k">for</span> <span class="n">nameParam</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;registrationName&#39;</span><span class="p">,</span> <span class="s1">&#39;guiName&#39;</span><span class="p">]:</span>
-          <span class="k">if</span> <span class="n">nameParam</span> <span class="ow">in</span> <span class="n">params</span><span class="p">:</span>
-              <span class="n">registrationName</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="n">nameParam</span><span class="p">]</span>
-              <span class="k">del</span> <span class="n">params</span><span class="p">[</span><span class="n">nameParam</span><span class="p">]</span>
 
         <span class="c1"># Pass all the named arguments as property,value pairs</span>
         <span class="n">SetProperties</span><span class="p">(</span><span class="n">px</span><span class="p">,</span> <span class="o">**</span><span class="n">params</span><span class="p">)</span>
@@ -3200,12 +3351,12 @@
         <span class="s2">&quot;Internal method.&quot;</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="n">px</span><span class="p">:</span>
             <span class="k">return</span> <span class="kc">None</span>
-        <span class="k">if</span> <span class="n">px</span><span class="o">.</span><span class="n">IsA</span><span class="p">(</span><span class="s2">&quot;vtkSMSourceProxy&quot;</span><span class="p">):</span>
-            <span class="k">return</span> <span class="n">servermanager</span><span class="o">.</span><span class="n">_getPyProxy</span><span class="p">(</span><span class="n">px</span><span class="p">)</span>
-        <span class="k">else</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">px</span><span class="o">.</span><span class="n">IsA</span><span class="p">(</span><span class="s2">&quot;vtkSMOutputPort&quot;</span><span class="p">):</span>
             <span class="k">return</span> <span class="n">servermanager</span><span class="o">.</span><span class="n">OutputPort</span><span class="p">(</span>
               <span class="n">servermanager</span><span class="o">.</span><span class="n">_getPyProxy</span><span class="p">(</span><span class="n">px</span><span class="o">.</span><span class="n">GetSourceProxy</span><span class="p">()),</span>
               <span class="n">px</span><span class="o">.</span><span class="n">GetPortIndex</span><span class="p">())</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">servermanager</span><span class="o">.</span><span class="n">_getPyProxy</span><span class="p">(</span><span class="n">px</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">get_source</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="s2">&quot;Returns the active source.&quot;</span>

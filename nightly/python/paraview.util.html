@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>util Package &mdash; ParaView/Python 5.8.1-RC1-883-gf201515c2c documentation</title>
+  <title>util Package &mdash; ParaView/Python 5.8.1-RC1-954-ga5d1ee6b8c documentation</title>
   
 
   
@@ -24,7 +24,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:'./',
-        VERSION:'5.8.1-RC1-883-gf201515c2c',
+        VERSION:'5.8.1-RC1-954-ga5d1ee6b8c',
         COLLAPSE_INDEX:false,
         FILE_SUFFIX:'.html',
         HAS_SOURCE:  true
@@ -49,7 +49,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="ParaView/Python 5.8.1-RC1-883-gf201515c2c documentation" href="index.html"/>
+    <link rel="top" title="ParaView/Python 5.8.1-RC1-954-ga5d1ee6b8c documentation" href="index.html"/>
         <link rel="up" title="paraview Package" href="paraview.html"/>
         <link rel="next" title="util.vtkAlgorithm Module" href="paraview.util.vtkAlgorithm.html"/>
         <link rel="prev" title="images Package" href="paraview.tpl.cinema_python.images.html"/> 
@@ -69,7 +69,7 @@
           <li> <a href="index.html">
             <img src="_static/paraview-logo-small.png"
             alt="ParaView/Python"></img></a> </li>
-          <li class="version"> version 5.8.1-RC1-883-gf201515c2c</li>
+          <li class="version"> version 5.8.1-RC1-954-ga5d1ee6b8c</li>
         </ul>
         <form id ="rtd-search-form" class="wy-form" action="search.html" method="get">
   <input type="text" name="q" placeholder="Search docs" />
@@ -364,6 +364,7 @@
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.PTSReader.html">paraview.simple.PTSReader</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.PVDReader.html">paraview.simple.PVDReader</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.PVTrivialProducer.html">paraview.simple.PVTrivialProducer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="paraview.simple.PVTrivialProducer2.html">paraview.simple.PVTrivialProducer2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.ParallelNetCDFPOPreader.html">paraview.simple.ParallelNetCDFPOPreader</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.ParticlePath.html">paraview.simple.ParticlePath</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.ParticleTracer.html">paraview.simple.ParticleTracer</a></li>
@@ -679,6 +680,14 @@ the length/area/volume of a 1D/2D/3D cell. The calculation is exact for
 lines, polylines, triangles, triangle strips, pixels, voxels, convex
 polygons, quads and tetrahedra. All other 3D cells are triangulated
 during volume calculation. In such cases, the result may not be exact.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="paraview.util.ReplaceDollarVariablesWithEnvironment">
+<code class="descclassname">paraview.util.</code><code class="descname">ReplaceDollarVariablesWithEnvironment</code><span class="sig-paren">(</span><em>text</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/util.html#ReplaceDollarVariablesWithEnvironment"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.util.ReplaceDollarVariablesWithEnvironment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Replaces all substrings of the type <cite>${FOO}</cite> with <cite>FOO</cite> obtained
+from the <cite>os.environ</cite>. If the key is not defined in the environment, this
+raises a <cite>KeyError</cite>.</p>
 </dd></dl>
 
 <dl class="function">

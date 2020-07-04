@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>paraview.smstate &mdash; ParaView/Python 5.8.1-RC1-883-gf201515c2c documentation</title>
+  <title>paraview.smstate &mdash; ParaView/Python 5.8.1-RC1-954-ga5d1ee6b8c documentation</title>
   
 
   
@@ -24,7 +24,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:'../../',
-        VERSION:'5.8.1-RC1-883-gf201515c2c',
+        VERSION:'5.8.1-RC1-954-ga5d1ee6b8c',
         COLLAPSE_INDEX:false,
         FILE_SUFFIX:'.html',
         HAS_SOURCE:  true
@@ -49,7 +49,7 @@
         <link rel="index" title="Index"
               href="../../genindex.html"/>
         <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="ParaView/Python 5.8.1-RC1-883-gf201515c2c documentation" href="../../index.html"/>
+    <link rel="top" title="ParaView/Python 5.8.1-RC1-954-ga5d1ee6b8c documentation" href="../../index.html"/>
         <link rel="up" title="Module code" href="../index.html"/> 
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -67,7 +67,7 @@
           <li> <a href="../../index.html">
             <img src="../../_static/paraview-logo-small.png"
             alt="ParaView/Python"></img></a> </li>
-          <li class="version"> version 5.8.1-RC1-883-gf201515c2c</li>
+          <li class="version"> version 5.8.1-RC1-954-ga5d1ee6b8c</li>
         </ul>
         <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
   <input type="text" name="q" placeholder="Search docs" />
@@ -362,6 +362,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../paraview.simple.PTSReader.html">paraview.simple.PTSReader</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../paraview.simple.PVDReader.html">paraview.simple.PVDReader</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../paraview.simple.PVTrivialProducer.html">paraview.simple.PVTrivialProducer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../paraview.simple.PVTrivialProducer2.html">paraview.simple.PVTrivialProducer2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../paraview.simple.ParallelNetCDFPOPreader.html">paraview.simple.ParallelNetCDFPOPreader</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../paraview.simple.ParticlePath.html">paraview.simple.ParticlePath</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../paraview.simple.ParticleTracer.html">paraview.simple.ParticleTracer</a></li>
@@ -773,9 +774,17 @@
             <span class="n">get_producers</span><span class="p">(</span><span class="n">proxy</span><span class="o">.</span><span class="n">ScalarOpacityFunction</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">producer_set</span><span class="p">)</span>
     <span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span> <span class="k">pass</span></div>
 
-<div class="viewcode-block" id="get_state"><a class="viewcode-back" href="../../paraview.smstate.html#paraview.smstate.get_state">[docs]</a><span class="k">def</span> <span class="nf">get_state</span><span class="p">(</span><span class="n">propertiesToTraceOnCreate</span><span class="o">=</span><span class="n">RECORD_MODIFIED_PROPERTIES</span><span class="p">,</span>
-    <span class="n">skipHiddenRepresentations</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">skipRenderingComponents</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">source_set</span><span class="o">=</span><span class="p">[],</span> <span class="nb">filter</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">raw</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<div class="viewcode-block" id="get_state"><a class="viewcode-back" href="../../paraview.smstate.html#paraview.smstate.get_state">[docs]</a><span class="k">def</span> <span class="nf">get_state</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">source_set</span><span class="o">=</span><span class="p">[],</span> <span class="nb">filter</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">raw</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Returns the state string&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">options</span><span class="p">:</span>
+        <span class="n">options</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">_getPyProxy</span><span class="p">(</span><span class="n">options</span><span class="p">)</span>
+        <span class="n">propertiesToTraceOnCreate</span> <span class="o">=</span> <span class="n">options</span><span class="o">.</span><span class="n">PropertiesToTraceOnCreate</span>
+        <span class="n">skipHiddenRepresentations</span> <span class="o">=</span> <span class="n">options</span><span class="o">.</span><span class="n">SkipHiddenDisplayProperties</span>
+        <span class="n">skipRenderingComponents</span> <span class="o">=</span> <span class="n">options</span><span class="o">.</span><span class="n">SkipRenderingComponents</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">propertiesToTraceOnCreate</span> <span class="o">=</span> <span class="n">RECORD_MODIFIED_PROPERTIES</span>
+        <span class="n">skipHiddenRepresentations</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="n">skipRenderingComponents</span> <span class="o">=</span> <span class="kc">False</span>
 
     <span class="c1"># essential to ensure any obsolete accessors don&#39;t linger - can cause havoc</span>
     <span class="c1"># when saving state following a Python trace session</span>
@@ -810,16 +819,17 @@
     <span class="n">proxies_of_interest</span> <span class="o">=</span> <span class="n">producers</span><span class="o">.</span><span class="n">union</span><span class="p">(</span><span class="n">consumers</span><span class="p">)</span>
     <span class="c1">#print (&quot;proxies_of_interest&quot;, proxies_of_interest)</span>
 
-    <span class="n">trace_config</span> <span class="o">=</span> <span class="n">smtrace</span><span class="o">.</span><span class="n">start_trace</span><span class="p">()</span>
+    <span class="n">trace_config</span> <span class="o">=</span> <span class="n">smtrace</span><span class="o">.</span><span class="n">start_trace</span><span class="p">(</span><span class="n">preamble</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
     <span class="c1"># this ensures that lookup tables/scalar bars etc. are fully traced.</span>
     <span class="n">trace_config</span><span class="o">.</span><span class="n">SetFullyTraceSupplementalProxies</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
     <span class="n">trace_config</span><span class="o">.</span><span class="n">SetSkipRenderingComponents</span><span class="p">(</span><span class="n">skipRenderingComponents</span><span class="p">)</span>
 
     <span class="n">trace</span> <span class="o">=</span> <span class="n">smtrace</span><span class="o">.</span><span class="n">TraceOutput</span><span class="p">()</span>
     <span class="n">trace</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;# state file generated using </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">simple</span><span class="o">.</span><span class="n">GetParaViewSourceVersion</span><span class="p">())</span>
+    <span class="n">trace</span><span class="o">.</span><span class="n">append_separated</span><span class="p">(</span><span class="n">smtrace</span><span class="o">.</span><span class="n">get_current_trace_output_and_reset</span><span class="p">(</span><span class="n">raw</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
 
     <span class="c1">#--------------------------------------------------------------------------</span>
-    <span class="c1"># First, we trace the views and layouts, if any.</span>
+    <span class="c1"># We trace the views and layouts, if any.</span>
     <span class="k">if</span> <span class="n">skipRenderingComponents</span><span class="p">:</span>
         <span class="n">views</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">else</span><span class="p">:</span>
@@ -882,10 +892,6 @@
             <span class="s2">&quot;# ----------------------------------------------------------------&quot;</span><span class="p">])</span>
         <span class="k">for</span> <span class="n">source</span> <span class="ow">in</span> <span class="n">sorted_sources</span><span class="p">:</span>
             <span class="n">traceitem</span> <span class="o">=</span> <span class="n">smtrace</span><span class="o">.</span><span class="n">RegisterPipelineProxy</span><span class="p">(</span><span class="n">source</span><span class="p">)</span>
-            <span class="n">traceitem</span><span class="o">.</span><span class="n">finalize</span><span class="p">()</span>
-            <span class="k">del</span> <span class="n">traceitem</span>
-            <span class="c1"># make sure any name changes are recorded</span>
-            <span class="n">traceitem</span> <span class="o">=</span> <span class="n">smtrace</span><span class="o">.</span><span class="n">RenameProxy</span><span class="p">(</span><span class="n">source</span><span class="p">)</span>
             <span class="n">traceitem</span><span class="o">.</span><span class="n">finalize</span><span class="p">()</span>
             <span class="k">del</span> <span class="n">traceitem</span>
         <span class="n">trace</span><span class="o">.</span><span class="n">append_separated</span><span class="p">(</span><span class="n">smtrace</span><span class="o">.</span><span class="n">get_current_trace_output_and_reset</span><span class="p">(</span><span class="n">raw</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
@@ -976,14 +982,42 @@
                 <span class="n">smtrace</span><span class="o">.</span><span class="n">Trace</span><span class="o">.</span><span class="n">get_accessor</span><span class="p">(</span><span class="n">ctf</span><span class="o">.</span><span class="n">ScalarOpacityFunction</span><span class="p">)</span>
         <span class="n">trace</span><span class="o">.</span><span class="n">append_separated</span><span class="p">(</span><span class="n">smtrace</span><span class="o">.</span><span class="n">get_current_trace_output_and_reset</span><span class="p">(</span><span class="n">raw</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
 
+    <span class="c1"># Trace extract generators.</span>
+    <span class="n">exgens</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">proxies_of_interest</span> \
+            <span class="k">if</span> <span class="n">smtrace</span><span class="o">.</span><span class="n">Trace</span><span class="o">.</span><span class="n">get_registered_name</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot;extract_generators&quot;</span><span class="p">)])</span>
+    <span class="k">if</span> <span class="n">exgens</span><span class="p">:</span>
+        <span class="n">trace</span><span class="o">.</span><span class="n">append_separated</span><span class="p">([</span>\
+            <span class="s2">&quot;# ----------------------------------------------------------------&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;# setup extract generators&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;# ----------------------------------------------------------------&quot;</span><span class="p">])</span>
+        <span class="k">for</span> <span class="n">exgen</span> <span class="ow">in</span> <span class="n">exgens</span><span class="p">:</span>
+            <span class="c1"># FIXME: this currently doesn&#39;t handle multiple output ports</span>
+            <span class="c1"># correctly.</span>
+            <span class="n">traceitem</span> <span class="o">=</span> <span class="n">smtrace</span><span class="o">.</span><span class="n">CreateExtractGenerator</span><span class="p">(</span>\
+                    <span class="n">xmlname</span><span class="o">=</span><span class="n">exgen</span><span class="o">.</span><span class="n">Writer</span><span class="o">.</span><span class="n">GetXMLName</span><span class="p">(),</span>
+                    <span class="n">producer</span><span class="o">=</span><span class="n">exgen</span><span class="o">.</span><span class="n">Producer</span><span class="p">,</span>
+                    <span class="n">generator</span><span class="o">=</span><span class="n">exgen</span><span class="p">,</span>
+                    <span class="n">registrationName</span><span class="o">=</span><span class="n">smtrace</span><span class="o">.</span><span class="n">Trace</span><span class="o">.</span><span class="n">get_registered_name</span><span class="p">(</span><span class="n">exgen</span><span class="p">,</span> <span class="s2">&quot;extract_generators&quot;</span><span class="p">))</span>
+            <span class="n">traceitem</span><span class="o">.</span><span class="n">finalize</span><span class="p">()</span>
+            <span class="k">del</span> <span class="n">traceitem</span>
+        <span class="n">trace</span><span class="o">.</span><span class="n">append_separated</span><span class="p">(</span><span class="n">smtrace</span><span class="o">.</span><span class="n">get_current_trace_output_and_reset</span><span class="p">(</span><span class="n">raw</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+
     <span class="c1"># restore the active source since the order in which the pipeline is created</span>
     <span class="c1"># in the state file can end up changing the active source to be different</span>
     <span class="c1"># than what it was when the state is being saved.</span>
     <span class="n">trace</span><span class="o">.</span><span class="n">append_separated</span><span class="p">([</span>\
             <span class="s2">&quot;# ----------------------------------------------------------------&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;# finally, restore active source&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;# restore active source&quot;</span><span class="p">,</span>
             <span class="s2">&quot;SetActiveSource(</span><span class="si">%s</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="n">smtrace</span><span class="o">.</span><span class="n">Trace</span><span class="o">.</span><span class="n">get_accessor</span><span class="p">(</span><span class="n">simple</span><span class="o">.</span><span class="n">GetActiveSource</span><span class="p">()),</span>
             <span class="s2">&quot;# ----------------------------------------------------------------&quot;</span><span class="p">])</span>
+
+    <span class="k">if</span> <span class="n">options</span><span class="p">:</span>
+        <span class="c1"># add coda about extracts generation.</span>
+        <span class="n">trace</span><span class="o">.</span><span class="n">append_separated</span><span class="p">([</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;if __name__ == &#39;__main__&#39;:&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;    # generate extracts&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;    SaveExtracts(DataExtractsOutputDirectory=&#39;</span><span class="si">%s</span><span class="s2">&#39;,&quot;</span> <span class="o">%</span> <span class="n">options</span><span class="o">.</span><span class="n">DataExtractsOutputDirectory</span><span class="p">,</span>
+            <span class="s2">&quot;        ImageExtractsOutputDirectory=&#39;</span><span class="si">%s</span><span class="s2">&#39;)&quot;</span> <span class="o">%</span> <span class="n">options</span><span class="o">.</span><span class="n">ImageExtractsOutputDirectory</span><span class="p">])</span>
     <span class="k">del</span> <span class="n">trace_config</span>
     <span class="n">smtrace</span><span class="o">.</span><span class="n">stop_trace</span><span class="p">()</span>
     <span class="c1">#print (trace)</span>

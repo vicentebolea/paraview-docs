@@ -152,6 +152,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad477cff7a5c553c2f98c694394319ca2"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkSMParaViewPipelineController.html#ad477cff7a5c553c2f98c694394319ca2">RegisterTextureProxy</a> (<a class="el" href="classvtkSMProxy.html">vtkSMProxy</a> *proxy, const char *filename)</td></tr>
 <tr class="memdesc:ad477cff7a5c553c2f98c694394319ca2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this method after <a class="el" href="classvtkSMParaViewPipelineController.html#a8590d8ab0c40bf7336bf143a3aebc189" title="Pre-initializes a proxy i.e.">PreInitializeProxy()</a> and <a class="el" href="classvtkSMParaViewPipelineController.html#a95fcaeeb37ff7d6d27dcffd8d7a4ae20" title="Final step in proxy initialization.">PostInitializeProxy()</a> to register a texture proxy with the proxy manager.  <a href="#ad477cff7a5c553c2f98c694394319ca2">More...</a><br /></td></tr>
 <tr class="separator:ad477cff7a5c553c2f98c694394319ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69641b1af927df6a44646722ecf7a1d0"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkSMParaViewPipelineController.html#a69641b1af927df6a44646722ecf7a1d0">RegisterExtractGeneratorProxy</a> (<a class="el" href="classvtkSMProxy.html">vtkSMProxy</a> *proxy, const char *proxyname)</td></tr>
+<tr class="memdesc:a69641b1af927df6a44646722ecf7a1d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers an extract generator.  <a href="#a69641b1af927df6a44646722ecf7a1d0">More...</a><br /></td></tr>
+<tr class="separator:a69641b1af927df6a44646722ecf7a1d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a109ae4d7007ddf88f1741ad711a4f264"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkSMParaViewPipelineController.html#a109ae4d7007ddf88f1741ad711a4f264">RegisterExtractGeneratorProxy</a> (<a class="el" href="classvtkSMProxy.html">vtkSMProxy</a> *proxy)</td></tr>
+<tr class="separator:a109ae4d7007ddf88f1741ad711a4f264"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafb9ba6dad7ec18dbccd6926d3dfcc5f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classvtkSMProxy.html">vtkSMProxy</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkSMParaViewPipelineController.html#aafb9ba6dad7ec18dbccd6926d3dfcc5f">FindAnimationScene</a> (<a class="el" href="classvtkSMSession.html">vtkSMSession</a> *session)</td></tr>
 <tr class="memdesc:aafb9ba6dad7ec18dbccd6926d3dfcc5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the animation scene, if any.  <a href="#aafb9ba6dad7ec18dbccd6926d3dfcc5f">More...</a><br /></td></tr>
 <tr class="separator:aafb9ba6dad7ec18dbccd6926d3dfcc5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1400,6 +1405,72 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a69641b1af927df6a44646722ecf7a1d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69641b1af927df6a44646722ecf7a1d0">&#9670;&nbsp;</a></span>RegisterExtractGeneratorProxy() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool vtkSMParaViewPipelineController::RegisterExtractGeneratorProxy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvtkSMProxy.html">vtkSMProxy</a> *&#160;</td>
+          <td class="paramname"><em>proxy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>proxyname</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Registers an extract generator. </p>
+
+</div>
+</div>
+<a id="a109ae4d7007ddf88f1741ad711a4f264"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a109ae4d7007ddf88f1741ad711a4f264">&#9670;&nbsp;</a></span>RegisterExtractGeneratorProxy() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool vtkSMParaViewPipelineController::RegisterExtractGeneratorProxy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvtkSMProxy.html">vtkSMProxy</a> *&#160;</td>
+          <td class="paramname"><em>proxy</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="vtkSMParaViewPipelineController_8h_source.html#l00228">228</a> of file <a class="el" href="vtkSMParaViewPipelineController_8h_source.html">vtkSMParaViewPipelineController.h</a>.</p>
+
+</div>
+</div>
 <a id="aafb9ba6dad7ec18dbccd6926d3dfcc5f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aafb9ba6dad7ec18dbccd6926d3dfcc5f">&#9670;&nbsp;</a></span>FindAnimationScene()</h2>
 
@@ -1986,7 +2057,7 @@ Additional Inherited Members</h2></td></tr>
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.15 on Tue Jun 30 2020
+</a> 1.8.15 on Sat Jul 4 2020
 </small></address>
 <!-- KW:BEGIN -->
 <!-- this adds the version selection header -->

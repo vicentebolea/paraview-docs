@@ -269,6 +269,7 @@ Proxies generated for server side objects under :doc:`paraview.simple`
     paraview.simple.PTSReader
     paraview.simple.PVDReader
     paraview.simple.PVTrivialProducer
+    paraview.simple.PVTrivialProducer2
     paraview.simple.ParallelNetCDFPOPreader
     paraview.simple.ParticlePath
     paraview.simple.ParticleTracer
@@ -796,6 +797,7 @@ Proxies generated for server side objects under :doc:`paraview.simple`
     PTSReader
     PVDReader
     PVTrivialProducer
+    PVTrivialProducer2
     ParallelNetCDFPOPreader
     ParticlePath
     ParticleTracer

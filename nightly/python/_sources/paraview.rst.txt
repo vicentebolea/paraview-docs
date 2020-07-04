@@ -18,7 +18,6 @@ Modules
     paraview._colorMaps
     paraview.collaboration
     paraview.coprocessing
-    paraview.cpexport
     paraview.cpstate
     paraview.live
     paraview.lookuptable
@@ -43,8 +42,11 @@ Subpackages
 .. toctree::
 
     paraview.benchmark
+    paraview.catalyst
+    paraview.demos
     paraview.detail
     paraview.modules
+    paraview.tests
     paraview.tpl
     paraview.util
     paraview.web

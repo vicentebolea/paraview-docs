@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>smtrace Module &mdash; ParaView/Python 5.8.1-RC1-883-gf201515c2c documentation</title>
+  <title>smtrace Module &mdash; ParaView/Python 5.8.1-RC1-954-ga5d1ee6b8c documentation</title>
   
 
   
@@ -24,7 +24,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:'./',
-        VERSION:'5.8.1-RC1-883-gf201515c2c',
+        VERSION:'5.8.1-RC1-954-ga5d1ee6b8c',
         COLLAPSE_INDEX:false,
         FILE_SUFFIX:'.html',
         HAS_SOURCE:  true
@@ -49,7 +49,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="ParaView/Python 5.8.1-RC1-883-gf201515c2c documentation" href="index.html"/>
+    <link rel="top" title="ParaView/Python 5.8.1-RC1-954-ga5d1ee6b8c documentation" href="index.html"/>
         <link rel="up" title="paraview Package" href="paraview.html"/>
         <link rel="next" title="spatiotemporalparallelism Module" href="paraview.spatiotemporalparallelism.html"/>
         <link rel="prev" title="smtesting Module" href="paraview.smtesting.html"/> 
@@ -69,7 +69,7 @@
           <li> <a href="index.html">
             <img src="_static/paraview-logo-small.png"
             alt="ParaView/Python"></img></a> </li>
-          <li class="version"> version 5.8.1-RC1-883-gf201515c2c</li>
+          <li class="version"> version 5.8.1-RC1-954-ga5d1ee6b8c</li>
         </ul>
         <form id ="rtd-search-form" class="wy-form" action="search.html" method="get">
   <input type="text" name="q" placeholder="Search docs" />
@@ -364,6 +364,7 @@
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.PTSReader.html">paraview.simple.PTSReader</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.PVDReader.html">paraview.simple.PVDReader</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.PVTrivialProducer.html">paraview.simple.PVTrivialProducer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="paraview.simple.PVTrivialProducer2.html">paraview.simple.PVTrivialProducer2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.ParallelNetCDFPOPreader.html">paraview.simple.ParallelNetCDFPOPreader</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.ParticlePath.html">paraview.simple.ParticlePath</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.ParticleTracer.html">paraview.simple.ParticleTracer</a></li>
@@ -739,7 +740,7 @@ garbage collected since there’s no reference to it.</p>
 
 <dl class="class">
 <dt id="paraview.smtrace.AnimationProxyFilter">
-<em class="property">class </em><code class="descclassname">paraview.smtrace.</code><code class="descname">AnimationProxyFilter</code><a class="reference internal" href="_modules/paraview/smtrace.html#AnimationProxyFilter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.AnimationProxyFilter" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">paraview.smtrace.</code><code class="descname">AnimationProxyFilter</code><span class="sig-paren">(</span><em>trace_all_in_ctor=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/smtrace.html#AnimationProxyFilter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.AnimationProxyFilter" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#paraview.smtrace.ProxyFilter" title="paraview.smtrace.ProxyFilter"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.ProxyFilter</span></code></a></p>
 <dl class="method">
 <dt id="paraview.smtrace.AnimationProxyFilter.should_never_trace">
@@ -837,6 +838,18 @@ finalized.</p>
 </dd></dl>
 
 <dl class="class">
+<dt id="paraview.smtrace.CreateExtractGenerator">
+<em class="property">class </em><code class="descclassname">paraview.smtrace.</code><code class="descname">CreateExtractGenerator</code><span class="sig-paren">(</span><em>xmlname</em>, <em>producer</em>, <em>generator</em>, <em>registrationName</em>, <em>comment=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/smtrace.html#CreateExtractGenerator"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.CreateExtractGenerator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#paraview.smtrace.TraceItem" title="paraview.smtrace.TraceItem"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.TraceItem</span></code></a></p>
+<p>Traces creation of extract generators</p>
+<dl class="method">
+<dt id="paraview.smtrace.CreateExtractGenerator.finalize">
+<code class="descname">finalize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/smtrace.html#CreateExtractGenerator.finalize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.CreateExtractGenerator.finalize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
 <dt id="paraview.smtrace.Delete">
 <em class="property">class </em><code class="descclassname">paraview.smtrace.</code><code class="descname">Delete</code><span class="sig-paren">(</span><em>proxy</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/smtrace.html#Delete"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.Delete" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#paraview.smtrace.TraceItem" title="paraview.smtrace.TraceItem"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.TraceItem</span></code></a></p>
@@ -845,7 +858,7 @@ finalized.</p>
 
 <dl class="class">
 <dt id="paraview.smtrace.ExodusIIReaderFilter">
-<em class="property">class </em><code class="descclassname">paraview.smtrace.</code><code class="descname">ExodusIIReaderFilter</code><a class="reference internal" href="_modules/paraview/smtrace.html#ExodusIIReaderFilter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.ExodusIIReaderFilter" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">paraview.smtrace.</code><code class="descname">ExodusIIReaderFilter</code><span class="sig-paren">(</span><em>trace_all_in_ctor=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/smtrace.html#ExodusIIReaderFilter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.ExodusIIReaderFilter" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#paraview.smtrace.PipelineProxyFilter" title="paraview.smtrace.PipelineProxyFilter"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.PipelineProxyFilter</span></code></a></p>
 <dl class="method">
 <dt id="paraview.smtrace.ExodusIIReaderFilter.should_never_trace">
@@ -863,7 +876,7 @@ finalized.</p>
 
 <dl class="class">
 <dt id="paraview.smtrace.ExporterProxyFilter">
-<em class="property">class </em><code class="descclassname">paraview.smtrace.</code><code class="descname">ExporterProxyFilter</code><a class="reference internal" href="_modules/paraview/smtrace.html#ExporterProxyFilter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.ExporterProxyFilter" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">paraview.smtrace.</code><code class="descname">ExporterProxyFilter</code><span class="sig-paren">(</span><em>trace_all_in_ctor=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/smtrace.html#ExporterProxyFilter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.ExporterProxyFilter" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#paraview.smtrace.ProxyFilter" title="paraview.smtrace.ProxyFilter"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.ProxyFilter</span></code></a></p>
 <dl class="method">
 <dt id="paraview.smtrace.ExporterProxyFilter.should_never_trace">
@@ -878,8 +891,24 @@ finalized.</p>
 </dd></dl>
 
 <dl class="class">
+<dt id="paraview.smtrace.ExtractGeneratorFilter">
+<em class="property">class </em><code class="descclassname">paraview.smtrace.</code><code class="descname">ExtractGeneratorFilter</code><span class="sig-paren">(</span><em>trace_all_in_ctor=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/smtrace.html#ExtractGeneratorFilter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.ExtractGeneratorFilter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#paraview.smtrace.ProxyFilter" title="paraview.smtrace.ProxyFilter"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.ProxyFilter</span></code></a></p>
+<dl class="method">
+<dt id="paraview.smtrace.ExtractGeneratorFilter.should_never_trace">
+<code class="descname">should_never_trace</code><span class="sig-paren">(</span><em>prop</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/smtrace.html#ExtractGeneratorFilter.should_never_trace"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.ExtractGeneratorFilter.should_never_trace" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="paraview.smtrace.ExtractGeneratorFilter.should_trace_in_ctor">
+<code class="descname">should_trace_in_ctor</code><span class="sig-paren">(</span><em>prop</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/smtrace.html#ExtractGeneratorFilter.should_trace_in_ctor"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.ExtractGeneratorFilter.should_trace_in_ctor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
 <dt id="paraview.smtrace.ExtractSelectionFilter">
-<em class="property">class </em><code class="descclassname">paraview.smtrace.</code><code class="descname">ExtractSelectionFilter</code><a class="reference internal" href="_modules/paraview/smtrace.html#ExtractSelectionFilter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.ExtractSelectionFilter" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">paraview.smtrace.</code><code class="descname">ExtractSelectionFilter</code><span class="sig-paren">(</span><em>trace_all_in_ctor=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/smtrace.html#ExtractSelectionFilter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.ExtractSelectionFilter" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#paraview.smtrace.PipelineProxyFilter" title="paraview.smtrace.PipelineProxyFilter"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.PipelineProxyFilter</span></code></a></p>
 <dl class="method">
 <dt id="paraview.smtrace.ExtractSelectionFilter.should_never_trace">
@@ -918,7 +947,7 @@ can trace when some other trace item is active.</p>
 
 <dl class="class">
 <dt id="paraview.smtrace.PipelineProxyFilter">
-<em class="property">class </em><code class="descclassname">paraview.smtrace.</code><code class="descname">PipelineProxyFilter</code><a class="reference internal" href="_modules/paraview/smtrace.html#PipelineProxyFilter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.PipelineProxyFilter" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">paraview.smtrace.</code><code class="descname">PipelineProxyFilter</code><span class="sig-paren">(</span><em>trace_all_in_ctor=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/smtrace.html#PipelineProxyFilter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.PipelineProxyFilter" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#paraview.smtrace.ProxyFilter" title="paraview.smtrace.ProxyFilter"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.ProxyFilter</span></code></a></p>
 <dl class="method">
 <dt id="paraview.smtrace.PipelineProxyFilter.should_never_trace">
@@ -1049,7 +1078,7 @@ else it will use just the property name, <em>e.g.</em>, Radius.</td>
 
 <dl class="class">
 <dt id="paraview.smtrace.ProxyFilter">
-<em class="property">class </em><code class="descclassname">paraview.smtrace.</code><code class="descname">ProxyFilter</code><a class="reference internal" href="_modules/paraview/smtrace.html#ProxyFilter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.ProxyFilter" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">paraview.smtrace.</code><code class="descname">ProxyFilter</code><span class="sig-paren">(</span><em>trace_all_in_ctor=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/smtrace.html#ProxyFilter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.ProxyFilter" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <dl class="method">
 <dt id="paraview.smtrace.ProxyFilter.should_never_trace">
@@ -1199,7 +1228,7 @@ sources/filters/readers etc.</p>
 
 <dl class="class">
 <dt id="paraview.smtrace.RepresentationProxyFilter">
-<em class="property">class </em><code class="descclassname">paraview.smtrace.</code><code class="descname">RepresentationProxyFilter</code><a class="reference internal" href="_modules/paraview/smtrace.html#RepresentationProxyFilter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.RepresentationProxyFilter" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">paraview.smtrace.</code><code class="descname">RepresentationProxyFilter</code><span class="sig-paren">(</span><em>trace_all_in_ctor=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/smtrace.html#RepresentationProxyFilter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.RepresentationProxyFilter" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#paraview.smtrace.PipelineProxyFilter" title="paraview.smtrace.PipelineProxyFilter"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.PipelineProxyFilter</span></code></a></p>
 <dl class="method">
 <dt id="paraview.smtrace.RepresentationProxyFilter.should_never_trace">
@@ -1259,7 +1288,7 @@ even when it’s same as the default value (see issue #17196).</p>
 
 <dl class="class">
 <dt id="paraview.smtrace.ScalarBarProxyFilter">
-<em class="property">class </em><code class="descclassname">paraview.smtrace.</code><code class="descname">ScalarBarProxyFilter</code><a class="reference internal" href="_modules/paraview/smtrace.html#ScalarBarProxyFilter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.ScalarBarProxyFilter" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">paraview.smtrace.</code><code class="descname">ScalarBarProxyFilter</code><span class="sig-paren">(</span><em>trace_all_in_ctor=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/smtrace.html#ScalarBarProxyFilter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.ScalarBarProxyFilter" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#paraview.smtrace.ProxyFilter" title="paraview.smtrace.ProxyFilter"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.ProxyFilter</span></code></a></p>
 <dl class="method">
 <dt id="paraview.smtrace.ScalarBarProxyFilter.should_never_trace">
@@ -1275,7 +1304,7 @@ even when it’s same as the default value (see issue #17196).</p>
 
 <dl class="class">
 <dt id="paraview.smtrace.ScreenShotHelperProxyFilter">
-<em class="property">class </em><code class="descclassname">paraview.smtrace.</code><code class="descname">ScreenShotHelperProxyFilter</code><a class="reference internal" href="_modules/paraview/smtrace.html#ScreenShotHelperProxyFilter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.ScreenShotHelperProxyFilter" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">paraview.smtrace.</code><code class="descname">ScreenShotHelperProxyFilter</code><span class="sig-paren">(</span><em>trace_all_in_ctor=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/smtrace.html#ScreenShotHelperProxyFilter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.ScreenShotHelperProxyFilter" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#paraview.smtrace.ProxyFilter" title="paraview.smtrace.ProxyFilter"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.ProxyFilter</span></code></a></p>
 <dl class="method">
 <dt id="paraview.smtrace.ScreenShotHelperProxyFilter.should_never_trace">
@@ -1447,7 +1476,7 @@ to try to consolidate the state changes.</p>
 
 <dl class="class">
 <dt id="paraview.smtrace.TransferFunctionProxyFilter">
-<em class="property">class </em><code class="descclassname">paraview.smtrace.</code><code class="descname">TransferFunctionProxyFilter</code><a class="reference internal" href="_modules/paraview/smtrace.html#TransferFunctionProxyFilter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.TransferFunctionProxyFilter" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">paraview.smtrace.</code><code class="descname">TransferFunctionProxyFilter</code><span class="sig-paren">(</span><em>trace_all_in_ctor=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/smtrace.html#TransferFunctionProxyFilter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.TransferFunctionProxyFilter" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#paraview.smtrace.ProxyFilter" title="paraview.smtrace.ProxyFilter"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.ProxyFilter</span></code></a></p>
 <dl class="method">
 <dt id="paraview.smtrace.TransferFunctionProxyFilter.should_never_trace">
@@ -1469,7 +1498,7 @@ to try to consolidate the state changes.</p>
 
 <dl class="class">
 <dt id="paraview.smtrace.ViewProxyFilter">
-<em class="property">class </em><code class="descclassname">paraview.smtrace.</code><code class="descname">ViewProxyFilter</code><a class="reference internal" href="_modules/paraview/smtrace.html#ViewProxyFilter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.ViewProxyFilter" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">paraview.smtrace.</code><code class="descname">ViewProxyFilter</code><span class="sig-paren">(</span><em>trace_all_in_ctor=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/smtrace.html#ViewProxyFilter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.ViewProxyFilter" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#paraview.smtrace.ProxyFilter" title="paraview.smtrace.ProxyFilter"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.ProxyFilter</span></code></a></p>
 <dl class="method">
 <dt id="paraview.smtrace.ViewProxyFilter.should_never_trace">
@@ -1480,7 +1509,7 @@ to try to consolidate the state changes.</p>
 
 <dl class="class">
 <dt id="paraview.smtrace.WriterProxyFilter">
-<em class="property">class </em><code class="descclassname">paraview.smtrace.</code><code class="descname">WriterProxyFilter</code><a class="reference internal" href="_modules/paraview/smtrace.html#WriterProxyFilter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.WriterProxyFilter" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">paraview.smtrace.</code><code class="descname">WriterProxyFilter</code><span class="sig-paren">(</span><em>trace_all_in_ctor=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/smtrace.html#WriterProxyFilter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.WriterProxyFilter" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#paraview.smtrace.ProxyFilter" title="paraview.smtrace.ProxyFilter"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.smtrace.ProxyFilter</span></code></a></p>
 <dl class="method">
 <dt id="paraview.smtrace.WriterProxyFilter.should_never_trace">
@@ -1517,7 +1546,7 @@ themselves.</p>
 
 <dl class="function">
 <dt id="paraview.smtrace.start_trace">
-<code class="descclassname">paraview.smtrace.</code><code class="descname">start_trace</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/smtrace.html#start_trace"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.start_trace" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">paraview.smtrace.</code><code class="descname">start_trace</code><span class="sig-paren">(</span><em>preamble=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/smtrace.html#start_trace"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.smtrace.start_trace" title="Permalink to this definition">¶</a></dt>
 <dd><p>Starting tracing. On successful start, will return a vtkSMTrace object.
 One can set tracing options on it to control how the tracing. If tracing was
 already started, calling this contine with the same trace.</p>

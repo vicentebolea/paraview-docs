@@ -53,6 +53,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a3878d6d1a15e9f583c7437ef4a77cc2f"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpqProxySelectionUtilities.html#a3878d6d1a15e9f583c7437ef4a77cc2f">copy</a> (const <a class="el" href="pqProxySelection_8h.html#a2cbc1ce0cf3f35b4546e8b786c1525b0">pqProxySelection</a> &amp;<a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/vtkBoostGraphAdapter_8h.html#a7c22aa18a4e42c330618a6410d133551">source</a>, <a class="el" href="classvtkSMProxySelectionModel.html">vtkSMProxySelectionModel</a> *dest)</td></tr>
 <tr class="memdesc:a3878d6d1a15e9f583c7437ef4a77cc2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">copy values to <a class="el" href="classvtkSMProxySelectionModel.html" title="selects proxies.">vtkSMProxySelectionModel</a>.  <a href="#a3878d6d1a15e9f583c7437ef4a77cc2f">More...</a><br /></td></tr>
 <tr class="separator:a3878d6d1a15e9f583c7437ef4a77cc2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f9f5f687991439517ae53b5611aef30"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="pqProxySelection_8h.html#a2cbc1ce0cf3f35b4546e8b786c1525b0">pqProxySelection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpqProxySelectionUtilities.html#a5f9f5f687991439517ae53b5611aef30">getPipelineProxies</a> (const <a class="el" href="pqProxySelection_8h.html#a2cbc1ce0cf3f35b4546e8b786c1525b0">pqProxySelection</a> &amp;sel)</td></tr>
+<tr class="memdesc:a5f9f5f687991439517ae53b5611aef30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selections can contains <a class="el" href="classpqOutputPort.html" title="pqOutputPort is a server manager model item for an output port of any pqPipelineSource item.">pqOutputPort</a>, <a class="el" href="classpqPipelineSource.html" title="PQ representation for a vtkSMProxy that can be involved in a pipeline.">pqPipelineSource</a>, or <a class="el" href="classpqExtractGenerator.html" title="pqProxy subclass for extract generators">pqExtractGenerator</a> instances.  <a href="#a5f9f5f687991439517ae53b5611aef30">More...</a><br /></td></tr>
+<tr class="separator:a5f9f5f687991439517ae53b5611aef30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -136,6 +139,35 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a5f9f5f687991439517ae53b5611aef30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f9f5f687991439517ae53b5611aef30">&#9670;&nbsp;</a></span>getPipelineProxies()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="pqProxySelection_8h.html#a2cbc1ce0cf3f35b4546e8b786c1525b0">pqProxySelection</a> pqProxySelectionUtilities::getPipelineProxies </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="pqProxySelection_8h.html#a2cbc1ce0cf3f35b4546e8b786c1525b0">pqProxySelection</a> &amp;&#160;</td>
+          <td class="paramname"><em>sel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Selections can contains <a class="el" href="classpqOutputPort.html" title="pqOutputPort is a server manager model item for an output port of any pqPipelineSource item.">pqOutputPort</a>, <a class="el" href="classpqPipelineSource.html" title="PQ representation for a vtkSMProxy that can be involved in a pipeline.">pqPipelineSource</a>, or <a class="el" href="classpqExtractGenerator.html" title="pqProxy subclass for extract generators">pqExtractGenerator</a> instances. </p>
+<p>Use this method to filter out all <a class="el" href="classpqOutputPort.html" title="pqOutputPort is a server manager model item for an output port of any pqPipelineSource item.">pqOutputPort</a> and replace them with corresponding <a class="el" href="classpqPipelineSource.html" title="PQ representation for a vtkSMProxy that can be involved in a pipeline.">pqPipelineSource</a> instances. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/source/Qt/Core/<a class="el" href="pqProxySelection_8h_source.html">pqProxySelection.h</a></li>
 </ul>
@@ -145,7 +177,7 @@ Static Public Member Functions</h2></td></tr>
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.15 on Tue Jun 30 2020
+</a> 1.8.15 on Sat Jul 4 2020
 </small></address>
 <!-- KW:BEGIN -->
 <!-- this adds the version selection header -->

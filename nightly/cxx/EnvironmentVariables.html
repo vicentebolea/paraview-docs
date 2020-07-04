@@ -54,7 +54,7 @@ $(function() {
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><code>VTK_DEBUG_SKIP_OSPRAY_CHECK</code>  </td><td class="markdownTableBodyNone">Skip test to validate OSPRay rendering support.   </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>PV_DEBUG_TEST</code>  </td><td class="markdownTableBodyNone">Prints debugging information about the testing framework during playback to cout.   </td></tr>
+<td class="markdownTableBodyNone"><code>PV_DEBUG_TEST</code>  </td><td class="markdownTableBodyNone">Prints debugging information about the testing framework during playback to <code>stdout</code>.   </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><code>PV_ICET_WINDOW_BORDERS</code>  </td><td class="markdownTableBodyNone">Force render windows to be 400x400 instead of fullscreen.   </td></tr>
 <tr class="markdownTableRowEven">
@@ -85,13 +85,15 @@ $(function() {
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Variable  </th><th class="markdownTableHeadNone">Description   </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>PARAVIEW_LOG_PLUGIN_VERBOSITY</code>  </td><td class="markdownTableBodyNone">Log messages related to ParaView plugins (see <a class="el" href="classvtkPVLogger.html#ad41f2e418e2f7ce2c15eece2127e6d44" title="Use this verbosity level to for log message relating to ParaView&#39;s plugin system.">vtkPVLogger::GetPluginVerbosity()</a>)   </td></tr>
+<td class="markdownTableBodyNone"><code>PARAVIEW_LOG_PLUGIN_VERBOSITY</code>  </td><td class="markdownTableBodyNone">Log messages related to ParaView plugins (see <a class="el" href="classvtkPVLogger.html#aecda59379bffd893eb6407bc9a2f17d5" title="Use this verbosity level to for log message relating to ParaView&#39;s plugin system.">vtkPVLogger::GetPluginVerbosity()</a>)   </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>PARAVIEW_LOG_PIPELINE_VERBOSITY</code>  </td><td class="markdownTableBodyNone">Log messages related to Pipeline execution (see <a class="el" href="classvtkPVLogger.html#a42eef892f205b8eba6e7735ebdc274ae" title="Use this verbosity level when logging messages that provide information about pipeline update request...">vtkPVLogger::GetPipelineVerbosity()</a>)   </td></tr>
+<td class="markdownTableBodyNone"><code>PARAVIEW_LOG_PIPELINE_VERBOSITY</code>  </td><td class="markdownTableBodyNone">Log messages related to Pipeline execution (see <a class="el" href="classvtkPVLogger.html#a5b6a354d25726ef1efe9c451903910f6" title="Use this verbosity level when logging messages that provide information about pipeline update request...">vtkPVLogger::GetPipelineVerbosity()</a>)   </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>PARAVIEW_LOG_DATA_MOVEMENT_VERBOSITY</code>  </td><td class="markdownTableBodyNone">Log messages related to data movement for rendering and other tasks (see <a class="el" href="classvtkPVLogger.html#a84fd181554b012f6f0e4bf5ec27b5ac6" title="Verbosity level for log messages related to data-movement e.g.">vtkPVLogger::GetDataMovementVerbosity()</a>)   </td></tr>
+<td class="markdownTableBodyNone"><code>PARAVIEW_LOG_DATA_MOVEMENT_VERBOSITY</code>  </td><td class="markdownTableBodyNone">Log messages related to data movement for rendering and other tasks (see <a class="el" href="classvtkPVLogger.html#aa05369674b1b28639f20ad26b4ba497d" title="Verbosity level for log messages related to data-movement e.g.">vtkPVLogger::GetDataMovementVerbosity()</a>)   </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>PARAVIEW_LOG_APPLICATION_VERBOSITY</code>  </td><td class="markdownTableBodyNone">Log messages related to the application (see <a class="el" href="classvtkPVLogger.html#a726fe22f9e9b7aa628b939c6999a8347" title="Verbosity level for log messages related to the application, gui, and similar components.">vtkPVLogger::GetApplicationVerbosity()</a>)   </td></tr>
+<td class="markdownTableBodyNone"><code>PARAVIEW_LOG_APPLICATION_VERBOSITY</code>  </td><td class="markdownTableBodyNone">Log messages related to the application (see <a class="el" href="classvtkPVLogger.html#a789fef59a930f7c8af0f53252793cf0d" title="Verbosity level for log messages related to the application, gui, and similar components.">vtkPVLogger::GetApplicationVerbosity()</a>)   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>PARAVIEW_LOG_CATALYST_VERBOSITY</code>  </td><td class="markdownTableBodyNone">Log messages related to Catalyst (see <a class="el" href="classvtkPVLogger.html#abc2adb0d9604de4d5fbd8e0652f5b7b3" title="Verbosity level for log messages related to Catalyst and other in situ tasks.">vtkPVLogger::GetCatalystVerbosity()</a>)   </td></tr>
 </table>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
@@ -100,7 +102,7 @@ $(function() {
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.15 on Tue Jun 30 2020
+</a> 1.8.15 on Sat Jul 4 2020
 </small></address>
 <!-- KW:BEGIN -->
 <!-- this adds the version selection header -->

@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>simple Module &mdash; ParaView/Python 5.8.1-RC1-883-gf201515c2c documentation</title>
+  <title>simple Module &mdash; ParaView/Python 5.8.1-RC1-954-ga5d1ee6b8c documentation</title>
   
 
   
@@ -24,7 +24,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:'./',
-        VERSION:'5.8.1-RC1-883-gf201515c2c',
+        VERSION:'5.8.1-RC1-954-ga5d1ee6b8c',
         COLLAPSE_INDEX:false,
         FILE_SUFFIX:'.html',
         HAS_SOURCE:  true
@@ -49,7 +49,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="ParaView/Python 5.8.1-RC1-883-gf201515c2c documentation" href="index.html"/>
+    <link rel="top" title="ParaView/Python 5.8.1-RC1-954-ga5d1ee6b8c documentation" href="index.html"/>
         <link rel="up" title="paraview Package" href="paraview.html"/>
         <link rel="next" title="Available readers, sources, writers, filters and animation cues" href="paraview.servermanager_proxies.html"/>
         <link rel="prev" title="servermanager Module" href="paraview.servermanager.html"/> 
@@ -69,7 +69,7 @@
           <li> <a href="index.html">
             <img src="_static/paraview-logo-small.png"
             alt="ParaView/Python"></img></a> </li>
-          <li class="version"> version 5.8.1-RC1-883-gf201515c2c</li>
+          <li class="version"> version 5.8.1-RC1-954-ga5d1ee6b8c</li>
         </ul>
         <form id ="rtd-search-form" class="wy-form" action="search.html" method="get">
   <input type="text" name="q" placeholder="Search docs" />
@@ -364,6 +364,7 @@
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.PTSReader.html">paraview.simple.PTSReader</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.PVDReader.html">paraview.simple.PVDReader</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.PVTrivialProducer.html">paraview.simple.PVTrivialProducer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="paraview.simple.PVTrivialProducer2.html">paraview.simple.PVTrivialProducer2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.ParallelNetCDFPOPreader.html">paraview.simple.ParallelNetCDFPOPreader</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.ParticlePath.html">paraview.simple.ParticlePath</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.ParticleTracer.html">paraview.simple.ParticleTracer</a></li>
@@ -805,6 +806,40 @@ See CreateView for arguments documentation</p>
 </dd></dl>
 
 <dl class="function">
+<dt id="paraview.simple.CreateExtractGenerator">
+<code class="descclassname">paraview.simple.</code><code class="descname">CreateExtractGenerator</code><span class="sig-paren">(</span><em>name</em>, <em>proxy=None</em>, <em>registrationName=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/simple.html#CreateExtractGenerator"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.simple.CreateExtractGenerator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a new extract generator and returns it.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>name</strong> (<cite>str</cite>) – The type of the extract generator to create.</li>
+<li><strong>proxy</strong> – The proxy to generate the extract from. If not specified</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p><cite>GetActiveSource()</cite> is used.
+:type proxy: <a class="reference internal" href="paraview.servermanager.html#paraview.servermanager.Proxy" title="paraview.servermanager.Proxy"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.servermanager.Proxy</span></code></a>, optional
+:param registrationName: The registration name to use to register
+the generator with the ProxyManager. If not specified a unique name
+will be generated.
+:type name: <cite>str</cite>, optional</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The extract generator created, on success, else None</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="paraview.servermanager.html#paraview.servermanager.Proxy" title="paraview.servermanager.Proxy"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.servermanager.Proxy</span></code></a> or <cite>None</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
 <dt id="paraview.simple.CreateLayout">
 <code class="descclassname">paraview.simple.</code><code class="descname">CreateLayout</code><span class="sig-paren">(</span><em>name=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/simple.html#CreateLayout"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.simple.CreateLayout" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a new layout with no active view.</p>
@@ -939,6 +974,24 @@ If no <cite>proxy</cite> is provided, active source is used.</p>
 </dd></dl>
 
 <dl class="function">
+<dt id="paraview.simple.FindExtractGenerator">
+<code class="descclassname">paraview.simple.</code><code class="descname">FindExtractGenerator</code><span class="sig-paren">(</span><em>registrationName</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/simple.html#FindExtractGenerator"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.simple.FindExtractGenerator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns an extract generator with a specific registrationName.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>registrationName</strong> (<cite>str</cite>) – Registration name for the extract generator.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The extract generator or None</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="paraview.servermanager.html#paraview.servermanager.Proxy" title="paraview.servermanager.Proxy"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.servermanager.Proxy</span></code></a> or <cite>None</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
 <dt id="paraview.simple.FindSource">
 <code class="descclassname">paraview.simple.</code><code class="descname">FindSource</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/simple.html#FindSource"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.simple.FindSource" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a proxy base on the name that was used to register it
@@ -1069,6 +1122,32 @@ If pipeline object and/or view are not specified, active objects are used.</p>
 <code class="descclassname">paraview.simple.</code><code class="descname">GetDisplayProperty</code><span class="sig-paren">(</span><em>*arguments</em>, <em>**keywords</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/simple.html#GetDisplayProperty"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.simple.GetDisplayProperty" title="Permalink to this definition">¶</a></dt>
 <dd><p>Same as GetProperty, except that if no ‘proxy’ is passed, it will use
 the active display properties, rather than the active source</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="paraview.simple.GetExtractGenerators">
+<code class="descclassname">paraview.simple.</code><code class="descname">GetExtractGenerators</code><span class="sig-paren">(</span><em>proxy=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/simple.html#GetExtractGenerators"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.simple.GetExtractGenerators" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of extract generators associated with the proxy.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>proxy</strong> – The proxy to return the extract generators associated with.</td>
+</tr>
+</tbody>
+</table>
+<p>If not specified (or is None) then all extract generators are returned.
+:type proxy: <a class="reference internal" href="paraview.servermanager.html#paraview.servermanager.Proxy" title="paraview.servermanager.Proxy"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.servermanager.Proxy</span></code></a>, optional</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">List of associated extract generators if any. May return an empty</td>
+</tr>
+</tbody>
+</table>
+<p>list.
+:rtype: list of <a class="reference internal" href="paraview.servermanager.html#paraview.servermanager.Proxy" title="paraview.servermanager.Proxy"><code class="xref py py-class docutils literal notranslate"><span class="pre">paraview.servermanager.Proxy</span></code></a></p>
 </dd></dl>
 
 <dl class="function">
@@ -1641,6 +1720,32 @@ as keyword arguments. Example usage:</p>
 <span class="n">SaveData</span><span class="p">(</span><span class="s2">&quot;sample.csv&quot;</span><span class="p">,</span> <span class="n">FieldAssociation</span><span class="o">=</span><span class="s2">&quot;Points&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
+</dd></dl>
+
+<dl class="function">
+<dt id="paraview.simple.SaveExtracts">
+<code class="descclassname">paraview.simple.</code><code class="descname">SaveExtracts</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/simple.html#SaveExtracts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.simple.SaveExtracts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate extracts. Parameters are forwarded for ‘SaveAnimationExtracts’
+Currently, supported keyword parameters are:</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>DataExtractsOutputDirectory</strong> (<cite>str</cite>) – root directory for data extracts</li>
+<li><strong>ImageExtractsOutputDirectory</strong> (<cite>str</cite>) – root directory for image extracts</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="paraview.simple.SaveExtractsUsingCatalystOptions">
+<code class="descclassname">paraview.simple.</code><code class="descname">SaveExtractsUsingCatalystOptions</code><span class="sig-paren">(</span><em>options</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/simple.html#SaveExtractsUsingCatalystOptions"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.simple.SaveExtractsUsingCatalystOptions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates extracts using a CatalystOptions object. This is intended for use
+when a Catalyst analysis script is being run in batch.</p>
 </dd></dl>
 
 <dl class="function">

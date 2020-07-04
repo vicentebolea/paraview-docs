@@ -1,0 +1,7 @@
+detail.cinema_extracts_writer Module
+====================================
+
+.. automodule:: paraview.detail.cinema_extracts_writer
+    :members:
+    :undoc-members:
+    :show-inheritance:

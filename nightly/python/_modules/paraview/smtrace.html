@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>paraview.smtrace &mdash; ParaView/Python 5.8.1-RC1-883-gf201515c2c documentation</title>
+  <title>paraview.smtrace &mdash; ParaView/Python 5.8.1-RC1-954-ga5d1ee6b8c documentation</title>
   
 
   
@@ -24,7 +24,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:'../../',
-        VERSION:'5.8.1-RC1-883-gf201515c2c',
+        VERSION:'5.8.1-RC1-954-ga5d1ee6b8c',
         COLLAPSE_INDEX:false,
         FILE_SUFFIX:'.html',
         HAS_SOURCE:  true
@@ -49,7 +49,7 @@
         <link rel="index" title="Index"
               href="../../genindex.html"/>
         <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="ParaView/Python 5.8.1-RC1-883-gf201515c2c documentation" href="../../index.html"/>
+    <link rel="top" title="ParaView/Python 5.8.1-RC1-954-ga5d1ee6b8c documentation" href="../../index.html"/>
         <link rel="up" title="Module code" href="../index.html"/> 
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -67,7 +67,7 @@
           <li> <a href="../../index.html">
             <img src="../../_static/paraview-logo-small.png"
             alt="ParaView/Python"></img></a> </li>
-          <li class="version"> version 5.8.1-RC1-883-gf201515c2c</li>
+          <li class="version"> version 5.8.1-RC1-954-ga5d1ee6b8c</li>
         </ul>
         <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
   <input type="text" name="q" placeholder="Search docs" />
@@ -362,6 +362,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../paraview.simple.PTSReader.html">paraview.simple.PTSReader</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../paraview.simple.PVDReader.html">paraview.simple.PVDReader</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../paraview.simple.PVTrivialProducer.html">paraview.simple.PVTrivialProducer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../paraview.simple.PVTrivialProducer2.html">paraview.simple.PVTrivialProducer2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../paraview.simple.ParallelNetCDFPOPreader.html">paraview.simple.ParallelNetCDFPOPreader</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../paraview.simple.ParticlePath.html">paraview.simple.ParticlePath</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../paraview.simple.ParticleTracer.html">paraview.simple.ParticleTracer</a></li>
@@ -998,7 +999,12 @@
                         <span class="s2">&quot;# a texture&quot;</span><span class="p">,</span>
                                              <span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> = CreateTexture(</span><span class="si">%s</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">accessor</span><span class="p">,</span> <span class="nb">repr</span><span class="p">(</span><span class="n">filename</span><span class="p">))])</span>
             <span class="k">return</span> <span class="kc">True</span>
-
+        <span class="k">if</span> <span class="bp">cls</span><span class="o">.</span><span class="n">get_registered_name</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="s2">&quot;extract_generators&quot;</span><span class="p">):</span>
+            <span class="n">regName</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">get_registered_name</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="s2">&quot;extract_generators&quot;</span><span class="p">)</span>
+            <span class="n">accessor</span> <span class="o">=</span> <span class="n">ProxyAccessor</span><span class="p">(</span><span class="bp">cls</span><span class="o">.</span><span class="n">get_varname</span><span class="p">(</span><span class="n">regName</span><span class="p">),</span> <span class="n">obj</span><span class="p">)</span>
+            <span class="bp">cls</span><span class="o">.</span><span class="n">Output</span><span class="o">.</span><span class="n">append_separated</span><span class="p">([</span>\
+                <span class="s2">&quot;# get extract generator&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> = FindExtractGenerator(&#39;</span><span class="si">%s</span><span class="s2">&#39;)&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">accessor</span><span class="p">,</span> <span class="n">regName</span><span class="p">)])</span>
         <span class="k">return</span> <span class="kc">False</span></div>
 
 <div class="viewcode-block" id="Trace.rename_separate_tf_and_get_representation"><a class="viewcode-back" href="../../paraview.smtrace.html#paraview.smtrace.Trace.rename_separate_tf_and_get_representation">[docs]</a>    <span class="nd">@classmethod</span>
@@ -1384,6 +1390,9 @@
 <span class="c1"># === Filters used to filter properties traced ===</span>
 <span class="c1"># ===================================================================================================</span>
 <div class="viewcode-block" id="ProxyFilter"><a class="viewcode-back" href="../../paraview.smtrace.html#paraview.smtrace.ProxyFilter">[docs]</a><span class="k">class</span> <span class="nc">ProxyFilter</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">trace_all_in_ctor</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">trace_all_in_ctor</span> <span class="o">=</span> <span class="n">trace_all_in_ctor</span>
+
 <div class="viewcode-block" id="ProxyFilter.should_never_trace"><a class="viewcode-back" href="../../paraview.smtrace.html#paraview.smtrace.ProxyFilter.should_never_trace">[docs]</a>    <span class="k">def</span> <span class="nf">should_never_trace</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">prop</span><span class="p">,</span> <span class="n">hide_gui_hidden</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
         <span class="k">if</span> <span class="n">prop</span><span class="o">.</span><span class="n">get_object</span><span class="p">()</span><span class="o">.</span><span class="n">GetIsInternal</span><span class="p">()</span> <span class="ow">or</span> <span class="n">prop</span><span class="o">.</span><span class="n">get_object</span><span class="p">()</span><span class="o">.</span><span class="n">GetInformationOnly</span><span class="p">():</span>
             <span class="k">return</span> <span class="kc">True</span>
@@ -1422,7 +1431,8 @@
         <span class="k">return</span> <span class="p">(</span><span class="n">trace_props_with_default_values</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">prop</span><span class="o">.</span><span class="n">get_object</span><span class="p">()</span><span class="o">.</span><span class="n">IsValueDefault</span><span class="p">())</span></div>
 
 <div class="viewcode-block" id="ProxyFilter.should_trace_in_ctor"><a class="viewcode-back" href="../../paraview.smtrace.html#paraview.smtrace.ProxyFilter.should_trace_in_ctor">[docs]</a>    <span class="k">def</span> <span class="nf">should_trace_in_ctor</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">prop</span><span class="p">):</span>
-        <span class="k">return</span> <span class="kc">False</span></div></div>
+        <span class="k">return</span> <span class="kc">False</span> <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">trace_all_in_ctor</span> <span class="k">else</span> \
+                <span class="p">(</span><span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">should_never_trace</span><span class="p">(</span><span class="n">prop</span><span class="p">)</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">should_trace_in_create</span><span class="p">(</span><span class="n">prop</span><span class="p">))</span></div></div>
 
 <div class="viewcode-block" id="PipelineProxyFilter"><a class="viewcode-back" href="../../paraview.smtrace.html#paraview.smtrace.PipelineProxyFilter">[docs]</a><span class="k">class</span> <span class="nc">PipelineProxyFilter</span><span class="p">(</span><span class="n">ProxyFilter</span><span class="p">):</span>
 <div class="viewcode-block" id="PipelineProxyFilter.should_trace_in_create"><a class="viewcode-back" href="../../paraview.smtrace.html#paraview.smtrace.PipelineProxyFilter.should_trace_in_create">[docs]</a>    <span class="k">def</span> <span class="nf">should_trace_in_create</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">prop</span><span class="p">):</span>
@@ -1532,6 +1542,13 @@
             <span class="k">return</span> <span class="kc">False</span>
         <span class="k">return</span> <span class="n">ProxyFilter</span><span class="o">.</span><span class="n">should_never_trace</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">prop</span><span class="p">)</span></div></div>
 
+<div class="viewcode-block" id="ExtractGeneratorFilter"><a class="viewcode-back" href="../../paraview.smtrace.html#paraview.smtrace.ExtractGeneratorFilter">[docs]</a><span class="k">class</span> <span class="nc">ExtractGeneratorFilter</span><span class="p">(</span><span class="n">ProxyFilter</span><span class="p">):</span>
+<div class="viewcode-block" id="ExtractGeneratorFilter.should_trace_in_ctor"><a class="viewcode-back" href="../../paraview.smtrace.html#paraview.smtrace.ExtractGeneratorFilter.should_trace_in_ctor">[docs]</a>    <span class="k">def</span> <span class="nf">should_trace_in_ctor</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">prop</span><span class="p">):</span> <span class="k">return</span> <span class="kc">False</span></div>
+<div class="viewcode-block" id="ExtractGeneratorFilter.should_never_trace"><a class="viewcode-back" href="../../paraview.smtrace.html#paraview.smtrace.ExtractGeneratorFilter.should_never_trace">[docs]</a>    <span class="k">def</span> <span class="nf">should_never_trace</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">prop</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">prop</span><span class="o">.</span><span class="n">get_property_name</span><span class="p">()</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;Trigger&quot;</span><span class="p">,</span> <span class="s2">&quot;Writer&quot;</span><span class="p">]:</span>
+            <span class="k">return</span> <span class="kc">True</span>
+        <span class="k">return</span> <span class="nb">super</span><span class="p">(</span><span class="n">ExtractGeneratorFilter</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">should_never_trace</span><span class="p">(</span><span class="n">prop</span><span class="p">)</span></div></div>
+
 <div class="viewcode-block" id="SupplementalProxy"><a class="viewcode-back" href="../../paraview.smtrace.html#paraview.smtrace.SupplementalProxy">[docs]</a><span class="k">def</span> <span class="nf">SupplementalProxy</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;This function decorates a ProxyFilter. Designed to be</span>
 <span class="sd">    used for supplemental proxies, so that we can centralize the logic</span>
@@ -1602,8 +1619,8 @@
             <span class="n">filter_type</span> <span class="o">=</span> <span class="n">ExtractSelectionFilter</span><span class="p">()</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="n">filter_type</span> <span class="o">=</span> <span class="n">PipelineProxyFilter</span><span class="p">()</span>
-
-        <span class="n">trace</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">accessor</span><span class="o">.</span><span class="n">trace_ctor</span><span class="p">(</span><span class="n">ctor</span><span class="p">,</span> <span class="n">filter_type</span><span class="p">))</span>
+        <span class="n">ctor_args</span> <span class="o">=</span> <span class="s2">&quot;registrationName=&#39;</span><span class="si">%s</span><span class="s2">&#39;&quot;</span> <span class="o">%</span> <span class="n">pname</span>
+        <span class="n">trace</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">accessor</span><span class="o">.</span><span class="n">trace_ctor</span><span class="p">(</span><span class="n">ctor</span><span class="p">,</span> <span class="n">filter_type</span><span class="p">,</span> <span class="n">ctor_args</span><span class="o">=</span><span class="n">ctor_args</span><span class="p">))</span>
         <span class="n">Trace</span><span class="o">.</span><span class="n">Output</span><span class="o">.</span><span class="n">append_separated</span><span class="p">(</span><span class="n">trace</span><span class="o">.</span><span class="n">raw_data</span><span class="p">())</span>
         <span class="n">TraceItem</span><span class="o">.</span><span class="n">finalize</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></div></div>
 
@@ -2252,6 +2269,48 @@
             <span class="k">raise</span> <span class="n">Untraceable</span><span class="p">(</span><span class="s2">&quot;Invalid argument type </span><span class="si">%r</span><span class="s2">&quot;</span><span class="o">%</span> <span class="n">proxy</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">trace</span><span class="o">.</span><span class="n">raw_data</span><span class="p">()</span></div></div>
 
+<div class="viewcode-block" id="CreateExtractGenerator"><a class="viewcode-back" href="../../paraview.smtrace.html#paraview.smtrace.CreateExtractGenerator">[docs]</a><span class="k">class</span> <span class="nc">CreateExtractGenerator</span><span class="p">(</span><span class="n">TraceItem</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Traces creation of extract generators&quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">xmlname</span><span class="p">,</span> <span class="n">producer</span><span class="p">,</span> <span class="n">generator</span><span class="p">,</span> <span class="n">registrationName</span><span class="p">,</span> <span class="n">comment</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">(</span><span class="n">CreateExtractGenerator</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+
+        <span class="n">producer</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">_getPyProxy</span><span class="p">(</span><span class="n">producer</span><span class="p">)</span>
+        <span class="n">generator</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">_getPyProxy</span><span class="p">(</span><span class="n">generator</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">ProducerAccessor</span> <span class="o">=</span> <span class="n">Trace</span><span class="o">.</span><span class="n">get_accessor</span><span class="p">(</span><span class="n">producer</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">OutputPort</span> <span class="o">=</span> <span class="n">producer</span><span class="o">.</span><span class="n">Port</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Generator</span> <span class="o">=</span> <span class="n">generator</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">XMLName</span> <span class="o">=</span> <span class="n">xmlname</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Comment</span> <span class="o">=</span> <span class="n">comment</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Name</span> <span class="o">=</span> <span class="n">registrationName</span>
+
+<div class="viewcode-block" id="CreateExtractGenerator.finalize"><a class="viewcode-back" href="../../paraview.smtrace.html#paraview.smtrace.CreateExtractGenerator.finalize">[docs]</a>    <span class="k">def</span> <span class="nf">finalize</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="n">TraceOutput</span><span class="p">()</span>
+        <span class="n">port</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">OutputPort</span>
+        <span class="n">regName</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">Name</span>
+        <span class="n">accessor</span> <span class="o">=</span> <span class="n">ProxyAccessor</span><span class="p">(</span><span class="n">Trace</span><span class="o">.</span><span class="n">get_varname</span><span class="p">(</span><span class="n">regName</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">Generator</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">Comment</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">output</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">Comment</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">output</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;# create extract generator&quot;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">port</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">output</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>\
+                    <span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> = CreateExtractGenerator(&#39;</span><span class="si">%s</span><span class="s2">&#39;, OutputPort(</span><span class="si">%s</span><span class="s2">, </span><span class="si">%d</span><span class="s2">), registrationName=&#39;</span><span class="si">%s</span><span class="s2">&#39;)&quot;</span> <span class="o">%</span> \
+                    <span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">accessor</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">XMLName</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ProducerAccessor</span><span class="p">),</span> <span class="n">port</span><span class="p">,</span> <span class="n">regName</span><span class="p">))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">output</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>\
+                    <span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> = CreateExtractGenerator(&#39;</span><span class="si">%s</span><span class="s2">&#39;, </span><span class="si">%s</span><span class="s2">, registrationName=&#39;</span><span class="si">%s</span><span class="s2">&#39;)&quot;</span> <span class="o">%</span> \
+                    <span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">accessor</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">XMLName</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">ProducerAccessor</span><span class="p">),</span> <span class="n">regName</span><span class="p">))</span>
+
+        <span class="n">ctor_trace</span> <span class="o">=</span> <span class="n">accessor</span><span class="o">.</span><span class="n">trace_ctor</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="n">ExtractGeneratorFilter</span><span class="p">())</span>
+        <span class="k">if</span> <span class="n">ctor_trace</span><span class="p">:</span>
+            <span class="n">output</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;# trace defaults for the extract generator.&quot;</span><span class="p">)</span>
+            <span class="n">output</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ctor_trace</span><span class="p">)</span>
+        <span class="n">Trace</span><span class="o">.</span><span class="n">Output</span><span class="o">.</span><span class="n">append_separated</span><span class="p">(</span><span class="n">output</span><span class="o">.</span><span class="n">raw_data</span><span class="p">())</span>
+        <span class="nb">super</span><span class="p">(</span><span class="n">CreateExtractGenerator</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">finalize</span><span class="p">()</span></div></div>
+
 <span class="c1"># __ActiveTraceItems is simply used to keep track of items that are currently</span>
 <span class="c1"># active to avoid non-nestable trace items from being created when previous</span>
 <span class="c1"># items are active.</span>
@@ -2323,11 +2382,11 @@
 <span class="c1">#------------------------------------------------------------------------------</span>
 <span class="c1"># Public methods</span>
 <span class="c1">#------------------------------------------------------------------------------</span>
-<div class="viewcode-block" id="start_trace"><a class="viewcode-back" href="../../paraview.smtrace.html#paraview.smtrace.start_trace">[docs]</a><span class="k">def</span> <span class="nf">start_trace</span><span class="p">():</span>
+<div class="viewcode-block" id="start_trace"><a class="viewcode-back" href="../../paraview.smtrace.html#paraview.smtrace.start_trace">[docs]</a><span class="k">def</span> <span class="nf">start_trace</span><span class="p">(</span><span class="n">preamble</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Starting tracing. On successful start, will return a vtkSMTrace object.</span>
 <span class="sd">    One can set tracing options on it to control how the tracing. If tracing was</span>
 <span class="sd">    already started, calling this contine with the same trace.&quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="n">sm</span><span class="o">.</span><span class="n">vtkSMTrace</span><span class="o">.</span><span class="n">StartTrace</span><span class="p">()</span></div>
+    <span class="k">return</span> <span class="n">sm</span><span class="o">.</span><span class="n">vtkSMTrace</span><span class="o">.</span><span class="n">StartTrace</span><span class="p">(</span><span class="n">preamble</span><span class="p">)</span></div>
 
 <div class="viewcode-block" id="stop_trace"><a class="viewcode-back" href="../../paraview.smtrace.html#paraview.smtrace.stop_trace">[docs]</a><span class="k">def</span> <span class="nf">stop_trace</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Stops the trace and returns the generated trace output string.&quot;&quot;&quot;</span>
