@@ -116,9 +116,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a2109d23f4a662e1361927fa155dc1546"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpqResetScalarRangeReaction.html#a2109d23f4a662e1361927fa155dc1546">resetScalarRangeToCustom</a> (<a class="el" href="classpqPipelineRepresentation.html">pqPipelineRepresentation</a> *repr=NULL)</td></tr>
 <tr class="memdesc:a2109d23f4a662e1361927fa155dc1546"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset range to a custom range.  <a href="#a2109d23f4a662e1361927fa155dc1546">More...</a><br /></td></tr>
 <tr class="separator:a2109d23f4a662e1361927fa155dc1546"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5536e7a3b9d7ac7d2b62f0677b627717"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpqResetScalarRangeReaction.html#a5536e7a3b9d7ac7d2b62f0677b627717">resetScalarRangeToCustom</a> (<a class="el" href="classvtkSMProxy.html">vtkSMProxy</a> *tfProxy)</td></tr>
-<tr class="memdesc:a5536e7a3b9d7ac7d2b62f0677b627717"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset range to a custom range.  <a href="#a5536e7a3b9d7ac7d2b62f0677b627717">More...</a><br /></td></tr>
-<tr class="separator:a5536e7a3b9d7ac7d2b62f0677b627717"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f89f1b9c036f99601c983c92eb839bd"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpqResetScalarRangeReaction.html#a0f89f1b9c036f99601c983c92eb839bd">resetScalarRangeToCustom</a> (<a class="el" href="classvtkSMProxy.html">vtkSMProxy</a> *tfProxy, bool separateOpacity=false)</td></tr>
+<tr class="memdesc:a0f89f1b9c036f99601c983c92eb839bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset range to a custom range.  <a href="#a0f89f1b9c036f99601c983c92eb839bd">More...</a><br /></td></tr>
+<tr class="separator:a0f89f1b9c036f99601c983c92eb839bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1ccbe4bcd4e5127519799fe0ba6aaef"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpqResetScalarRangeReaction.html#ab1ccbe4bcd4e5127519799fe0ba6aaef">resetScalarRangeToDataOverTime</a> (<a class="el" href="classpqPipelineRepresentation.html">pqPipelineRepresentation</a> *repr=NULL)</td></tr>
 <tr class="memdesc:ab1ccbe4bcd4e5127519799fe0ba6aaef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset range to data range over time.  <a href="#ab1ccbe4bcd4e5127519799fe0ba6aaef">More...</a><br /></td></tr>
 <tr class="separator:ab1ccbe4bcd4e5127519799fe0ba6aaef"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -340,8 +340,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a5536e7a3b9d7ac7d2b62f0677b627717"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5536e7a3b9d7ac7d2b62f0677b627717">&#9670;&nbsp;</a></span>resetScalarRangeToCustom() <span class="overload">[2/2]</span></h2>
+<a id="a0f89f1b9c036f99601c983c92eb839bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f89f1b9c036f99601c983c92eb839bd">&#9670;&nbsp;</a></span>resetScalarRangeToCustom() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -353,8 +353,18 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">static bool pqResetScalarRangeReaction::resetScalarRangeToCustom </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classvtkSMProxy.html">vtkSMProxy</a> *&#160;</td>
-          <td class="paramname"><em>tfProxy</em></td><td>)</td>
+          <td class="paramname"><em>tfProxy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>separateOpacity</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -367,7 +377,8 @@ Additional Inherited Members</h2></td></tr>
 <p>Reset range to a custom range. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">tfProxy</td><td>The transfer function proxy to reset the range on.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tfProxy</td><td>The transfer function proxy to reset the range on. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">separateOpacity</td><td>Show controls for setting the opacity function range separately from the color transfer function.</td></tr>
   </table>
   </dd>
 </dl>
