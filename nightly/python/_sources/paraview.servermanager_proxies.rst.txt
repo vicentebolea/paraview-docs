@@ -84,6 +84,7 @@ Proxies generated for server side objects under :doc:`paraview.simple`
     paraview.simple.ContourGenericDataset
     paraview.simple.ConvertAMRdatasettoMultiblock
     paraview.simple.ConvertIntoMolecule
+    paraview.simple.ConvertPolyhedralCells
     paraview.simple.ConvertSelection
     paraview.simple.CosmoReader
     paraview.simple.CountCellFaces
@@ -612,6 +613,7 @@ Proxies generated for server side objects under :doc:`paraview.simple`
     ContourGenericDataset
     ConvertAMRdatasettoMultiblock
     ConvertIntoMolecule
+    ConvertPolyhedralCells
     ConvertSelection
     CosmoReader
     CountCellFaces
