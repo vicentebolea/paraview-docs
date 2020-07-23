@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>paraview.smtrace &mdash; ParaView/Python 5.8.1-RC2-1002-gbf20c499b1 documentation</title>
+  <title>paraview.smtrace &mdash; ParaView/Python 5.8.1-RC2-1008-g594cd2aebe documentation</title>
   
 
   
@@ -24,7 +24,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:'../../',
-        VERSION:'5.8.1-RC2-1002-gbf20c499b1',
+        VERSION:'5.8.1-RC2-1008-g594cd2aebe',
         COLLAPSE_INDEX:false,
         FILE_SUFFIX:'.html',
         HAS_SOURCE:  true
@@ -49,7 +49,7 @@
         <link rel="index" title="Index"
               href="../../genindex.html"/>
         <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="ParaView/Python 5.8.1-RC2-1002-gbf20c499b1 documentation" href="../../index.html"/>
+    <link rel="top" title="ParaView/Python 5.8.1-RC2-1008-g594cd2aebe documentation" href="../../index.html"/>
         <link rel="up" title="Module code" href="../index.html"/> 
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -67,7 +67,7 @@
           <li> <a href="../../index.html">
             <img src="../../_static/paraview-logo-small.png"
             alt="ParaView/Python"></img></a> </li>
-          <li class="version"> version 5.8.1-RC2-1002-gbf20c499b1</li>
+          <li class="version"> version 5.8.1-RC2-1008-g594cd2aebe</li>
         </ul>
         <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
   <input type="text" name="q" placeholder="Search docs" />
@@ -2354,11 +2354,14 @@
         <span class="n">Trace</span><span class="o">.</span><span class="n">Output</span><span class="o">.</span><span class="n">append</span><span class="p">([</span>\
             <span class="s2">&quot;#### disable automatic camera reset on &#39;Show&#39;&quot;</span><span class="p">,</span>
             <span class="s2">&quot;paraview.simple._DisableFirstRenderCameraReset()&quot;</span><span class="p">])</span>
+
     <span class="k">return</span> <span class="kc">True</span>
 
 <span class="k">def</span> <span class="nf">_stop_trace_internal</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;**internal** stops trace. Called by vtkSMTrace::StopTrace().&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">_get_skip_rendering</span><span class="p">():</span>
+        <span class="c1"># ensure we trace the active view, so camera changes will be recorded.</span>
+        <span class="n">Trace</span><span class="o">.</span><span class="n">get_accessor</span><span class="p">(</span><span class="n">simple</span><span class="o">.</span><span class="n">GetActiveView</span><span class="p">())</span>
         <span class="n">camera_trace</span> <span class="o">=</span> <span class="n">SaveCameras</span><span class="o">.</span><span class="n">get_trace</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">camera_trace</span><span class="p">:</span>
             <span class="n">Trace</span><span class="o">.</span><span class="n">Output</span><span class="o">.</span><span class="n">append_separated</span><span class="p">(</span>\
