@@ -17,7 +17,6 @@ Modules
     paraview.detail.annotation
     paraview.detail.calculator
     paraview.detail.catalyst_export
-    paraview.detail.cinema_extracts_writer
     paraview.detail.exportnow
     paraview.detail.extract_selection
     paraview.detail.loghandler

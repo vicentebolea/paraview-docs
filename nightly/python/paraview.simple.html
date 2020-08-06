@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>simple Module &mdash; ParaView/Python 5.8.1-RC2-1042-g812c692dbe documentation</title>
+  <title>simple Module &mdash; ParaView/Python 5.8.1-1064-g4210addda0 documentation</title>
   
 
   
@@ -24,7 +24,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:'./',
-        VERSION:'5.8.1-RC2-1042-g812c692dbe',
+        VERSION:'5.8.1-1064-g4210addda0',
         COLLAPSE_INDEX:false,
         FILE_SUFFIX:'.html',
         HAS_SOURCE:  true
@@ -49,7 +49,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="ParaView/Python 5.8.1-RC2-1042-g812c692dbe documentation" href="index.html"/>
+    <link rel="top" title="ParaView/Python 5.8.1-1064-g4210addda0 documentation" href="index.html"/>
         <link rel="up" title="paraview Package" href="paraview.html"/>
         <link rel="next" title="Available readers, sources, writers, filters and animation cues" href="paraview.servermanager_proxies.html"/>
         <link rel="prev" title="servermanager Module" href="paraview.servermanager.html"/> 
@@ -69,7 +69,7 @@
           <li> <a href="index.html">
             <img src="_static/paraview-logo-small.png"
             alt="ParaView/Python"></img></a> </li>
-          <li class="version"> version 5.8.1-RC2-1042-g812c692dbe</li>
+          <li class="version"> version 5.8.1-1064-g4210addda0</li>
         </ul>
         <form id ="rtd-search-form" class="wy-form" action="search.html" method="get">
   <input type="text" name="q" placeholder="Search docs" />
@@ -155,8 +155,6 @@
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.CellCenters.html">paraview.simple.CellCenters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.CellDatatoPointData.html">paraview.simple.CellDatatoPointData</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.CellSize.html">paraview.simple.CellSize</a></li>
-<li class="toctree-l2"><a class="reference internal" href="paraview.simple.CinemaDatabasePipelineObjectFilter.html">paraview.simple.CinemaDatabasePipelineObjectFilter</a></li>
-<li class="toctree-l2"><a class="reference internal" href="paraview.simple.CinemaDatabasePipelineObjectReader.html">paraview.simple.CinemaDatabasePipelineObjectReader</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.CityGMLReader.html">paraview.simple.CityGMLReader</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.Clean.html">paraview.simple.Clean</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.CleanCellstoGrid.html">paraview.simple.CleanCellstoGrid</a></li>
@@ -1387,10 +1385,8 @@ shown by the scalar bar.</p>
 <dl class="function">
 <dt id="paraview.simple.ImportCinema">
 <code class="descclassname">paraview.simple.</code><code class="descname">ImportCinema</code><span class="sig-paren">(</span><em>filename</em>, <em>view=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/paraview/simple.html#ImportCinema"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#paraview.simple.ImportCinema" title="Permalink to this definition">¶</a></dt>
-<dd><p>Import a cinema database. This can potentially create multiple
-sources/filters for visualizable objects in the Cinema database.
-Returns True on success. If view is provided, then the cinema sources
-are shown in that view as indicated in the database.</p>
+<dd><p>::deprecated:: 5.9</p>
+<p>Cinema import capabilities are no longer supported in this version.</p>
 </dd></dl>
 
 <dl class="function">
@@ -1733,11 +1729,7 @@ Currently, supported keyword parameters are:</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>DataExtractsOutputDirectory</strong> (<cite>str</cite>) – root directory for data extracts</li>
-<li><strong>ImageExtractsOutputDirectory</strong> (<cite>str</cite>) – root directory for image extracts</li>
-</ul>
-</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>ExtractsOutputDirectory</strong> (<cite>str</cite>) – root directory for extracts</td>
 </tr>
 </tbody>
 </table>

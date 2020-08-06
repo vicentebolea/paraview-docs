@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>paraview.catalyst.v2_internals &mdash; ParaView/Python 5.8.1-RC2-1042-g812c692dbe documentation</title>
+  <title>paraview.catalyst.v2_internals &mdash; ParaView/Python 5.8.1-1064-g4210addda0 documentation</title>
   
 
   
@@ -24,7 +24,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:'../../../',
-        VERSION:'5.8.1-RC2-1042-g812c692dbe',
+        VERSION:'5.8.1-1064-g4210addda0',
         COLLAPSE_INDEX:false,
         FILE_SUFFIX:'.html',
         HAS_SOURCE:  true
@@ -49,7 +49,7 @@
         <link rel="index" title="Index"
               href="../../../genindex.html"/>
         <link rel="search" title="Search" href="../../../search.html"/>
-    <link rel="top" title="ParaView/Python 5.8.1-RC2-1042-g812c692dbe documentation" href="../../../index.html"/>
+    <link rel="top" title="ParaView/Python 5.8.1-1064-g4210addda0 documentation" href="../../../index.html"/>
         <link rel="up" title="paraview.catalyst" href="../catalyst.html"/> 
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -67,7 +67,7 @@
           <li> <a href="../../../index.html">
             <img src="../../../_static/paraview-logo-small.png"
             alt="ParaView/Python"></img></a> </li>
-          <li class="version"> version 5.8.1-RC2-1042-g812c692dbe</li>
+          <li class="version"> version 5.8.1-1064-g4210addda0</li>
         </ul>
         <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
   <input type="text" name="q" placeholder="Search docs" />
@@ -153,8 +153,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../../../paraview.simple.CellCenters.html">paraview.simple.CellCenters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../paraview.simple.CellDatatoPointData.html">paraview.simple.CellDatatoPointData</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../paraview.simple.CellSize.html">paraview.simple.CellSize</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../paraview.simple.CinemaDatabasePipelineObjectFilter.html">paraview.simple.CinemaDatabasePipelineObjectFilter</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../paraview.simple.CinemaDatabasePipelineObjectReader.html">paraview.simple.CinemaDatabasePipelineObjectReader</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../paraview.simple.CityGMLReader.html">paraview.simple.CityGMLReader</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../paraview.simple.Clean.html">paraview.simple.Clean</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../paraview.simple.CleanCellstoGrid.html">paraview.simple.CleanCellstoGrid</a></li>
@@ -742,9 +740,9 @@
     <span class="n">log</span><span class="p">(</span><span class="n">log_level</span><span class="p">(),</span> <span class="s2">&quot;called request_data_description (ts=</span><span class="si">%d</span><span class="s2">, time=</span><span class="si">%f</span><span class="s2">)&quot;</span><span class="p">,</span>
         <span class="n">dataDescription</span><span class="o">.</span><span class="n">GetTimeStep</span><span class="p">(),</span> <span class="n">dataDescription</span><span class="o">.</span><span class="n">GetTime</span><span class="p">())</span>
 
-    <span class="n">options</span> <span class="o">=</span> <span class="n">module</span><span class="o">.</span><span class="n">options</span>
-    <span class="n">cntr</span> <span class="o">=</span> <span class="n">_get_extracts_controller</span><span class="p">(</span><span class="n">dataDescription</span><span class="p">,</span> <span class="n">options</span><span class="p">)</span>
+    <span class="n">cntr</span> <span class="o">=</span> <span class="n">_get_extracts_controller</span><span class="p">(</span><span class="n">dataDescription</span><span class="p">,</span> <span class="n">module</span><span class="p">)</span>
 
+    <span class="n">options</span> <span class="o">=</span> <span class="n">module</span><span class="o">.</span><span class="n">options</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">_is_activated</span><span class="p">(</span><span class="n">cntr</span><span class="p">,</span> <span class="n">options</span><span class="p">,</span> <span class="n">module</span><span class="p">):</span>
         <span class="k">return</span>
 
@@ -767,7 +765,7 @@
     <span class="n">log</span><span class="p">(</span><span class="n">log_level</span><span class="p">(),</span> <span class="s2">&quot;called co_process (ts=</span><span class="si">%d</span><span class="s2">, time=</span><span class="si">%f</span><span class="s2">)&quot;</span><span class="p">,</span>
         <span class="n">dataDescription</span><span class="o">.</span><span class="n">GetTimeStep</span><span class="p">(),</span> <span class="n">dataDescription</span><span class="o">.</span><span class="n">GetTime</span><span class="p">())</span>
     <span class="n">options</span> <span class="o">=</span> <span class="n">module</span><span class="o">.</span><span class="n">options</span>
-    <span class="n">cntr</span> <span class="o">=</span> <span class="n">_get_extracts_controller</span><span class="p">(</span><span class="n">dataDescription</span><span class="p">,</span> <span class="n">options</span><span class="p">)</span>
+    <span class="n">cntr</span> <span class="o">=</span> <span class="n">_get_extracts_controller</span><span class="p">(</span><span class="n">dataDescription</span><span class="p">,</span> <span class="n">module</span><span class="p">)</span>
     <span class="n">params</span> <span class="o">=</span> <span class="n">module</span><span class="o">.</span><span class="n">catalyst_params</span>
 
     <span class="c1"># first, load all analysis scripts, if we haven&#39;t already.</span>
@@ -802,6 +800,7 @@
     <span class="k">if</span> <span class="n">_is_live_trigger_activated</span><span class="p">(</span><span class="n">cntr</span><span class="p">,</span> <span class="n">options</span><span class="p">):</span>
         <span class="n">_do_live</span><span class="p">(</span><span class="n">dataDescription</span><span class="p">,</span> <span class="n">module</span><span class="p">)</span></div>
 
+
 <div class="viewcode-block" id="finalize"><a class="viewcode-back" href="../../../paraview.catalyst.v2_internals.html#paraview.catalyst.v2_internals.finalize">[docs]</a><span class="k">def</span> <span class="nf">finalize</span><span class="p">(</span><span class="n">module</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Called when Catalyst is being finalized. It&#39;s unclear which cases this would</span>
@@ -810,6 +809,11 @@
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">params</span> <span class="o">=</span> <span class="n">module</span><span class="o">.</span><span class="n">catalyst_params</span>
 
+    <span class="k">if</span> <span class="n">module</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">GenerateCinemaSpecification</span><span class="p">:</span>
+        <span class="n">log</span><span class="p">(</span><span class="n">log_level</span><span class="p">(),</span> <span class="s2">&quot;saving cinema specification&quot;</span><span class="p">)</span>
+        <span class="n">cntr</span> <span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="s2">&quot;extracts_controller&quot;</span><span class="p">]</span>
+        <span class="n">cntr</span><span class="o">.</span><span class="n">SaveSummaryTable</span><span class="p">(</span><span class="s2">&quot;data.csv&quot;</span><span class="p">,</span> <span class="n">module</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">GetSessionProxyManager</span><span class="p">())</span>
+
     <span class="c1"># note: the order here is inverse of all other customization callbacks.</span>
     <span class="c1"># we first call &#39;catalyst_finalize&#39; on all analysis pipeline and then the parent</span>
     <span class="c1"># module.</span>
@@ -817,12 +821,18 @@
     <span class="n">_call_customized_callback</span><span class="p">(</span><span class="n">module</span><span class="p">,</span> <span class="s2">&quot;catalyst_finalize&quot;</span><span class="p">,</span> <span class="n">do_submodules_first</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></div>
 
 
-<span class="k">def</span> <span class="nf">_get_extracts_controller</span><span class="p">(</span><span class="n">dataDescription</span><span class="p">,</span> <span class="n">options</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">_get_extracts_controller</span><span class="p">(</span><span class="n">dataDescription</span><span class="p">,</span> <span class="n">module</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Returns a vtkSMExtractsController instance initialized based on the</span>
-<span class="sd">    dataDescription and options</span>
+<span class="sd">    dataDescription and module</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">cntr</span> <span class="o">=</span> <span class="n">module</span><span class="o">.</span><span class="n">catalyst_params</span><span class="p">[</span><span class="s2">&quot;extracts_controller&quot;</span><span class="p">]</span>
+    <span class="n">cntr</span><span class="o">.</span><span class="n">SetTimeStep</span><span class="p">(</span><span class="n">dataDescription</span><span class="o">.</span><span class="n">GetTimeStep</span><span class="p">())</span>
+    <span class="n">cntr</span><span class="o">.</span><span class="n">SetTime</span><span class="p">(</span><span class="n">dataDescription</span><span class="o">.</span><span class="n">GetTime</span><span class="p">())</span>
+    <span class="k">return</span> <span class="n">cntr</span>
 
-<span class="sd">    :param dataDescription: Catalyst data description object</span>
-<span class="sd">    :type dataDescription: :class:`vtkCPDataDescription`</span>
+<span class="k">def</span> <span class="nf">_create_extracts_controller</span><span class="p">(</span><span class="n">options</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Returns a new vtkSMExtractsController instance initialized based on the</span>
+<span class="sd">    options</span>
 
 <span class="sd">    :param options: Catalyst options</span>
 <span class="sd">    :type options: :class:`paraview.servermanager.Proxy`</span>
@@ -832,28 +842,18 @@
     <span class="kn">import</span> <span class="nn">re</span><span class="o">,</span> <span class="nn">os</span>
 
     <span class="n">cntr</span> <span class="o">=</span> <span class="n">vtkSMExtractsController</span><span class="p">()</span>
-    <span class="n">cntr</span><span class="o">.</span><span class="n">SetTimeStep</span><span class="p">(</span><span class="n">dataDescription</span><span class="o">.</span><span class="n">GetTimeStep</span><span class="p">())</span>
-    <span class="n">cntr</span><span class="o">.</span><span class="n">SetTime</span><span class="p">(</span><span class="n">dataDescription</span><span class="o">.</span><span class="n">GetTime</span><span class="p">())</span>
 
     <span class="c1"># override options if passed in environment options.</span>
-    <span class="k">if</span> <span class="s1">&#39;PARAVIEW_OVERRIDE_DATA_OUTPUT_DIRECTORY&#39;</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">:</span>
-        <span class="n">data_root</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;PARAVIEW_OVERRIDE_DATA_OUTPUT_DIRECTORY&quot;</span><span class="p">]</span>
+    <span class="k">if</span> <span class="s1">&#39;PARAVIEW_OVERRIDE_EXTRACTS_OUTPUT_DIRECTORY&#39;</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">:</span>
+        <span class="n">extracts_output_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;PARAVIEW_OVERRIDE_EXTRACTS_OUTPUT_DIRECTORY&quot;</span><span class="p">]</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="n">data_root</span> <span class="o">=</span> <span class="n">options</span><span class="o">.</span><span class="n">DataExtractsOutputDirectory</span>
-
-    <span class="k">if</span> <span class="s1">&#39;PARAVIEW_OVERRIDE_IMAGE_OUTPUT_DIRECTORY&#39;</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">:</span>
-        <span class="n">image_root</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;PARAVIEW_OVERRIDE_IMAGE_OUTPUT_DIRECTORY&quot;</span><span class="p">]</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">image_root</span> <span class="o">=</span> <span class="n">options</span><span class="o">.</span><span class="n">ImageExtractsOutputDirectory</span>
+        <span class="n">extracts_output_dir</span> <span class="o">=</span> <span class="n">options</span><span class="o">.</span><span class="n">ExtractsOutputDirectory</span>
 
     <span class="c1"># if the paths have ${...}, replace that with environment variables.</span>
     <span class="kn">from</span> <span class="nn">..util</span> <span class="k">import</span> <span class="n">ReplaceDollarVariablesWithEnvironment</span>
-    <span class="n">data_root</span> <span class="o">=</span> <span class="n">ReplaceDollarVariablesWithEnvironment</span><span class="p">(</span><span class="n">data_root</span><span class="p">)</span>
-    <span class="n">image_root</span> <span class="o">=</span> <span class="n">ReplaceDollarVariablesWithEnvironment</span><span class="p">(</span><span class="n">image_root</span><span class="p">)</span>
-    <span class="n">cntr</span><span class="o">.</span><span class="n">SetDataExtractsOutputDirectory</span><span class="p">(</span><span class="n">data_root</span><span class="p">)</span>
-    <span class="n">cntr</span><span class="o">.</span><span class="n">SetImageExtractsOutputDirectory</span><span class="p">(</span><span class="n">image_root</span><span class="p">)</span>
+    <span class="n">extracts_output_dir</span> <span class="o">=</span> <span class="n">ReplaceDollarVariablesWithEnvironment</span><span class="p">(</span><span class="n">extracts_output_dir</span><span class="p">)</span>
+    <span class="n">cntr</span><span class="o">.</span><span class="n">SetExtractsOutputDirectory</span><span class="p">(</span><span class="n">extracts_output_dir</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">cntr</span>
-
 
 <span class="k">def</span> <span class="nf">_is_live_trigger_activated</span><span class="p">(</span><span class="n">cntr</span><span class="p">,</span> <span class="n">options</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">options</span><span class="o">.</span><span class="n">EnableCatalystLive</span> <span class="ow">and</span> <span class="n">options</span><span class="o">.</span><span class="n">CatalystLiveTrigger</span><span class="o">.</span><span class="n">IsActivated</span><span class="p">(</span><span class="n">cntr</span><span class="p">)</span>
@@ -896,6 +896,10 @@
         <span class="n">print_warning</span><span class="p">(</span><span class="s2">&quot;Module &#39;</span><span class="si">%s</span><span class="s2">&#39; missing Catalyst &#39;options&#39;, will use a default options object&quot;</span><span class="p">,</span> <span class="n">module</span><span class="o">.</span><span class="vm">__name__</span><span class="p">)</span>
         <span class="kn">from</span> <span class="nn">.</span> <span class="k">import</span> <span class="n">Options</span>
         <span class="n">module</span><span class="o">.</span><span class="n">options</span> <span class="o">=</span> <span class="n">Options</span><span class="p">()</span>
+    <span class="c1"># setup extracts controller to use.</span>
+    <span class="c1"># we need to use the same controller throughout the entire run to ensure</span>
+    <span class="c1"># that we can generate a summary table, if requested correctly.</span>
+    <span class="n">module</span><span class="o">.</span><span class="n">catalyst_params</span><span class="p">[</span><span class="s2">&quot;extracts_controller&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">_create_extracts_controller</span><span class="p">(</span><span class="n">module</span><span class="o">.</span><span class="n">options</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">_load_analysis_scripts</span><span class="p">(</span><span class="n">module</span><span class="p">):</span>
     <span class="kn">import</span> <span class="nn">importlib</span><span class="o">,</span> <span class="nn">importlib.util</span><span class="o">,</span> <span class="nn">zipimport</span><span class="o">,</span> <span class="nn">os.path</span>

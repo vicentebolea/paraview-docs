@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>paraview.simple &mdash; ParaView/Python 5.8.1-RC2-1042-g812c692dbe documentation</title>
+  <title>paraview.simple &mdash; ParaView/Python 5.8.1-1064-g4210addda0 documentation</title>
   
 
   
@@ -24,7 +24,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:'../../',
-        VERSION:'5.8.1-RC2-1042-g812c692dbe',
+        VERSION:'5.8.1-1064-g4210addda0',
         COLLAPSE_INDEX:false,
         FILE_SUFFIX:'.html',
         HAS_SOURCE:  true
@@ -49,7 +49,7 @@
         <link rel="index" title="Index"
               href="../../genindex.html"/>
         <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="ParaView/Python 5.8.1-RC2-1042-g812c692dbe documentation" href="../../index.html"/>
+    <link rel="top" title="ParaView/Python 5.8.1-1064-g4210addda0 documentation" href="../../index.html"/>
         <link rel="up" title="Module code" href="../index.html"/> 
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -67,7 +67,7 @@
           <li> <a href="../../index.html">
             <img src="../../_static/paraview-logo-small.png"
             alt="ParaView/Python"></img></a> </li>
-          <li class="version"> version 5.8.1-RC2-1042-g812c692dbe</li>
+          <li class="version"> version 5.8.1-1064-g4210addda0</li>
         </ul>
         <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
   <input type="text" name="q" placeholder="Search docs" />
@@ -153,8 +153,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../../paraview.simple.CellCenters.html">paraview.simple.CellCenters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../paraview.simple.CellDatatoPointData.html">paraview.simple.CellDatatoPointData</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../paraview.simple.CellSize.html">paraview.simple.CellSize</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../paraview.simple.CinemaDatabasePipelineObjectFilter.html">paraview.simple.CinemaDatabasePipelineObjectFilter</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../paraview.simple.CinemaDatabasePipelineObjectReader.html">paraview.simple.CinemaDatabasePipelineObjectReader</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../paraview.simple.CityGMLReader.html">paraview.simple.CityGMLReader</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../paraview.simple.Clean.html">paraview.simple.Clean</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../paraview.simple.CleanCellstoGrid.html">paraview.simple.CleanCellstoGrid</a></li>
@@ -1189,42 +1187,19 @@
 <span class="sd">    when a Catalyst analysis script is being run in batch.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="c1"># handle the case where options is CatalystOptions</span>
-
-    <span class="c1"># currently, Catalyst state files don&#39;t have anything about animation,</span>
-    <span class="c1"># however, we reply one animation to generate the extracts, so we ensure</span>
-    <span class="c1"># that the animation is updated based on timesteps in data by explicitly</span>
-    <span class="c1"># calling UpdateAnimationUsingDataTimeSteps.</span>
-    <span class="n">scene</span> <span class="o">=</span> <span class="n">GetAnimationScene</span><span class="p">()</span>
-    <span class="n">scene</span><span class="o">.</span><span class="n">UpdateAnimationUsingDataTimeSteps</span><span class="p">()</span>
-
-    <span class="n">pxm</span> <span class="o">=</span> <span class="n">servermanager</span><span class="o">.</span><span class="n">ProxyManager</span><span class="p">()</span>
-    <span class="n">proxy</span> <span class="o">=</span> <span class="n">servermanager</span><span class="o">.</span><span class="n">_getPyProxy</span><span class="p">(</span><span class="n">pxm</span><span class="o">.</span><span class="n">NewProxy</span><span class="p">(</span><span class="s2">&quot;misc&quot;</span><span class="p">,</span> <span class="s2">&quot;SaveAnimationExtracts&quot;</span><span class="p">))</span>
-
-    <span class="c1"># override options if passed in environment options.</span>
-    <span class="kn">import</span> <span class="nn">os</span>
-    <span class="k">if</span> <span class="s1">&#39;PARAVIEW_OVERRIDE_DATA_OUTPUT_DIRECTORY&#39;</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">:</span>
-        <span class="n">proxy</span><span class="o">.</span><span class="n">DataExtractsOutputDirectory</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;PARAVIEW_OVERRIDE_DATA_OUTPUT_DIRECTORY&quot;</span><span class="p">]</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">proxy</span><span class="o">.</span><span class="n">DataExtractsOutputDirectory</span> <span class="o">=</span> <span class="n">options</span><span class="o">.</span><span class="n">DataExtractsOutputDirectory</span>
-    <span class="k">if</span> <span class="s1">&#39;PARAVIEW_OVERRIDE_IMAGE_OUTPUT_DIRECTORY&#39;</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">:</span>
-        <span class="n">proxy</span><span class="o">.</span><span class="n">ImageExtractsOutputDirectory</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;PARAVIEW_OVERRIDE_IMAGE_OUTPUT_DIRECTORY&quot;</span><span class="p">]</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">proxy</span><span class="o">.</span><span class="n">ImageExtractsOutputDirectory</span> <span class="o">=</span> <span class="n">options</span><span class="o">.</span><span class="n">ImageExtractsOutputDirectory</span>
-    <span class="k">return</span> <span class="n">proxy</span><span class="o">.</span><span class="n">SaveExtracts</span><span class="p">()</span></div>
+    <span class="k">return</span> <span class="n">SaveExtracts</span><span class="p">(</span><span class="n">ExtractsOutputDirectory</span> <span class="o">=</span> <span class="n">options</span><span class="o">.</span><span class="n">ExtractsOutputDirectory</span><span class="p">,</span>
+                        <span class="n">GenerateCinemaSpecification</span> <span class="o">=</span> <span class="n">options</span><span class="o">.</span><span class="n">GenerateCinemaSpecification</span><span class="p">)</span></div>
 
 <div class="viewcode-block" id="SaveExtracts"><a class="viewcode-back" href="../../paraview.simple.html#paraview.simple.SaveExtracts">[docs]</a><span class="k">def</span> <span class="nf">SaveExtracts</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Generate extracts. Parameters are forwarded for &#39;SaveAnimationExtracts&#39;</span>
 <span class="sd">    Currently, supported keyword parameters are:</span>
 
-<span class="sd">    :param DataExtractsOutputDirectory: root directory for data extracts</span>
-<span class="sd">    :type DataExtractsOutputDirectory: `str`</span>
-
-<span class="sd">    :param ImageExtractsOutputDirectory: root directory for image extracts</span>
-<span class="sd">    :type ImageExtractsOutputDirectory: `str`</span>
+<span class="sd">    :param ExtractsOutputDirectory: root directory for extracts</span>
+<span class="sd">    :type ExtractsOutputDirectory: `str`</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="c1"># currently, Python state files don&#39;t have anything about animation,</span>
-    <span class="c1"># however, we reply one animation to generate the extracts, so we ensure</span>
+    <span class="c1"># however, we rely on animation to generate the extracts, so we ensure</span>
     <span class="c1"># that the animation is updated based on timesteps in data by explicitly</span>
     <span class="c1"># calling UpdateAnimationUsingDataTimeSteps.</span>
     <span class="n">scene</span> <span class="o">=</span> <span class="n">GetAnimationScene</span><span class="p">()</span>
@@ -1236,22 +1211,15 @@
 
     <span class="c1"># override options if passed in environment options.</span>
     <span class="kn">import</span> <span class="nn">os</span>
-    <span class="k">if</span> <span class="s1">&#39;PARAVIEW_OVERRIDE_DATA_OUTPUT_DIRECTORY&#39;</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">:</span>
-        <span class="n">data_root</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;PARAVIEW_OVERRIDE_DATA_OUTPUT_DIRECTORY&quot;</span><span class="p">]</span>
+    <span class="k">if</span> <span class="s1">&#39;PARAVIEW_OVERRIDE_EXTRACTS_OUTPUT_DIRECTORY&#39;</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">:</span>
+        <span class="n">root</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;PARAVIEW_OVERRIDE_EXTRACTS_OUTPUT_DIRECTORY&quot;</span><span class="p">]</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="n">data_root</span> <span class="o">=</span> <span class="n">proxy</span><span class="o">.</span><span class="n">DataExtractsOutputDirectory</span>
-
-    <span class="k">if</span> <span class="s1">&#39;PARAVIEW_OVERRIDE_IMAGE_OUTPUT_DIRECTORY&#39;</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">:</span>
-        <span class="n">image_root</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;PARAVIEW_OVERRIDE_IMAGE_OUTPUT_DIRECTORY&quot;</span><span class="p">]</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">image_root</span> <span class="o">=</span> <span class="n">proxy</span><span class="o">.</span><span class="n">ImageExtractsOutputDirectory</span>
+        <span class="n">root</span> <span class="o">=</span> <span class="n">proxy</span><span class="o">.</span><span class="n">ExtractsOutputDirectory</span>
 
     <span class="c1"># if the paths have ${...}, replace that with environment variables.</span>
     <span class="kn">from</span> <span class="nn">.util</span> <span class="k">import</span> <span class="n">ReplaceDollarVariablesWithEnvironment</span>
-    <span class="n">data_root</span> <span class="o">=</span> <span class="n">ReplaceDollarVariablesWithEnvironment</span><span class="p">(</span><span class="n">data_root</span><span class="p">)</span>
-    <span class="n">image_root</span> <span class="o">=</span> <span class="n">ReplaceDollarVariablesWithEnvironment</span><span class="p">(</span><span class="n">image_root</span><span class="p">)</span>
-    <span class="n">proxy</span><span class="o">.</span><span class="n">DataExtractsOutputDirectory</span> <span class="o">=</span> <span class="n">data_root</span>
-    <span class="n">proxy</span><span class="o">.</span><span class="n">ImageExtractsOutputDirectory</span> <span class="o">=</span> <span class="n">image_root</span>
+    <span class="n">root</span> <span class="o">=</span> <span class="n">ReplaceDollarVariablesWithEnvironment</span><span class="p">(</span><span class="n">root</span><span class="p">)</span>
+    <span class="n">proxy</span><span class="o">.</span><span class="n">ExtractsOutputDirectory</span> <span class="o">=</span> <span class="n">root</span>
     <span class="k">return</span> <span class="n">proxy</span><span class="o">.</span><span class="n">SaveExtracts</span><span class="p">()</span></div>
 
 <span class="c1">#==============================================================================</span>
@@ -1817,19 +1785,13 @@
 
 <span class="c1"># -----------------------------------------------------------------------------</span>
 <div class="viewcode-block" id="ImportCinema"><a class="viewcode-back" href="../../paraview.simple.html#paraview.simple.ImportCinema">[docs]</a><span class="k">def</span> <span class="nf">ImportCinema</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">view</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Import a cinema database. This can potentially create multiple</span>
-<span class="sd">    sources/filters for visualizable objects in the Cinema database.</span>
-<span class="sd">    Returns True on success. If view is provided, then the cinema sources</span>
-<span class="sd">    are shown in that view as indicated in the database.</span>
+    <span class="sd">&quot;&quot;&quot;::deprecated:: 5.9</span>
+
+<span class="sd">    Cinema import capabilities are no longer supported in this version.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">try</span><span class="p">:</span>
-        <span class="kn">from</span> <span class="nn">paraview.modules.vtkPVCinemaReader</span> <span class="k">import</span> <span class="n">vtkSMCinemaDatabaseImporter</span>
-    <span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
-        <span class="c1"># cinema not supported in current configuration</span>
-        <span class="k">return</span> <span class="kc">False</span>
-    <span class="n">session</span> <span class="o">=</span> <span class="n">servermanager</span><span class="o">.</span><span class="n">ActiveConnection</span><span class="o">.</span><span class="n">Session</span>
-    <span class="n">importer</span> <span class="o">=</span> <span class="n">vtkSMCinemaDatabaseImporter</span><span class="p">()</span>
-    <span class="k">return</span> <span class="n">importer</span><span class="o">.</span><span class="n">ImportCinema</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">session</span><span class="p">,</span> <span class="n">view</span><span class="p">)</span></div>
+    <span class="kn">import</span> <span class="nn">warnings</span>
+    <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="s2">&quot;&#39;ImportCinema&#39; is no longer supported&quot;</span><span class="p">,</span> <span class="ne">DeprecationWarning</span><span class="p">)</span>
+    <span class="k">return</span> <span class="kc">False</span></div>
 
 <span class="c1"># -----------------------------------------------------------------------------</span>
 <div class="viewcode-block" id="CreateWriter"><a class="viewcode-back" href="../../paraview.simple.html#paraview.simple.CreateWriter">[docs]</a><span class="k">def</span> <span class="nf">CreateWriter</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">proxy</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">extraArgs</span><span class="p">):</span>

@@ -60,8 +60,6 @@ Proxies generated for server side objects under :doc:`paraview.simple`
     paraview.simple.CellCenters
     paraview.simple.CellDatatoPointData
     paraview.simple.CellSize
-    paraview.simple.CinemaDatabasePipelineObjectFilter
-    paraview.simple.CinemaDatabasePipelineObjectReader
     paraview.simple.CityGMLReader
     paraview.simple.Clean
     paraview.simple.CleanCellstoGrid
@@ -590,8 +588,6 @@ Proxies generated for server side objects under :doc:`paraview.simple`
     CellCenters
     CellDatatoPointData
     CellSize
-    CinemaDatabasePipelineObjectFilter
-    CinemaDatabasePipelineObjectReader
     CityGMLReader
     Clean
     CleanCellstoGrid
