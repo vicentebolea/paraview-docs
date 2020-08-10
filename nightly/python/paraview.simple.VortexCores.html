@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>paraview.simple.VortexCore &mdash; ParaView/Python 5.8.1-1071-g31cfb2c182 documentation</title>
+  <title>paraview.simple.VortexCores &mdash; ParaView/Python 5.8.1-1076-g3a1fb27789 documentation</title>
   
 
   
@@ -24,7 +24,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:'./',
-        VERSION:'5.8.1-1071-g31cfb2c182',
+        VERSION:'5.8.1-1076-g3a1fb27789',
         COLLAPSE_INDEX:false,
         FILE_SUFFIX:'.html',
         HAS_SOURCE:  true
@@ -49,7 +49,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="ParaView/Python 5.8.1-1071-g31cfb2c182 documentation" href="index.html"/>
+    <link rel="top" title="ParaView/Python 5.8.1-1076-g3a1fb27789 documentation" href="index.html"/>
         <link rel="up" title="Available readers, sources, writers, filters and animation cues" href="paraview.servermanager_proxies.html"/>
         <link rel="next" title="paraview.simple.WarpByScalar" href="paraview.simple.WarpByScalar.html"/>
         <link rel="prev" title="paraview.simple.VoronoiMergeConnected" href="paraview.simple.VoronoiMergeConnected.html"/> 
@@ -69,7 +69,7 @@
           <li> <a href="index.html">
             <img src="_static/paraview-logo-small.png"
             alt="ParaView/Python"></img></a> </li>
-          <li class="version"> version 5.8.1-1071-g31cfb2c182</li>
+          <li class="version"> version 5.8.1-1076-g3a1fb27789</li>
         </ul>
         <form id ="rtd-search-form" class="wy-form" action="search.html" method="get">
   <input type="text" name="q" placeholder="Search docs" />
@@ -570,7 +570,7 @@
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.VisItXYZReader.html">paraview.simple.VisItXYZReader</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.VisItXmdvReader.html">paraview.simple.VisItXmdvReader</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.VoronoiMergeConnected.html">paraview.simple.VoronoiMergeConnected</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">paraview.simple.VortexCore</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">paraview.simple.VortexCores</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.WarpByScalar.html">paraview.simple.WarpByScalar</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.WarpByVector.html">paraview.simple.WarpByVector</a></li>
 <li class="toctree-l2"><a class="reference internal" href="paraview.simple.WavefrontOBJReader.html">paraview.simple.WavefrontOBJReader</a></li>
@@ -661,20 +661,26 @@
           <ul class="wy-breadcrumbs">
   <li><a href="index.html">Docs</a> &raquo;</li>
   <a href="genindex.html" class="float-right">Index</a> 
-  <li><a href="">paraview.simple.VortexCore</a></li>
+  <li><a href="">paraview.simple.VortexCores</a></li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
 </ul>
 <hr/>
           
-  <div class="section" id="paraview-simple-vortexcore">
-<h1>paraview.simple.VortexCore<a class="headerlink" href="#paraview-simple-vortexcore" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="paraview-simple-vortexcores">
+<h1>paraview.simple.VortexCores<a class="headerlink" href="#paraview-simple-vortexcores" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
-<dt id="paraview.simple.VortexCore">
-<code class="descclassname">paraview.simple.</code><code class="descname">VortexCore</code><span class="sig-paren">(</span><em>*input</em>, <em>**params</em><span class="sig-paren">)</span><a class="headerlink" href="#paraview.simple.VortexCore" title="Permalink to this definition">¶</a></dt>
+<dt id="paraview.simple.VortexCores">
+<code class="descclassname">paraview.simple.</code><code class="descname">VortexCores</code><span class="sig-paren">(</span><em>*input</em>, <em>**params</em><span class="sig-paren">)</span><a class="headerlink" href="#paraview.simple.VortexCores" title="Permalink to this definition">¶</a></dt>
 <dd><blockquote>
-<div>Compute vortex cores.</div></blockquote>
+<div>Compute vortex core lines using the parallel vectors method. By default, the “Higher-Order”
+approach of computing the parallel vector lines between the flow field’s velocity and jerk
+is disabled in favor of computing the parallel vector lines between the velocity and
+acceleration. To further discriminate against spurious vortex cores, at each potential point
+value the Q-criterion, delta-criterion, lambda_ci, and lambda_2-criterion are checked. The Q-criterion
+and delta-criterion are used to prefilter cells prior to the execution of the parallel lines
+algorithm, and all criteria values are stored as point values on the output polylines.</div></blockquote>
 </dd></dl>
 
 <div class="section" id="data-descriptors">
@@ -683,12 +689,11 @@
 <div><dl class="docutils">
 <dt>Input</dt>
 <dd>The input.</dd>
-</dl>
-<p>UseHigherOrderMethod</p>
-<dl class="docutils">
+<dt>UseHigherOrderMethod</dt>
+<dd>Use the flow field’s jerk instead of acceleration as the second vector field during the
+parallel vector operation. Disabled by default.</dd>
 <dt>VectorField</dt>
-<dd>This property indicates the name of the tensor array on which to operate. The indicated array’s
-eigenvalues and eigenvectors are used for scaling and orienting the glyphs.</dd>
+<dd>This property indicates the name of the vector array from which to compute vortex cores.</dd>
 </dl>
 </div></blockquote>
 <div class="section" id="data-descriptors-inherited-from-sourceproxy">

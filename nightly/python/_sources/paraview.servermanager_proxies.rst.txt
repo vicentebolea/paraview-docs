@@ -475,7 +475,7 @@ Proxies generated for server side objects under :doc:`paraview.simple`
     paraview.simple.VisItXYZReader
     paraview.simple.VisItXmdvReader
     paraview.simple.VoronoiMergeConnected
-    paraview.simple.VortexCore
+    paraview.simple.VortexCores
     paraview.simple.WarpByScalar
     paraview.simple.WarpByVector
     paraview.simple.WavefrontOBJReader
@@ -1003,7 +1003,7 @@ Proxies generated for server side objects under :doc:`paraview.simple`
     VisItXYZReader
     VisItXmdvReader
     VoronoiMergeConnected
-    VortexCore
+    VortexCores
     WarpByScalar
     WarpByVector
     WavefrontOBJReader

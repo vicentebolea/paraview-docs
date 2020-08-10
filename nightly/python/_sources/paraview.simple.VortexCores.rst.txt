@@ -1,9 +1,9 @@
-paraview.simple.VortexCore
-==========================
+paraview.simple.VortexCores
+===========================
 
 .. currentmodule:: paraview.simple
 
-.. autofunction:: VortexCore
+.. autofunction:: VortexCores
 
 Data Descriptors
 ----------------
@@ -14,10 +14,11 @@ Data Descriptors
        The input.
    
    UseHigherOrderMethod
+       Use the flow field's jerk instead of acceleration as the second vector field during the
+       parallel vector operation. Disabled by default.
    
    VectorField
-       This property indicates the name of the tensor array on which to operate. The indicated array's
-       eigenvalues and eigenvectors are used for scaling and orienting the glyphs.
+       This property indicates the name of the vector array from which to compute vortex cores.
    
    
 
