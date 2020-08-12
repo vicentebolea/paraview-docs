@@ -1,6 +1,7 @@
 <map id="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/Core/vtkPVSession.h" name="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/Core/vtkPVSession.h">
-<area shape="rect" id="node1" title=" " alt="" coords="561,5,791,105"/>
+<area shape="rect" id="node1" title=" " alt="" coords="721,5,951,105"/>
 <area shape="rect" id="node2" href="$vtkPVSessionBase_8h.html" title=" " alt="" coords="527,153,825,253"/>
+<area shape="rect" id="node11" href="$vtkRemoteWriterHelper_8h.html" title=" " alt="" coords="849,153,1146,253"/>
 <area shape="rect" id="node3" href="$vtkPVSessionServer_8h.html" title=" " alt="" coords="367,301,665,401"/>
 <area shape="rect" id="node5" href="$vtkSMSession_8h.html" title=" " alt="" coords="877,301,1174,401"/>
 <area shape="rect" id="node4" href="$pvserver__common_8h.html" title=" " alt="" coords="5,449,360,549"/>

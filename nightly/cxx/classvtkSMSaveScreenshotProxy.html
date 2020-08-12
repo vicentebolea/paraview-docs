@@ -118,9 +118,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7e7e48690d59abb7919e61fabd6ba0df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69deb648a9a9cf77a17c7512e668a940"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkSMSaveScreenshotProxy.html#a69deb648a9a9cf77a17c7512e668a940">PrintSelf</a> (ostream &amp;os, <a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/classvtkIndent.html">vtkIndent</a> indent) override</td></tr>
 <tr class="separator:a69deb648a9a9cf77a17c7512e668a940"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39a5051a1412fef68e587eda73fb4126"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkSMSaveScreenshotProxy.html#a39a5051a1412fef68e587eda73fb4126">WriteImage</a> (const char *filename)</td></tr>
-<tr class="memdesc:a39a5051a1412fef68e587eda73fb4126"><td class="mdescLeft">&#160;</td><td class="mdescRight">Capture image.  <a href="#a39a5051a1412fef68e587eda73fb4126">More...</a><br /></td></tr>
-<tr class="separator:a39a5051a1412fef68e587eda73fb4126"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4223d6b1865e7e202aaa621b0d9f264e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkSMSaveScreenshotProxy.html#a4223d6b1865e7e202aaa621b0d9f264e">WriteImage</a> (const char *filename)</td></tr>
+<tr class="memdesc:a4223d6b1865e7e202aaa621b0d9f264e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Capture image.  <a href="#a4223d6b1865e7e202aaa621b0d9f264e">More...</a><br /></td></tr>
+<tr class="separator:a4223d6b1865e7e202aaa621b0d9f264e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f224faffe7600a2e1698d8d41c356b2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkSMSaveScreenshotProxy.html#a8f224faffe7600a2e1698d8d41c356b2">WriteImage</a> (const char *filename, vtkTypeUInt32 <a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/namespacevtkX3D.html#ac6551f7bf833e8254b2b3ecdaea0d210a13c73d49b0f10fc872e9c7895421e213">location</a>)</td></tr>
+<tr class="memdesc:a8f224faffe7600a2e1698d8d41c356b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is same as <code><a class="el" href="classvtkSMSaveScreenshotProxy.html#a4223d6b1865e7e202aaa621b0d9f264e" title="Capture image.">WriteImage(const char*)</a></code> except that one can specify the location at which to write the image.  <a href="#a8f224faffe7600a2e1698d8d41c356b2">More...</a><br /></td></tr>
+<tr class="separator:a8f224faffe7600a2e1698d8d41c356b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2436d9078d97941b6695a6e4577fd891"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/classvtkSmartPointer.html">vtkSmartPointer</a>&lt; <a class="elRef" doxygen="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag:http://www.vtk.org/doc/nightly/html/" href="http://www.vtk.org/doc/nightly/html/classvtkImageData.html">vtkImageData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkSMSaveScreenshotProxy.html#a2436d9078d97941b6695a6e4577fd891">CaptureImage</a> ()</td></tr>
 <tr class="memdesc:a2436d9078d97941b6695a6e4577fd891"><td class="mdescLeft">&#160;</td><td class="mdescRight">Capture the rendered image but doesn't save it out to any file.  <a href="#a2436d9078d97941b6695a6e4577fd891">More...</a><br /></td></tr>
 <tr class="separator:a2436d9078d97941b6695a6e4577fd891"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -869,7 +872,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>proxy to help with saving screenshots for views </p>
 <p><a class="el" href="classvtkSMSaveScreenshotProxy.html" title="proxy to help with saving screenshots for views">vtkSMSaveScreenshotProxy</a> is used to capture images from views or layouts. It encapsulates the logic to generate screen shot of any arbitrary size independent of the application window size.</p>
-<p>The properties on this proxy provide various options that user can configure when saving images/screenshots. Once those properties are setup, one calls <code><a class="el" href="classvtkSMSaveScreenshotProxy.html#a39a5051a1412fef68e587eda73fb4126" title="Capture image.">vtkSMSaveScreenshotProxy::WriteImage</a></code> or <code><a class="el" href="classvtkSMSaveScreenshotProxy.html#a2436d9078d97941b6695a6e4577fd891" title="Capture the rendered image but doesn&#39;t save it out to any file.">vtkSMSaveScreenshotProxy::CaptureImage</a></code>. </p>
+<p>The properties on this proxy provide various options that user can configure when saving images/screenshots. Once those properties are setup, one calls <code><a class="el" href="classvtkSMSaveScreenshotProxy.html#a4223d6b1865e7e202aaa621b0d9f264e" title="Capture image.">vtkSMSaveScreenshotProxy::WriteImage</a></code> or <code><a class="el" href="classvtkSMSaveScreenshotProxy.html#a2436d9078d97941b6695a6e4577fd891" title="Capture the rendered image but doesn&#39;t save it out to any file.">vtkSMSaveScreenshotProxy::CaptureImage</a></code>. </p>
 
 <p class="definition">Definition at line <a class="el" href="vtkSMSaveScreenshotProxy_8h_source.html#l00042">42</a> of file <a class="el" href="vtkSMSaveScreenshotProxy_8h_source.html">vtkSMSaveScreenshotProxy.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
@@ -1115,32 +1118,55 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a39a5051a1412fef68e587eda73fb4126"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39a5051a1412fef68e587eda73fb4126">&#9670;&nbsp;</a></span>WriteImage()</h2>
+<a id="a4223d6b1865e7e202aaa621b0d9f264e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4223d6b1865e7e202aaa621b0d9f264e">&#9670;&nbsp;</a></span>WriteImage() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool vtkSMSaveScreenshotProxy::WriteImage </td>
+          <td class="memname">bool vtkSMSaveScreenshotProxy::WriteImage </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>filename</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Capture image. </p>
 <p>The properties for this proxy provide all the necessary information to capture the image. </p>
+
+</div>
+</div>
+<a id="a8f224faffe7600a2e1698d8d41c356b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f224faffe7600a2e1698d8d41c356b2">&#9670;&nbsp;</a></span>WriteImage() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vtkSMSaveScreenshotProxy::WriteImage </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vtkTypeUInt32&#160;</td>
+          <td class="paramname"><em>location</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This is same as <code><a class="el" href="classvtkSMSaveScreenshotProxy.html#a4223d6b1865e7e202aaa621b0d9f264e" title="Capture image.">WriteImage(const char*)</a></code> except that one can specify the location at which to write the image. </p>
+<p>Currently supported values are <a class="el" href="classvtkPVSession.html#ab345fdae0be1c0ea958889648b87688ba64929b15d7ceb43b034a7785d5d9540b">vtkPVSession::CLIENT</a>, <a class="el" href="classvtkPVSession.html#ab345fdae0be1c0ea958889648b87688ba7672dafd8e52e30be4b2e45f1bf04f49">vtkPVSession::DATA_SERVER</a> or <a class="el" href="classvtkPVSession.html#ab345fdae0be1c0ea958889648b87688ba9b176646ed16e58515076f15c5ba6936">vtkPVSession::DATA_SERVER_ROOT</a>. Selecting <a class="el" href="classvtkPVSession.html#ab345fdae0be1c0ea958889648b87688ba7672dafd8e52e30be4b2e45f1bf04f49">vtkPVSession::DATA_SERVER</a> is same as <a class="el" href="classvtkPVSession.html#ab345fdae0be1c0ea958889648b87688ba9b176646ed16e58515076f15c5ba6936">vtkPVSession::DATA_SERVER_ROOT</a> since the images are only written on root node. </p>
 
 </div>
 </div>
@@ -1600,7 +1626,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkSMSaveScreenshotProxy_8h_source.html#l00148">148</a> of file <a class="el" href="vtkSMSaveScreenshotProxy_8h_source.html">vtkSMSaveScreenshotProxy.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkSMSaveScreenshotProxy_8h_source.html#l00158">158</a> of file <a class="el" href="vtkSMSaveScreenshotProxy_8h_source.html">vtkSMSaveScreenshotProxy.h</a>.</p>
 
 </div>
 </div>
@@ -1624,7 +1650,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkSMSaveScreenshotProxy_8h_source.html#l00149">149</a> of file <a class="el" href="vtkSMSaveScreenshotProxy_8h_source.html">vtkSMSaveScreenshotProxy.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkSMSaveScreenshotProxy_8h_source.html#l00159">159</a> of file <a class="el" href="vtkSMSaveScreenshotProxy_8h_source.html">vtkSMSaveScreenshotProxy.h</a>.</p>
 
 </div>
 </div>
@@ -1648,7 +1674,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkSMSaveScreenshotProxy_8h_source.html#l00150">150</a> of file <a class="el" href="vtkSMSaveScreenshotProxy_8h_source.html">vtkSMSaveScreenshotProxy.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkSMSaveScreenshotProxy_8h_source.html#l00160">160</a> of file <a class="el" href="vtkSMSaveScreenshotProxy_8h_source.html">vtkSMSaveScreenshotProxy.h</a>.</p>
 
 </div>
 </div>
@@ -1661,7 +1687,7 @@ Additional Inherited Members</h2></td></tr>
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.15 on Tue Aug 11 2020
+</a> 1.8.15 on Wed Aug 12 2020
 </small></address>
 <!-- KW:BEGIN -->
 <!-- this adds the version selection header -->
