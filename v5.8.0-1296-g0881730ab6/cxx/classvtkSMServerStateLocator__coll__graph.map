@@ -1,0 +1,9 @@
+<map id="vtkSMServerStateLocator" name="vtkSMServerStateLocator">
+<area shape="rect" id="node2" href="$classvtkSMStateLocator.html" title="Class used to retrieve a given message state based on its GlobalID. " alt="" coords="281,264,425,291"/>
+<area shape="rect" id="node3" href="$classvtkSMObject.html" title="superclass for most server manager classes " alt="" coords="547,173,651,200"/>
+<area shape="rect" id="node4" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkObject.html" title="vtkObject" alt="" coords="556,83,641,109"/>
+<area shape="rect" id="node5" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkWeakPointer.html" title="vtkWeakPointer\&lt; vtkSMSession \&gt;" alt="" coords="5,173,251,200"/>
+<area shape="rect" id="node6" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkWeakPointerBase.html" title="vtkWeakPointerBase" alt="" coords="187,5,344,32"/>
+<area shape="rect" id="node7" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkWeakPointer.html" title="vtkWeakPointer\&lt; T \&gt;" alt="" coords="184,83,347,109"/>
+<area shape="rect" id="node8" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkWeakPointer.html" title="vtkWeakPointer\&lt; vtkUndoStack \&gt;" alt="" coords="275,173,521,200"/>
+</map>

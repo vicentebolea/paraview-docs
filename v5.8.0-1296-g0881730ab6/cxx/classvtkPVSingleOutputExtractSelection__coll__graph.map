@@ -1,0 +1,12 @@
+<map id="vtkPVSingleOutputExtractSelection" name="vtkPVSingleOutputExtractSelection">
+<area shape="rect" id="node2" href="$classvtkPVExtractSelection.html" title="Adds a two more output ports to vtkExtractSelection, the second port contains an id selection and the..." alt="" coords="811,163,978,190"/>
+<area shape="rect" id="node3" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkExtractSelection.html" title="vtkExtractSelection" alt="" coords="611,163,760,190"/>
+<area shape="rect" id="node4" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkExtractSelectionBase.html" title="vtkExtractSelectionBase" alt="" coords="5,137,187,163"/>
+<area shape="rect" id="node5" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkExtractSelectedFrustum.html" title="vtkExtractSelectedFrustum" alt="" coords="247,35,444,62"/>
+<area shape="rect" id="node6" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkExtractSelectedBlock.html" title="vtkExtractSelectedBlock" alt="" coords="255,86,436,113"/>
+<area shape="rect" id="node8" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkExtractSelectedThresholds.html" title="vtkExtractSelectedThresholds" alt="" coords="237,137,453,163"/>
+<area shape="rect" id="node9" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkExtractSelectedLocations.html" title="vtkExtractSelectedLocations" alt="" coords="242,187,449,214"/>
+<area shape="rect" id="node10" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkProbeSelectedLocations.html" title="vtkProbeSelectedLocations" alt="" coords="246,238,445,265"/>
+<area shape="rect" id="node11" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkExtractSelectedIds.html" title="vtkExtractSelectedIds" alt="" coords="263,289,427,315"/>
+<area shape="rect" id="node7" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkExtractSelectedRows.html" title="vtkExtractSelectedRows" alt="" coords="256,339,435,366"/>
+</map>

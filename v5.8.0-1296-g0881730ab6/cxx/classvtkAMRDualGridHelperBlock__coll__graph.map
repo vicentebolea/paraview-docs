@@ -1,0 +1,11 @@
+<map id="vtkAMRDualGridHelperBlock" name="vtkAMRDualGridHelperBlock">
+<area shape="rect" id="node2" href="$classvtkAMRDualGridHelperFace.html" title="vtkAMRDualGridHelperFace" alt="" coords="5,280,205,307"/>
+<area shape="rect" id="node3" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkImageData.html" title="vtkImageData" alt="" coords="231,280,345,307"/>
+<area shape="rect" id="node4" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkDataSet.html" title="vtkDataSet" alt="" coords="658,203,752,229"/>
+<area shape="rect" id="node5" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkDataObject.html" title="vtkDataObject" alt="" coords="1137,97,1252,124"/>
+<area shape="rect" id="node6" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkTimeStamp.html" title="vtkTimeStamp" alt="" coords="237,5,355,32"/>
+<area shape="rect" id="node7" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkCellData.html" title="vtkCellData" alt="" coords="497,97,596,124"/>
+<area shape="rect" id="node8" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkUnsignedCharArray.html" title="vtkUnsignedCharArray" alt="" coords="621,97,789,124"/>
+<area shape="rect" id="node9" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkPointData.html" title="vtkPointData" alt="" coords="815,97,921,124"/>
+<area shape="rect" id="node10" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkCallbackCommand.html" title="vtkCallbackCommand" alt="" coords="946,97,1112,124"/>
+</map>
