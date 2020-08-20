@@ -1,0 +1,16 @@
+<map id="vtkPVClientServerSynchronizedRenderers" name="vtkPVClientServerSynchronizedRenderers">
+<area shape="rect" id="node2" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkSynchronizedRenderers.html" title="vtkSynchronizedRenderers" alt="" coords="1512,348,1707,375"/>
+<area shape="rect" id="node3" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkObject.html" title="vtkObject" alt="" coords="267,291,352,317"/>
+<area shape="rect" id="node6" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkMultiProcessController.html" title="vtkMultiProcessController" alt="" coords="888,304,1077,331"/>
+<area shape="rect" id="node7" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkOutputWindow.html" title="vtkOutputWindow" alt="" coords="564,231,703,257"/>
+<area shape="rect" id="node8" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkCommunicator.html" title="vtkCommunicator" alt="" coords="564,281,703,308"/>
+<area shape="rect" id="node11" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkShaderProgram2.html" title="vtkShaderProgram2" alt="" coords="558,113,709,140"/>
+<area shape="rect" id="node14" href="$classvtkImageCompressor.html" title="Superclass for image compressor/decompressor used by Composite Managers. " alt="" coords="552,435,715,461"/>
+<area shape="rect" id="node4" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkObjectBase.html" title="vtkObjectBase" alt="" coords="7,291,124,317"/>
+<area shape="rect" id="node5" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkTimeStamp.html" title="vtkTimeStamp" alt="" coords="6,113,125,140"/>
+<area shape="rect" id="node10" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkRenderer.html" title="vtkRenderer" alt="" coords="932,5,1033,32"/>
+<area shape="rect" id="node12" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkShadowMapPass.html" title="vtkShadowMapPass" alt="" coords="907,56,1058,83"/>
+<area shape="rect" id="node13" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkDepthPeelingPass.html" title="vtkDepthPeelingPass" alt="" coords="903,169,1062,196"/>
+<area shape="rect" id="node9" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkOpenGLRenderer.html" title="vtkOpenGLRenderer" alt="" coords="1248,87,1400,113"/>
+<area shape="rect" id="node15" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkUnsignedCharArray.html" title="vtkUnsignedCharArray" alt="" coords="225,465,394,492"/>
+</map>

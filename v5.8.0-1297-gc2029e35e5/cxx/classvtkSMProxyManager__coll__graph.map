@@ -1,0 +1,17 @@
+<map id="vtkSMProxyManager" name="vtkSMProxyManager">
+<area shape="rect" id="node2" href="$classvtkSMObject.html" title="superclass for most server manager classes " alt="" coords="733,125,837,152"/>
+<area shape="rect" id="node6" href="$classvtkSMWriterFactory.html" title="is a factory or creating a writer based on the data type information from the output port..." alt="" coords="1055,179,1203,205"/>
+<area shape="rect" id="node7" href="$classvtkSMReaderFactory.html" title="is a factory for creating a reader proxy based on the filename/extension. " alt="" coords="1052,16,1207,43"/>
+<area shape="rect" id="node9" href="$classvtkSMPluginManager.html" title="manages ParaView plugins. " alt="" coords="1050,77,1209,104"/>
+<area shape="rect" id="node12" href="$classvtkSMUndoStackBuilder.html" title="builds server manager undo sets and pushes them on the undo stack. " alt="" coords="1040,229,1219,256"/>
+<area shape="rect" id="node3" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkObject.html" title="vtkObject" alt="" coords="224,140,309,167"/>
+<area shape="rect" id="node8" href="$classvtkStringList.html" title="Manages allocation and freeing for a string list. " alt="" coords="543,12,647,39"/>
+<area shape="rect" id="node11" href="$classvtkPVInformation.html" title="Superclass for information objects. " alt="" coords="360,69,496,96"/>
+<area shape="rect" id="node13" href="$classvtkUndoSet.html" title="Maintains a collection of vtkUndoElement that can be undone/redone in a single step. " alt="" coords="736,224,835,251"/>
+<area shape="rect" id="node14" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkCollection.html" title="vtkCollection" alt="" coords="374,173,482,200"/>
+<area shape="rect" id="node16" href="$classvtkUndoStack.html" title="undo/redo stack. " alt="" coords="371,275,485,301"/>
+<area shape="rect" id="node4" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkObjectBase.html" title="vtkObjectBase" alt="" coords="7,115,124,141"/>
+<area shape="rect" id="node5" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkTimeStamp.html" title="vtkTimeStamp" alt="" coords="6,165,125,192"/>
+<area shape="rect" id="node10" href="$classvtkPVPluginsInformation.html" title="information about plugins tracked by vtkPVPluginTracker. " alt="" coords="694,52,877,79"/>
+<area shape="rect" id="node15" href="$classvtkSMUndoStack.html" title="This is the undo/redo stack for the Server Manager. " alt="" coords="719,275,851,301"/>
+</map>

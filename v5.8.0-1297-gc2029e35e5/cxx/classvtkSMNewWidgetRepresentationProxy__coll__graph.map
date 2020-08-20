@@ -1,0 +1,27 @@
+<map id="vtkSMNewWidgetRepresentationProxy" name="vtkSMNewWidgetRepresentationProxy">
+<area shape="rect" id="node2" href="$classvtkSMProxy.html" title="proxy for a VTK object(s) on a server " alt="" coords="1817,171,1916,197"/>
+<area shape="rect" id="node3" href="$classvtkSMRemoteObject.html" title="baseclass for all proxy&#45;objects that have counter parts on server as well as client processes..." alt="" coords="1441,120,1596,147"/>
+<area shape="rect" id="node4" href="$classvtkSMSessionObject.html" title="superclass for any server manager classes that are related to a session " alt="" coords="993,133,1148,160"/>
+<area shape="rect" id="node5" href="$classvtkSMObject.html" title="superclass for most server manager classes " alt="" coords="577,173,681,200"/>
+<area shape="rect" id="node9" href="$classvtkSMDocumentation.html" title="class providing access to the documentation for a vtkSMProxy. " alt="" coords="989,221,1152,248"/>
+<area shape="rect" id="node6" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkObject.html" title="vtkObject" alt="" coords="260,515,345,541"/>
+<area shape="rect" id="node10" href="$classvtkPVXMLElement.html" title="This is used by vtkPVXMLParser to represent an XML document starting at the root element. " alt="" coords="559,263,700,289"/>
+<area shape="rect" id="node16" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkInteractorObserver.html" title="vtkInteractorObserver" alt="" coords="1436,585,1601,612"/>
+<area shape="rect" id="node17" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkObserverMediator.html" title="vtkObserverMediator" alt="" coords="1787,675,1946,701"/>
+<area shape="rect" id="node18" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkRenderWindowInteractor.html" title="vtkRenderWindowInteractor" alt="" coords="2147,635,2349,661"/>
+<area shape="rect" id="node21" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkProp.html" title="vtkProp" alt="" coords="593,465,665,492"/>
+<area shape="rect" id="node24" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkWidgetEventTranslator.html" title="vtkWidgetEventTranslator" alt="" coords="975,471,1166,497"/>
+<area shape="rect" id="node25" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkEvent.html" title="vtkEvent" alt="" coords="589,516,669,543"/>
+<area shape="rect" id="node26" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkWidgetCallbackMapper.html" title="vtkWidgetCallbackMapper" alt="" coords="1422,413,1615,440"/>
+<area shape="rect" id="node7" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkTimeStamp.html" title="vtkTimeStamp" alt="" coords="6,515,125,541"/>
+<area shape="rect" id="node20" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkRenderer.html" title="vtkRenderer" alt="" coords="1020,521,1121,548"/>
+<area shape="rect" id="node22" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkWidgetRepresentation.html" title="vtkWidgetRepresentation" alt="" coords="977,352,1164,379"/>
+<area shape="rect" id="node8" href="$classvtkSMMessage.html" title="Header class that setup every thing in order to use Protobuf messages in a transparent manner..." alt="" coords="1459,7,1578,33"/>
+<area shape="rect" id="node11" href="$structvtkSMProxyInternals.html" title="vtkSMProxyInternals" alt="" coords="1441,171,1597,197"/>
+<area shape="rect" id="node12" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkWeakPointer.html" title="vtkWeakPointer\&lt; vtkSMProxy \&gt;" alt="" coords="955,68,1187,95"/>
+<area shape="rect" id="node13" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkWeakPointerBase.html" title="vtkWeakPointerBase" alt="" coords="224,119,381,145"/>
+<area shape="rect" id="node14" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkWeakPointer.html" title="vtkWeakPointer\&lt; T \&gt;" alt="" coords="548,119,711,145"/>
+<area shape="rect" id="node23" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkWeakPointer.html" title="vtkWeakPointer\&lt; vtkRenderer \&gt;" alt="" coords="512,313,747,340"/>
+<area shape="rect" id="node15" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkAbstractWidget.html" title="vtkAbstractWidget" alt="" coords="1795,413,1938,440"/>
+<area shape="rect" id="node19" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkCallbackCommand.html" title="vtkCallbackCommand" alt="" coords="987,573,1154,600"/>
+</map>

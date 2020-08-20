@@ -1,0 +1,25 @@
+<map id="vtkGeometrySliceRepresentation" name="vtkGeometrySliceRepresentation">
+<area shape="rect" id="node2" href="$classvtkGeometryRepresentation.html" title="representation for showing any datasets as external shell of polygons. " alt="" coords="1673,439,1879,465"/>
+<area shape="rect" id="node3" href="$classvtkPVDataRepresentation.html" title="vtkPVDataRepresentation adds some ParaView specific API to data representations. " alt="" coords="1312,5,1501,32"/>
+<area shape="rect" id="node4" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkDataRepresentation.html" title="vtkDataRepresentation" alt="" coords="862,5,1034,32"/>
+<area shape="rect" id="node5" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkProperty.html" title="vtkProperty" alt="" coords="472,755,571,781"/>
+<area shape="rect" id="node21" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkActor.html" title="vtkActor" alt="" coords="909,875,987,901"/>
+<area shape="rect" id="node6" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkObject.html" title="vtkObject" alt="" coords="224,511,309,537"/>
+<area shape="rect" id="node13" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkAlgorithm.html" title="vtkAlgorithm" alt="" coords="468,653,575,680"/>
+<area shape="rect" id="node15" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkMultiProcessController.html" title="vtkMultiProcessController" alt="" coords="611,511,800,537"/>
+<area shape="rect" id="node24" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkDataObject.html" title="vtkDataObject" alt="" coords="463,159,579,185"/>
+<area shape="rect" id="node7" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkTimeStamp.html" title="vtkTimeStamp" alt="" coords="6,465,125,492"/>
+<area shape="rect" id="node11" href="$classvtkPVGeometryFilter.html" title="Geometry filter that does outlines for volumes. " alt="" coords="1328,439,1485,465"/>
+<area shape="rect" id="node22" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkMapper.html" title="vtkMapper" alt="" coords="476,840,567,867"/>
+<area shape="rect" id="node8" href="$classvtkGeometryRepresentation__detail_1_1DecimationFilterType.html" title="vtkGeometryRepresentation\l_detail::DecimationFilterType" alt="" coords="1301,250,1512,291"/>
+<area shape="rect" id="node9" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkQuadricClustering.html" title="vtkQuadricClustering" alt="" coords="869,157,1027,184"/>
+<area shape="rect" id="node10" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkFeatureEdges.html" title="vtkFeatureEdges" alt="" coords="456,209,587,236"/>
+<area shape="rect" id="node12" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkDataObjectAlgorithm.html" title="vtkDataObjectAlgorithm" alt="" coords="858,653,1038,680"/>
+<area shape="rect" id="node14" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkUnstructuredGridGeometryFilter.html" title="vtkUnstructuredGridGeometry\lFilter" alt="" coords="839,271,1057,313"/>
+<area shape="rect" id="node16" href="$classvtkPVRecoverGeometryWireframe.html" title="Get corrected wireframe from tessellated facets. " alt="" coords="825,337,1071,364"/>
+<area shape="rect" id="node17" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkGenericGeometryFilter.html" title="vtkGenericGeometryFilter" alt="" coords="853,388,1043,415"/>
+<area shape="rect" id="node18" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkDataSetSurfaceFilter.html" title="vtkDataSetSurfaceFilter" alt="" coords="860,552,1036,579"/>
+<area shape="rect" id="node19" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkOutlineSource.html" title="vtkOutlineSource" alt="" coords="881,603,1015,629"/>
+<area shape="rect" id="node20" href="$classvtkPVLODActor.html" title="an actor that supports multiple levels of detail " alt="" coords="1346,828,1467,855"/>
+<area shape="rect" id="node23" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkPiecewiseFunction.html" title="vtkPiecewiseFunction" alt="" coords="1105,120,1268,147"/>
+</map>
