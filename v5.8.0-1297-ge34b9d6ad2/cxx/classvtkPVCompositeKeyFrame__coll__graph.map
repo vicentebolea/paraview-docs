@@ -1,0 +1,10 @@
+<map id="vtkPVCompositeKeyFrame" name="vtkPVCompositeKeyFrame">
+<area shape="rect" id="node2" href="$classvtkPVKeyFrame.html" title="Base class for key frames. " alt="" coords="361,95,485,122"/>
+<area shape="rect" id="node6" href="$classvtkPVBooleanKeyFrame.html" title="Empty key frame. " alt="" coords="549,45,726,71"/>
+<area shape="rect" id="node7" href="$classvtkPVRampKeyFrame.html" title="Interplates lineraly between consecutive key frames. " alt="" coords="556,95,719,122"/>
+<area shape="rect" id="node8" href="$classvtkPVExponentialKeyFrame.html" title="Interplates lineraly between consecutive key frames. " alt="" coords="537,146,738,173"/>
+<area shape="rect" id="node9" href="$classvtkPVSinusoidKeyFrame.html" title="Interplates a sinusoid. " alt="" coords="548,197,727,223"/>
+<area shape="rect" id="node3" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkObject.html" title="vtkObject" alt="" coords="224,95,309,122"/>
+<area shape="rect" id="node4" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkObjectBase.html" title="vtkObjectBase" alt="" coords="7,70,124,97"/>
+<area shape="rect" id="node5" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkTimeStamp.html" title="vtkTimeStamp" alt="" coords="6,121,125,147"/>
+</map>

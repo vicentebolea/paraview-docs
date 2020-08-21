@@ -1,0 +1,5 @@
+<map id="vtkSICollaborationManager" name="vtkSICollaborationManager">
+<area shape="rect" id="node2" href="$classvtkSIObject.html" title="Object that is managed by vtkPVSessionCore which wrap concrete class such as the vtk ones..." alt="" coords="55,155,152,181"/>
+<area shape="rect" id="node3" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkObject.html" title="vtkObject" alt="" coords="61,80,147,107"/>
+<area shape="rect" id="node4" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkObjectBase.html" title="vtkObjectBase" alt="" coords="45,5,163,32"/>
+</map>

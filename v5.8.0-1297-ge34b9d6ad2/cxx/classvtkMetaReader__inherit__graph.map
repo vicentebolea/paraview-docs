@@ -1,0 +1,11 @@
+<map id="vtkMetaReader" name="vtkMetaReader">
+<area shape="rect" id="node5" href="$classvtkFileSeriesReader.html" title="meta&#45;reader to read file series " alt="" coords="691,81,842,108"/>
+<area shape="rect" id="node2" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkDataObjectAlgorithm.html" title="vtkDataObjectAlgorithm" alt="" coords="294,81,474,108"/>
+<area shape="rect" id="node3" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkAlgorithm.html" title="vtkAlgorithm" alt="" coords="139,81,245,108"/>
+<area shape="rect" id="node4" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkObject.html" title="vtkObject" alt="" coords="5,81,91,108"/>
+<area shape="rect" id="node6" href="$classvtkAMRFileSeriesReader.html" title="vtkAMRFileSeriesReader" alt="" coords="901,5,1080,32"/>
+<area shape="rect" id="node7" href="$classvtkExodusFileSeriesReader.html" title="meta&#45;reader to read Exodus file series from simulation restarts " alt="" coords="892,56,1089,83"/>
+<area shape="rect" id="node8" href="$classvtkImageFileSeriesReader.html" title="adds support for optionally reading image stacks. " alt="" coords="895,107,1086,133"/>
+<area shape="rect" id="node10" href="$classvtkSpyPlotFileSeriesReader.html" title="vtkSpyPlotFileSeriesReader extends vtkFileSeriesReader to change the number of output ports on this r..." alt="" coords="891,157,1090,184"/>
+<area shape="rect" id="node9" href="$classvtkRawImageFileSeriesReader.html" title="adds support for optionally reading raw image stacks. " alt="" coords="1139,107,1357,133"/>
+</map>
