@@ -1,0 +1,12 @@
+<map id="vtkPMultiResolutionGenericIOReader" name="vtkPMultiResolutionGenericIOReader">
+<area shape="rect" id="node2" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkMultiBlockDataSetAlgorithm.html" title="vtkMultiBlockDataSetAlgorithm" alt="" coords="245,363,472,389"/>
+<area shape="rect" id="node3" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkAlgorithm.html" title="vtkAlgorithm" alt="" coords="195,261,301,288"/>
+<area shape="rect" id="node6" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkExecutive.html" title="vtkExecutive" alt="" coords="5,363,112,389"/>
+<area shape="rect" id="node4" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkObject.html" title="vtkObject" alt="" coords="271,83,356,109"/>
+<area shape="rect" id="node7" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkProgressObserver.html" title="vtkProgressObserver" alt="" coords="331,160,489,187"/>
+<area shape="rect" id="node8" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkInformation.html" title="vtkInformation" alt="" coords="189,160,307,187"/>
+<area shape="rect" id="node9" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkDataArraySelection.html" title="vtkDataArraySelection" alt="" coords="466,211,635,237"/>
+<area shape="rect" id="node5" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkObjectBase.html" title="vtkObjectBase" alt="" coords="423,5,540,32"/>
+<area shape="rect" id="node11" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkCommand.html" title="vtkCommand" alt="" coords="534,83,644,109"/>
+<area shape="rect" id="node10" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkCallbackCommand.html" title="vtkCallbackCommand" alt="" coords="681,312,847,339"/>
+</map>

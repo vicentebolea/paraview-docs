@@ -1,0 +1,12 @@
+<map id="vtkPVClipClosedSurface" name="vtkPVClipClosedSurface">
+<area shape="rect" id="node2" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkClipClosedSurface.html" title="vtkClipClosedSurface" alt="" coords="167,275,328,301"/>
+<area shape="rect" id="node3" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkPolyDataAlgorithm.html" title="vtkPolyDataAlgorithm" alt="" coords="5,184,171,211"/>
+<area shape="rect" id="node4" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkAlgorithm.html" title="vtkAlgorithm" alt="" coords="67,83,173,109"/>
+<area shape="rect" id="node5" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkObject.html" title="vtkObject" alt="" coords="272,5,357,32"/>
+<area shape="rect" id="node6" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkIdList.html" title="vtkIdList" alt="" coords="181,133,259,160"/>
+<area shape="rect" id="node8" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkCollection.html" title="vtkCollection" alt="" coords="261,83,368,109"/>
+<area shape="rect" id="node10" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkImplicitFunction.html" title="vtkImplicitFunction" alt="" coords="452,184,599,211"/>
+<area shape="rect" id="node11" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkAbstractTransform.html" title="vtkAbstractTransform" alt="" coords="444,83,607,109"/>
+<area shape="rect" id="node7" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkPlaneCollection.html" title="vtkPlaneCollection" alt="" coords="284,184,428,211"/>
+<area shape="rect" id="node9" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkPlane.html" title="vtkPlane" alt="" coords="409,275,487,301"/>
+</map>

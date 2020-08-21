@@ -1,0 +1,17 @@
+<map id="vtkCGNSFileSeriesReader" name="vtkCGNSFileSeriesReader">
+<area shape="rect" id="node2" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkMultiBlockDataSetAlgorithm.html" title="vtkMultiBlockDataSetAlgorithm" alt="" coords="905,85,1132,112"/>
+<area shape="rect" id="node8" href="$classvtkCGNSReader.html" title="vtkCGNSReader creates a multi&#45;block dataset and reads unstructured grids, and structured meshes from ..." alt="" coords="1421,248,1547,275"/>
+<area shape="rect" id="node3" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkAlgorithm.html" title="vtkAlgorithm" alt="" coords="516,63,623,89"/>
+<area shape="rect" id="node5" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkExecutive.html" title="vtkExecutive" alt="" coords="965,136,1072,163"/>
+<area shape="rect" id="node4" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkObject.html" title="vtkObject" alt="" coords="5,157,91,184"/>
+<area shape="rect" id="node6" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkProgressObserver.html" title="vtkProgressObserver" alt="" coords="142,107,301,133"/>
+<area shape="rect" id="node7" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkInformation.html" title="vtkInformation" alt="" coords="162,5,281,32"/>
+<area shape="rect" id="node9" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkMultiProcessController.html" title="vtkMultiProcessController" alt="" coords="475,247,664,273"/>
+<area shape="rect" id="node10" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkOutputWindow.html" title="vtkOutputWindow" alt="" coords="152,309,291,336"/>
+<area shape="rect" id="node11" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkCommunicator.html" title="vtkCommunicator" alt="" coords="152,208,291,235"/>
+<area shape="rect" id="node12" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkNew.html" title="vtkNew\&lt; vtkDataArraySelection \&gt;" alt="" coords="894,339,1143,365"/>
+<area shape="rect" id="node13" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkNew.html" title="vtkNew\&lt; T \&gt;" alt="" coords="514,375,625,401"/>
+<area shape="rect" id="node16" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkNew.html" title="vtkNew\&lt; vtkFileSeriesHelper \&gt;" alt="" coords="1169,381,1397,408"/>
+<area shape="rect" id="node14" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkCallbackCommand.html" title="vtkCallbackCommand" alt="" coords="935,288,1102,315"/>
+<area shape="rect" id="node15" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkCommand.html" title="vtkCommand" alt="" coords="514,297,625,324"/>
+</map>

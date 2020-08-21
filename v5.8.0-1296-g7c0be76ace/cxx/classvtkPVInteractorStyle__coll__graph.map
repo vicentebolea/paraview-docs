@@ -1,0 +1,17 @@
+<map id="vtkPVInteractorStyle" name="vtkPVInteractorStyle">
+<area shape="rect" id="node2" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkInteractorStyleTrackballCamera.html" title="vtkInteractorStyleTrackball\lCamera" alt="" coords="1699,379,1896,421"/>
+<area shape="rect" id="node3" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkInteractorStyle.html" title="vtkInteractorStyle" alt="" coords="1371,240,1509,267"/>
+<area shape="rect" id="node4" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkInteractorObserver.html" title="vtkInteractorObserver" alt="" coords="1048,215,1213,241"/>
+<area shape="rect" id="node5" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkObject.html" title="vtkObject" alt="" coords="5,379,91,405"/>
+<area shape="rect" id="node7" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkProp.html" title="vtkProp" alt="" coords="300,379,372,405"/>
+<area shape="rect" id="node8" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkEventForwarderCommand.html" title="vtkEventForwarderCommand" alt="" coords="481,113,693,140"/>
+<area shape="rect" id="node12" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkTDxInteractorStyle.html" title="vtkTDxInteractorStyle" alt="" coords="1048,265,1213,292"/>
+<area shape="rect" id="node14" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkCollection.html" title="vtkCollection" alt="" coords="1238,492,1346,519"/>
+<area shape="rect" id="node15" href="$classvtkCameraManipulator.html" title="Abstraction of style away from button. " alt="" coords="717,544,888,571"/>
+<area shape="rect" id="node16" href="$classvtkCameraManipulatorGUIHelper.html" title="Helper class for Camera Manipulators. " alt="" coords="217,593,455,620"/>
+<area shape="rect" id="node6" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkRenderer.html" title="vtkRenderer" alt="" coords="752,312,853,339"/>
+<area shape="rect" id="node9" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkActor2D.html" title="vtkActor2D" alt="" coords="921,429,1015,456"/>
+<area shape="rect" id="node10" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkActor.html" title="vtkActor" alt="" coords="1092,12,1169,39"/>
+<area shape="rect" id="node11" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkPolyDataMapper.html" title="vtkPolyDataMapper" alt="" coords="1055,63,1206,89"/>
+<area shape="rect" id="node13" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkOutlineSource.html" title="vtkOutlineSource" alt="" coords="1063,164,1198,191"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Ui::AnimationTimeWidget" name="Ui::AnimationTimeWidget">
+<area shape="rect" id="node2" href="$classUi__AnimationTimeWidget.html" title="Ui_AnimationTimeWidget" alt="" coords="20,96,209,123"/>
+<area shape="rect" id="node3" href="$classpqSpinBox.html" title="QSpinBox which fires editingFinished() signal when the value is changed by steps (increments). " alt="" coords="5,5,96,32"/>
+<area shape="rect" id="node4" href="$classpqLineEdit.html" title="pqLineEdit is a specialization of QLineEdit which provide a new property &#39;text2&#39;. ..." alt="" coords="135,5,225,32"/>
+</map>
