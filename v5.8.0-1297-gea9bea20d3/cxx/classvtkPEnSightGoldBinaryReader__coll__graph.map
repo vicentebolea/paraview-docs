@@ -1,0 +1,9 @@
+<map id="vtkPEnSightGoldBinaryReader" name="vtkPEnSightGoldBinaryReader">
+<area shape="rect" id="node2" href="$classvtkPEnSightReader.html" title="Superclass for EnSight file parallel readers. " alt="" coords="175,440,320,467"/>
+<area shape="rect" id="node3" href="$classvtkPGenericEnSightReader.html" title="class to read any type of EnSight files " alt="" coords="5,252,200,279"/>
+<area shape="rect" id="node4" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkGenericEnSightReader.html" title="vtkGenericEnSightReader" alt="" coords="9,83,196,109"/>
+<area shape="rect" id="node5" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkIdList.html" title="vtkIdList" alt="" coords="238,133,316,160"/>
+<area shape="rect" id="node6" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkObject.html" title="vtkObject" alt="" coords="339,5,424,32"/>
+<area shape="rect" id="node8" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkCollection.html" title="vtkCollection" alt="" coords="402,83,509,109"/>
+<area shape="rect" id="node7" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkIdListCollection.html" title="vtkIdListCollection" alt="" coords="482,252,624,279"/>
+</map>
