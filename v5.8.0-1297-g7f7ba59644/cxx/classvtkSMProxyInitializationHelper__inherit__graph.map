@@ -1,0 +1,11 @@
+<map id="vtkSMProxyInitializationHelper" name="vtkSMProxyInitializationHelper">
+<area shape="rect" id="node5" href="$classvtkSMCSVProxiesInitializationHelper.html" title="initialization helper for (writers, PCSVReader) proxy. " alt="" coords="698,5,915,46"/>
+<area shape="rect" id="node6" href="$classvtkSMExtractSelectionProxyInitializationHelper.html" title="Initialization helper for the ExtractSelection filter proxy. " alt="" coords="704,70,909,111"/>
+<area shape="rect" id="node7" href="$classvtkSMOMETIFFChannelCalculatorInitializationHelper.html" title="initialization helper for &quot;OMETIFFChannelCalculator&quot; filter. " alt="" coords="689,135,925,177"/>
+<area shape="rect" id="node8" href="$classvtkSMPLYWriterProxyInitializationHelper.html" title="initialization helper for (writers, PPLYWriter) proxy. " alt="" coords="687,201,927,242"/>
+<area shape="rect" id="node9" href="$classvtkSMSpreadSheetRepresentationInitializationHelper.html" title="initialization helper for SpreadSheetRepresentation proxy. " alt="" coords="685,266,928,307"/>
+<area shape="rect" id="node10" href="$classvtkSMXYChartRepresentationInitializationHelper.html" title="initialization helper for XYChartRepresentation proxy. " alt="" coords="701,331,912,373"/>
+<area shape="rect" id="node2" href="$classvtkSMObject.html" title="superclass for most server manager classes " alt="" coords="304,176,408,203"/>
+<area shape="rect" id="node3" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkObject.html" title="vtkObject" alt="" coords="171,176,256,203"/>
+<area shape="rect" id="node4" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkObjectBase.html" title="vtkObjectBase" alt="" coords="5,176,123,203"/>
+</map>

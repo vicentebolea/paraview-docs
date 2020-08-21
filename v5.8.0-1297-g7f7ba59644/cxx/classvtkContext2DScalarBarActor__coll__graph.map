@@ -1,0 +1,28 @@
+<map id="vtkContext2DScalarBarActor" name="vtkContext2DScalarBarActor">
+<area shape="rect" id="node2" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkScalarBarActor.html" title="vtkScalarBarActor" alt="" coords="2368,867,2507,893"/>
+<area shape="rect" id="node3" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkActor2D.html" title="vtkActor2D" alt="" coords="1331,284,1426,311"/>
+<area shape="rect" id="node18" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkTexturedActor2D.html" title="vtkTexturedActor2D" alt="" coords="1745,965,1895,992"/>
+<area shape="rect" id="node19" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkScalarBarActorInternal.html" title="vtkScalarBarActorInternal" alt="" coords="1725,519,1915,545"/>
+<area shape="rect" id="node4" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkProp.html" title="vtkProp" alt="" coords="636,519,708,545"/>
+<area shape="rect" id="node5" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkObject.html" title="vtkObject" alt="" coords="319,680,404,707"/>
+<area shape="rect" id="node7" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkCoordinate.html" title="vtkCoordinate" alt="" coords="929,575,1044,601"/>
+<area shape="rect" id="node8" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkViewport.html" title="vtkViewport" alt="" coords="621,575,723,601"/>
+<area shape="rect" id="node9" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkProperty2D.html" title="vtkProperty2D" alt="" coords="929,253,1045,280"/>
+<area shape="rect" id="node11" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkTextProperty.html" title="vtkTextProperty" alt="" coords="1757,1020,1883,1047"/>
+<area shape="rect" id="node13" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkScalarsToColors.html" title="vtkScalarsToColors" alt="" coords="914,863,1059,889"/>
+<area shape="rect" id="node20" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkPoints.html" title="vtkPoints" alt="" coords="795,1083,877,1109"/>
+<area shape="rect" id="node22" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkCellArray.html" title="vtkCellArray" alt="" coords="935,625,1038,652"/>
+<area shape="rect" id="node27" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkTextRenderer.html" title="vtkTextRenderer" alt="" coords="1103,985,1231,1012"/>
+<area shape="rect" id="node6" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkTimeStamp.html" title="vtkTimeStamp" alt="" coords="6,1221,125,1248"/>
+<area shape="rect" id="node12" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkPolyDataMapper2D.html" title="vtkPolyDataMapper2D" alt="" coords="1295,757,1463,784"/>
+<area shape="rect" id="node15" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkTexture.html" title="vtkTexture" alt="" coords="1333,1199,1424,1225"/>
+<area shape="rect" id="node26" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkImageData.html" title="vtkImageData" alt="" coords="435,1319,549,1345"/>
+<area shape="rect" id="node25" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkTextActor.html" title="vtkTextActor" alt="" coords="2120,1104,2224,1131"/>
+<area shape="rect" id="node10" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkMapper2D.html" title="vtkMapper2D" alt="" coords="932,676,1041,703"/>
+<area shape="rect" id="node14" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkUnsignedCharArray.html" title="vtkUnsignedCharArray" alt="" coords="902,812,1071,839"/>
+<area shape="rect" id="node16" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkImageAlgorithm.html" title="vtkImageAlgorithm" alt="" coords="913,1171,1061,1197"/>
+<area shape="rect" id="node17" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkTransform.html" title="vtkTransform" alt="" coords="933,1277,1041,1304"/>
+<area shape="rect" id="node21" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$structvtkScalarBarBox.html" title="vtkScalarBarBox" alt="" coords="1313,693,1444,720"/>
+<area shape="rect" id="node23" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkPolyData.html" title="vtkPolyData" alt="" coords="1327,375,1430,401"/>
+<area shape="rect" id="node24" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkSmartVector.html" title="vtkSmartVector\&lt; vtkTextActor \&gt;" alt="" coords="1261,560,1496,587"/>
+</map>

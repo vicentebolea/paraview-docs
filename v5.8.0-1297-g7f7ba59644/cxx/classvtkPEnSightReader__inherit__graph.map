@@ -1,0 +1,7 @@
+<map id="vtkPEnSightReader" name="vtkPEnSightReader">
+<area shape="rect" id="node5" href="$classvtkPEnSightGoldBinaryReader.html" title="Parallel vtkEnSightGoldBinaryReader. " alt="" coords="5,304,221,331"/>
+<area shape="rect" id="node6" href="$classvtkPEnSightGoldReader.html" title="Parallel version of vtkEnSightGoldReader. " alt="" coords="246,304,420,331"/>
+<area shape="rect" id="node2" href="$classvtkPGenericEnSightReader.html" title="class to read any type of EnSight files " alt="" coords="125,155,320,181"/>
+<area shape="rect" id="node3" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkGenericEnSightReader.html" title="vtkGenericEnSightReader" alt="" coords="129,80,316,107"/>
+<area shape="rect" id="node4" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkMultiBlockDataSetAlgorithm.html" title="vtkMultiBlockDataSetAlgorithm" alt="" coords="109,5,336,32"/>
+</map>

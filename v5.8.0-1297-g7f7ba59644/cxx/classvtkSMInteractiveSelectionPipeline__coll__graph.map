@@ -1,0 +1,14 @@
+<map id="vtkSMInteractiveSelectionPipeline" name="vtkSMInteractiveSelectionPipeline">
+<area shape="rect" id="node2" href="$classvtkSMPreselectionPipeline.html" title="Preselection enables the user to inspect cells/points without actually selecting them. " alt="" coords="1331,138,1525,165"/>
+<area shape="rect" id="node3" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkObject.html" title="vtkObject" alt="" coords="303,45,388,72"/>
+<area shape="rect" id="node4" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkObjectBase.html" title="vtkObjectBase" alt="" coords="7,222,124,249"/>
+<area shape="rect" id="node5" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkWeakPointerBase.html" title="vtkWeakPointerBase" alt="" coords="267,218,424,245"/>
+<area shape="rect" id="node13" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkCommand.html" title="vtkCommand" alt="" coords="290,320,401,346"/>
+<area shape="rect" id="node9" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkWeakPointer.html" title="vtkWeakPointer\&lt; vtkSMRender\lViewProxy \&gt;" alt="" coords="875,183,1101,224"/>
+<area shape="rect" id="node10" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkWeakPointer.html" title="vtkWeakPointer\&lt; T \&gt;" alt="" coords="475,218,637,245"/>
+<area shape="rect" id="node11" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkWeakPointer.html" title="vtkWeakPointer\&lt; vtkSMSource\lProxy \&gt;" alt="" coords="876,248,1100,290"/>
+<area shape="rect" id="node6" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkTimeStamp.html" title="vtkTimeStamp" alt="" coords="6,45,125,72"/>
+<area shape="rect" id="node7" href="$classvtkSMSourceProxy.html" title="proxy for a VTK source on a server " alt="" coords="917,69,1059,96"/>
+<area shape="rect" id="node8" href="$classvtkSMProxy.html" title="proxy for a VTK object(s) on a server " alt="" coords="507,86,605,113"/>
+<area shape="rect" id="node12" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkCallbackCommand.html" title="vtkCallbackCommand" alt="" coords="673,330,839,357"/>
+</map>
