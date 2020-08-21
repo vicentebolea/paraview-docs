@@ -1,0 +1,20 @@
+<map id="vtkSMTesting" name="vtkSMTesting">
+<area shape="rect" id="node2" href="$classvtkSMObject.html" title="superclass for most server manager classes " alt="" coords="400,139,504,165"/>
+<area shape="rect" id="node10" href="$classvtkSMDocumentation.html" title="class providing access to the documentation for a vtkSMProxy. " alt="" coords="787,144,949,171"/>
+<area shape="rect" id="node3" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkObject.html" title="vtkObject" alt="" coords="224,409,309,436"/>
+<area shape="rect" id="node11" href="$classvtkPVXMLElement.html" title="This is used by vtkPVXMLParser to represent an XML document starting at the root element. " alt="" coords="381,228,523,255"/>
+<area shape="rect" id="node14" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkTesting.html" title="vtkTesting" alt="" coords="1195,388,1285,415"/>
+<area shape="rect" id="node16" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkWindow.html" title="vtkWindow" alt="" coords="405,439,499,465"/>
+<area shape="rect" id="node18" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkRenderWindowInteractor.html" title="vtkRenderWindowInteractor" alt="" coords="1139,535,1341,561"/>
+<area shape="rect" id="node19" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkPainterDeviceAdapter.html" title="vtkPainterDeviceAdapter" alt="" coords="360,540,544,567"/>
+<area shape="rect" id="node4" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkObjectBase.html" title="vtkObjectBase" alt="" coords="7,384,124,411"/>
+<area shape="rect" id="node5" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkTimeStamp.html" title="vtkTimeStamp" alt="" coords="6,435,125,461"/>
+<area shape="rect" id="node6" href="$classvtkSMViewProxy.html" title="Superclass for all view proxies. " alt="" coords="1392,193,1523,220"/>
+<area shape="rect" id="node7" href="$classvtkSMProxy.html" title="proxy for a VTK object(s) on a server " alt="" coords="1191,193,1289,220"/>
+<area shape="rect" id="node8" href="$classvtkSMRemoteObject.html" title="baseclass for all proxy&#45;objects that have counter parts on server as well as client processes..." alt="" coords="791,43,945,69"/>
+<area shape="rect" id="node9" href="$classvtkSMMessage.html" title="Header class that setup every thing in order to use Protobuf messages in a transparent manner..." alt="" coords="809,93,927,120"/>
+<area shape="rect" id="node12" href="$structvtkSMProxyInternals.html" title="vtkSMProxyInternals" alt="" coords="790,287,946,313"/>
+<area shape="rect" id="node13" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkWeakPointer.html" title="vtkWeakPointer\&lt; vtkSMProxy \&gt;" alt="" coords="752,337,984,364"/>
+<area shape="rect" id="node15" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkRenderWindow.html" title="vtkRenderWindow" alt="" coords="798,489,938,516"/>
+<area shape="rect" id="node17" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkRendererCollection.html" title="vtkRendererCollection" alt="" coords="369,489,535,516"/>
+</map>

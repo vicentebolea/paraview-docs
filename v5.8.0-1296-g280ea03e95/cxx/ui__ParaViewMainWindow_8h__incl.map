@@ -1,0 +1,29 @@
+<map id="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/build/Clients/ParaView/paraview_autogen/include/ui_ParaViewMainWindow.h" name="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/build/Clients/ParaView/paraview_autogen/include/ui_ParaViewMainWindow.h">
+<area shape="rect" id="node17" href="$pqCollaborationPanel_8h.html" title="pqCollaborationPanel.h" alt="" coords="2909,125,3080,152"/>
+<area shape="rect" id="node24" href="$pqColorMapEditor_8h.html" title="pqColorMapEditor.h" alt="" coords="3371,125,3519,152"/>
+<area shape="rect" id="node26" href="$pqComparativeVisPanel_8h.html" title="pqComparativeVisPanel.h" alt="" coords="3017,208,3207,235"/>
+<area shape="rect" id="node27" href="$pqDataInformationWidget_8h.html" title="pqDataInformationWidget.h" alt="" coords="4532,208,4735,235"/>
+<area shape="rect" id="node28" href="$pqFindDataSelectionDisplayFrame_8h.html" title="pqFindDataSelectionDisplay\lFrame.h" alt="" coords="3231,201,3435,242"/>
+<area shape="rect" id="node29" href="$pqLightsInspector_8h.html" title="pqLightsInspector.h" alt="" coords="4759,208,4907,235"/>
+<area shape="rect" id="node30" href="$pqMemoryInspectorPanel_8h.html" title="pqMemoryInspectorPanel.h" alt="" coords="2283,208,2481,235"/>
+<area shape="rect" id="node36" href="$pqMultiBlockInspectorWidget_8h.html" title="pqMultiBlockInspectorWidget.h" alt="" coords="3544,125,3768,152"/>
+<area shape="rect" id="node39" href="$pqOutputWidget_8h.html" title="pqOutputWidget.h" alt="" coords="3105,125,3244,152"/>
+<area shape="rect" id="node41" href="$pqPVAnimationWidget_8h.html" title="pqPVAnimationWidget.h" alt="" coords="4005,125,4184,152"/>
+<area shape="rect" id="node43" href="$pqPipelineBrowserWidget_8h.html" title="pqPipelineBrowserWidget.h" alt="" coords="5339,208,5540,235"/>
+<area shape="rect" id="node50" href="$pqPropertiesPanel_8h.html" title="pqPropertiesPanel.h" alt="" coords="4931,208,5081,235"/>
+<area shape="rect" id="node52" href="$pqProxyInformationWidget_8h.html" title="pqProxyInformationWidget.h" alt="" coords="5106,208,5315,235"/>
+<area shape="rect" id="node53" href="$pqStatusBar_8h.html" title="pqStatusBar.h" alt="" coords="4208,125,4320,152"/>
+<area shape="rect" id="node55" href="$pqTabbedMultiViewWidget_8h.html" title="pqTabbedMultiViewWidget.h" alt="" coords="5565,208,5771,235"/>
+<area shape="rect" id="node59" href="$pqTimeInspectorWidget_8h.html" title="pqTimeInspectorWidget.h" alt="" coords="3792,125,3981,152"/>
+<area shape="rect" id="node18" href="$pqComponentsModule_8h.html" title="pqComponentsModule.h" alt="" coords="4373,299,4552,325"/>
+<area shape="rect" id="node19" href="$vtkSMMessageMinimal_8h.html" title="vtkSMMessageMinimal.h" alt="" coords="2506,208,2688,235"/>
+<area shape="rect" id="node20" href="$vtkRemotingServerManagerModule_8h.html" title="vtkRemotingServerManager\lModule.h" alt="" coords="2564,291,2767,333"/>
+<area shape="rect" id="node21" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkSystemIncludes_8h.html" title="vtkSystemIncludes.h" alt="" coords="3066,299,3224,325"/>
+<area shape="rect" id="node22" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkType_8h.html" title="vtkType.h" alt="" coords="4081,381,4167,408"/>
+<area shape="rect" id="node25" href="$pqApplicationComponentsModule_8h.html" title="pqApplicationComponentsModule.h" alt="" coords="3917,208,4168,235"/>
+<area shape="rect" id="node40" href="$pqCoreModule_8h.html" title="pqCoreModule.h" alt="" coords="2815,208,2941,235"/>
+<area shape="rect" id="node42" href="$pqAnimationViewWidget_8h.html" title="pqAnimationViewWidget.h" alt="" coords="4193,208,4388,235"/>
+<area shape="rect" id="node44" href="$pqFlatTreeView_8h.html" title="pqFlatTreeView.h" alt="" coords="5374,299,5505,325"/>
+<area shape="rect" id="node45" href="$pqWidgetsModule_8h.html" title="pqWidgetsModule.h" alt="" coords="5277,381,5427,408"/>
+<area shape="rect" id="node51" href="$vtkLegacy_8h.html" title="vtkLegacy.h" alt="" coords="4957,299,5056,325"/>
+</map>

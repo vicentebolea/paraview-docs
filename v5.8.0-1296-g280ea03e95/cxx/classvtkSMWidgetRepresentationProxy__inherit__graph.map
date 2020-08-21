@@ -1,0 +1,7 @@
+<map id="vtkSMWidgetRepresentationProxy" name="vtkSMWidgetRepresentationProxy">
+<area shape="rect" id="node5" href="$classvtkSMBoxRepresentationProxy.html" title="proxy for vtkBoxRepresentation " alt="" coords="5,328,227,355"/>
+<area shape="rect" id="node6" href="$classvtkSMImplicitPlaneRepresentationProxy.html" title="proxy for a implicit plane representation " alt="" coords="252,321,497,362"/>
+<area shape="rect" id="node2" href="$classvtkSMProxy.html" title="proxy for a VTK object(s) on a server " alt="" coords="196,155,295,181"/>
+<area shape="rect" id="node3" href="$classvtkSMRemoteObject.html" title="baseclass for all proxy&#45;objects that have counter parts on server as well as client processes..." alt="" coords="168,80,323,107"/>
+<area shape="rect" id="node4" href="$classvtkSMSessionObject.html" title="superclass for any server manager classes that are related to a session " alt="" coords="168,5,323,32"/>
+</map>

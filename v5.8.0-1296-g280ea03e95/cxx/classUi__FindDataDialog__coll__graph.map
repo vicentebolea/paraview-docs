@@ -1,0 +1,5 @@
+<map id="Ui_FindDataDialog" name="Ui_FindDataDialog">
+<area shape="rect" id="node2" href="$classpqFindDataCurrentSelectionFrame.html" title="pqFindDataCurrentSelectionFrame is designed to be used by pqFindDataDialog. " alt="" coords="7,5,209,46"/>
+<area shape="rect" id="node3" href="$classpqFindDataCreateSelectionFrame.html" title="pqFindDataCreateSelectionFrame is designed to be used by pqFindDataDialog. " alt="" coords="9,70,207,111"/>
+<area shape="rect" id="node4" href="$classpqFindDataSelectionDisplayFrame.html" title="pqFindDataSelectionDisplayFrame is designed to be used by pqFindDataDialog. " alt="" coords="6,135,210,177"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="Ui::FindDataCreateSelectionFrame" name="Ui::FindDataCreateSelectionFrame">
+<area shape="rect" id="node2" href="$classUi__FindDataCreateSelectionFrame.html" title="Ui_FindDataCreateSelection\lFrame" alt="" coords="135,187,337,229"/>
+<area shape="rect" id="node3" href="$classpqMultiQueryClauseWidget.html" title="pqMultiQueryClauseWidget is used by pqQueryDialog as the widget allowing the user choose the clauses ..." alt="" coords="5,96,203,123"/>
+<area shape="rect" id="node4" href="$classpqOutputPort.html" title="pqOutputPort is a server manager model item for an output port of any pqPipelineSource item..." alt="" coords="50,5,157,32"/>
+<area shape="rect" id="node5" href="$classpqOutputPortComboBox.html" title="pqOutputPortComboBox is a combo&#45;box that shows all outputports for all sources/filters. " alt="" coords="228,96,407,123"/>
+</map>
