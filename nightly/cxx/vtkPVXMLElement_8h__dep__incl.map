@@ -1,6 +1,5 @@
-<map id="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/VTKExtensions/Core/vtkPVXMLElement.h" name="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/VTKExtensions/Core/vtkPVXMLElement.h">
-<area shape="rect" id="node1" title=" " alt="" coords="233,5,464,105"/>
-<area shape="rect" id="node2" href="$pqServerConfiguration_8h.html" title=" " alt="" coords="5,161,348,246"/>
-<area shape="rect" id="node4" href="$vtkSMVectorPropertyTemplate_8h.html" title=" " alt="" coords="372,153,669,253"/>
-<area shape="rect" id="node3" href="$pqServerConfigurationImporter_8h.html" title=" " alt="" coords="57,301,296,401"/>
+<map id="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/VTKExtensions/Core/vtkPVXMLElement.h" name="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/VTKExtensions/Core/vtkPVXMLElement.h">
+<area shape="rect" id="node2" href="$pqServerConfiguration_8h.html" title="/builds/gitlab&#45;kitware\l&#45;sciviz&#45;ci/Qt/Core/pqServerConfiguration.h" alt="" coords="5,117,299,158"/>
+<area shape="rect" id="node4" href="$vtkSMVectorPropertyTemplate_8h.html" title="/builds/gitlab&#45;kitware\l&#45;sciviz&#45;ci/Remoting/ServerManager\l/vtkSMVectorPropertyTemplate.h" alt="" coords="324,109,572,165"/>
+<area shape="rect" id="node3" href="$pqServerConfigurationImporter_8h.html" title="/builds/gitlab&#45;kitware\l&#45;sciviz&#45;ci/Qt/Components\l/pqServerConfigurationImporter.h" alt="" coords="33,213,271,269"/>
 </map>

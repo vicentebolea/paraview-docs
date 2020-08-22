@@ -1,8 +1,7 @@
-<map id="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/Animation/vtkSIXMLAnimationWriterRepresentationProperty.h" name="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/Animation/vtkSIXMLAnimationWriterRepresentationProperty.h">
-<area shape="rect" id="node1" title=" " alt="" coords="51,5,406,105"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,153,236,180"/>
-<area shape="rect" id="node3" href="$vtkSIInputProperty_8h.html" title=" " alt="" coords="260,153,413,180"/>
-<area shape="rect" id="node4" title=" " alt="" coords="227,377,430,419"/>
-<area shape="rect" id="node5" href="$vtkSIProxyProperty_8h.html" title=" " alt="" coords="315,228,473,255"/>
-<area shape="rect" id="node6" href="$vtkSIProperty_8h.html" title=" " alt="" coords="366,303,486,329"/>
+<map id="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/Animation/vtkSIXMLAnimationWriterRepresentationProperty.h" name="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/Animation/vtkSIXMLAnimationWriterRepresentationProperty.h">
+<area shape="rect" id="node2" href="$vtkRemotingAnimationModule_8h.html" title="vtkRemotingAnimationModule.h" alt="" coords="5,125,235,152"/>
+<area shape="rect" id="node3" href="$vtkSIInputProperty_8h.html" title="vtkSIInputProperty.h" alt="" coords="259,125,412,152"/>
+<area shape="rect" id="node4" href="$vtkRemotingServerManagerModule_8h.html" title="vtkRemotingServerManager\lModule.h" alt="" coords="227,350,429,391"/>
+<area shape="rect" id="node5" href="$vtkSIProxyProperty_8h.html" title="vtkSIProxyProperty.h" alt="" coords="315,200,472,227"/>
+<area shape="rect" id="node6" href="$vtkSIProperty_8h.html" title="vtkSIProperty.h" alt="" coords="365,275,485,301"/>
 </map>

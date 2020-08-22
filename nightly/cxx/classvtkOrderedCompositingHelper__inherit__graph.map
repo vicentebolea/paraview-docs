@@ -1,5 +1,4 @@
 <map id="vtkOrderedCompositingHelper" name="vtkOrderedCompositingHelper">
-<area shape="rect" id="node1" title="helper to assist in determine process order when rendering" alt="" coords="5,155,225,181"/>
-<area shape="rect" id="node2" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkObject.html" title=" " alt="" coords="73,80,158,107"/>
-<area shape="rect" id="node3" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkObjectBase.html" title=" " alt="" coords="57,5,174,32"/>
+<area shape="rect" id="node2" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkObject.html" title="vtkObject" alt="" coords="72,80,157,107"/>
+<area shape="rect" id="node3" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkObjectBase.html" title="vtkObjectBase" alt="" coords="56,5,173,32"/>
 </map>

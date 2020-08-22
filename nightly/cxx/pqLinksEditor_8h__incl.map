@@ -1,11 +1,5 @@
-<map id="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Qt/Components/pqLinksEditor.h" name="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Qt/Components/pqLinksEditor.h">
-<area shape="rect" id="node1" title=" " alt="" coords="264,5,499,105"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,153,80,180"/>
-<area shape="rect" id="node3" title=" " alt="" coords="104,153,235,180"/>
-<area shape="rect" id="node4" title=" " alt="" coords="259,153,365,180"/>
-<area shape="rect" id="node5" title=" " alt="" coords="389,153,515,180"/>
-<area shape="rect" id="node6" title=" " alt="" coords="539,153,717,180"/>
-<area shape="rect" id="node7" href="$pqLinksModel_8h.html" title=" " alt="" coords="741,153,864,180"/>
-<area shape="rect" id="node8" title=" " alt="" coords="657,228,783,255"/>
-<area shape="rect" id="node9" title=" " alt="" coords="808,228,963,255"/>
+<map id="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Qt/Components/pqLinksEditor.h" name="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Qt/Components/pqLinksEditor.h">
+<area shape="rect" id="node6" href="$pqComponentsModule_8h.html" title="pqComponentsModule.h" alt="" coords="539,109,717,136"/>
+<area shape="rect" id="node7" href="$pqLinksModel_8h.html" title="pqLinksModel.h" alt="" coords="741,109,864,136"/>
+<area shape="rect" id="node8" href="$pqCoreModule_8h.html" title="pqCoreModule.h" alt="" coords="657,184,783,211"/>
 </map>

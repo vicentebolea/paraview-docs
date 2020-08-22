@@ -1,13 +1,10 @@
-<map id="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/ServerManager/vtkSMStringVectorProperty.h" name="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/ServerManager/vtkSMStringVectorProperty.h">
-<area shape="rect" id="node1" title=" " alt="" coords="46,5,343,105"/>
-<area shape="rect" id="node2" title=" " alt="" coords="31,452,233,493"/>
-<area shape="rect" id="node3" href="$vtkSMVectorProperty_8h.html" title=" " alt="" coords="43,153,211,180"/>
-<area shape="rect" id="node10" title=" " alt="" coords="235,153,293,180"/>
-<area shape="rect" id="node11" title=" " alt="" coords="318,153,381,180"/>
-<area shape="rect" id="node4" href="$vtkSMProperty_8h.html" title=" " alt="" coords="291,228,418,255"/>
-<area shape="rect" id="node5" href="$vtkSMDomainIterator_8h.html" title=" " alt="" coords="145,303,317,329"/>
-<area shape="rect" id="node6" href="$vtkSMObject_8h.html" title=" " alt="" coords="195,377,311,404"/>
-<area shape="rect" id="node7" href="$vtkSMMessageMinimal_8h.html" title=" " alt="" coords="335,377,518,404"/>
-<area shape="rect" id="node8" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkSmartPointer_8h.html" title=" " alt="" coords="443,303,581,329"/>
-<area shape="rect" id="node9" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkWeakPointer_8h.html" title=" " alt="" coords="605,303,741,329"/>
+<map id="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/ServerManager/vtkSMStringVectorProperty.h" name="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/ServerManager/vtkSMStringVectorProperty.h">
+<area shape="rect" id="node2" href="$vtkRemotingServerManagerModule_8h.html" title="vtkRemotingServerManager\lModule.h" alt="" coords="31,409,234,450"/>
+<area shape="rect" id="node3" href="$vtkSMVectorProperty_8h.html" title="vtkSMVectorProperty.h" alt="" coords="43,109,211,136"/>
+<area shape="rect" id="node4" href="$vtkSMProperty_8h.html" title="vtkSMProperty.h" alt="" coords="292,184,418,211"/>
+<area shape="rect" id="node5" href="$vtkSMDomainIterator_8h.html" title="vtkSMDomainIterator.h" alt="" coords="145,259,316,285"/>
+<area shape="rect" id="node7" href="$vtkSMMessageMinimal_8h.html" title="vtkSMMessageMinimal.h" alt="" coords="336,333,518,360"/>
+<area shape="rect" id="node6" href="$vtkSMObject_8h.html" title="vtkSMObject.h" alt="" coords="196,333,311,360"/>
+<area shape="rect" id="node8" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkSmartPointer_8h.html" title="vtkSmartPointer.h" alt="" coords="443,259,582,285"/>
+<area shape="rect" id="node9" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkWeakPointer_8h.html" title="vtkWeakPointer.h" alt="" coords="606,259,742,285"/>
 </map>

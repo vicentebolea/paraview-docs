@@ -1,7 +1,6 @@
-<map id="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/VTKExtensions/FiltersStatistics/vtkPSciVizKMeans.h" name="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/VTKExtensions/FiltersStatistics/vtkPSciVizKMeans.h">
-<area shape="rect" id="node1" title=" " alt="" coords="31,5,291,105"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,228,201,269"/>
-<area shape="rect" id="node3" href="$vtkSciVizStatistics_8h.html" title=" " alt="" coords="141,153,295,180"/>
-<area shape="rect" id="node4" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkTableAlgorithm_8h.html" title=" " alt="" coords="225,235,379,262"/>
-<area shape="rect" id="node5" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkAlgorithm_8h.html" title=" " alt="" coords="243,317,361,344"/>
+<map id="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/VTKExtensions/FiltersStatistics/vtkPSciVizKMeans.h" name="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/VTKExtensions/FiltersStatistics/vtkPSciVizKMeans.h">
+<area shape="rect" id="node2" href="$vtkPVVTKExtensionsFiltersStatisticsModule_8h.html" title="vtkPVVTKExtensionsFilters\lStatisticsModule.h" alt="" coords="5,185,200,226"/>
+<area shape="rect" id="node3" href="$vtkSciVizStatistics_8h.html" title="vtkSciVizStatistics.h" alt="" coords="140,109,295,136"/>
+<area shape="rect" id="node4" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkTableAlgorithm_8h.html" title="vtkTableAlgorithm.h" alt="" coords="225,192,377,219"/>
+<area shape="rect" id="node5" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkAlgorithm_8h.html" title="vtkAlgorithm.h" alt="" coords="242,275,360,301"/>
 </map>

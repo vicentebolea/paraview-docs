@@ -1,6 +1,4 @@
-<map id="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Qt/Python/pqPythonDebugLeaksView.h" name="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Qt/Python/pqPythonDebugLeaksView.h">
-<area shape="rect" id="node1" title=" " alt="" coords="131,5,435,105"/>
-<area shape="rect" id="node2" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkQtDebugLeaksView_8h.html" title=" " alt="" coords="5,153,187,180"/>
-<area shape="rect" id="node3" title=" " alt="" coords="211,153,354,180"/>
-<area shape="rect" id="node4" title=" " alt="" coords="378,153,457,180"/>
+<map id="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Qt/Python/pqPythonDebugLeaksView.h" name="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Qt/Python/pqPythonDebugLeaksView.h">
+<area shape="rect" id="node2" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkQtDebugLeaksView_8h.html" title="vtkQtDebugLeaksView.h" alt="" coords="5,109,187,136"/>
+<area shape="rect" id="node3" href="$pqPythonModule_8h.html" title="pqPythonModule.h" alt="" coords="211,109,353,136"/>
 </map>

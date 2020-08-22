@@ -1,9 +1,6 @@
-<map id="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/VTKExtensions/AMR/vtkPVAMRDualContour.h" name="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/VTKExtensions/AMR/vtkPVAMRDualContour.h">
-<area shape="rect" id="node1" title=" " alt="" coords="146,5,377,105"/>
-<area shape="rect" id="node2" href="$vtkAMRDualContour_8h.html" title=" " alt="" coords="313,153,477,180"/>
-<area shape="rect" id="node5" title=" " alt="" coords="5,228,251,255"/>
-<area shape="rect" id="node3" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkMultiBlockDataSetAlgorithm_8h.html" title=" " alt="" coords="275,228,514,255"/>
-<area shape="rect" id="node6" title=" " alt="" coords="539,228,597,255"/>
-<area shape="rect" id="node7" title=" " alt="" coords="622,228,685,255"/>
-<area shape="rect" id="node4" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkAlgorithm_8h.html" title=" " alt="" coords="335,303,454,329"/>
+<map id="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/VTKExtensions/AMR/vtkPVAMRDualContour.h" name="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/VTKExtensions/AMR/vtkPVAMRDualContour.h">
+<area shape="rect" id="node2" href="$vtkAMRDualContour_8h.html" title="vtkAMRDualContour.h" alt="" coords="313,109,476,136"/>
+<area shape="rect" id="node5" href="$vtkPVVTKExtensionsAMRModule_8h.html" title="vtkPVVTKExtensionsAMRModule.h" alt="" coords="5,184,251,211"/>
+<area shape="rect" id="node3" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkMultiBlockDataSetAlgorithm_8h.html" title="vtkMultiBlockDataSetAlgorithm.h" alt="" coords="275,184,513,211"/>
+<area shape="rect" id="node4" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkAlgorithm_8h.html" title="vtkAlgorithm.h" alt="" coords="335,259,453,285"/>
 </map>

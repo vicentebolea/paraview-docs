@@ -1,10 +1,6 @@
-<map id="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Qt/ApplicationComponents/pqPVApplicationCore.h" name="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Qt/ApplicationComponents/pqPVApplicationCore.h">
-<area shape="rect" id="node1" title=" " alt="" coords="361,5,667,105"/>
-<area shape="rect" id="node2" href="$pqApplicationCore_8h.html" title=" " alt="" coords="241,153,395,180"/>
-<area shape="rect" id="node6" title=" " alt="" coords="393,228,472,255"/>
-<area shape="rect" id="node7" title=" " alt="" coords="471,153,723,180"/>
-<area shape="rect" id="node8" title=" " alt="" coords="747,153,801,180"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,228,132,255"/>
-<area shape="rect" id="node4" title=" " alt="" coords="156,228,269,255"/>
-<area shape="rect" id="node5" title=" " alt="" coords="294,228,369,255"/>
+<map id="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Qt/ApplicationComponents/pqPVApplicationCore.h" name="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Qt/ApplicationComponents/pqPVApplicationCore.h">
+<area shape="rect" id="node2" href="$pqApplicationCore_8h.html" title="pqApplicationCore.h" alt="" coords="135,109,288,136"/>
+<area shape="rect" id="node7" href="$pqApplicationComponentsModule_8h.html" title="pqApplicationComponentsModule.h" alt="" coords="313,109,564,136"/>
+<area shape="rect" id="node3" href="$pqCoreModule_8h.html" title="pqCoreModule.h" alt="" coords="5,184,131,211"/>
+<area shape="rect" id="node4" href="$vtkPVConfig_8h.html" title="vtkPVConfig.h" alt="" coords="155,184,268,211"/>
 </map>

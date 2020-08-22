@@ -1,9 +1,4 @@
-<map id="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Qt/ApplicationComponents/pqPipelineContextMenuBehavior.h" name="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Qt/ApplicationComponents/pqPipelineContextMenuBehavior.h">
-<area shape="rect" id="node1" title=" " alt="" coords="310,5,617,105"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,153,257,180"/>
-<area shape="rect" id="node3" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkType_8h.html" title=" " alt="" coords="282,153,367,180"/>
-<area shape="rect" id="node4" title=" " alt="" coords="392,153,447,180"/>
-<area shape="rect" id="node5" title=" " alt="" coords="471,153,546,180"/>
-<area shape="rect" id="node6" title=" " alt="" coords="571,153,636,180"/>
-<area shape="rect" id="node7" title=" " alt="" coords="660,153,739,180"/>
+<map id="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Qt/ApplicationComponents/pqPipelineContextMenuBehavior.h" name="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Qt/ApplicationComponents/pqPipelineContextMenuBehavior.h">
+<area shape="rect" id="node2" href="$pqApplicationComponentsModule_8h.html" title="pqApplicationComponentsModule.h" alt="" coords="5,109,256,136"/>
+<area shape="rect" id="node3" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkType_8h.html" title="vtkType.h" alt="" coords="281,109,367,136"/>
 </map>

@@ -1,8 +1,7 @@
-<map id="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/Animation/vtkXMLPVAnimationWriter.h" name="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/Animation/vtkXMLPVAnimationWriter.h">
-<area shape="rect" id="node1" title=" " alt="" coords="94,5,361,105"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,153,236,180"/>
-<area shape="rect" id="node3" href="$vtkXMLPVDWriter_8h.html" title=" " alt="" coords="261,153,407,180"/>
-<area shape="rect" id="node4" title=" " alt="" coords="141,228,343,269"/>
-<area shape="rect" id="node5" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkXMLWriter_8h.html" title=" " alt="" coords="367,235,485,262"/>
-<area shape="rect" id="node6" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkAlgorithm_8h.html" title=" " alt="" coords="367,317,485,344"/>
+<map id="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/Animation/vtkXMLPVAnimationWriter.h" name="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/Animation/vtkXMLPVAnimationWriter.h">
+<area shape="rect" id="node2" href="$vtkRemotingAnimationModule_8h.html" title="vtkRemotingAnimationModule.h" alt="" coords="5,109,235,136"/>
+<area shape="rect" id="node3" href="$vtkXMLPVDWriter_8h.html" title="vtkXMLPVDWriter.h" alt="" coords="260,109,407,136"/>
+<area shape="rect" id="node4" href="$vtkPVVTKExtensionsIOCoreModule_8h.html" title="vtkPVVTKExtensionsIOCore\lModule.h" alt="" coords="141,185,341,226"/>
+<area shape="rect" id="node5" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkXMLWriter_8h.html" title="vtkXMLWriter.h" alt="" coords="366,192,484,219"/>
+<area shape="rect" id="node6" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkAlgorithm_8h.html" title="vtkAlgorithm.h" alt="" coords="366,275,484,301"/>
 </map>

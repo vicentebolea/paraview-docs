@@ -1,8 +1,5 @@
-<map id="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Qt/Core/pqOutputPort.h" name="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Qt/Core/pqOutputPort.h">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,289,91"/>
-<area shape="rect" id="node2" title=" " alt="" coords="21,288,148,315"/>
-<area shape="rect" id="node3" href="$pqProxy_8h.html" title=" " alt="" coords="178,139,263,165"/>
-<area shape="rect" id="node4" href="$pqServerManagerModelItem_8h.html" title=" " alt="" coords="112,213,329,240"/>
-<area shape="rect" id="node6" title=" " alt="" coords="353,213,432,240"/>
-<area shape="rect" id="node5" title=" " alt="" coords="183,288,258,315"/>
+<map id="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Qt/Core/pqOutputPort.h" name="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Qt/Core/pqOutputPort.h">
+<area shape="rect" id="node2" href="$pqCoreModule_8h.html" title="pqCoreModule.h" alt="" coords="5,245,131,272"/>
+<area shape="rect" id="node3" href="$pqProxy_8h.html" title="pqProxy.h" alt="" coords="161,96,247,123"/>
+<area shape="rect" id="node4" href="$pqServerManagerModelItem_8h.html" title="pqServerManagerModelItem.h" alt="" coords="95,171,312,197"/>
 </map>

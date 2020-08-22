@@ -1,15 +1,17 @@
-<map id="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/ViewsPython/vtkSMPythonViewProxy.h" name="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/ViewsPython/vtkSMPythonViewProxy.h">
-<area shape="rect" id="node1" title=" " alt="" coords="177,5,460,105"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,153,253,180"/>
-<area shape="rect" id="node3" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkNew_8h.html" title=" " alt="" coords="277,153,360,180"/>
-<area shape="rect" id="node5" href="$vtkSMViewProxy_8h.html" title=" " alt="" coords="475,153,616,180"/>
-<area shape="rect" id="node4" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkIOStream_8h.html" title=" " alt="" coords="305,385,421,411"/>
-<area shape="rect" id="node6" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkCommand_8h.html" title=" " alt="" coords="723,228,845,255"/>
-<area shape="rect" id="node9" title=" " alt="" coords="355,228,557,255"/>
-<area shape="rect" id="node10" href="$vtkSMProxy_8h.html" title=" " alt="" coords="581,228,691,255"/>
-<area shape="rect" id="node7" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkObjectBase_8h.html" title=" " alt="" coords="762,385,891,411"/>
-<area shape="rect" id="node8" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkObject_8h.html" title=" " alt="" coords="822,303,919,329"/>
-<area shape="rect" id="node11" href="$vtkClientServerID_8h.html" title=" " alt="" coords="355,303,504,329"/>
-<area shape="rect" id="node12" title=" " alt="" coords="465,377,668,419"/>
-<area shape="rect" id="node13" href="$vtkSMRemoteObject_8h.html" title=" " alt="" coords="579,303,746,329"/>
+<map id="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/ViewsPython/vtkSMPythonViewProxy.h" name="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/ViewsPython/vtkSMPythonViewProxy.h">
+<area shape="rect" id="node2" href="$vtkRemotingViewsPythonModule_8h.html" title="vtkRemotingViewsPythonModule.h" alt="" coords="5,109,253,136"/>
+<area shape="rect" id="node3" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkNew_8h.html" title="vtkNew.h" alt="" coords="277,109,360,136"/>
+<area shape="rect" id="node5" href="$vtkSMViewProxy_8h.html" title="vtkSMViewProxy.h" alt="" coords="575,109,716,136"/>
+<area shape="rect" id="node4" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkIOStream_8h.html" title="vtkIOStream.h" alt="" coords="221,341,336,368"/>
+<area shape="rect" id="node6" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkCommand_8h.html" title="vtkCommand.h" alt="" coords="1005,184,1128,211"/>
+<area shape="rect" id="node9" href="$vtkRemotingViewsModule_8h.html" title="vtkRemotingViewsModule.h" alt="" coords="639,184,841,211"/>
+<area shape="rect" id="node14" href="$vtkSMProxy_8h.html" title="vtkSMProxy.h" alt="" coords="448,184,557,211"/>
+<area shape="rect" id="node7" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkObjectBase_8h.html" title="vtkObjectBase.h" alt="" coords="1089,341,1217,368"/>
+<area shape="rect" id="node8" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkObject_8h.html" title="vtkObject.h" alt="" coords="1105,259,1201,285"/>
+<area shape="rect" id="node10" href="$vtkRemotingServerManagerModule_8h.html" title="vtkRemotingServerManager\lModule.h" alt="" coords="467,334,669,375"/>
+<area shape="rect" id="node11" href="$vtkChartsCoreModule_8h.html" title="vtkChartsCoreModule.h" alt="" coords="778,259,952,285"/>
+<area shape="rect" id="node12" href="$vtkRenderingContext2DModule_8h.html" title="vtkRenderingContext2DModule.h" alt="" coords="829,341,1064,368"/>
+<area shape="rect" id="node13" href="$vtkRenderingCoreModule_8h.html" title="vtkRenderingCoreModule.h" alt="" coords="692,424,889,451"/>
+<area shape="rect" id="node15" href="$vtkClientServerID_8h.html" title="vtkClientServerID.h" alt="" coords="260,259,409,285"/>
+<area shape="rect" id="node16" href="$vtkSMRemoteObject_8h.html" title="vtkSMRemoteObject.h" alt="" coords="485,259,651,285"/>
 </map>

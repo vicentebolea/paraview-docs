@@ -1,7 +1,6 @@
-<map id="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/Export/vtkPVX3DExporter.h" name="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/Export/vtkPVX3DExporter.h">
-<area shape="rect" id="node1" title=" " alt="" coords="85,5,327,105"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,153,212,180"/>
-<area shape="rect" id="node3" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkX3DExporter_8h.html" title=" " alt="" coords="237,153,373,180"/>
-<area shape="rect" id="node4" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkExporter_8h.html" title=" " alt="" coords="250,228,359,255"/>
-<area shape="rect" id="node5" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkObject_8h.html" title=" " alt="" coords="256,303,353,329"/>
+<map id="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/Export/vtkPVX3DExporter.h" name="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/Export/vtkPVX3DExporter.h">
+<area shape="rect" id="node2" href="$vtkRemotingExportModule_8h.html" title="vtkRemotingExportModule.h" alt="" coords="5,109,211,136"/>
+<area shape="rect" id="node3" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkX3DExporter_8h.html" title="vtkX3DExporter.h" alt="" coords="236,109,372,136"/>
+<area shape="rect" id="node4" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkExporter_8h.html" title="vtkExporter.h" alt="" coords="249,184,359,211"/>
+<area shape="rect" id="node5" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkObject_8h.html" title="vtkObject.h" alt="" coords="255,259,352,285"/>
 </map>

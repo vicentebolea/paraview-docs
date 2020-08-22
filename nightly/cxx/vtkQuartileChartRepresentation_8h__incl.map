@@ -1,10 +1,7 @@
-<map id="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/Views/vtkQuartileChartRepresentation.h" name="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/Views/vtkQuartileChartRepresentation.h">
-<area shape="rect" id="node1" title=" " alt="" coords="229,5,473,105"/>
-<area shape="rect" id="node2" href="$vtkXYChartRepresentation_8h.html" title=" " alt="" coords="249,153,453,180"/>
-<area shape="rect" id="node3" href="$vtkChartRepresentation_8h.html" title=" " alt="" coords="257,228,445,255"/>
-<area shape="rect" id="node4" href="$vtkPVDataRepresentation_8h.html" title=" " alt="" coords="5,303,207,329"/>
-<area shape="rect" id="node5" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkWeakPointer_8h.html" title=" " alt="" coords="107,377,243,404"/>
-<area shape="rect" id="node6" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkSmartPointer_8h.html" title=" " alt="" coords="282,303,421,329"/>
-<area shape="rect" id="node7" title=" " alt="" coords="445,303,495,329"/>
-<area shape="rect" id="node8" title=" " alt="" coords="519,303,562,329"/>
+<map id="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/Views/vtkQuartileChartRepresentation.h" name="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/Views/vtkQuartileChartRepresentation.h">
+<area shape="rect" id="node2" href="$vtkXYChartRepresentation_8h.html" title="vtkXYChartRepresentation.h" alt="" coords="305,109,508,136"/>
+<area shape="rect" id="node3" href="$vtkChartRepresentation_8h.html" title="vtkChartRepresentation.h" alt="" coords="313,184,500,211"/>
+<area shape="rect" id="node4" href="$vtkPVDataRepresentation_8h.html" title="vtkPVDataRepresentation.h" alt="" coords="5,259,205,285"/>
+<area shape="rect" id="node6" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkSmartPointer_8h.html" title="vtkSmartPointer.h" alt="" coords="231,259,369,285"/>
+<area shape="rect" id="node5" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkWeakPointer_8h.html" title="vtkWeakPointer.h" alt="" coords="188,333,324,360"/>
 </map>

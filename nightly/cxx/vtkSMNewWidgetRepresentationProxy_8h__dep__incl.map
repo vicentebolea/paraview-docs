@@ -1,5 +1,4 @@
-<map id="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/Views/vtkSMNewWidgetRepresentationProxy.h" name="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/Views/vtkSMNewWidgetRepresentationProxy.h">
-<area shape="rect" id="node1" title=" " alt="" coords="184,5,471,105"/>
-<area shape="rect" id="node2" href="$vtkSMScalarBarWidgetRepresentationProxy_8h.html" title=" " alt="" coords="5,153,324,253"/>
-<area shape="rect" id="node3" href="$vtkSMTextWidgetRepresentationProxy_8h.html" title=" " alt="" coords="348,153,632,253"/>
+<map id="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/Views/vtkSMNewWidgetRepresentationProxy.h" name="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/Views/vtkSMNewWidgetRepresentationProxy.h">
+<area shape="rect" id="node2" href="$vtkSMScalarBarWidgetRepresentationProxy_8h.html" title="/builds/gitlab&#45;kitware\l&#45;sciviz&#45;ci/Remoting/Views\l/vtkSMScalarBarWidgetRepresentation\lProxy.h" alt="" coords="5,110,277,181"/>
+<area shape="rect" id="node3" href="$vtkSMTextWidgetRepresentationProxy_8h.html" title="/builds/gitlab&#45;kitware\l&#45;sciviz&#45;ci/Remoting/Views\l/vtkSMTextWidgetRepresentationProxy.h" alt="" coords="302,117,585,173"/>
 </map>

@@ -1,8 +1,7 @@
-<map id="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/Live/vtkSteeringDataGenerator.h" name="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/Live/vtkSteeringDataGenerator.h">
-<area shape="rect" id="node1" title=" " alt="" coords="133,5,359,105"/>
-<area shape="rect" id="node2" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkDataObjectAlgorithm_8h.html" title=" " alt="" coords="42,153,234,180"/>
-<area shape="rect" id="node6" title=" " alt="" coords="259,153,449,180"/>
-<area shape="rect" id="node3" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkAlgorithm_8h.html" title=" " alt="" coords="5,228,124,255"/>
-<area shape="rect" id="node5" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkDataObject_8h.html" title=" " alt="" coords="149,228,277,255"/>
-<area shape="rect" id="node4" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkObject_8h.html" title=" " alt="" coords="89,303,187,329"/>
+<map id="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/Live/vtkSteeringDataGenerator.h" name="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/Live/vtkSteeringDataGenerator.h">
+<area shape="rect" id="node2" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkDataObjectAlgorithm_8h.html" title="vtkDataObjectAlgorithm.h" alt="" coords="41,109,233,136"/>
+<area shape="rect" id="node6" href="$vtkRemotingLiveModule_8h.html" title="vtkRemotingLiveModule.h" alt="" coords="258,109,448,136"/>
+<area shape="rect" id="node3" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkAlgorithm_8h.html" title="vtkAlgorithm.h" alt="" coords="5,184,123,211"/>
+<area shape="rect" id="node5" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkDataObject_8h.html" title="vtkDataObject.h" alt="" coords="148,184,276,211"/>
+<area shape="rect" id="node4" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkObject_8h.html" title="vtkObject.h" alt="" coords="89,259,185,285"/>
 </map>

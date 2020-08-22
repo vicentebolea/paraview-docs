@@ -1,5 +1,3 @@
-<map id="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/Export/vtkPVWebExporter.h" name="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/Export/vtkPVWebExporter.h">
-<area shape="rect" id="node1" title=" " alt="" coords="83,5,324,105"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,153,185,180"/>
-<area shape="rect" id="node3" title=" " alt="" coords="209,153,416,180"/>
+<map id="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/Export/vtkPVWebExporter.h" name="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/Export/vtkPVWebExporter.h">
+<area shape="rect" id="node3" href="$vtkRemotingExportModule_8h.html" title="vtkRemotingExportModule.h" alt="" coords="209,109,415,136"/>
 </map>

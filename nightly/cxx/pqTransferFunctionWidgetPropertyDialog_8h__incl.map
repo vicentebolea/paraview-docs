@@ -1,9 +1,6 @@
-<map id="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Qt/ApplicationComponents/pqTransferFunctionWidgetPropertyDialog.h" name="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Qt/ApplicationComponents/pqTransferFunctionWidgetPropertyDialog.h">
-<area shape="rect" id="node1" title=" " alt="" coords="263,5,570,105"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,153,257,180"/>
-<area shape="rect" id="node3" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkSmartPointer_8h.html" title=" " alt="" coords="282,153,421,180"/>
-<area shape="rect" id="node6" title=" " alt="" coords="445,153,519,180"/>
-<area shape="rect" id="node7" title=" " alt="" coords="543,153,669,180"/>
-<area shape="rect" id="node4" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkSmartPointerBase_8h.html" title=" " alt="" coords="265,228,437,255"/>
-<area shape="rect" id="node5" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkObjectBase_8h.html" title=" " alt="" coords="287,303,416,329"/>
+<map id="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Qt/ApplicationComponents/pqTransferFunctionWidgetPropertyDialog.h" name="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Qt/ApplicationComponents/pqTransferFunctionWidgetPropertyDialog.h">
+<area shape="rect" id="node2" href="$pqApplicationComponentsModule_8h.html" title="pqApplicationComponentsModule.h" alt="" coords="5,109,256,136"/>
+<area shape="rect" id="node3" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkSmartPointer_8h.html" title="vtkSmartPointer.h" alt="" coords="281,109,420,136"/>
+<area shape="rect" id="node4" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkSmartPointerBase_8h.html" title="vtkSmartPointerBase.h" alt="" coords="265,184,436,211"/>
+<area shape="rect" id="node5" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkObjectBase_8h.html" title="vtkObjectBase.h" alt="" coords="286,259,415,285"/>
 </map>

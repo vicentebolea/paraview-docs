@@ -1,9 +1,8 @@
-<map id="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/ClientServerStream/vtkClientServerStream.h" name="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/ClientServerStream/vtkClientServerStream.h">
-<area shape="rect" id="node1" title=" " alt="" coords="429,5,707,105"/>
-<area shape="rect" id="node2" href="$vtkPVLogInformation_8h.html" title=" " alt="" coords="5,153,235,253"/>
-<area shape="rect" id="node3" href="$vtkSMMessage_8h.html" title=" " alt="" coords="259,153,557,253"/>
-<area shape="rect" id="node6" href="$vtkSMProxyInternals_8h.html" title=" " alt="" coords="581,153,878,253"/>
-<area shape="rect" id="node7" href="$vtkSMPlotMatrixViewProxy_8h.html" title=" " alt="" coords="902,153,1141,253"/>
-<area shape="rect" id="node4" href="$vtkSMProxyPropertyInternals_8h.html" title=" " alt="" coords="98,301,395,401"/>
-<area shape="rect" id="node5" href="$vtkSMSessionProxyManagerInternals_8h.html" title=" " alt="" coords="419,301,717,401"/>
+<map id="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/ClientServerStream/vtkClientServerStream.h" name="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/ClientServerStream/vtkClientServerStream.h">
+<area shape="rect" id="node2" href="$vtkPVLogInformation_8h.html" title="/builds/gitlab&#45;kitware\l&#45;sciviz&#45;ci/Remoting/Core\l/vtkPVLogInformation.h" alt="" coords="5,109,184,165"/>
+<area shape="rect" id="node3" href="$vtkSMMessage_8h.html" title="/builds/gitlab&#45;kitware\l&#45;sciviz&#45;ci/Remoting/ServerManager\l/vtkSMMessage.h" alt="" coords="209,109,457,165"/>
+<area shape="rect" id="node6" href="$vtkSMProxyInternals_8h.html" title="/builds/gitlab&#45;kitware\l&#45;sciviz&#45;ci/Remoting/ServerManager\l/vtkSMProxyInternals.h" alt="" coords="481,109,729,165"/>
+<area shape="rect" id="node7" href="$vtkSMPlotMatrixViewProxy_8h.html" title="/builds/gitlab&#45;kitware\l&#45;sciviz&#45;ci/Remoting/Views\l/vtkSMPlotMatrixViewProxy.h" alt="" coords="753,109,964,165"/>
+<area shape="rect" id="node4" href="$vtkSMProxyPropertyInternals_8h.html" title="/builds/gitlab&#45;kitware\l&#45;sciviz&#45;ci/Remoting/ServerManager\l/vtkSMProxyPropertyInternals.h" alt="" coords="65,213,313,269"/>
+<area shape="rect" id="node5" href="$vtkSMSessionProxyManagerInternals_8h.html" title="/builds/gitlab&#45;kitware\l&#45;sciviz&#45;ci/Remoting/ServerManager\l/vtkSMSessionProxyManagerInternals.h" alt="" coords="338,213,616,269"/>
 </map>

@@ -1,9 +1,8 @@
-<map id="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/Core/vtkSession.h" name="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/Core/vtkSession.h">
-<area shape="rect" id="node1" title=" " alt="" coords="234,5,463,105"/>
-<area shape="rect" id="node2" href="$vtkProcessModuleInternals_8h.html" title=" " alt="" coords="107,153,337,253"/>
-<area shape="rect" id="node3" href="$vtkPVSession_8h.html" title=" " alt="" coords="361,153,590,253"/>
-<area shape="rect" id="node4" href="$vtkPVSessionBase_8h.html" title=" " alt="" coords="165,301,463,401"/>
-<area shape="rect" id="node7" href="$vtkRemoteWriterHelper_8h.html" title=" " alt="" coords="487,301,784,401"/>
-<area shape="rect" id="node5" href="$vtkPVSessionServer_8h.html" title=" " alt="" coords="5,449,303,549"/>
-<area shape="rect" id="node6" href="$vtkSMSession_8h.html" title=" " alt="" coords="327,449,624,549"/>
+<map id="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/Core/vtkSession.h" name="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/Core/vtkSession.h">
+<area shape="rect" id="node2" href="$vtkProcessModuleInternals_8h.html" title="/builds/gitlab&#45;kitware\l&#45;sciviz&#45;ci/Remoting/Core\l/vtkProcessModuleInternals.h" alt="" coords="73,109,287,165"/>
+<area shape="rect" id="node3" href="$vtkPVSession_8h.html" title="/builds/gitlab&#45;kitware\l&#45;sciviz&#45;ci/Remoting/Core\l/vtkPVSession.h" alt="" coords="311,109,491,165"/>
+<area shape="rect" id="node4" href="$vtkPVSessionBase_8h.html" title="/builds/gitlab&#45;kitware\l&#45;sciviz&#45;ci/Remoting/ServerManager\l/vtkPVSessionBase.h" alt="" coords="141,213,389,269"/>
+<area shape="rect" id="node7" href="$vtkRemoteWriterHelper_8h.html" title="/builds/gitlab&#45;kitware\l&#45;sciviz&#45;ci/Remoting/ServerManager\l/vtkRemoteWriterHelper.h" alt="" coords="413,213,661,269"/>
+<area shape="rect" id="node5" href="$vtkPVSessionServer_8h.html" title="/builds/gitlab&#45;kitware\l&#45;sciviz&#45;ci/Remoting/ServerManager\l/vtkPVSessionServer.h" alt="" coords="5,317,253,373"/>
+<area shape="rect" id="node6" href="$vtkSMSession_8h.html" title="/builds/gitlab&#45;kitware\l&#45;sciviz&#45;ci/Remoting/ServerManager\l/vtkSMSession.h" alt="" coords="277,317,525,373"/>
 </map>

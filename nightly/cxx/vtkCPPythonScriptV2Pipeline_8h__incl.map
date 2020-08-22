@@ -1,9 +1,7 @@
-<map id="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Clients/PythonCatalyst/vtkCPPythonScriptV2Pipeline.h" name="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Clients/PythonCatalyst/vtkCPPythonScriptV2Pipeline.h">
-<area shape="rect" id="node1" title=" " alt="" coords="191,5,472,105"/>
-<area shape="rect" id="node2" href="$vtkCPPythonPipeline_8h.html" title=" " alt="" coords="185,153,355,180"/>
-<area shape="rect" id="node6" title=" " alt="" coords="303,228,522,255"/>
-<area shape="rect" id="node3" href="$vtkCPPipeline_8h.html" title=" " alt="" coords="72,228,196,255"/>
-<area shape="rect" id="node7" title=" " alt="" coords="221,228,279,255"/>
-<area shape="rect" id="node4" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkObject_8h.html" title=" " alt="" coords="5,303,103,329"/>
-<area shape="rect" id="node5" title=" " alt="" coords="127,303,301,329"/>
+<map id="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Clients/PythonCatalyst/vtkCPPythonScriptV2Pipeline.h" name="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Clients/PythonCatalyst/vtkCPPythonScriptV2Pipeline.h">
+<area shape="rect" id="node2" href="$vtkCPPythonPipeline_8h.html" title="vtkCPPythonPipeline.h" alt="" coords="174,109,343,136"/>
+<area shape="rect" id="node6" href="$vtkPVPythonCatalystModule_8h.html" title="vtkPVPythonCatalystModule.h" alt="" coords="303,184,521,211"/>
+<area shape="rect" id="node3" href="$vtkCPPipeline_8h.html" title="vtkCPPipeline.h" alt="" coords="71,184,195,211"/>
+<area shape="rect" id="node4" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkObject_8h.html" title="vtkObject.h" alt="" coords="5,259,101,285"/>
+<area shape="rect" id="node5" href="$vtkPVCatalystModule_8h.html" title="vtkPVCatalystModule.h" alt="" coords="127,259,300,285"/>
 </map>

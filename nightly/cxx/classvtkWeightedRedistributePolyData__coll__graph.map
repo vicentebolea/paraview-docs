@@ -1,10 +1,9 @@
 <map id="vtkWeightedRedistributePolyData" name="vtkWeightedRedistributePolyData">
-<area shape="rect" id="node1" title="do weighted balance of cells on processors" alt="" coords="68,351,309,377"/>
-<area shape="rect" id="node2" href="$classvtkRedistributePolyData.html" title="redistribute poly cells from other processes (special version to color according to processor)" alt="" coords="99,275,279,301"/>
-<area shape="rect" id="node3" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkPolyDataAlgorithm.html" title=" " alt="" coords="5,185,172,212"/>
-<area shape="rect" id="node4" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkAlgorithm.html" title=" " alt="" coords="39,81,146,108"/>
-<area shape="rect" id="node5" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkObject.html" title=" " alt="" coords="157,5,242,32"/>
-<area shape="rect" id="node6" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkMultiProcessController.html" title=" " alt="" coords="197,185,386,212"/>
-<area shape="rect" id="node7" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkOutputWindow.html" title=" " alt="" coords="221,81,359,108"/>
-<area shape="rect" id="node8" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkCommunicator.html" title=" " alt="" coords="383,81,522,108"/>
+<area shape="rect" id="node2" href="$classvtkRedistributePolyData.html" title="redistribute poly cells from other processes (special version to color according to processor) ..." alt="" coords="118,277,297,304"/>
+<area shape="rect" id="node3" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkPolyDataAlgorithm.html" title="vtkPolyDataAlgorithm" alt="" coords="5,187,171,213"/>
+<area shape="rect" id="node4" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkAlgorithm.html" title="vtkAlgorithm" alt="" coords="36,83,143,109"/>
+<area shape="rect" id="node5" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkObject.html" title="vtkObject" alt="" coords="175,5,260,32"/>
+<area shape="rect" id="node6" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkMultiProcessController.html" title="vtkMultiProcessController" alt="" coords="196,187,385,213"/>
+<area shape="rect" id="node7" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkOutputWindow.html" title="vtkOutputWindow" alt="" coords="220,83,359,109"/>
+<area shape="rect" id="node8" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkCommunicator.html" title="vtkCommunicator" alt="" coords="383,83,521,109"/>
 </map>

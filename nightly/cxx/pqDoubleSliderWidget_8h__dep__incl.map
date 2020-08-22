@@ -1,5 +1,8 @@
-<map id="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Qt/Widgets/pqDoubleSliderWidget.h" name="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Qt/Widgets/pqDoubleSliderWidget.h">
-<area shape="rect" id="node1" title=" " alt="" coords="151,5,459,105"/>
-<area shape="rect" id="node2" href="$pqDiscreteDoubleWidget_8h.html" title=" " alt="" coords="5,153,284,253"/>
-<area shape="rect" id="node3" href="$pqDoubleRangeWidget_8h.html" title=" " alt="" coords="309,153,621,253"/>
+<map id="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Qt/Widgets/pqDoubleSliderWidget.h" name="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Qt/Widgets/pqDoubleSliderWidget.h">
+<area shape="rect" id="node2" href="$pqDiscreteDoubleWidget_8h.html" title="/builds/gitlab&#45;kitware\l&#45;sciviz&#45;ci/Qt/Widgets\l/pqDiscreteDoubleWidget.h" alt="" coords="399,109,599,165"/>
+<area shape="rect" id="node3" href="$pqDoubleRangeWidget_8h.html" title="/builds/gitlab&#45;kitware\l&#45;sciviz&#45;ci/Qt/Widgets\l/pqDoubleRangeWidget.h" alt="" coords="623,109,809,165"/>
+<area shape="rect" id="node4" href="$ui__pqDoubleRangeSliderPropertyWidget_8h.html" title="/builds/gitlab&#45;kitware\l&#45;sciviz&#45;ci/build/Qt/Application\lComponents/pqApplicationComponents\l_autogen/include/ui_pqDoubleRangeSliderProperty\lWidget.h" alt="" coords="5,213,355,299"/>
+<area shape="rect" id="node5" href="$ui__pqLightPropertyWidget_8h.html" title="/builds/gitlab&#45;kitware\l&#45;sciviz&#45;ci/build/Qt/Application\lComponents/pqApplicationComponents\l_autogen/include/ui_pqLightPropertyWidget.h" alt="" coords="380,221,697,291"/>
+<area shape="rect" id="node6" href="$ui__pqMoleculePropertyWidget_8h.html" title="/builds/gitlab&#45;kitware\l&#45;sciviz&#45;ci/build/Qt/Application\lComponents/pqApplicationComponents\l_autogen/include/ui_pqMoleculePropertyWidget.h" alt="" coords="722,221,1064,291"/>
+<area shape="rect" id="node7" href="$ui__pqCameraDialog_8h.html" title="/builds/gitlab&#45;kitware\l&#45;sciviz&#45;ci/build/Qt/Components\l/pqComponents_autogen/include\l/ui_pqCameraDialog.h" alt="" coords="1089,221,1324,291"/>
 </map>

@@ -1,5 +1,4 @@
-<map id="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/ServerManager/vtkSMProxyLink.h" name="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/ServerManager/vtkSMProxyLink.h">
-<area shape="rect" id="node1" title=" " alt="" coords="151,5,448,105"/>
-<area shape="rect" id="node2" href="$vtkSMProxyInternals_8h.html" title=" " alt="" coords="5,153,303,253"/>
-<area shape="rect" id="node3" href="$vtkSMCameraLink_8h.html" title=" " alt="" coords="327,153,565,253"/>
+<map id="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/ServerManager/vtkSMProxyLink.h" name="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/ServerManager/vtkSMProxyLink.h">
+<area shape="rect" id="node2" href="$vtkSMProxyInternals_8h.html" title="/builds/gitlab&#45;kitware\l&#45;sciviz&#45;ci/Remoting/ServerManager\l/vtkSMProxyInternals.h" alt="" coords="5,109,253,165"/>
+<area shape="rect" id="node3" href="$vtkSMCameraLink_8h.html" title="/builds/gitlab&#45;kitware\l&#45;sciviz&#45;ci/Remoting/Views\l/vtkSMCameraLink.h" alt="" coords="277,109,467,165"/>
 </map>

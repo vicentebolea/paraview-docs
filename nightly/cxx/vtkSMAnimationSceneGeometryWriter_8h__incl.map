@@ -1,9 +1,8 @@
-<map id="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/Animation/vtkSMAnimationSceneGeometryWriter.h" name="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/Animation/vtkSMAnimationSceneGeometryWriter.h">
-<area shape="rect" id="node1" title=" " alt="" coords="51,5,337,105"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,228,236,255"/>
-<area shape="rect" id="node3" href="$vtkSMAnimationSceneWriter_8h.html" title=" " alt="" coords="158,153,377,180"/>
-<area shape="rect" id="node4" href="$vtkSMSessionObject_8h.html" title=" " alt="" coords="260,228,427,255"/>
-<area shape="rect" id="node5" title=" " alt="" coords="194,377,397,419"/>
-<area shape="rect" id="node6" href="$vtkSMObject_8h.html" title=" " alt="" coords="285,303,401,329"/>
-<area shape="rect" id="node7" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkWeakPointer_8h.html" title=" " alt="" coords="426,303,562,329"/>
+<map id="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/Animation/vtkSMAnimationSceneGeometryWriter.h" name="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/Animation/vtkSMAnimationSceneGeometryWriter.h">
+<area shape="rect" id="node2" href="$vtkRemotingAnimationModule_8h.html" title="vtkRemotingAnimationModule.h" alt="" coords="5,184,235,211"/>
+<area shape="rect" id="node3" href="$vtkSMAnimationSceneWriter_8h.html" title="vtkSMAnimationSceneWriter.h" alt="" coords="157,109,376,136"/>
+<area shape="rect" id="node4" href="$vtkSMSessionObject_8h.html" title="vtkSMSessionObject.h" alt="" coords="259,184,425,211"/>
+<area shape="rect" id="node5" href="$vtkRemotingServerManagerModule_8h.html" title="vtkRemotingServerManager\lModule.h" alt="" coords="193,334,396,375"/>
+<area shape="rect" id="node6" href="$vtkSMObject_8h.html" title="vtkSMObject.h" alt="" coords="285,259,400,285"/>
+<area shape="rect" id="node7" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkWeakPointer_8h.html" title="vtkWeakPointer.h" alt="" coords="425,259,561,285"/>
 </map>

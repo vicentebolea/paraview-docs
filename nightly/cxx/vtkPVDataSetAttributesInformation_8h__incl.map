@@ -1,9 +1,8 @@
-<map id="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/Core/vtkPVDataSetAttributesInformation.h" name="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/Core/vtkPVDataSetAttributesInformation.h">
-<area shape="rect" id="node1" title=" " alt="" coords="141,5,409,105"/>
-<area shape="rect" id="node2" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkDataSetAttributes_8h.html" title=" " alt="" coords="5,153,176,180"/>
-<area shape="rect" id="node6" href="$vtkPVInformation_8h.html" title=" " alt="" coords="201,153,349,180"/>
-<area shape="rect" id="node7" title=" " alt="" coords="289,228,484,255"/>
-<area shape="rect" id="node3" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkFieldData_8h.html" title=" " alt="" coords="33,228,149,255"/>
-<area shape="rect" id="node4" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkObject_8h.html" title=" " alt="" coords="94,377,191,404"/>
-<area shape="rect" id="node5" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkAbstractArray_8h.html" title=" " alt="" coords="71,303,214,329"/>
+<map id="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/Core/vtkPVDataSetAttributesInformation.h" name="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/Core/vtkPVDataSetAttributesInformation.h">
+<area shape="rect" id="node2" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkDataSetAttributes_8h.html" title="vtkDataSetAttributes.h" alt="" coords="5,109,176,136"/>
+<area shape="rect" id="node6" href="$vtkPVInformation_8h.html" title="vtkPVInformation.h" alt="" coords="201,109,348,136"/>
+<area shape="rect" id="node7" href="$vtkRemotingCoreModule_8h.html" title="vtkRemotingCoreModule.h" alt="" coords="289,184,484,211"/>
+<area shape="rect" id="node3" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkFieldData_8h.html" title="vtkFieldData.h" alt="" coords="33,184,148,211"/>
+<area shape="rect" id="node4" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkObject_8h.html" title="vtkObject.h" alt="" coords="94,333,191,360"/>
+<area shape="rect" id="node5" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkAbstractArray_8h.html" title="vtkAbstractArray.h" alt="" coords="71,259,213,285"/>
 </map>

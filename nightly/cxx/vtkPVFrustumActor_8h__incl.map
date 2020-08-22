@@ -1,5 +1,7 @@
-<map id="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/Views/vtkPVFrustumActor.h" name="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/Views/vtkPVFrustumActor.h">
-<area shape="rect" id="node1" title=" " alt="" coords="53,5,291,105"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,153,144,180"/>
-<area shape="rect" id="node3" title=" " alt="" coords="168,153,371,180"/>
+<map id="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/Views/vtkPVFrustumActor.h" name="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/Views/vtkPVFrustumActor.h">
+<area shape="rect" id="node3" href="$vtkRemotingViewsModule_8h.html" title="vtkRemotingViewsModule.h" alt="" coords="207,109,409,136"/>
+<area shape="rect" id="node4" href="$vtkRemotingServerManagerModule_8h.html" title="vtkRemotingServerManager\lModule.h" alt="" coords="5,185,208,226"/>
+<area shape="rect" id="node5" href="$vtkChartsCoreModule_8h.html" title="vtkChartsCoreModule.h" alt="" coords="283,192,457,219"/>
+<area shape="rect" id="node6" href="$vtkRenderingContext2DModule_8h.html" title="vtkRenderingContext2DModule.h" alt="" coords="150,275,385,301"/>
+<area shape="rect" id="node7" href="$vtkRenderingCoreModule_8h.html" title="vtkRenderingCoreModule.h" alt="" coords="325,349,523,376"/>
 </map>

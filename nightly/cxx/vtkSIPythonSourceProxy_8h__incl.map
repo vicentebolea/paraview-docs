@@ -1,12 +1,10 @@
-<map id="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/ServerManagerPython/vtkSIPythonSourceProxy.h" name="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/ServerManagerPython/vtkSIPythonSourceProxy.h">
-<area shape="rect" id="node1" title=" " alt="" coords="180,5,477,105"/>
-<area shape="rect" id="node2" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkNew_8h.html" title=" " alt="" coords="22,161,105,187"/>
-<area shape="rect" id="node4" title=" " alt="" coords="129,153,331,195"/>
-<area shape="rect" id="node5" href="$vtkSISourceProxy_8h.html" title=" " alt="" coords="355,161,502,187"/>
-<area shape="rect" id="node10" title=" " alt="" coords="526,161,603,187"/>
-<area shape="rect" id="node3" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkIOStream_8h.html" title=" " alt="" coords="5,243,121,269"/>
-<area shape="rect" id="node6" title=" " alt="" coords="319,392,522,433"/>
-<area shape="rect" id="node7" href="$vtkSIProxy_8h.html" title=" " alt="" coords="435,243,537,269"/>
-<area shape="rect" id="node8" href="$vtkSIObject_8h.html" title=" " alt="" coords="458,317,567,344"/>
-<area shape="rect" id="node9" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkSmartPointer_8h.html" title=" " alt="" coords="591,317,730,344"/>
+<map id="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/ServerManagerPython/vtkSIPythonSourceProxy.h" name="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/ServerManagerPython/vtkSIPythonSourceProxy.h">
+<area shape="rect" id="node2" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkNew_8h.html" title="vtkNew.h" alt="" coords="21,117,104,144"/>
+<area shape="rect" id="node4" href="$vtkRemotingServerManagerPythonModule_8h.html" title="vtkRemotingServerManager\lPythonModule.h" alt="" coords="128,110,331,151"/>
+<area shape="rect" id="node5" href="$vtkSISourceProxy_8h.html" title="vtkSISourceProxy.h" alt="" coords="355,117,501,144"/>
+<area shape="rect" id="node3" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkIOStream_8h.html" title="vtkIOStream.h" alt="" coords="5,200,120,227"/>
+<area shape="rect" id="node6" href="$vtkRemotingServerManagerModule_8h.html" title="vtkRemotingServerManager\lModule.h" alt="" coords="332,350,535,391"/>
+<area shape="rect" id="node7" href="$vtkSIProxy_8h.html" title="vtkSIProxy.h" alt="" coords="447,200,549,227"/>
+<area shape="rect" id="node8" href="$vtkSIObject_8h.html" title="vtkSIObject.h" alt="" coords="471,275,580,301"/>
+<area shape="rect" id="node9" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkSmartPointer_8h.html" title="vtkSmartPointer.h" alt="" coords="604,275,743,301"/>
 </map>

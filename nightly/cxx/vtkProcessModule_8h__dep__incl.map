@@ -1,6 +1,5 @@
-<map id="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/Core/vtkProcessModule.h" name="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/Core/vtkProcessModule.h">
-<area shape="rect" id="node1" title=" " alt="" coords="447,5,676,105"/>
-<area shape="rect" id="node2" href="$pvpython_8h.html" title=" " alt="" coords="5,153,360,253"/>
-<area shape="rect" id="node3" href="$pvserver__common_8h.html" title=" " alt="" coords="384,153,739,253"/>
-<area shape="rect" id="node4" href="$vtkPVSystemInformation_8h.html" title=" " alt="" coords="763,153,992,253"/>
+<map id="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/Core/vtkProcessModule.h" name="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/Core/vtkProcessModule.h">
+<area shape="rect" id="node2" href="$pvpython_8h.html" title="/builds/gitlab&#45;kitware\l&#45;sciviz&#45;ci/Clients/CommandLine\lExecutables/pvpython.h" alt="" coords="5,109,232,165"/>
+<area shape="rect" id="node3" href="$pvserver__common_8h.html" title="/builds/gitlab&#45;kitware\l&#45;sciviz&#45;ci/Clients/CommandLine\lExecutables/pvserver_common.h" alt="" coords="257,109,495,165"/>
+<area shape="rect" id="node4" href="$vtkPVSystemInformation_8h.html" title="/builds/gitlab&#45;kitware\l&#45;sciviz&#45;ci/Remoting/Core\l/vtkPVSystemInformation.h" alt="" coords="519,109,720,165"/>
 </map>

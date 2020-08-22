@@ -1,8 +1,7 @@
-<map id="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/Misc/vtkSMPLYWriterProxyInitializationHelper.h" name="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/Misc/vtkSMPLYWriterProxyInitializationHelper.h">
-<area shape="rect" id="node1" title=" " alt="" coords="58,5,357,105"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,161,199,187"/>
-<area shape="rect" id="node3" href="$vtkSMProxyInitializationHelper_8h.html" title=" " alt="" coords="223,153,403,195"/>
-<area shape="rect" id="node4" href="$vtkSMObject_8h.html" title=" " alt="" coords="255,243,371,269"/>
-<area shape="rect" id="node5" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkObject_8h.html" title=" " alt="" coords="177,325,275,351"/>
-<area shape="rect" id="node6" title=" " alt="" coords="299,317,502,359"/>
+<map id="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/Misc/vtkSMPLYWriterProxyInitializationHelper.h" name="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/Misc/vtkSMPLYWriterProxyInitializationHelper.h">
+<area shape="rect" id="node2" href="$vtkRemotingMiscModule_8h.html" title="vtkRemotingMiscModule.h" alt="" coords="5,133,197,160"/>
+<area shape="rect" id="node3" href="$vtkSMProxyInitializationHelper_8h.html" title="vtkSMProxyInitialization\lHelper.h" alt="" coords="222,126,401,167"/>
+<area shape="rect" id="node4" href="$vtkSMObject_8h.html" title="vtkSMObject.h" alt="" coords="254,216,369,243"/>
+<area shape="rect" id="node5" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkObject_8h.html" title="vtkObject.h" alt="" coords="177,299,273,325"/>
+<area shape="rect" id="node6" href="$vtkRemotingServerManagerModule_8h.html" title="vtkRemotingServerManager\lModule.h" alt="" coords="299,291,501,333"/>
 </map>

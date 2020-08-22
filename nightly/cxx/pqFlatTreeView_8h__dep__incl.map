@@ -1,4 +1,6 @@
-<map id="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Qt/Widgets/pqFlatTreeView.h" name="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Qt/Widgets/pqFlatTreeView.h">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,324,91"/>
-<area shape="rect" id="node2" href="$pqPipelineBrowserWidget_8h.html" title=" " alt="" coords="47,139,282,239"/>
+<map id="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Qt/Widgets/pqFlatTreeView.h" name="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Qt/Widgets/pqFlatTreeView.h">
+<area shape="rect" id="node2" href="$ui__pqChangeInputDialog_8h.html" title="/builds/gitlab&#45;kitware\l&#45;sciviz&#45;ci/build/Qt/Components\l/pqComponents_autogen/include\l/ui_pqChangeInputDialog.h" alt="" coords="5,110,240,181"/>
+<area shape="rect" id="node3" href="$ui__pqCustomFilterDefinitionWizard_8h.html" title="/builds/gitlab&#45;kitware\l&#45;sciviz&#45;ci/build/Qt/Components\l/pqComponents_autogen/include\l/ui_pqCustomFilterDefinitionWizard.h" alt="" coords="265,110,527,181"/>
+<area shape="rect" id="node4" href="$pqPipelineBrowserWidget_8h.html" title="/builds/gitlab&#45;kitware\l&#45;sciviz&#45;ci/Qt/Components\l/pqPipelineBrowserWidget.h" alt="" coords="552,117,757,173"/>
+<area shape="rect" id="node5" href="$ui__ParaViewMainWindow_8h.html" title="/builds/gitlab&#45;kitware\l&#45;sciviz&#45;ci/build/Clients\l/ParaView/paraview_autogen\l/include/ui_ParaViewMainWindow.h" alt="" coords="529,230,780,301"/>
 </map>

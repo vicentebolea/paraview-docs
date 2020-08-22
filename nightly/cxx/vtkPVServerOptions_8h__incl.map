@@ -1,11 +1,7 @@
-<map id="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/Core/vtkPVServerOptions.h" name="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/Core/vtkPVServerOptions.h">
-<area shape="rect" id="node1" title=" " alt="" coords="161,5,391,105"/>
-<area shape="rect" id="node2" href="$vtkPVOptions_8h.html" title=" " alt="" coords="319,153,441,180"/>
-<area shape="rect" id="node6" title=" " alt="" coords="5,228,200,255"/>
-<area shape="rect" id="node3" href="$vtkCommandOptions_8h.html" title=" " alt="" coords="225,228,397,255"/>
-<area shape="rect" id="node7" title=" " alt="" coords="421,228,480,255"/>
-<area shape="rect" id="node8" title=" " alt="" coords="505,228,565,255"/>
-<area shape="rect" id="node9" title=" " alt="" coords="589,228,651,255"/>
-<area shape="rect" id="node4" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkObject_8h.html" title=" " alt="" coords="165,303,262,329"/>
-<area shape="rect" id="node5" title=" " alt="" coords="286,303,533,329"/>
+<map id="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/Core/vtkPVServerOptions.h" name="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/Core/vtkPVServerOptions.h">
+<area shape="rect" id="node2" href="$vtkPVOptions_8h.html" title="vtkPVOptions.h" alt="" coords="319,109,441,136"/>
+<area shape="rect" id="node6" href="$vtkRemotingCoreModule_8h.html" title="vtkRemotingCoreModule.h" alt="" coords="5,184,200,211"/>
+<area shape="rect" id="node3" href="$vtkCommandOptions_8h.html" title="vtkCommandOptions.h" alt="" coords="225,184,396,211"/>
+<area shape="rect" id="node4" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkObject_8h.html" title="vtkObject.h" alt="" coords="165,259,261,285"/>
+<area shape="rect" id="node5" href="$vtkPVVTKExtensionsCoreModule_8h.html" title="vtkPVVTKExtensionsCoreModule.h" alt="" coords="286,259,532,285"/>
 </map>

@@ -1,5 +1,4 @@
-<map id="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/Misc/vtkSMPreselectionPipeline.h" name="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/Misc/vtkSMPreselectionPipeline.h">
-<area shape="rect" id="node1" title=" " alt="" coords="156,5,384,105"/>
-<area shape="rect" id="node2" href="$vtkSMInteractiveSelectionPipeline_8h.html" title=" " alt="" coords="5,153,265,253"/>
-<area shape="rect" id="node3" href="$vtkSMTooltipSelectionPipeline_8h.html" title=" " alt="" coords="289,153,523,253"/>
+<map id="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/Misc/vtkSMPreselectionPipeline.h" name="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/Misc/vtkSMPreselectionPipeline.h">
+<area shape="rect" id="node2" href="$vtkSMInteractiveSelectionPipeline_8h.html" title="/builds/gitlab&#45;kitware\l&#45;sciviz&#45;ci/Remoting/Misc\l/vtkSMInteractiveSelectionPipeline.h" alt="" coords="5,109,264,165"/>
+<area shape="rect" id="node3" href="$vtkSMTooltipSelectionPipeline_8h.html" title="/builds/gitlab&#45;kitware\l&#45;sciviz&#45;ci/Remoting/Misc\l/vtkSMTooltipSelectionPipeline.h" alt="" coords="289,109,521,165"/>
 </map>

@@ -1,9 +1,11 @@
-<map id="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/Views/vtkSMBoxRepresentationProxy.h" name="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/Views/vtkSMBoxRepresentationProxy.h">
-<area shape="rect" id="node1" title=" " alt="" coords="58,5,297,105"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,243,208,269"/>
-<area shape="rect" id="node3" href="$vtkSMWidgetRepresentationProxy_8h.html" title=" " alt="" coords="145,153,351,195"/>
-<area shape="rect" id="node4" href="$vtkSMProxy_8h.html" title=" " alt="" coords="232,243,341,269"/>
-<area shape="rect" id="node5" href="$vtkClientServerID_8h.html" title=" " alt="" coords="100,317,249,344"/>
-<area shape="rect" id="node6" title=" " alt="" coords="245,392,448,433"/>
-<area shape="rect" id="node7" href="$vtkSMRemoteObject_8h.html" title=" " alt="" coords="325,317,491,344"/>
+<map id="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/Views/vtkSMBoxRepresentationProxy.h" name="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/Views/vtkSMBoxRepresentationProxy.h">
+<area shape="rect" id="node2" href="$vtkRemotingViewsModule_8h.html" title="vtkRemotingViewsModule.h" alt="" coords="249,200,452,227"/>
+<area shape="rect" id="node7" href="$vtkSMWidgetRepresentationProxy_8h.html" title="vtkSMWidgetRepresentation\lProxy.h" alt="" coords="389,110,595,151"/>
+<area shape="rect" id="node3" href="$vtkRemotingServerManagerModule_8h.html" title="vtkRemotingServerManager\lModule.h" alt="" coords="524,350,727,391"/>
+<area shape="rect" id="node4" href="$vtkChartsCoreModule_8h.html" title="vtkChartsCoreModule.h" alt="" coords="138,275,312,301"/>
+<area shape="rect" id="node5" href="$vtkRenderingContext2DModule_8h.html" title="vtkRenderingContext2DModule.h" alt="" coords="5,357,240,384"/>
+<area shape="rect" id="node6" href="$vtkRenderingCoreModule_8h.html" title="vtkRenderingCoreModule.h" alt="" coords="180,440,377,467"/>
+<area shape="rect" id="node8" href="$vtkSMProxy_8h.html" title="vtkSMProxy.h" alt="" coords="523,200,632,227"/>
+<area shape="rect" id="node9" href="$vtkClientServerID_8h.html" title="vtkClientServerID.h" alt="" coords="439,275,588,301"/>
+<area shape="rect" id="node10" href="$vtkSMRemoteObject_8h.html" title="vtkSMRemoteObject.h" alt="" coords="663,275,829,301"/>
 </map>

@@ -1,9 +1,8 @@
 <map id="vtkCompositeDataToUnstructuredGridFilter" name="vtkCompositeDataToUnstructuredGridFilter">
-<area shape="rect" id="node1" title="appends all vtkUnstructuredGrid leaves of the input composite dataset to a single vtkUnstructuredGrid..." alt="" coords="5,336,248,377"/>
-<area shape="rect" id="node2" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkUnstructuredGridAlgorithm.html" title=" " alt="" coords="17,260,236,287"/>
-<area shape="rect" id="node3" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkAlgorithm.html" title=" " alt="" coords="169,171,276,197"/>
-<area shape="rect" id="node5" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkExecutive.html" title=" " alt="" coords="260,260,367,287"/>
-<area shape="rect" id="node4" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkObject.html" title=" " alt="" coords="300,5,385,32"/>
-<area shape="rect" id="node6" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkProgressObserver.html" title=" " alt="" coords="162,81,321,108"/>
-<area shape="rect" id="node7" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkInformation.html" title=" " alt="" coords="345,81,463,108"/>
+<area shape="rect" id="node2" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkUnstructuredGridAlgorithm.html" title="vtkUnstructuredGridAlgorithm" alt="" coords="17,264,236,291"/>
+<area shape="rect" id="node3" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkAlgorithm.html" title="vtkAlgorithm" alt="" coords="169,173,276,200"/>
+<area shape="rect" id="node5" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkExecutive.html" title="vtkExecutive" alt="" coords="260,264,367,291"/>
+<area shape="rect" id="node4" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkObject.html" title="vtkObject" alt="" coords="260,5,345,32"/>
+<area shape="rect" id="node6" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkProgressObserver.html" title="vtkProgressObserver" alt="" coords="158,83,316,109"/>
+<area shape="rect" id="node7" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$classvtkInformation.html" title="vtkInformation" alt="" coords="341,83,459,109"/>
 </map>

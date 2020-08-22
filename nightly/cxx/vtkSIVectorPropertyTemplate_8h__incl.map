@@ -1,9 +1,8 @@
-<map id="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/ServerManager/vtkSIVectorPropertyTemplate.h" name="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/ServerManager/vtkSIVectorPropertyTemplate.h">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,303,105"/>
-<area shape="rect" id="node2" title=" " alt="" coords="70,377,273,419"/>
-<area shape="rect" id="node3" href="$vtkSIVectorProperty_8h.html" title=" " alt="" coords="133,153,295,180"/>
-<area shape="rect" id="node4" href="$vtkSIProperty_8h.html" title=" " alt="" coords="223,228,343,255"/>
-<area shape="rect" id="node5" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkObject_8h.html" title=" " alt="" coords="235,303,332,329"/>
-<area shape="rect" id="node6" href="$vtkSMMessageMinimal_8h.html" title=" " alt="" coords="356,303,539,329"/>
-<area shape="rect" id="node7" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkWeakPointer_8h.html" title=" " alt="" coords="563,303,699,329"/>
+<map id="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/ServerManager/vtkSIVectorPropertyTemplate.h" name="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/ServerManager/vtkSIVectorPropertyTemplate.h">
+<area shape="rect" id="node2" href="$vtkRemotingServerManagerModule_8h.html" title="vtkRemotingServerManager\lModule.h" alt="" coords="107,334,309,375"/>
+<area shape="rect" id="node3" href="$vtkSIVectorProperty_8h.html" title="vtkSIVectorProperty.h" alt="" coords="109,109,269,136"/>
+<area shape="rect" id="node4" href="$vtkSIProperty_8h.html" title="vtkSIProperty.h" alt="" coords="235,184,355,211"/>
+<area shape="rect" id="node5" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkObject_8h.html" title="vtkObject.h" alt="" coords="159,259,256,285"/>
+<area shape="rect" id="node6" href="$vtkSMMessageMinimal_8h.html" title="vtkSMMessageMinimal.h" alt="" coords="333,259,515,285"/>
+<area shape="rect" id="node7" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkWeakPointer_8h.html" title="vtkWeakPointer.h" alt="" coords="540,259,676,285"/>
 </map>

@@ -1,6 +1,5 @@
-<map id="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Clients/PythonCatalyst/CPythonAdaptorAPI.h" name="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Clients/PythonCatalyst/CPythonAdaptorAPI.h">
-<area shape="rect" id="node1" title=" " alt="" coords="69,5,350,105"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,153,224,180"/>
-<area shape="rect" id="node3" href="$CAdaptorAPI_8h.html" title=" " alt="" coords="248,153,363,180"/>
-<area shape="rect" id="node4" title=" " alt="" coords="219,228,392,255"/>
+<map id="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Clients/PythonCatalyst/CPythonAdaptorAPI.h" name="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Clients/PythonCatalyst/CPythonAdaptorAPI.h">
+<area shape="rect" id="node2" href="$vtkPVPythonCatalystModule_8h.html" title="vtkPVPythonCatalystModule.h" alt="" coords="5,109,224,136"/>
+<area shape="rect" id="node3" href="$CAdaptorAPI_8h.html" title="CAdaptorAPI.h" alt="" coords="248,109,363,136"/>
+<area shape="rect" id="node4" href="$vtkPVCatalystModule_8h.html" title="vtkPVCatalystModule.h" alt="" coords="219,184,392,211"/>
 </map>

@@ -1,8 +1,11 @@
-<map id="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/Views/vtkPVInteractiveViewLinkRepresentation.h" name="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/Views/vtkPVInteractiveViewLinkRepresentation.h">
-<area shape="rect" id="node1" title=" " alt="" coords="155,5,457,105"/>
-<area shape="rect" id="node2" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkLogoRepresentation_8h.html" title=" " alt="" coords="106,153,290,180"/>
-<area shape="rect" id="node6" title=" " alt="" coords="314,153,517,180"/>
-<area shape="rect" id="node3" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkBorderRepresentation_8h.html" title=" " alt="" coords="100,228,296,255"/>
-<area shape="rect" id="node4" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkWidgetRepresentation_8h.html" title=" " alt="" coords="5,303,204,329"/>
-<area shape="rect" id="node5" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkCoordinate_8h.html" title=" " alt="" coords="228,303,355,329"/>
+<map id="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/Views/vtkPVInteractiveViewLinkRepresentation.h" name="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/Views/vtkPVInteractiveViewLinkRepresentation.h">
+<area shape="rect" id="node2" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkLogoRepresentation_8h.html" title="vtkLogoRepresentation.h" alt="" coords="179,109,363,136"/>
+<area shape="rect" id="node6" href="$vtkRemotingViewsModule_8h.html" title="vtkRemotingViewsModule.h" alt="" coords="459,109,661,136"/>
+<area shape="rect" id="node3" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkBorderRepresentation_8h.html" title="vtkBorderRepresentation.h" alt="" coords="99,192,295,219"/>
+<area shape="rect" id="node4" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkWidgetRepresentation_8h.html" title="vtkWidgetRepresentation.h" alt="" coords="5,275,203,301"/>
+<area shape="rect" id="node5" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkCoordinate_8h.html" title="vtkCoordinate.h" alt="" coords="227,275,353,301"/>
+<area shape="rect" id="node7" href="$vtkRemotingServerManagerModule_8h.html" title="vtkRemotingServerManager\lModule.h" alt="" coords="320,185,523,226"/>
+<area shape="rect" id="node8" href="$vtkChartsCoreModule_8h.html" title="vtkChartsCoreModule.h" alt="" coords="598,192,772,219"/>
+<area shape="rect" id="node9" href="$vtkRenderingContext2DModule_8h.html" title="vtkRenderingContext2DModule.h" alt="" coords="465,275,700,301"/>
+<area shape="rect" id="node10" href="$vtkRenderingCoreModule_8h.html" title="vtkRenderingCoreModule.h" alt="" coords="640,349,837,376"/>
 </map>

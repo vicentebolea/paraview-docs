@@ -1,7 +1,6 @@
-<map id="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/VTKExtensions/FiltersPython/vtkPythonProgrammableFilter.h" name="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/VTKExtensions/FiltersPython/vtkPythonProgrammableFilter.h">
-<area shape="rect" id="node1" title=" " alt="" coords="51,5,369,105"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,153,201,195"/>
-<area shape="rect" id="node3" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkProgrammableFilter_8h.html" title=" " alt="" coords="225,161,408,187"/>
-<area shape="rect" id="node4" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkPassInputTypeAlgorithm_8h.html" title=" " alt="" coords="211,243,422,269"/>
-<area shape="rect" id="node5" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkAlgorithm_8h.html" title=" " alt="" coords="257,317,376,344"/>
+<map id="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/VTKExtensions/FiltersPython/vtkPythonProgrammableFilter.h" name="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/VTKExtensions/FiltersPython/vtkPythonProgrammableFilter.h">
+<area shape="rect" id="node2" href="$vtkPVVTKExtensionsFiltersPythonModule_8h.html" title="vtkPVVTKExtensionsFilters\lPythonModule.h" alt="" coords="5,126,200,167"/>
+<area shape="rect" id="node3" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkProgrammableFilter_8h.html" title="vtkProgrammableFilter.h" alt="" coords="225,133,407,160"/>
+<area shape="rect" id="node4" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkPassInputTypeAlgorithm_8h.html" title="vtkPassInputTypeAlgorithm.h" alt="" coords="211,216,421,243"/>
+<area shape="rect" id="node5" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkAlgorithm_8h.html" title="vtkAlgorithm.h" alt="" coords="257,291,375,317"/>
 </map>

@@ -1,6 +1,4 @@
-<map id="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Qt/Widgets/pqExpandableTableView.h" name="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Qt/Widgets/pqExpandableTableView.h">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,307,105"/>
-<area shape="rect" id="node2" href="$pqTableView_8h.html" title=" " alt="" coords="147,153,261,180"/>
-<area shape="rect" id="node3" title=" " alt="" coords="34,228,185,255"/>
-<area shape="rect" id="node4" title=" " alt="" coords="209,228,308,255"/>
+<map id="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Qt/Widgets/pqExpandableTableView.h" name="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Qt/Widgets/pqExpandableTableView.h">
+<area shape="rect" id="node2" href="$pqTableView_8h.html" title="pqTableView.h" alt="" coords="117,109,232,136"/>
+<area shape="rect" id="node3" href="$pqWidgetsModule_8h.html" title="pqWidgetsModule.h" alt="" coords="5,184,155,211"/>
 </map>

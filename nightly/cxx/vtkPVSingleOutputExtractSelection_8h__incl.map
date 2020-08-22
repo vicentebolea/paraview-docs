@@ -1,7 +1,6 @@
-<map id="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/VTKExtensions/Extraction/vtkPVSingleOutputExtractSelection.h" name="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/VTKExtensions/Extraction/vtkPVSingleOutputExtractSelection.h">
-<area shape="rect" id="node1" title=" " alt="" coords="42,5,378,105"/>
-<area shape="rect" id="node2" href="$vtkPVExtractSelection_8h.html" title=" " alt="" coords="121,153,299,180"/>
-<area shape="rect" id="node3" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkExtractSelection_8h.html" title=" " alt="" coords="21,235,183,262"/>
-<area shape="rect" id="node5" title=" " alt="" coords="207,228,429,269"/>
-<area shape="rect" id="node4" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkExtractSelectionBase_8h.html" title=" " alt="" coords="5,317,199,344"/>
+<map id="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/VTKExtensions/Extraction/vtkPVSingleOutputExtractSelection.h" name="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/VTKExtensions/Extraction/vtkPVSingleOutputExtractSelection.h">
+<area shape="rect" id="node2" href="$vtkPVExtractSelection_8h.html" title="vtkPVExtractSelection.h" alt="" coords="120,125,299,152"/>
+<area shape="rect" id="node3" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkExtractSelection_8h.html" title="vtkExtractSelection.h" alt="" coords="21,208,181,235"/>
+<area shape="rect" id="node5" href="$vtkPVVTKExtensionsExtractionModule_8h.html" title="vtkPVVTKExtensionsExtraction\lModule.h" alt="" coords="206,201,428,242"/>
+<area shape="rect" id="node4" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkExtractSelectionBase_8h.html" title="vtkExtractSelectionBase.h" alt="" coords="5,291,197,317"/>
 </map>

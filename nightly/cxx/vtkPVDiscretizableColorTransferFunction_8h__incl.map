@@ -1,9 +1,12 @@
-<map id="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/Views/vtkPVDiscretizableColorTransferFunction.h" name="/home/kitware/dashboards/buildbot/paraview_master&#45;vall&#45;linux&#45;shared&#45;release_adios2_doc_extdeps_gui_mpi_python3/source/Remoting/Views/vtkPVDiscretizableColorTransferFunction.h">
-<area shape="rect" id="node1" title=" " alt="" coords="163,5,464,105"/>
-<area shape="rect" id="node2" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkDiscretizableColorTransferFunction_8h.html" title=" " alt="" coords="90,153,305,195"/>
-<area shape="rect" id="node7" title=" " alt="" coords="329,161,532,187"/>
-<area shape="rect" id="node3" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkColorTransferFunction_8h.html" title=" " alt="" coords="5,243,200,269"/>
-<area shape="rect" id="node5" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkSmartPointer_8h.html" title=" " alt="" coords="224,243,363,269"/>
-<area shape="rect" id="node4" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkScalarsToColors_8h.html" title=" " alt="" coords="24,317,181,344"/>
-<area shape="rect" id="node6" href="/home/kitware/dashboards/buildbot/paraview_master-vall-linux-shared-release_adios2_doc_extdeps_gui_mpi_python3/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkSmartPointerBase_8h.html" title=" " alt="" coords="207,317,379,344"/>
+<map id="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/Views/vtkPVDiscretizableColorTransferFunction.h" name="/builds/gitlab&#45;kitware&#45;sciviz&#45;ci/Remoting/Views/vtkPVDiscretizableColorTransferFunction.h">
+<area shape="rect" id="node2" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkDiscretizableColorTransferFunction_8h.html" title="vtkDiscretizableColorTransfer\lFunction.h" alt="" coords="186,126,400,167"/>
+<area shape="rect" id="node7" href="$vtkRemotingViewsModule_8h.html" title="vtkRemotingViewsModule.h" alt="" coords="525,133,728,160"/>
+<area shape="rect" id="node3" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkColorTransferFunction_8h.html" title="vtkColorTransferFunction.h" alt="" coords="5,224,200,251"/>
+<area shape="rect" id="node5" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkSmartPointer_8h.html" title="vtkSmartPointer.h" alt="" coords="224,224,363,251"/>
+<area shape="rect" id="node4" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkScalarsToColors_8h.html" title="vtkScalarsToColors.h" alt="" coords="24,307,181,333"/>
+<area shape="rect" id="node6" href="/builds/gitlab-kitware-sciviz-ci/build/Utilities/Doxygen/vtkNightlyDoc.tag$vtkSmartPointerBase_8h.html" title="vtkSmartPointerBase.h" alt="" coords="207,307,379,333"/>
+<area shape="rect" id="node8" href="$vtkRemotingServerManagerModule_8h.html" title="vtkRemotingServerManager\lModule.h" alt="" coords="387,217,589,258"/>
+<area shape="rect" id="node9" href="$vtkChartsCoreModule_8h.html" title="vtkChartsCoreModule.h" alt="" coords="665,224,839,251"/>
+<area shape="rect" id="node10" href="$vtkRenderingContext2DModule_8h.html" title="vtkRenderingContext2DModule.h" alt="" coords="531,307,767,333"/>
+<area shape="rect" id="node11" href="$vtkRenderingCoreModule_8h.html" title="vtkRenderingCoreModule.h" alt="" coords="707,381,904,408"/>
 </map>
